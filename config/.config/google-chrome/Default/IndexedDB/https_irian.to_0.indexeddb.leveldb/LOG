@@ -1,0 +1,15 @@
+2020/07/03-10:07:55.608 976 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_irian.to_0.indexeddb.leveldb/MANIFEST-000001
+2020/07/03-10:07:55.608 976 Recovering log #4
+2020/07/03-10:07:55.727 976 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_irian.to_0.indexeddb.leveldb/000004.log 
+2020/07/03-10:45:50.506 e63 Level-0 table #8: started
+2020/07/03-10:45:50.550 e63 Level-0 table #8: 4866 bytes OK
+2020/07/03-10:45:50.595 e63 Delete type=0 #4
+2020/07/03-10:45:50.595 e63 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/07/03-10:45:50.596 e63 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x013\x00[\x00D\x00E\x00F\x00A\x00U\x00L\x00T\x00]\x00!\x001\x00:\x008\x007\x001\x005\x006\x008\x001\x001\x000\x007\x002\x003\x00:\x00w\x00e\x00b\x00:\x00e\x00e\x00b\x00c\x006\x008\x001\x005\x004\x003\x005\x000\x001\x007\x00d\x002\x006\x00d\x009\x007\x00b\x006' @ 74 : 1
+2020/07/03-10:45:50.596 e63 Compacting 1@1 + 1@2 files
+2020/07/03-10:45:50.640 e63 Generated table #9@1: 20 keys, 1271 bytes
+2020/07/03-10:45:50.640 e63 Compacted 1@1 + 1@2 files => 1271 bytes
+2020/07/03-10:45:50.684 e63 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/07/03-10:45:50.684 e63 Delete type=2 #5
+2020/07/03-10:45:50.684 e63 Delete type=2 #8
+2020/07/03-10:45:50.684 e63 Manual compaction at level-1 from '\x00\x01\x01\x02\x013\x00[\x00D\x00E\x00F\x00A\x00U\x00L\x00T\x00]\x00!\x001\x00:\x008\x007\x001\x005\x006\x008\x001\x001\x000\x007\x002\x003\x00:\x00w\x00e\x00b\x00:\x00e\x00e\x00b\x00c\x006\x008\x001\x005\x004\x003\x005\x000\x001\x007\x00d\x002\x006\x00d\x009\x007\x00b\x006' @ 74 : 1 .. (end); will stop at (end)

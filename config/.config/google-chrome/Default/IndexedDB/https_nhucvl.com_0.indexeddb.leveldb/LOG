@@ -1,0 +1,5 @@
+2020/08/23-14:43:03.140 1c251 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_nhucvl.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/08/23-14:43:13.317 16f9 Level-0 table #5: started
+2020/08/23-14:43:13.371 16f9 Level-0 table #5: 1101 bytes OK
+2020/08/23-14:43:13.440 16f9 Delete type=0 #3
+2020/08/23-14:43:13.441 16f9 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

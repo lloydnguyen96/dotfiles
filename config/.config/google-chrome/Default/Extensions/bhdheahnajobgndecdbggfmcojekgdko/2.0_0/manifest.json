@@ -1,0 +1,18 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "https://www.desmos.com/calculator"
+      },
+      "urls": [ "*://www.desmos.com/", "*://www.desmos.com/" ]
+   },
+   "description": "Beautiful, powerful, free math exploration! Brought to you by desmos.com",
+   "icons": {
+      "128": "icon_128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQD6y0/QcPxKIefuwePEdQPFwCzl1q1xbN6eLG8QWjO+rrwhtw00Inxx5+pS6xKvNiCAIR9O0Cnl/bzM6+ix19zLxFIAJ9VcetoWBLYy7JE/KIwaLwmAtyG93Q2RUaUlq7QgBWeVAiSx3NKr/oGFadvMAYXbCDzJw7dKe1x1ca+adQIDAQAB",
+   "manifest_version": 2,
+   "name": "Desmos Graphing Calculator",
+   "permissions": [  ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0"
+}

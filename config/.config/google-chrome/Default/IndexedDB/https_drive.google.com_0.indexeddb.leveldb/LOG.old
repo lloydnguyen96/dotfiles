@@ -1,0 +1,20 @@
+2020/09/11-20:47:28.316 b1ba4 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/09/11-20:47:28.317 b1ba4 Recovering log #2088
+2020/09/11-20:47:28.508 b1ba4 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/002088.log 
+2020/09/11-20:47:38.565 b2212 Level-0 table #2097: started
+2020/09/11-20:47:38.779 b2212 Level-0 table #2097: 1559074 bytes OK
+2020/09/11-20:47:39.125 b2212 Delete type=0 #2088
+2020/09/11-20:47:47.773 b2212 Compacting 1@1 + 5@2 files
+2020/09/11-20:47:48.856 b2212 Generated table #2098@1: 5704 keys, 2127984 bytes
+2020/09/11-20:47:52.139 b2212 Generated table #2099@1: 2016 keys, 2117211 bytes
+2020/09/11-20:47:54.374 b2212 Generated table #2100@1: 2215 keys, 2118640 bytes
+2020/09/11-20:47:56.156 b2212 Generated table #2101@1: 2023 keys, 2118873 bytes
+2020/09/11-20:47:56.940 b2212 Generated table #2102@1: 9087 keys, 902455 bytes
+2020/09/11-20:47:56.940 b2212 Compacted 1@1 + 5@2 files => 9385163 bytes
+2020/09/11-20:47:57.859 b2212 compacted to: files[ 0 0 5 0 0 0 0 ]
+2020/09/11-20:47:57.860 b2212 Delete type=2 #2094
+2020/09/11-20:47:57.860 b2212 Delete type=2 #2093
+2020/09/11-20:47:57.860 b2212 Delete type=2 #2092
+2020/09/11-20:47:57.860 b2212 Delete type=2 #2097
+2020/09/11-20:47:57.860 b2212 Delete type=2 #2090
+2020/09/11-20:47:57.860 b2212 Delete type=2 #2091

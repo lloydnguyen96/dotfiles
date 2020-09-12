@@ -1,0 +1,5 @@
+2020/07/07-09:48:26.997 1333 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_gadgets.ndtv.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/07/07-09:53:30.621 1102 Level-0 table #5: started
+2020/07/07-09:53:30.664 1102 Level-0 table #5: 1005 bytes OK
+2020/07/07-09:53:30.706 1102 Delete type=0 #3
+2020/07/07-09:53:30.707 1102 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

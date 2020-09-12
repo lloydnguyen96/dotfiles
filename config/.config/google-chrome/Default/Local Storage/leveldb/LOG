@@ -1,0 +1,12 @@
+2020/09/12-11:38:21.336 ea3 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
+2020/09/12-11:38:21.402 ea3 Recovering log #2569
+2020/09/12-11:38:21.781 ea3 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/Local Storage/leveldb/002569.log 
+2020/09/12-11:43:22.597 143c Level-0 table #2576: started
+2020/09/12-11:43:22.834 143c Level-0 table #2576: 21441 bytes OK
+2020/09/12-11:43:23.165 143c Delete type=0 #2569
+2020/09/12-11:51:14.313 143c Level-0 table #2578: started
+2020/09/12-11:51:14.365 143c Level-0 table #2578: 20353 bytes OK
+2020/09/12-11:51:14.407 143c Delete type=0 #2575
+2020/09/12-12:09:00.458 143c Level-0 table #2580: started
+2020/09/12-12:09:00.522 143c Level-0 table #2580: 21914 bytes OK
+2020/09/12-12:09:00.564 143c Delete type=0 #2577

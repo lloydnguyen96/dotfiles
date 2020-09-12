@@ -1,0 +1,5 @@
+2020/07/04-11:32:54.007 7ec4 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_taigame.org_0.indexeddb.leveldb/MANIFEST-000001
+2020/07/04-11:32:56.222 f7e Level-0 table #5: started
+2020/07/04-11:32:56.267 f7e Level-0 table #5: 826 bytes OK
+2020/07/04-11:32:56.334 f7e Delete type=0 #3
+2020/07/04-11:32:56.334 f7e Manual compaction at level-0 from (begin) .. (end); will stop at (end)

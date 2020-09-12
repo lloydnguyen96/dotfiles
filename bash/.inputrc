@@ -1,0 +1,18 @@
+$include /etc/inputrc
+# read 'https://www.topbug.net/blog/2017/07/31/inputrc-for-humans/'
+"\C-p":history-search-backward
+"\C-n":history-search-forward
+
+set colored-stats On
+set completion-ignore-case On
+set completion-prefix-display-length 3
+set mark-symlinked-directories On
+set show-all-if-ambiguous On
+set show-all-if-unmodified On
+set visible-stats On
+
+"\C-l": clear-screen
+
+set show-mode-in-prompt on
+set vi-cmd-mode-string "NORMAL"
+set vi-ins-mode-string "INSERT"

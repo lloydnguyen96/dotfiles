@@ -1,0 +1,5 @@
+2020/07/09-01:58:21.839 1d90 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_editage.onesignal.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/07/09-01:58:24.757 d99 Level-0 table #5: started
+2020/07/09-01:58:24.836 d99 Level-0 table #5: 6193 bytes OK
+2020/07/09-01:58:24.892 d99 Delete type=0 #3
+2020/07/09-01:58:24.893 d99 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

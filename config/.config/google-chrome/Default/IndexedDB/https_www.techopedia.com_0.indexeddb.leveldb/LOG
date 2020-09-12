@@ -1,0 +1,5 @@
+2020/07/21-12:11:07.130 10512 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.techopedia.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/07/21-12:11:39.028 103d Level-0 table #5: started
+2020/07/21-12:11:39.480 103d Level-0 table #5: 826 bytes OK
+2020/07/21-12:11:40.168 103d Delete type=0 #3
+2020/07/21-12:11:40.170 103d Manual compaction at level-0 from (begin) .. (end); will stop at (end)

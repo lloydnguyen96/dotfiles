@@ -1,0 +1,8 @@
+2020/06/16-13:58:11.886 1a8d Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.investopedia.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/06/16-13:58:11.886 1a8d Recovering log #4
+2020/06/16-13:58:11.887 1a8d Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.investopedia.com_0.indexeddb.leveldb/000004.log 
+2020/06/16-13:58:58.744 f4d Level-0 table #8: started
+2020/06/16-13:58:58.744 f4d Level-0 table #8: 0 bytes OK
+2020/06/16-13:58:58.789 f4d Delete type=0 #4
+2020/06/16-13:58:58.789 f4d Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/06/16-13:58:58.789 f4d Manual compaction at level-1 from (begin) .. (end); will stop at (end)

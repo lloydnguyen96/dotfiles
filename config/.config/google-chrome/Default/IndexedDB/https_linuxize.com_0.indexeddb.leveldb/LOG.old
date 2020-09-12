@@ -1,0 +1,15 @@
+2020/07/26-20:47:29.304 26180 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_linuxize.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/07/26-20:47:29.304 26180 Recovering log #4
+2020/07/26-20:47:29.304 26180 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_linuxize.com_0.indexeddb.leveldb/000004.log 
+2020/07/26-20:47:34.104 1555 Level-0 table #8: started
+2020/07/26-20:47:34.148 1555 Level-0 table #8: 11174 bytes OK
+2020/07/26-20:47:34.182 1555 Delete type=0 #4
+2020/07/26-20:47:34.183 1555 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/07/26-20:47:34.183 1555 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01 \x03\x00\x10R\x0e\xb68wB\x00\x01N\x00d\x00a\x00t\x00a\x00-\x00c\x00a\x00c\x00h\x00e\x00|\x00h\x00t\x00t\x00p\x00s\x00:\x00/\x00/\x00l\x00i\x00n\x00u\x00x\x00i\x00z\x00e\x00.\x00c\x00o\x00m\x00/\x00m\x00a\x00n\x00i\x00f\x00e\x00s\x00t\x00.\x001\x002\x008\x00d\x00c\x004\x00c\x00a\x008\x00d\x004\x007\x00b\x009\x00d\x00b\x007\x005\x00f\x00f\x00b\x00c\x007\x002\x00b\x005\x008\x008\x000\x002\x001\x00a\x00.\x00j\x00s\x00o\x00n' @ 472 : 1
+2020/07/26-20:47:34.183 1555 Compacting 1@1 + 1@2 files
+2020/07/26-20:47:34.237 1555 Generated table #9@1: 66 keys, 4962 bytes
+2020/07/26-20:47:34.237 1555 Compacted 1@1 + 1@2 files => 4962 bytes
+2020/07/26-20:47:34.282 1555 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/07/26-20:47:34.282 1555 Delete type=2 #5
+2020/07/26-20:47:34.282 1555 Delete type=2 #8
+2020/07/26-20:47:34.283 1555 Manual compaction at level-1 from '\x00\x01\x01 \x03\x00\x10R\x0e\xb68wB\x00\x01N\x00d\x00a\x00t\x00a\x00-\x00c\x00a\x00c\x00h\x00e\x00|\x00h\x00t\x00t\x00p\x00s\x00:\x00/\x00/\x00l\x00i\x00n\x00u\x00x\x00i\x00z\x00e\x00.\x00c\x00o\x00m\x00/\x00m\x00a\x00n\x00i\x00f\x00e\x00s\x00t\x00.\x001\x002\x008\x00d\x00c\x004\x00c\x00a\x008\x00d\x004\x007\x00b\x009\x00d\x00b\x007\x005\x00f\x00f\x00b\x00c\x007\x002\x00b\x005\x008\x008\x000\x002\x001\x00a\x00.\x00j\x00s\x00o\x00n' @ 472 : 1 .. (end); will stop at (end)

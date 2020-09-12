@@ -1,0 +1,5 @@
+2020/06/27-17:03:07.250 11dc Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_forums.tomshardware.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/06/27-17:03:26.522 cd1 Level-0 table #5: started
+2020/06/27-17:03:26.571 cd1 Level-0 table #5: 356 bytes OK
+2020/06/27-17:03:26.627 cd1 Delete type=0 #3
+2020/06/27-17:03:26.627 cd1 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

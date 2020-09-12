@@ -1,0 +1,14 @@
+2020/08/31-18:45:25.899 8177 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/Local Extension Settings/eocfcfklbhdgkilphhkcpcgaollminlf/MANIFEST-000001
+2020/08/31-18:45:25.949 8177 Recovering log #110
+2020/08/31-18:45:26.057 8177 Level-0 table #112: started
+2020/08/31-18:45:26.244 8177 Level-0 table #112: 2671159 bytes OK
+2020/08/31-18:45:26.277 8177 Delete type=0 #110
+2020/08/31-18:45:26.278 83dc Compacting 4@0 + 1@1 files
+2020/08/31-18:45:26.612 83dc Generated table #114@0: 1 keys, 2671159 bytes
+2020/08/31-18:45:26.613 83dc Compacted 4@0 + 1@1 files => 2671159 bytes
+2020/08/31-18:45:26.644 83dc compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/08/31-18:45:26.644 83dc Delete type=2 #103
+2020/08/31-18:45:26.644 83dc Delete type=2 #101
+2020/08/31-18:45:26.644 83dc Delete type=2 #112
+2020/08/31-18:45:26.644 83dc Delete type=2 #106
+2020/08/31-18:45:26.644 83dc Delete type=2 #109

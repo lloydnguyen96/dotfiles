@@ -1,0 +1,5 @@
+2020/06/30-18:22:13.065 4001 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_aax-fe-sin.amazon-adsystem.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/06/30-18:22:16.668 1037 Level-0 table #5: started
+2020/06/30-18:22:16.712 1037 Level-0 table #5: 370 bytes OK
+2020/06/30-18:22:16.901 1037 Delete type=0 #3
+2020/06/30-18:22:16.902 1037 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

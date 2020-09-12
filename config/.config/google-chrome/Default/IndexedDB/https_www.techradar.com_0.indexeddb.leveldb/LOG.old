@@ -1,0 +1,5 @@
+2020/07/03-16:42:22.085 98d9 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.techradar.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/07/03-16:42:30.146 e63 Level-0 table #5: started
+2020/07/03-16:42:30.261 e63 Level-0 table #5: 5719 bytes OK
+2020/07/03-16:42:30.328 e63 Delete type=0 #3
+2020/07/03-16:42:30.329 e63 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

@@ -1,0 +1,5 @@
+2020/07/09-22:19:30.923 6870 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_community.hpe.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/07/09-22:19:39.336 f3f Level-0 table #5: started
+2020/07/09-22:19:39.380 f3f Level-0 table #5: 1572 bytes OK
+2020/07/09-22:19:39.447 f3f Delete type=0 #3
+2020/07/09-22:19:39.448 f3f Manual compaction at level-0 from (begin) .. (end); will stop at (end)

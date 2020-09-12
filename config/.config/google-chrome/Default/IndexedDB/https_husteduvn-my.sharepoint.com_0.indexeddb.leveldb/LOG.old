@@ -1,0 +1,8 @@
+2020/07/12-14:57:32.945 300c Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_husteduvn-my.sharepoint.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/07/12-14:57:32.946 300c Recovering log #641
+2020/07/12-14:57:32.946 300c Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_husteduvn-my.sharepoint.com_0.indexeddb.leveldb/000641.log 
+2020/07/12-14:58:05.030 e19 Level-0 table #645: started
+2020/07/12-14:58:05.030 e19 Level-0 table #645: 0 bytes OK
+2020/07/12-14:58:05.068 e19 Delete type=0 #641
+2020/07/12-14:58:05.068 e19 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/07/12-14:58:05.068 e19 Manual compaction at level-1 from (begin) .. (end); will stop at (end)

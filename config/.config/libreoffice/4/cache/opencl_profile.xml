@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile>
+ <version>LibreOffice v1</version>
+ <device>
+  <type>opencl</type>
+  <name>GeForce RTX 2070 SUPER</name>
+  <driver>440.100</driver>
+  <time>17378</time>
+  <errors>false</errors>
+ </device>
+ <device>
+  <type>native</type>
+  <time>2526720</time>
+  <errors>false</errors>
+ </device>
+</profile>

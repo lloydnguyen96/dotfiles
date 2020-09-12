@@ -1,0 +1,16 @@
+2020/06/15-22:19:09.821 3dae Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.timeout.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/06/15-22:20:41.352 2d5b Level-0 table #5: started
+2020/06/15-22:20:41.473 2d5b Level-0 table #5: 4273818 bytes OK
+2020/06/15-22:20:41.511 2d5b Delete type=0 #3
+2020/06/15-22:25:45.125 2d5b Level-0 table #7: started
+2020/06/15-22:25:45.211 2d5b Level-0 table #7: 3873439 bytes OK
+2020/06/15-22:25:45.253 2d5b Delete type=0 #4
+2020/06/15-22:25:45.255 2d5b Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/06/15-22:25:45.255 2d5b Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x16\x00p\x00e\x00r\x00m\x00u\x00t\x00i\x00v\x00e\x00-\x00e\x00v\x00e\x00n\x00t\x00s\x00-\x00c\x00a\x00c\x00h\x00e' @ 852 : 1
+2020/06/15-22:25:45.255 2d5b Compacting 1@1 + 1@2 files
+2020/06/15-22:25:45.312 2d5b Generated table #8@1: 33 keys, 94222 bytes
+2020/06/15-22:25:45.312 2d5b Compacted 1@1 + 1@2 files => 94222 bytes
+2020/06/15-22:25:45.351 2d5b compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/06/15-22:25:45.351 2d5b Delete type=2 #7
+2020/06/15-22:25:45.351 2d5b Delete type=2 #5
+2020/06/15-22:25:45.355 2d5b Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x16\x00p\x00e\x00r\x00m\x00u\x00t\x00i\x00v\x00e\x00-\x00e\x00v\x00e\x00n\x00t\x00s\x00-\x00c\x00a\x00c\x00h\x00e' @ 852 : 1 .. (end); will stop at (end)

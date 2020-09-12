@@ -1,0 +1,8 @@
+2020/08/31-23:13:15.274 5078d Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_googleads.g.doubleclick.net_0.indexeddb.leveldb/MANIFEST-000001
+2020/08/31-23:13:15.316 5078d Recovering log #32
+2020/08/31-23:13:15.316 5078d Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_googleads.g.doubleclick.net_0.indexeddb.leveldb/000032.log 
+2020/08/31-23:13:22.362 1ca6 Level-0 table #36: started
+2020/08/31-23:13:22.362 1ca6 Level-0 table #36: 0 bytes OK
+2020/08/31-23:13:22.407 1ca6 Delete type=0 #32
+2020/08/31-23:13:22.407 1ca6 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/08/31-23:13:22.407 1ca6 Manual compaction at level-1 from (begin) .. (end); will stop at (end)

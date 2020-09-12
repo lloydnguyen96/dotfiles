@@ -1,0 +1,5 @@
+2020/07/16-11:53:43.565 2ee0 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_tensorflow-dot-devsite-v2-prod-3p.appspot.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/07/16-11:54:33.662 101f Level-0 table #5: started
+2020/07/16-11:54:33.707 101f Level-0 table #5: 1253 bytes OK
+2020/07/16-11:54:33.743 101f Delete type=0 #3
+2020/07/16-11:54:33.744 101f Manual compaction at level-0 from (begin) .. (end); will stop at (end)

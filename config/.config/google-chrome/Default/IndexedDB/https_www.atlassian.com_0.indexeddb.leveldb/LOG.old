@@ -1,0 +1,8 @@
+2020/07/20-11:30:44.956 2ab5 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.atlassian.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/07/20-11:30:44.957 2ab5 Recovering log #19
+2020/07/20-11:30:44.957 2ab5 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.atlassian.com_0.indexeddb.leveldb/000019.log 
+2020/07/20-11:30:48.232 eed Level-0 table #24: started
+2020/07/20-11:30:48.232 eed Level-0 table #24: 0 bytes OK
+2020/07/20-11:30:48.315 eed Delete type=0 #19
+2020/07/20-11:30:48.315 eed Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/07/20-11:30:48.315 eed Manual compaction at level-1 from (begin) .. (end); will stop at (end)

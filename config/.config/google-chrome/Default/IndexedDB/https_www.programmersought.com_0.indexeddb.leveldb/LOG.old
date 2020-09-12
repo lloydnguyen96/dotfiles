@@ -1,0 +1,15 @@
+2020/09/07-15:45:05.749 93fe Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.programmersought.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/09/07-15:45:05.750 93fe Recovering log #4
+2020/09/07-15:45:05.750 93fe Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.programmersought.com_0.indexeddb.leveldb/000004.log 
+2020/09/07-15:47:40.848 28a8 Level-0 table #8: started
+2020/09/07-15:47:40.895 28a8 Level-0 table #8: 473 bytes OK
+2020/09/07-15:47:40.937 28a8 Delete type=0 #4
+2020/09/07-15:47:40.938 28a8 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/09/07-15:47:40.938 28a8 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x05\x00I\x00Z\x00C\x00I\x00D' @ 92 : 1
+2020/09/07-15:47:40.938 28a8 Compacting 1@1 + 1@2 files
+2020/09/07-15:47:40.985 28a8 Generated table #9@1: 29 keys, 725 bytes
+2020/09/07-15:47:40.985 28a8 Compacted 1@1 + 1@2 files => 725 bytes
+2020/09/07-15:47:41.026 28a8 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/09/07-15:47:41.026 28a8 Delete type=2 #5
+2020/09/07-15:47:41.026 28a8 Delete type=2 #8
+2020/09/07-15:47:41.041 28a8 Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x05\x00I\x00Z\x00C\x00I\x00D' @ 92 : 1 .. (end); will stop at (end)

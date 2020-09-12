@@ -1,0 +1,1455 @@
+"*****************************************************************************
+"" Important Information
+"*****************************************************************************
+
+" Remember New Commands:
+" - .: perform the last command you use
+" - i_CTRL_E: insert character like the one below the cursor
+" - i_CTRL_Y: insert character like the one above the cursor
+" - i_CTRL_L: autotype searching character
+
+" Comment Abbreviations:
+" - nm: normal mode
+" - vm: visual mode
+" - im: insert mode
+
+" Strategies:
+" - always use nonrecursive mapping version to a new mapping
+" - always check all new plugin commands for duplicating problems
+" - :help index to search for default keys
+" - :verbose map key for tracking where a key is set
+" - :command <name> shows definitions of user-defined command named <name>
+"   (including plugin commands, of course)
+" - read ':h map-overview'
+
+" Inheritance Order:
+" - file -> buffer -> window -> tab page
+" - Window inherits options from buffer, window may override buffer's option
+"   values.
+" - Buffer inherits options from file, buffer may override file's option
+"   values.
+" - File inherits options from default options (file may override this option
+"   values by using :set command in .vimrc).
+
+" While Writing Vim Plugin:
+" - don't use recursive mappings
+" - use case-sensitive comparison (==#) and case-insensitive comparison (==?)
+" - don't depend on Vim Coercing, always coerce manually
+" - always use normal! (normal! vs normal is like noremap and map)
+
+" Virtual Environment:
+" - when developing Python with Vim, there are two Pythons of interest:
+" + the one that executes your code in a shell command, i.e. :!python %
+" + the (embedded in Vim) one that jedi-vim uses to provide code completion
+
+"*****************************************************************************
+"" Vim-PLug Core
+"*****************************************************************************
+
+if has("vim_starting")
+    set nocompatible " Be iMproved
+endif
+
+let b:vimplug_exists=expand("~/.vim/autoload/plug.vim")
+
+if !filereadable(b:vimplug_exists)
+    if !executable("curl")
+        echoerr "You have to install curl or first install vim-plug yourself!"
+        execute "q!"
+    endif
+    echo "Installing vim-plug..."
+    echo ""
+    let g:vim_plug_path=" --create-dirs https://raw.githubusercontent.com/"
+    let g:vim_plug_path .= "junegunn/vim-plug/master/plug.vim"
+    silent exec "!\curl -fLo " . b:vimplug_exists . g:vim_plug_path
+    let g:not_finish_vimplug="yes"
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+"*****************************************************************************
+"" Plugin Installations With Vim-Plug
+"*****************************************************************************
+
+call plug#begin(expand('~/.vim/plugged'))
+
+Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-scripts/grep.vim'
+Plug 'vim-scripts/CSApprox'
+Plug 'christoomey/vim-tmux-navigator'
+" Automatic Tagging and Tags Navigation
+Plug 'majutsushi/tagbar'
+" Language Server and LSP (autocompletion)
+Plug 'dense-analysis/ale'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tmux-plugins/vim-tmux-focus-events'
+
+" icons for nerdtree, vim-airline, ...
+" Plug 'ryanoasis/vim-devicons'
+
+" key bindings for commenting scripts
+Plug 'tpope/vim-commentary'
+
+" automatic folding of Python functions, docstrings
+" Plug 'tmhedberg/SimpylFold'
+
+" Git intergration in Vim
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
+
+" automatic closing of quotes, parenthesis, brackets, ...
+Plug 'Raimondi/delimitMate'
+
+" vertical lines at each indentation level for code indented with spaces
+Plug 'Yggdroot/indentLine'
+
+" Language Packs (syntax, ...)
+Plug 'sheerun/vim-polyglot'
+
+" Vimrc Samples
+" Plug 'avelino/vim-bootstrap-updater'
+" let g:vim_bootstrap_langs="c,python"
+" let g:vim_bootstrap_editor="vim" " nvim or vim
+
+" Fuzzy Finder
+if isdirectory('/usr/local/opt/fzf')
+    Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+else
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+endif
+
+let g:make='gmake'
+if exists('make')
+    let g:make='make'
+endif
+Plug 'Shougo/vimproc.vim', {'do': g:make}
+
+" Vim-Session
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-session'
+
+" Snippets
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+
+" Color
+Plug 'morhetz/gruvbox'
+
+" C
+Plug 'vim-scripts/c.vim', {'for': ['c', 'cpp']}
+Plug 'ludwig/split-manpage.vim'
+
+" Python
+"Plug 'davidhalter/jedi'
+Plug 'davidhalter/jedi-vim'
+Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
+
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+Plug 'deoplete-plugins/deoplete-jedi'
+
+" highlight trailing whitespaces
+Plug 'ntpeters/vim-better-whitespace'
+" Plug 'vim-scripts/ShowTrailingWhitespace'
+call plug#end()
+
+"*****************************************************************************
+"" Basic Setup
+"*****************************************************************************
+
+" move .viminfo to .vim folder for portability
+set viminfo+=n~/.vim/viminfo
+
+" enable file type detection: filetype on
+" enable loading the plugin files for specific file types: filetype plugin on
+" enable loading the indent files for specific file types: filetype indent on
+filetype plugin indent on
+
+" Location Of New Split Windows:
+set splitbelow
+set splitright
+
+" Encoding:
+" - read ':help fileencodings'
+set encoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8
+" improve smoothness of redrawing when there are multiple windows and the
+" terminal does not support a scrolling region.
+set ttyfast
+
+" Make Backspace Behaves Like In Normal Text Editor:
+" - can delete indentation characters
+" - can delete eol characters
+" - can delete beyond the location of the last start of insert mode
+" - read ':help 'backspace''
+set backspace=indent,eol,start
+
+" Tabs AND Spaces:
+" - may be overridden by autocmd rules
+" - tabstop: the width of a Tab character (which means the number of columns
+"   it occupies)
+
+" - expandtab: this option does not affect pre-existing Tab characters in the
+"   buffer:
+" + expandtab on ==> convert newly added Tab characters to equal number of
+" Space characters
+" + expandtab off ==> a sequence of newly added tabstop consecutive Space*
+" characters (counted from the leftmost observed Space* character in a line)
+" will be converted to a Tab character. Space* character: Space character
+" created by combination of (pressing <Tab> (when softtabstop>0), pressing
+" '>>' in normal mode)
+" + e.g.: tabstop=4, softtabstop=10, noexpandtab ==> a string of 10 Space*
+" characters will be converted to 2 Tab characters and 2 Space characters:
+" [Tab][Tab][Space][Space]
+
+" - softtabstop:
+" + softtabstop=0
+" ==> pressing <Tab> add a Tab character which occupies tabstop columns
+" (noexpandtab) or tabstop Space characters (expandtab)
+" ==> pressing <BS> delete the corresponding Tab or Space character
+" + softtabstop>0
+" ==> pressing <Tab> add (Space characters and as many as possible number of
+" Tab characters) with equal number of softtabstop columns in the form:
+" [Tab][Tab]... [Space][Space]... (noexpandtab) or equal number of Space
+" characters (expandtab). In other words, pressing <Tab> add a <Softtab>
+" character which will then be converted to suitable sequence of Tab and
+" Space characters
+" ==> pressing <BS> behaves in a really weird way with the combination of keys
+" (<Tab>, <Space>, '>>') that you press in addition to the events of change of
+" modes (insert, normal, ...) that you use. If you just press <Tab> key n
+" times (create n <Softtab> characters) then pressing <BS> will delete n
+" <Softtab> characters.
+
+" - shiftwidth:
+" + is used in visual mode (with '>' and '<' key) and normal mode (with '>>'
+" and '<<' key) to shift a line to right and left shiftwidth columns
+set tabstop=4
+set softtabstop=0
+set shiftwidth=4
+" set shiftround
+set expandtab
+
+" Leaders:
+let mapleader=','
+let maplocalleader=',,'
+
+" Buffers:
+" - if you want to keep changed buffer without saving it, switch on the
+"   'hidden' buffer
+" - see hidden buffers by executing ':buffers' command which shows buffers
+"   list
+" - without ':set hidden', it's not possible abandoning (hiding) file's
+"   changes
+" - read 'h: abandon'
+" - new users, unaware of this option, have no choice but to open many windows
+"   or use tab pages
+set hidden
+
+" Searching:
+" - smartcase: override the 'ignorecase' option if the search pattern contains
+"   upper case characters
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+set nobackup
+set noswapfile
+
+set fileformats=unix,dos,mac
+
+" Shell:
+if exists('$SHELL')
+    set shell=$SHELL
+else
+    set shell=/bin/sh
+endif
+
+" Automatically read a file again when it was changed outside of Vim
+" vim-tmux-focus-events makes the autoread option work properly for terminal
+" vim. So far, this was only working in a GUI version.
+" In order for Tmux to do its magic focus-events option has to be set to on.
+set autoread
+
+"*****************************************************************************
+"" Visual Settings
+"*****************************************************************************
+
+" NOTE:
+" - Switching on syntax highlighting also loads the menu file (in GUI vim),
+"   thus disabling the Buffers menu must be done before ':syntax on'
+let no_buffers_menu=1
+syntax on
+set ruler
+set number
+" set relativenumber
+
+" Colorscheme:
+" - True Color: the use of at least 24 bits to represent each dot or pixel
+" enable true color
+if exists('+termguicolors')
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+    set termguicolors
+endif
+" Most terminals don't handle italics right so gruvbox disables italics for
+" terminals by default. But if you're using urxvt or gnome-terminal you should
+" try setting g:gruvbox_italic=1.
+" Checkout: https://github.com/morhetz/gruvbox/wiki/Terminal-specific
+let g:gruvbox_italic=1
+let g:gruvbox_contrast_light="hard"
+let g:gruvbox_contrast_dark="hard"
+let g:gruvbox_hls_cursor="orange"
+" The reason we are using autocmd is that, vim always read .vimrc first and
+" after that starts to load plugins. Autocmd VimEnter makes sure that all
+" plugins are loaded completely and then use gruvbox
+if !exists('g:not_finish_vimplug')
+    " autocmd VimEnter * colorscheme gruvbox
+    " not use autocmd to avoid conflicts with ExtraWhitespace
+    colorscheme gruvbox
+endif
+set background=dark
+
+" ********** Read later **********
+set mousemodel=popup
+"set t_Co=256
+set guioptions=egmrti
+set gfn=Monospace\ 10
+
+if has("gui_running")
+    if has("gui_mac") || has("gui_macvim")
+        set guifont=Menlo:h12
+        set transparency=7
+    endif
+else
+    let g:CSApprox_loaded = 1
+
+    " indentLine
+    let g:indentLine_enabled = 1
+    " let g:indentLine_setColors = 0
+    let g:indentLine_color_gui = '#414141'
+    let g:indentLine_bgcolor_gui = '#1D2021'
+    let g:indentLine_concealcursor = 0
+    let g:indentLine_char = '┆'
+    let g:indentLine_faster = 0
+
+    if $COLORTERM == 'gnome-terminal'
+        set term=gnome-256color
+    else
+        if $TERM == 'xterm'
+            set term=xterm-256color
+        endif
+    endif
+endif
+
+if &term =~ '256color'
+    set t_ut=
+endif
+" **********  **********
+
+"" Disable the blinking cursor.
+set gcr=a:blinkon0
+" minimal number of screen lines to keep above and below the cursor
+set scrolloff=3
+
+" Status Bar:
+" - 2: Last window will always have a status line.
+set laststatus=2
+
+" read ':h auto-setting'
+set modeline
+" The modelines variable sets the number of lines (at the beginning and end of
+" each file) vim checks for initializations
+set modelines=10
+
+set title
+set titleold="Terminal"
+"set titlestring=%F
+
+set shortmess-=S
+set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)
+set statusline+=\ %{exists('g:loaded_fugitive')?fugitive#statusline():''}
+
+" ********** Statusline (bottom) and Tabline (top) - vim-airline **********
+let g:airline#extensions#branch#enabled=1 " fugitive integration
+let g:airline#extensions#ale#enabled=1 " ale integration
+let g:airline#extensions#tabline#enabled=1 " show tabline on top
+let g:airline#extensions#tagbar#enabled=1 " tagbar integration
+let g:airline_skip_empty_sections=1 " draw separators only for active windows
+let g:airline#extensions#virtualenv#enabled=1
+
+" read ':h airline-customization'
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+if !exists('g:airline_powerline_fonts')
+    let g:airline#extensions#tabline#left_sep = ' '
+    let g:airline#extensions#tabline#left_alt_sep = '|'
+    let g:airline_left_sep          = '▶'
+    let g:airline_left_alt_sep      = '»'
+    let g:airline_right_sep         = '◀'
+    let g:airline_right_alt_sep     = '«'
+    let g:airline#extensions#branch#prefix     = '⤴' "➔, ➥, ⎇
+    let g:airline#extensions#readonly#symbol   = '⊘'
+    let g:airline#extensions#linecolumn#prefix = '¶'
+    let g:airline#extensions#paste#symbol      = 'ρ'
+    " let g:airline_symbols.linenr    = '␊'
+    let g:airline_symbols.linenr    = '☰'
+    let g:airline_symbols.branch    = '⎇'
+    let g:airline_symbols.paste     = 'ρ'
+    let g:airline_symbols.paste     = 'Þ'
+    let g:airline_symbols.paste     = '∥'
+    let g:airline_symbols.whitespace = 'Ξ'
+    let g:airline_symbols.crypt     = '🔒'
+    let g:airline_symbols.spell     = 'Ꞩ'
+    let g:airline_symbols.notexists = 'Ɇ'
+else
+    let g:airline#extensions#tabline#left_sep = ''
+    let g:airline#extensions#tabline#left_alt_sep = ''
+    " powerline symbols
+    let g:airline_left_sep = ''
+    let g:airline_left_alt_sep = ''
+    let g:airline_right_sep = ''
+    let g:airline_right_alt_sep = ''
+    let g:airline_symbols.branch = ''
+    " let g:airline_symbols.readonly = ''
+    " let g:airline_symbols.linenr = ''
+    let g:airline_symbols.readonly = ''
+    let g:airline_symbols.linenr = '☰'
+    let g:airline_symbols.maxlinenr = ''
+    let g:airline_symbols.dirty='⚡'
+endif
+
+"*****************************************************************************
+"" Abbreviations
+"*****************************************************************************
+
+cnoreabbrev W! w!
+cnoreabbrev Q! q!
+cnoreabbrev Qall! qall!
+cnoreabbrev Wq wq
+cnoreabbrev Wa wa
+cnoreabbrev wQ wq
+cnoreabbrev WQ wq
+cnoreabbrev W w
+cnoreabbrev Q q
+cnoreabbrev Qall qall
+
+" Abbreviations will be expanded when you type anything that's not a letter,
+" number, or underscore.
+iabbrev adn and
+iabbrev waht what
+iabbrev tehn then
+iabbrev progrem program
+iabbrev @@ nguyenvanloihanoi@gmail.com
+iabbrev ccopy Copyright 2020 Lloyd Nguyen, all rights reserved.
+iabbrev exlucde exclude
+
+"*****************************************************************************
+"" Commands
+"*****************************************************************************
+
+" Trailing Whitespaces Removing:
+" - s means substitute
+" - %s means substitute in all lines
+" - \s is whitespace
+" - \s\+ is one or more whitespace
+" - \s\+$ is one or more whitespace to end of line
+" - e flag means no error is displayed
+command! FixWhitespace :%s/\s\+$//e
+
+"*****************************************************************************
+"" Functions
+"*****************************************************************************
+
+"*****************************************************************************
+"" Mappings and Variables
+"*****************************************************************************
+
+" Operator Pending Mappings:
+" i( inside parens
+" w to next word
+" iw inside word
+" t, until comma
+" n( inside next parentheses
+" l( inside last parentheses
+
+" t stands for two (double quotes)
+onoremap t i"
+" o stands for one (single quotes)
+onoremap o i'
+" p stands for parenthesis
+onoremap p i(
+" s stands for square brackets
+onoremap s i[
+" c stands for curly brackets
+onoremap c i{
+" a stands for angle brackets
+onoremap a i<
+
+" inside implicitly
+" onoremap n" :<c-u>normal! f"vi"<cr>
+" onoremap l" :<c-u>normal! F"vi"<cr>
+onoremap nt :<c-u>normal! f"vi"<cr>
+onoremap lt :<c-u>normal! F"vi"<cr>
+
+" onoremap n' :<c-u>normal! f'vi'<cr>
+" onoremap l' :<c-u>normal! F'vi'<cr>
+onoremap no :<c-u>normal! f'vi'<cr>
+onoremap lo :<c-u>normal! F'vi'<cr>
+
+" onoremap n( :<c-u>normal! f(vi(<cr>
+" onoremap l( :<c-u>normal! F)vi(<cr>
+onoremap np :<c-u>normal! f(vi(<cr>
+onoremap lp :<c-u>normal! F)vi(<cr>
+
+" onoremap n[ :<c-u>normal! f[vi[<cr>
+" onoremap l[ :<c-u>normal! F]vi[<cr>
+onoremap ns :<c-u>normal! f[vi[<cr>
+onoremap ls :<c-u>normal! F]vi[<cr>
+
+" onoremap n{ :<c-u>normal! f{vi{<cr>
+" onoremap l{ :<c-u>normal! F}vi{<cr>
+onoremap nc :<c-u>normal! f{vi{<cr>
+onoremap lc :<c-u>normal! F}vi{<cr>
+
+" onoremap n< :<c-u>normal! f<vi<<cr>
+" onoremap l< :<c-u>normal! F>vi<<cr>
+onoremap na :<c-u>normal! f<vi<<cr>
+onoremap la :<c-u>normal! F>vi<<cr>
+
+" ********** Leader Letter Meaning **********
+" - t: toggle (convert or toggle characters, words, ...)
+" - m: move (cursor, characters, words, lines, ...)
+" - w: write (write a buffer to its file)
+" - s: save other things (sessions, ...)
+" - q: quit (close a window, ...)
+" - c: complete (Insert Mode), close other things (Normal Mode)
+" - d: delete
+" - v: paste (mnemonic: ctrl_v)
+" - e: execute (execute, source files, ...)
+" - h (K): help (open documentation for keywords in different languages)
+" - o: open (open a new window for files, features, ...)
+" - b: buffer
+" - f: find (find everything with fzf, ctrp, ...)
+" - g: git
+" - r: rename, replace
+" - j: add (a line, ...) below the cursor
+" - u: add (a line, ...) above the cursor
+" - x: terminal
+" - i: inside (wrap word, ... inside something)
+" - not yet used letters: y, k, l, z, a, n, p
+
+" Search Mappings:
+" - These will make it so that going to the next one in a search will center
+"   on the line it's found in.
+" - zv: view cursor line, open just enough folds to make the line in which the
+"   cursor is located not folded
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+" toggle background mode
+nnoremap <leader>tb :call ToggleBackgroundMode()<cr>
+function ToggleBackgroundMode()
+    if &background==#"dark"
+        " must set above background
+        let g:indentLine_bgcolor_gui='#F9F5D7'
+        let g:better_whitespace_guicolor='#9d0006'
+        set background=light
+        AirlineTheme gruvbox
+        "AirlineTheme monochrome
+    else
+        let g:indentLine_bgcolor_gui='#1D2021'
+        let g:better_whitespace_guicolor='#fb4934'
+        set background=dark
+        AirlineTheme luna
+        "AirlineTheme jet
+        "AirlineTheme kalisi
+        "AirlineTheme monochrome
+    endif
+endfunction
+
+" ********** File System Explorer - nerdtree **********
+let g:NERDTreeChDirMode=2 " NERDTree root changes ==> CWD changes
+let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$'] " NERDTree won't display them
+let g:NERDTreeIgnore+=['\.db$', '\.sqlite$', '__pycache__']
+let g:NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
+let g:NERDTreeShowBookmarks=1
+" When switching into a tab, make sure that focus is on the file window, not
+" in the NERDTree window
+let g:nerdtree_tabs_focus_on_files=1
+let g:NERDTreeMapOpenInTabSilent='<RightMouse>'
+let g:NERDTreeWinSize=40
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
+" locate current file in NERDTree
+nnoremap <silent> <leader>fn :NERDTreeFind<cr>
+nnoremap <silent> <leader>on :NERDTreeToggle<cr>
+
+" ********** Searching - vim-scripts/grep.vim **********
+let Grep_Default_Options='-IR'
+let Grep_Skip_Files='*.log *.db'
+let Grep_Skip_Dirs='.git node_modules'
+" find using rgrep (use Fzf instead)
+" nnoremap <silent> <leader>fg :Rgrep<cr>
+cnoremap <c-p> <c-r>=expand("%:p:h") . "/" <cr>
+
+" ********** Terminal Window **********
+" - Text and Background color:
+" + terminal background color: #1D2021 (brought from bruvbox bg color)
+" + terminal text color: #D3D7CF (brought from built-in theme Tango dark)
+" - the palette of 16 ANSI colors for terminal (brough from theme tango)
+" + old_palette_entry2 #592A2A
+" + old_palette_entry2 #4E9A06
+" + new_palette_entry2 #B40000
+" + old_palette_entry4 #3465A4
+" + new_palette_entry4 #FFD000
+let g:terminal_ansi_colors=
+    \['#2E3436','#CC0000','#B40000','#C4A000',
+    \'#FFD000','#75507B','#06989A','#D3D7CF',
+    \'#555753','#EF2929','#8AE234','#FCE94F',
+    \'#729FCF','#AD7FA8','#34E2E2','#EEEEEC',]
+" open bash (terminal) horizontally
+nnoremap <silent> <leader>xh :terminal<cr>
+" open bash (terminal) vetically
+nnoremap <silent> <leader>xv :vert terminal<cr>
+" open fullscreen bash (terminal) in a new tab
+" nnoremap <silent> <leader>xt :terminal<cr>
+" switch from terminal window (in Terminal-Job mode) to other vim windows in
+" Normal mode
+tnoremap <silent> <c-k> <c-w>k
+tnoremap <silent> <c-j> <c-w>j
+tnoremap <silent> <c-h> <c-w>h
+tnoremap <silent> <c-l> <c-w>l
+tnoremap <silent> <leader>xh <c-w>:terminal<cr>
+tnoremap <silent> <leader>xv <c-w>:vert terminal<cr>
+" NOTE: can add more tnoremap mappings (modified from nnoremap mappings) in the
+" future if it's convenient and fast to use it from Terminal-Job mode
+
+" switch to Terminal-Normal mode
+tnoremap <silent> <leader>n <c-\><c-n>
+" switch to Normal mode (after set -o vi)
+tnoremap <silent> jk <esc>
+" switch to Terminal-Job mode: press i or a in Terminal-Normal mode
+tnoremap <silent> <leader>q <c-w><c-c>
+
+" ********** Buffers **********
+" buffers list
+nnoremap <leader>bl :ls<cr>:b<space>
+" Open a buffer listed in buffers list in a vertically split window
+nnoremap <leader>bv :ls<cr>:vert<space>belowright<space>sb<space>
+" Open a buffer listed in buffers list in a horizontally split window
+nnoremap <leader>bh :ls<cr>:belowright<space>sb<space>
+nnoremap <leader>db :ls<cr>:bd<space>
+
+nnoremap <leader>1 :buffer<space>1<cr>
+nnoremap <leader>2 :buffer<space>2<cr>
+nnoremap <leader>3 :buffer<space>3<cr>
+nnoremap <leader>4 :buffer<space>4<cr>
+nnoremap <leader>5 :buffer<space>5<cr>
+nnoremap <leader>6 :buffer<space>6<cr>
+nnoremap <leader>7 :buffer<space>7<cr>
+nnoremap <leader>8 :buffer<space>8<cr>
+nnoremap <leader>9 :buffer<space>9<cr>
+
+" ********** Git **********
+noremap <leader>gw :Gwrite<cr>
+noremap <leader>gc :Gcommit<cr>
+noremap <leader>gp :Gpush<cr>
+noremap <leader>gl :Gpull<cr>
+noremap <leader>gs :Gstatus<cr>
+noremap <leader>gb :Gblame<cr>
+noremap <leader>gd :Gvdiff<cr>
+noremap <leader>gr :Gremove<cr>
+" open current line on GitHub
+nnoremap <leader>og :.Gbrowse<cr>
+
+" ********** Session Management **********
+let g:session_directory="~/.vim/sessions"
+let g:session_default_name="default"
+let g:session_autoload="no"
+let g:session_autosave="no"
+let g:session_autosave_periodic=5
+let g:session_command_aliases=1
+nnoremap <leader>os :OpenSession<space>
+" write session (save session)
+nnoremap <leader>ss :SaveSession<space>
+nnoremap <leader>ds :DeleteSession<cr>
+" close session
+nnoremap <leader>cs :CloseSession<cr>
+
+" ********** Tabpages **********
+nnoremap <tab> gt
+nnoremap <s-tab> gT
+nnoremap <silent> <s-t> :tabnew<cr>
+
+" ********** Setting Working Directory **********
+" - read ':h filename-modifiers':
+" + :p makes file name a full path .vimrc ==> /home/user/.vimrc
+" + :h creates head of the file name /home/user/.vimrc ==> /home/user
+nnoremap <leader>. :lcd %:p:h<cr>
+
+" - opens an edit command with the path of the currently edited file filled in
+" - use Fzf instead
+" noremap <leader>e :e <c-r>=expand("%:p:h") . "/" <cr>
+
+" - opens a tab edit command with the path of the currently edited file filled
+" - use Fzf instead
+" noremap <leader>te :tabe <c-r>=expand("%:p:h") . "/" <cr>
+
+" enable a menu at the bottom of the vim/gvim window
+set wildmenu
+" - the meaning of list:longest,full is so that when you do completion in the
+" command line via tab, these events will happen:
+" + (on the first tab) a list of completions will be shown and the command
+"   will be completed to the longest common command
+" + (on the second tab) the wildmenu will show up with all the completions
+"   that were listed before
+" + e.g.: type :spe and hit tab
+set wildmode=list:longest,full
+
+" ****************************************************************************
+" ****************************************************************************
+" ********************************* fzf.vim **********************************
+
+" an action can be a reference to a function that processes selected lines
+function! s:build_quickfix_list(lines)
+    call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
+    copen
+    cc
+endfunction
+
+let g:fzf_action={
+    \ 'ctrl-q': function('s:build_quickfix_list'),
+    \ 'ctrl-t': 'tab split',
+    \ 'ctrl-h': 'split',
+    \ 'ctrl-v': 'vsplit' }
+
+" default fzf layout
+" - down / up / left / right
+" let g:fzf_layout = { 'down': '40%' }
+" let g:fzf_layout = { 'window': 'enew' }
+" let g:fzf_layout = { 'window': '-tabnew' }
+" let g:fzf_layout = { 'window': '10new' }
+" let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
+
+" See `man fzf-tmux` for available options
+" if exists('$TMUX')
+"     let g:fzf_layout = { 'tmux': '-p90%,60%' }
+" else
+"     let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
+" endif
+
+" customize fzf colors to match your color scheme
+" - fzf#wrap translates this to a set of `--color` options
+let g:fzf_colors =
+    \ { 'fg':      ['fg', 'Normal'],
+    \ 'bg':      ['bg', 'Normal'],
+    \ 'hl':      ['fg', 'Comment'],
+    \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+    \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+    \ 'hl+':     ['fg', 'Statement'],
+    \ 'info':    ['fg', 'PreProc'],
+    \ 'border':  ['fg', 'Ignore'],
+    \ 'prompt':  ['fg', 'Conditional'],
+    \ 'pointer': ['fg', 'Exception'],
+    \ 'marker':  ['fg', 'Keyword'],
+    \ 'spinner': ['fg', 'Label'],
+    \ 'header':  ['fg', 'Comment'] }
+
+" - excludes ., node_modules, target, dist folders (library folders,
+"   repository folders, ...) from results because we don't need to search
+"   files in these kinds of folders
+" - 2>/dev/null is used to write stderr to blackhold file /dev/null. stderr
+"   may contain 'Permission Denied' messages. It means that the command will
+"   not throw error or warning messages to stdout while we're reading readonly
+"   files
+" - type - several types of files can be searched for:
+" + b: block (buffered) special
+" + c: character (unbuffered) special
+" + d: directory
+" + p: named pipe (FIFO)
+" + f: regular file
+" + l: symbolic link
+" + s: socket
+" + D: door (Solaris)
+" - searching for files in Fzf will use 'find' command if 'ag' or 'rg' is not
+"   found. It will print out to stdout all files and symbolic links except
+"   those in anaconda3 folder, node_modules folder, ... or those that starts
+"   with '.'
+set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
+let $FZF_DEFAULT_COMMAND="find * -path 'anaconda3/**' -prune"
+let $FZF_DEFAULT_COMMAND .= " -o -path '*/\.*' -prune"
+let $FZF_DEFAULT_COMMAND .= " -o -path 'node_modules/**' -prune"
+let $FZF_DEFAULT_COMMAND .= " -o -path 'target/**' -prune"
+let $FZF_DEFAULT_COMMAND .= " -o -path 'dist/**' -prune"
+let $FZF_DEFAULT_COMMAND .= " -o -name '**/*.tfrecord'"
+let $FZF_DEFAULT_COMMAND .= " -o -type f -print -o -type l -print 2>/dev/null"
+
+" The Silver Searcher:
+" disabled by now because rg is better ^^
+" if executable('ag')
+"     let $FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+"     set grepprg=ag\ --nogroup\ --nocolor
+" endif
+
+" Ripgrep:
+" - --files: print each file without actually performing the search
+" - --hidden: search hidden files (not hidden buffers) and directories
+" - --follow: follow symbolic links while traversing directories
+" - --glob: include or exclude files and directories for searching that match
+"   the given glob.
+" - --vimgrep: show results with every match on its own line, including line
+"   numbers and column numbers. With this option, a line with more than one
+"   match will be printed more than once.
+" - grepprg: program to use for the :grep command (ripgrep or rg in this case)
+" Vim has two ways to find matches for a pattern: internal and external.
+" - internal (:vimgrep):
+" + pros: cross-platforms, leverage powerful Vim search patterns
+" - external (:grep): grep and grep-like programs (ripgrep or rg in this case)
+if executable('rg')
+    let $FZF_DEFAULT_COMMAND='rg --files --hidden --follow '
+    """ temporarily not used directory
+    let $FZF_DEFAULT_COMMAND .= '--glob "!**/Music/*" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!**/Videos/*" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!**/OneDriveDocuments/*" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!**/PcDocuments/*" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!**/Python/Project/*" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!**/Project_Ubuntu/SSD.TensorFlow/*" '
+    """
+    let $FZF_DEFAULT_COMMAND .= '--glob "!**/anaconda3/*" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!**/.pylint.d/*" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!**/.git/*" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!**/site-packages/*" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.tfrecord" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.ckpt-*" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.tfevents.*" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.pyc" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.jpg" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.JPG" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.jpeg" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.JPEG" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.png" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.PNG" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.gif" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.GIF" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.zip" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.mp3" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.MP3" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.mp4" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.MP4" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.flac" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.m4a" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.wmv" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.wav" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.tar*" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.avi" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.pdf" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.PDF" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.rar" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.doc" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.docx" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.pptx" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.MKV" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.ppt" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.xlsx" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.exe" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.msi" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.dwg" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.ipynb" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.download" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.pkl" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.lnk" '
+    let $FZF_DEFAULT_COMMAND .= '--glob "!*.whl" '
+
+    set grepprg=rg\ --vimgrep
+    " let g:first_argument='rg --column --line-number --no-heading '
+    " let g:first_argument .= '--fixed-strings --ignore-case --hidden '
+    " let g:first_argument .= '--follow --glob "!.git/*" --color "always" '
+    " command! -bang -nargs=* Find call fzf#vim#grep(
+    "     \g:first_argument.shellescape(<q-args>).'| tr -d "\017"',
+    "     \1,
+    "     \fzf#vim#with_preview(),
+    "     \<bang>0)
+    function! RipgrepFzf(query, fullscreen)
+        let command_fmt = 'rg --column --line-number --no-heading '
+        let command_fmt .= '--color=always --smart-case -- %s || true'
+        let initial_command = printf(command_fmt, shellescape(a:query))
+        let reload_command = printf(command_fmt, '{q}')
+        let spec = {'options': ['--phony',
+                                \'--query',
+                                \a:query,
+                                \'--bind',
+                                \'change:reload:'.reload_command]}
+        call fzf#vim#grep(initial_command,
+                        \1,
+                        \fzf#vim#with_preview(spec),
+                        \a:fullscreen)
+    endfunction
+    command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
+endif
+
+let g:fzf_preview_window="right:50%"
+let g:fzf_command_prefix="Fzf"
+" let g:project_path="/mnt/9A743BCF743BAD3F/Lloyd"
+" let g:project_path .= "/OneDrive - Hanoi University of Science and Technology"
+" let g:project_path .= "/DellDocuments/Python/Project_Ubuntu"
+let g:project_path="/home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/"
+let g:project_path .= "Python/Project_Ubuntu"
+command! -bang -nargs=? -complete=dir ProjectFiles call fzf#vim#files(
+    \g:project_path,
+    \fzf#vim#with_preview(),
+    \<bang>0)
+
+let g:home_path="~"
+command! -bang -nargs=? -complete=dir HomeFiles call fzf#vim#files(
+    \g:home_path,
+    \fzf#vim#with_preview(),
+    \<bang>0)
+
+" find using 'find', 'ag' or 'rg'
+nnoremap <silent> <leader>fb :FzfBuffers!<cr>
+nnoremap <silent> <leader>ff :FzfFiles!<cr>
+nnoremap <silent> <leader>fp :ProjectFiles!<cr>
+nnoremap <silent> <leader>f. :HomeFiles!<cr>
+" find keywords
+nnoremap <silent> <leader>fk :RG!<cr>
+" find lines in loaded buffers
+nnoremap <silent> <leader>fl :FzfLines!<cr>
+nnoremap <silent> <leader>fm :FzfMarks<cr>
+" find tags in current buffer
+nnoremap <silent> <leader>ft :FzfBTags<cr>
+inoremap <silent> <leader>fs <esc>:FzfSnippets!<cr>
+nnoremap <silent> <leader>fw :FzfWindows<cr>
+" find commands
+nnoremap <silent> <leader>fh :FzfHistory:<cr>
+nnoremap <silent> <leader>fc :FzfColors<cr>
+nnoremap <silent> <leader>fg :FzfBCommits<cr>
+
+" currently unable to use other Linux search commands (._.")
+let g:fzf_complete_cm="find -L ~/ -path '**/anaconda3/**' -prune"
+let g:fzf_complete_cm .= " -o -path '*/\.*' -prune"
+let g:fzf_complete_cm .= " -o -path '**/node_modules/**' -prune"
+let g:fzf_complete_cm .= " -o -type d -print -o -type l -print 2>/dev/null"
+inoremap <expr> <plug>(fzf-complete-home-path)
+    \ fzf#vim#complete#path(
+        \g:fzf_complete_cm)
+imap <leader>cl <plug>(fzf-complete-line)
+imap <leader>cp <plug>(fzf-complete-path)
+imap <leader>c. <plug>(fzf-complete-home-path)
+imap <leader>cw <plug>(fzf-complete-word)
+imap <leader>cf <plug>(fzf-complete-file)
+imap <leader>cb <plug>(fzf-complete-buffer-line)
+
+" mapping selecting mappings
+nmap <leader><tab> <plug>(fzf-maps-n)
+imap <leader><tab> <plug>(fzf-maps-i)
+xmap <leader><tab> <plug>(fzf-maps-x)
+omap <leader><tab> <plug>(fzf-maps-o)
+
+" *********************************   END   **********************************
+" *********************************   FZF   **********************************
+" ****************************************************************************
+
+" ********** Navigation List **********
+" Jumps List:
+" - FzfLines, Errors and Tagbar list entries are also stored in jumps list
+" nnoremap <leader>nj <c-i>
+" nnoremap <leader>pj <c-o>
+" move down in the list to the next jump point
+nnoremap <c-m> <c-i>
+" key to previous jump point is still <c-o>
+
+" Changes List:
+" - I actually don't use these maps.
+" nnoremap <leader>nc g,
+" nnoremap <leader>pc g;
+
+" Marks List: use Fzf instead
+" nnoremap <leader>nm <key>
+" nnoremap <leader>pm <key>
+
+" Errors List:
+let g:python_fixers=['autopep8', 'isort', 'remove_trailing_lines']
+let g:python_fixers+=['add_blank_lines_for_python_control_statements']
+let g:python_fixers+=['trim_whitespace']
+let g:ale_sign_column_always=1
+let g:ale_fixers={
+    \   '*': ['remove_trailing_lines', 'trim_whitespace'],
+    \   'javascript': ['eslint'],
+    \   'python': g:python_fixers,
+    \   'vim': ['remove_trailing_lines','trim_whitespace'],
+    \}
+" nmap <silent> <leader>ne <Plug>(ale_next_wrap)
+" nmap <silent> <leader>pe <Plug>(ale_previous_wrap)
+nmap <silent> <c-n> <Plug>(ale_next_wrap)
+nmap <silent> <c-p> <Plug>(ale_previous_wrap)
+
+" Buffers List: use Fzf instead
+" nnoremap <leader>nb :bn<cr>
+" nnoremap <leader>pb :bp<cr>
+
+" UltiSnips:
+let g:UltiSnipsExpandTrigger="<tab>"
+" use fzf instead
+let g:UltiSnipsListSnippets="<c-tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let g:UltiSnipsEditSplit="context"
+
+" Tagbar:
+let g:tagbar_autofocus=1
+" let g:tagbar_autoclose=1
+nmap <silent> <leader>ot :TagbarToggle<cr>
+
+" Copy Paste Cut:
+if has('unnamedplus')
+    set clipboard=unnamed,unnamedplus
+endif
+
+" mnemonic: ctrl_v
+noremap <leader>v :put<cr>g;
+"noremap D d$ " default map
+noremap Y y$
+
+if has('macunix')
+    " pbcopy for OSX copy/paste
+    vmap <c-x> :!pbcopy<cr>
+    vmap <c-c> :w !pbcopy<cr><cr>
+endif
+
+" clean search (highlight)
+nnoremap <silent> <space> :noh<cr>
+
+" vmap for maintain Visual Mode after shifting > and <
+vmap < <gv
+vmap > >gv
+
+" move visual block
+vnoremap J :m '>+1<cr>gv=gv
+vnoremap K :m '<-2<cr>gv=gv
+
+" jedi-vim
+" deoplete automatically shows modules more quickly
+let g:jedi#popup_on_dot=0
+let g:jedi#force_py_version="3"
+let g:jedi#use_splits_not_buffers="bottom"
+let g:jedi#show_call_signatures="1"
+let g:jedi#smart_auto_mappings=0
+" move to assignments
+let g:jedi#goto_assignments_command="<leader>ma"
+" move to definitions
+let g:jedi#goto_definitions_command="<leader>md"
+let g:jedi#goto_stubs_command="<leader>ms"
+let g:jedi#documentation_command="K"
+let g:jedi#usages_command="<leader>ou"
+let g:jedi#rename_command="<leader>r"
+let g:jedi#completions_command="<c-l>"
+
+" replace, append and insert text in buffer, ask for comfirmation
+nnoremap <leader>R viwy:%s/<c-r>+//gc<left><left><left>
+vnoremap <leader>R y:%s/<c-r>+//gc<left><left><left>
+nnoremap <leader>A viwy:%s/<c-r>+/<c-r>+/gc<left><left><left>
+vnoremap <leader>A y:%s/<c-r>+/<c-r>+/gc<left><left><left>
+" nnoremap <leader>I viwy:execute '%s/<c-r>+/' .'<c-r>+/gc'<c-left><left><left>
+" Exception:
+" - Cursor will not be in the correct position (at the begining) when we want
+"   to insert characters at the begining of a string which contain at least one
+"   Space character.
+" vnoremap <leader>I y:execute '%s/<c-r>+/' .'<c-r>+/gc'<c-left><left><left>
+nnoremap <leader>I viwy:call Insert('<c-r>+', '')<left><left>
+vnoremap <leader>I y:call Insert('<c-r>+', '')<left><left>
+function! Insert(text, inserted_text)
+    if mode() ==# "n"
+        execute '%s/' . a:text . '/' . a:inserted_text . a:text . '/gc'
+    else
+        execute '%s/' . a:text . '/' . a:inserted_text . a:text . '/gc'
+    endif
+endfunction
+
+" Navigations:
+nnoremap <silent> <c-k> <c-w>k
+nnoremap <silent> <c-j> <c-w>j
+nnoremap <silent> <c-h> <c-w>h
+nnoremap <silent> <c-l> <c-w>l
+
+" visually select a word: viw
+
+" convert the text to uppercase
+inoremap <leader>tu <esc>viwUA
+nnoremap <leader>tu viwUe
+
+" ov stands for: open my vimrc file
+nnoremap <leader>ov :vsplit $MYVIMRC<cr>
+inoremap <leader>ov <esc>:vsplit $MYVIMRC<cr>
+" ev stands for: execute, source my vimrc file
+nnoremap <leader>ev :source $MYVIMRC<cr>:AirlineTheme luna<cr>
+inoremap <leader>ev <esc>:source $MYVIMRC<cr>:AirlineTheme luna<cr>
+
+" surround the word in double quotes
+inoremap <leader>it <esc>viw<esc>a"<esc>bi"<esc>lela
+" surround the word in single quotes
+inoremap <leader>io <esc>viw<esc>a'<esc>bi'<esc>lela
+" surround the word in []
+inoremap <leader>is <esc>viw<esc>a]<esc>bi[<esc>lela
+" surround the word in <>
+inoremap <leader>ia <esc>viw<esc>a><esc>bi<<esc>lela
+" surround the word in ()
+inoremap <leader>ip <esc>viw<esc>a)<esc>bi(<esc>lela
+" surround the word in {}
+inoremap <leader>ic <esc>viw<esc>a}<esc>bi{<esc>lela
+" surround the word in double quotes
+
+nnoremap <leader>it viw<esc>a"<esc>bi"<esc>lel
+" surround the word in single quotes
+nnoremap <leader>io viw<esc>a'<esc>bi'<esc>lel
+" surround the word in []
+nnoremap <leader>is viw<esc>a]<esc>bi[<esc>lel
+" surround the word in <>
+nnoremap <leader>ia viw<esc>a><esc>bi<<esc>lel
+" surround the word in ()
+nnoremap <leader>ip viw<esc>a)<esc>bi(<esc>lel
+" surround the word in {}
+nnoremap <leader>ic viw<esc>a}<esc>bi{<esc>lel
+
+" wrap visually selected text in double quotes
+vnoremap <leader>it <esc>`>a"<esc>`<i"<esc>`>ll
+" wrap visually selected text in single quotes
+vnoremap <leader>io <esc>`>a'<esc>`<i'<esc>`>ll
+" wrap visually selected text in []
+vnoremap <leader>is <esc>`>a]<esc>`<i[<esc>`>ll
+" wrap visually selected text in <>
+vnoremap <leader>ia <esc>`>a><esc>`<i<<esc>`>ll
+" wrap visually selected text in ()
+vnoremap <leader>ip <esc>`>a)<esc>`<i(<esc>`>ll
+" wrap visually selected text in {}
+vnoremap <leader>ic <esc>`>a}<esc>`<i{<esc>`>ll
+
+" move cursor to the beginning of the current line
+nnoremap <leader>mh ^
+vnoremap <leader>mh ^
+" move cursor to the ending of the current line:
+" - $ highlight the newline character as well
+" - g_ don't highlight the newline character
+nnoremap <leader>ml g_
+vnoremap <leader>ml g_
+
+" create new line
+nnoremap <leader>u :set paste<cr>m`O<esc>``:set nopaste<cr>
+nnoremap <leader>j :set paste<cr>m`o<esc>``:set nopaste<cr>
+
+inoremap jk <esc>
+" inoremap <esc> <nop>
+
+" - disable bracketed paste mode to prevent the extra sequences '[200~' from
+"   wrapping our pasted text
+set t_BE=
+
+" nnoremap <up> <nop>
+" nnoremap <down> <nop>
+" nnoremap <left> <nop>
+" nnoremap <right> <nop>
+
+" save, write
+nnoremap <leader>w :w<cr>
+inoremap <leader>w <esc>:w<cr>
+nnoremap <silent> <leader>q :call Quit()<cr>
+inoremap <silent> <leader>q <esc>:call Quit()<cr>
+function Quit()
+    if &filetype ==# 'man'
+        execute 'bd! #'
+        execute 'q'
+    else
+        execute 'q'
+    endif
+endfunction
+
+" open vim help window
+nnoremap <leader>hv viwy:h <c-r>+<cr>
+vnoremap <leader>hv y:h <c-r>+<cr>
+" open tmux help window
+" read ':h find-manpage'
+" There is a trick to make the man page appear in a Vim window.
+" First, load the man filetype plugin:
+runtime! ftplugin/man.vim
+" let g:ft_man_open_mode = 'vert'
+" don't use <leader>K!!! It creates redundant buffers if failed
+nnoremap <leader>hm :call ManFor('')<left><left>
+function! ManFor(keyword)
+    tabnew
+    execute 'Man ' . a:keyword
+endfunction
+
+nnoremap <silent> <leader>tn :setlocal relativenumber!<cr>
+
+nnoremap <leader>tf :call ToggleFoldColumn()<cr>
+function ToggleFoldColumn()
+    if &foldcolumn
+        setlocal foldcolumn=0
+    else
+        setlocal foldcolumn=4
+    endif
+endfunction
+
+let g:quickfix_is_open=0
+nnoremap <leader>oq :call ToggleQuickfix()<cr>
+function ToggleQuickfix()
+    if g:quickfix_is_open
+        cclose
+        let g:quickfix_is_open=0
+        execute g:quickfix_return_to_window . "wincmd w"
+    else
+        let g:quickfix_return_to_window=winnr()
+        copen
+        let g:quickfix_is_open=1
+    endif
+endfunction
+
+" Default highlight is better than polyglot.
+let g:polyglot_disabled=['python']
+let g:python_highlight_all=1
+
+" ********** vim-multiple-cursors **********
+" if alt + n doesn't seem to work in VIM but works in gVIM, add this if
+if !has('gui_running')
+    map g <a-g>
+endif
+let g:multi_cursor_use_default_mapping=0
+let g:multi_cursor_start_word_key      = '<c-g>'
+let g:multi_cursor_select_all_word_key = '<a-g>'
+let g:multi_cursor_start_key           = 'g<c-g>'
+let g:multi_cursor_select_all_key      = 'g<a-g>'
+let g:multi_cursor_next_key            = '<c-g>'
+let g:multi_cursor_prev_key            = '<c-p>'
+let g:multi_cursor_skip_key            = '<c-x>'
+let g:multi_cursor_quit_key            = '<c-[>'
+let g:multi_cursor_quit_key            = '<esc>'
+
+" ********** if filepath is in clipboard **********
+" of: open file in the current window
+" oh: open file in horizontal split
+" op: open file in perpendicular split (or vertical split)
+nnoremap <leader>of :e<space><c-r>+<cr>
+nnoremap <leader>oh :sp<space><c-r>+<cr>
+nnoremap <leader>op :vs<space><c-r>+<cr>
+inoremap <leader>of <esc>:e<space><c-r>+<cr>
+inoremap <leader>oh <esc>:sp<space><c-r>+<cr>
+inoremap <leader>op <esc>:vs<space><c-r>+<cr>
+vnoremap <leader>of y:e<space><c-r>+<cr>
+vnoremap <leader>oh y:sp<space><c-r>+<cr>
+vnoremap <leader>op y:vs<space><c-r>+<cr>
+
+" ********** vim-tmux-navigator **********
+" disable tmux navigator when zooming the Vim pane
+let g:tmux_navigator_disable_when_zoomed = 1
+
+" ********** delimitMate **********
+let delimitMate_expand_cr = 1
+let delimitMate_jump_expansion = 1
+imap <cr> <Plug>delimitMateCR
+" get out of one closing bracket, ...
+imap <s-tab> <Plug>delimitMateS-Tab
+" get out of all closing brackets, ...
+imap <leader><s-tab> <Plug>delimitMateJumpMany
+
+" ********** general completion mechanism **********
+" set completeopt=menuone,longest,preview
+set pumheight=10
+inoremap <expr> ; pumvisible() ? "\<c-n>\<c-y>" : ";"
+" imap <expr> <cr> pumvisible()
+"                  \ ? "\<c-n>\<c-y>"
+"                  \ : "<Plug>delimitMateCR"
+
+" ********** deoplete **********
+let g:deoplete#enable_at_startup = 1
+call deoplete#custom#option({'auto_complete_popup': 'auto'})
+call deoplete#custom#option({'max_list': 10})
+call deoplete#custom#option({'num_processes': 6})
+" call deoplete#custom#option('sources', {
+"     \ '_': ['buffer'],
+"     \ 'cpp': ['buffer', 'tag'],
+"     \ 'python': ['omni'],
+"     \})
+call deoplete#custom#option({'auto_refresh_delay': 100})
+
+" fix error: vim-multiple-cursors auto insert <Plug> ...
+function g:Multiple_cursors_before()
+    call deoplete#custom#buffer_option('auto_complete', v:false)
+endfunction
+function g:Multiple_cursors_after()
+    call deoplete#custom#buffer_option('auto_complete', v:true)
+endfunction
+
+" ********** vim-better-whitespace **********
+" ctermxx is used by console version of Vim (when set notermguicolors)
+" guixx is used in GVim, or in console if set termguicolors, and the console is
+" capable of TrueColor
+let g:better_whitespace_guicolor='#fb4934'
+let g:better_whitespace_enabled=1
+let g:show_spaces_that_precede_tabs=1
+let g:strip_whitespace_on_save=1
+" to disable the highlighting for specific file types, add the following to
+" your ~/.vimrc:
+" let g:better_whitespace_filetypes_blacklist=['<filetype1>', '<filetype2>',
+" '<etc>']
+
+"*****************************************************************************
+"" Autocmd Rules
+"*****************************************************************************
+
+" ********** Event Settings **********
+" disable visualbell
+set noerrorbells visualbell t_vb=
+if has('autocmd')
+    autocmd GUIEnter * set visualbell t_vb=
+endif
+
+" set statusline, tabline theme
+augroup vimrc_set_theme
+    autocmd!
+    autocmd VimEnter * AirlineTheme luna
+augroup end
+
+" resize window size
+augroup vimrc_resize_window
+    autocmd!
+    autocmd VimResized,WinNew,WinLeave * wincmd =
+augroup end
+
+" triger `autoread` when files changes on disk
+" https://unix.stackexchange.com/questions/149209/refresh-changed-content-of-
+" file-opened-in-vim/383044#383044
+" https://vi.stackexchange.com/questions/13692/prevent-focusgained-autocmd-
+" running-in-command-line-editing-mode
+augroup vimrc_notify_file_changes
+    autocmd FocusGained,BufEnter,CursorHold,CursorHoldI *
+        \ if mode() !~ '\v(c|r.?|!|t)' && getcmdwintype() == '' |
+        \ checktime | endif
+    " notification after file change
+    " https://vi.stackexchange.com/questions/13091/autocmd-event-for-autoread
+    autocmd FileChangedShellPost *
+        \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." |
+        \ echohl None
+    autocmd!
+augroup end
+
+" - if the PC is fast enough, do syntax highlight syncing from start unless
+"   200 lines.
+augroup vimrc_sync_fromstart
+    autocmd!
+    autocmd BufEnter * :syntax sync fromstart
+    "autocmd BufEnter * :syntax sync maxlines=200
+augroup end
+
+" Remember Last Cursor Position:
+" - \" is Vim mark: to the cursor position when last exiting the current
+"   buffer line("'\"") returns the line number of mark '"
+function s:remember_cursor_position()
+    if line("'\"") > 1 && line("'\"") <= line("$")
+        exe "normal! g`\""
+    endif
+endfunction
+augroup vimrc_remember_cursor_position
+    autocmd!
+    autocmd BufReadPost * call s:remember_cursor_position()
+augroup end
+
+" ********** FileType-Specific Settings **********
+" make/cmake
+augroup vimrc_make_cmake
+    autocmd!
+    autocmd FileType make setlocal noexpandtab
+    autocmd BufNewFile,BufRead CMakeLists.txt setlocal filetype=cmake
+augroup end
+
+if !exists('*s:setupWrapping')
+    function s:setupWrapping()
+        set wrap
+        set wm=2
+        set textwidth=79 colorcolumn=80
+    endfunction
+endif
+augroup filetype_txt
+    autocmd!
+    autocmd BufRead,BufNewFile *.txt call s:setupWrapping()
+augroup end
+
+augroup filetype_c
+    autocmd!
+    autocmd FileType c setlocal tabstop=4 shiftwidth=4 expandtab
+augroup end
+
+augroup filetype_cpp
+    autocmd!
+    autocmd FileType cpp setlocal tabstop=4 shiftwidth=4 expandtab
+augroup end
+
+" read ':h fo-table' (fo stands for formatoptions)
+augroup filetype_python
+    autocmd!
+    " - preview docstring in folded text
+    let g:SimpylFold_docstring_preview=1
+    " - enable/disable docstring folding
+    " - python function folding is enabled by default while using
+    "   'tmhedberg/SimpylFold' plugin
+    let g:SimpylFold_fold_docstring=0
+    autocmd FileType python setlocal expandtab shiftwidth=4
+    autocmd FileType python setlocal tabstop=4 softtabstop=0
+    autocmd FileType python setlocal textwidth=79 colorcolumn=80
+    autocmd FileType python setlocal formatoptions+=croq
+    let g:python_keywords="if,elif,else,for,while,try"
+    let g:python_keywords .= "except,finally,def,class,with"
+    autocmd FileType python setlocal cinwords=g:python_keywords
+    " autocmd FileType python nnoremap <buffer> <localleader>c I# <esc>
+    autocmd FileType python setlocal commentstring=#\ %s
+    autocmd FileType python setlocal foldmethod=indent
+    autocmd FileType python setlocal foldlevel=10
+    autocmd FileType python onoremap <buffer> if /return<cr>
+    function! Exec()
+        w
+        execute '! clear; python3' shellescape(@%, 1)
+    endfunction
+    autocmd FileType python
+        \ nnoremap <buffer> <localleader>e :call Exec()<cr>
+    autocmd FileType python
+        \ inoremap <buffer> <localleader>e <esc>:call Exec()<cr>
+    " wrap selected text with parentheses and change to Insert Mode in front of
+    " it
+    autocmd FileType python
+        \ nnoremap <buffer> <localleader>i viw<esc>a)<esc>bi(<left>
+    autocmd FileType python
+        \ vnoremap <buffer> <localleader>i <esc>`>a)<esc>`<i(<left>
+augroup end
+
+augroup filetype_javascript
+    autocmd!
+    autocmd FileType javascript setlocal commentstring=//\ %s
+augroup end
+
+augroup filetype_html
+    autocmd!
+    autocmd FileType html nnoremap <buffer> <localleader>f Vatzf
+augroup end
+
+augroup filetype_vim
+    autocmd!
+    autocmd FileType vim setlocal foldmethod=marker
+    autocmd FileType vim setlocal commentstring=\"\ %s
+    autocmd FileType vim setlocal textwidth=79 colorcolumn=80
+augroup end
+
+augroup filetype_shell
+    autocmd!
+    autocmd BufNewFile,BufRead *.sh setlocal foldmethod=marker
+    autocmd BufNewFile,BufRead *.sh setlocal commentstring=#\ %s
+    autocmd BufNewFile,BufRead *.sh setlocal textwidth=79 colorcolumn=80
+augroup end

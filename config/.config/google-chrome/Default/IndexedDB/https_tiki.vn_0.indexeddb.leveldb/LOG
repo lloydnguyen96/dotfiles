@@ -1,0 +1,5 @@
+2020/06/28-23:05:34.260 1fca Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_tiki.vn_0.indexeddb.leveldb/MANIFEST-000001
+2020/06/28-23:05:38.025 ce3 Level-0 table #5: started
+2020/06/28-23:05:38.077 ce3 Level-0 table #5: 5713 bytes OK
+2020/06/28-23:05:38.144 ce3 Delete type=0 #3
+2020/06/28-23:05:38.144 ce3 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

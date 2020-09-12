@@ -1,0 +1,5 @@
+2020/07/20-11:40:53.773 2cc2 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.24h.com.vn_0.indexeddb.leveldb/MANIFEST-000001
+2020/07/20-11:40:57.647 eed Level-0 table #5: started
+2020/07/20-11:40:57.691 eed Level-0 table #5: 1120 bytes OK
+2020/07/20-11:40:57.804 eed Delete type=0 #3
+2020/07/20-11:40:57.804 eed Manual compaction at level-0 from (begin) .. (end); will stop at (end)

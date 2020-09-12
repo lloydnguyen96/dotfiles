@@ -1,0 +1,22 @@
+2020/09/11-20:46:37.016 b1b5c Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
+2020/09/11-20:46:37.037 b1b5c Recovering log #2564
+2020/09/11-20:46:37.143 b1b5c Reusing old log /home/loinguyenvan/.config/google-chrome/Default/Local Storage/leveldb/002564.log 
+2020/09/11-20:47:30.034 b2160 Level-0 table #2568: started
+2020/09/11-20:47:30.320 b2160 Level-0 table #2568: 16891 bytes OK
+2020/09/11-20:47:30.797 b2160 Delete type=0 #2564
+2020/09/11-21:57:42.977 b2160 Level-0 table #2570: started
+2020/09/11-21:57:43.039 b2160 Level-0 table #2570: 15293 bytes OK
+2020/09/11-21:57:43.127 b2160 Delete type=0 #2567
+2020/09/11-21:57:43.127 b2160 Compacting 4@0 + 3@1 files
+2020/09/11-21:57:43.362 b2160 Generated table #2571@0: 6285 keys, 3387563 bytes
+2020/09/11-21:57:43.474 b2160 Generated table #2572@0: 8466 keys, 2118601 bytes
+2020/09/11-21:57:43.563 b2160 Generated table #2573@0: 308 keys, 462643 bytes
+2020/09/11-21:57:43.563 b2160 Compacted 4@0 + 3@1 files => 5968807 bytes
+2020/09/11-21:57:43.604 b2160 compacted to: files[ 0 3 1 0 0 0 0 ]
+2020/09/11-21:57:43.604 b2160 Delete type=2 #2565
+2020/09/11-21:57:43.604 b2160 Delete type=2 #2563
+2020/09/11-21:57:43.604 b2160 Delete type=2 #2559
+2020/09/11-21:57:43.604 b2160 Delete type=2 #2560
+2020/09/11-21:57:43.604 b2160 Delete type=2 #2561
+2020/09/11-21:57:43.605 b2160 Delete type=2 #2568
+2020/09/11-21:57:43.605 b2160 Delete type=2 #2570

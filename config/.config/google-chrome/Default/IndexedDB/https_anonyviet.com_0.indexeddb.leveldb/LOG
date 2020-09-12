@@ -1,0 +1,17 @@
+2020/09/07-15:30:54.025 3b11 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_anonyviet.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/09/07-15:30:59.441 28a8 Level-0 table #5: started
+2020/09/07-15:30:59.486 28a8 Level-0 table #5: 6397 bytes OK
+2020/09/07-15:30:59.543 28a8 Delete type=0 #3
+2020/09/07-15:30:59.543 28a8 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2020/09/07-15:31:01.442 28a8 Level-0 table #7: started
+2020/09/07-15:31:01.478 28a8 Level-0 table #7: 212 bytes OK
+2020/09/07-15:31:01.519 28a8 Delete type=0 #4
+2020/09/07-15:31:01.519 28a8 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/09/07-15:31:01.520 28a8 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x00\x00\x002\x02P\x01\x00\x00\x00\x00\x00\x00\x00\x00' @ 409 : 0
+2020/09/07-15:31:01.520 28a8 Compacting 1@1 + 1@2 files
+2020/09/07-15:31:01.556 28a8 Generated table #8@1: 97 keys, 2299 bytes
+2020/09/07-15:31:01.557 28a8 Compacted 1@1 + 1@2 files => 2299 bytes
+2020/09/07-15:31:01.597 28a8 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/09/07-15:31:01.597 28a8 Delete type=2 #7
+2020/09/07-15:31:01.597 28a8 Delete type=2 #5
+2020/09/07-15:31:01.597 28a8 Manual compaction at level-1 from '\x00\x00\x00\x002\x02P\x01\x00\x00\x00\x00\x00\x00\x00\x00' @ 409 : 0 .. (end); will stop at (end)

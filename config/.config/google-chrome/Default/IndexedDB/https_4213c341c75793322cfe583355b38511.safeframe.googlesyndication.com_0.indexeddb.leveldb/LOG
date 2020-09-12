@@ -1,0 +1,8 @@
+2020/09/04-22:40:19.743 30ca44 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_4213c341c75793322cfe583355b38511.safeframe.googlesyndication.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/09/04-22:40:19.743 30ca44 Recovering log #4
+2020/09/04-22:40:19.743 30ca44 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_4213c341c75793322cfe583355b38511.safeframe.googlesyndication.com_0.indexeddb.leveldb/000004.log 
+2020/09/04-22:40:32.791 1866df Level-0 table #8: started
+2020/09/04-22:40:32.791 1866df Level-0 table #8: 0 bytes OK
+2020/09/04-22:40:32.863 1866df Delete type=0 #4
+2020/09/04-22:40:32.864 1866df Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/09/04-22:40:32.864 1866df Manual compaction at level-1 from (begin) .. (end); will stop at (end)

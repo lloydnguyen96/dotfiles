@@ -1,0 +1,5 @@
+2020/08/31-20:40:46.384 26514 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_hopamchuan.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/08/31-23:03:53.385 1ca6 Level-0 table #5: started
+2020/08/31-23:03:53.550 1ca6 Level-0 table #5: 1247 bytes OK
+2020/08/31-23:03:53.905 1ca6 Delete type=0 #3
+2020/08/31-23:03:53.925 1ca6 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

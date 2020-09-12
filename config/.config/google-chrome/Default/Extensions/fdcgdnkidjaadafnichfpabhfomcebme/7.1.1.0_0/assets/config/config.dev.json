@@ -1,0 +1,51 @@
+{
+  "env": {
+    "name": "DEV"
+  },
+  "api": {
+    "url": "https://beta-v2-api.zenguard.biz/v2",
+    "key": "ZMEx4hfuto83htix763jf9cz3n59f73v659f"
+  },
+  "apiv1": {
+    "url": "https://beta-api.zenguard.biz/cg",
+    "key": "ZMEx4hfuto83htix763jf9cz3n59f73v659f"
+  },
+  "blockChainRPCNode": [
+    "https://api.myetherwallet.com/rop",
+    "https://ropsten.infura.io/v3/74c324cc4f75481d817e2cfd606f703d"
+
+  ],
+  "blockchainFallback": true,
+  "enforceLogin": false,
+  "accountUrl": "https://account.zenmate.com/",
+  "websiteUrl": "https://dev-www.zenmate.com/",
+  "supportUrl": "https://zenguard.zendesk.com/hc/",
+  "feedbackUrl": "https://feedback.zenmate.com/v2/",
+  "domain": ".zenmate.com",
+  "availableLangs": [
+    "en",
+    "de",
+    "tr",
+    "fr",
+    "es",
+    "nl",
+    "ko",
+    "ru"
+  ],
+  "campaign": "default",
+  "triggerCampaignCount": 5,
+  "triggerRating": {
+    "free": 2,
+    "trial": 3,
+    "ultimate": 4
+  },
+  "additionalLocations": [
+    { "name": "TL",
+      "nodes": [
+        {
+          "dnsname": "blade1.frankfurt-rack412.nodes.gen4.ninja:9001",
+          "countrycode": "TL"
+        }
+    ]}
+  ]
+}

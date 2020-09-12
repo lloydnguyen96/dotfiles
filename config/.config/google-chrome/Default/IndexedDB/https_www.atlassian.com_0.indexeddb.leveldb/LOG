@@ -1,0 +1,15 @@
+2020/09/12-15:33:53.659 16499 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.atlassian.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/09/12-15:33:53.659 16499 Recovering log #23
+2020/09/12-15:33:53.659 16499 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.atlassian.com_0.indexeddb.leveldb/000023.log 
+2020/09/12-15:35:31.511 ff1 Level-0 table #27: started
+2020/09/12-15:35:31.555 ff1 Level-0 table #27: 792 bytes OK
+2020/09/12-15:35:31.596 ff1 Delete type=0 #23
+2020/09/12-15:35:31.596 ff1 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/09/12-15:35:31.597 ff1 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x1f\x01\x10\x002\x009\x004\x006\x003\x002\x002\x001\x007\x005\x002\x009\x006\x005\x002\x006\x00\x01(\x00c\x00t\x00.\x00p\x00.\x00m\x00.\x00V\x001\x00.\x002\x009\x004\x006\x003\x002\x002\x001\x007\x005\x002\x009\x006\x005\x002\x006\x00.\x001\x005\x009\x009\x008\x009\x009\x006\x003\x004\x006\x009\x002' @ 169 : 1
+2020/09/12-15:35:31.597 ff1 Compacting 1@1 + 1@2 files
+2020/09/12-15:35:31.644 ff1 Generated table #28@1: 29 keys, 1027 bytes
+2020/09/12-15:35:31.644 ff1 Compacted 1@1 + 1@2 files => 1027 bytes
+2020/09/12-15:35:31.684 ff1 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/09/12-15:35:31.685 ff1 Delete type=2 #21
+2020/09/12-15:35:31.685 ff1 Delete type=2 #27
+2020/09/12-15:35:31.685 ff1 Manual compaction at level-1 from '\x00\x01\x01\x1f\x01\x10\x002\x009\x004\x006\x003\x002\x002\x001\x007\x005\x002\x009\x006\x005\x002\x006\x00\x01(\x00c\x00t\x00.\x00p\x00.\x00m\x00.\x00V\x001\x00.\x002\x009\x004\x006\x003\x002\x002\x001\x007\x005\x002\x009\x006\x005\x002\x006\x00.\x001\x005\x009\x009\x008\x009\x009\x006\x003\x004\x006\x009\x002' @ 169 : 1 .. (end); will stop at (end)

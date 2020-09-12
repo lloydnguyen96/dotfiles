@@ -1,0 +1,5 @@
+2020/06/28-10:29:09.561 1295 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.barbarianmeetscoding.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/06/28-10:29:41.978 e81 Level-0 table #5: started
+2020/06/28-10:29:42.044 e81 Level-0 table #5: 2463 bytes OK
+2020/06/28-10:29:42.088 e81 Delete type=0 #3
+2020/06/28-10:29:42.089 e81 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

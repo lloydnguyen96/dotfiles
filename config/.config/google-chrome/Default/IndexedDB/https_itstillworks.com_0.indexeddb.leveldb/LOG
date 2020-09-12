@@ -1,0 +1,5 @@
+2020/07/07-09:55:29.065 12d5 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_itstillworks.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/07/07-09:57:56.780 1102 Level-0 table #5: started
+2020/07/07-09:57:56.828 1102 Level-0 table #5: 419661 bytes OK
+2020/07/07-09:57:56.859 1102 Delete type=0 #3
+2020/07/07-09:57:56.859 1102 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
