@@ -5,6 +5,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     sudo apt update -y
     sudo apt install stow
     sudo apt install exuberant-ctags
+    sudo apt update -y
     sudo apt install gnome-terminal
     sudo apt install vim-gtk3
     sudo apt install tmux
