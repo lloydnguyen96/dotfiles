@@ -1998,3 +1998,73 @@ watch -n 0.5 nvidia-smi
 tmux
 restart
 reboot
+touch README.md
+vim ~/.bashrc 
+python --version
+conda deactivate
+python --version
+python3 --version
+conda activate root
+conda update
+conda upgrade
+conda update --prefix /home/loinguyenvan/anaconda3 anaconda
+conda --version
+python --version
+python
+vim
+ls -la
+git status
+git add .
+ls -la
+git submodule add https://github.com/gpakosz/.tmux tmux/.tmux
+ls -la
+git rm --cached tmux/.tmux
+git rm -f --cached tmux/.tmux
+ls -la
+ls -la tmux/.tmux
+ls -la tmux/
+git submodule add https://github.com/gpakosz/.tmux tmux/.tmux
+git remote add origin https://github.com/lloydnguyen96/dotfiles.git
+git branch -M master
+git branch
+git branch -a
+git push -u origin master
+git status
+du -h .
+du -h ~/.dotfiles/
+du -h ~/.dotfiles/config/
+git status
+git add .
+git status
+ls -la
+vim .gitmodules 
+git add vim/.vim/plugged/CSApprox
+git add vim/.vim/plugged/c.vim
+git status
+ls -la
+git add .
+git status
+ls -la config/.config/
+ls -la ~/.config/
+git add .
+git status
+git add .
+git status
+git add .
+git status
+git add .
+git status
+git commit -m "first commit"
+git branch -a
+git branch -M master
+git branch -a
+git remote add origin https://github.com/lloydnguyen96/dotfiles.git
+git push -u origin master
+git branch -a
+ls -la
+git status
+du -h ~/.dotfiles/
+du -h ~/.dotfiles/tmux/
+du -h ~/.dotfiles/bash
+du -h ~/.dotfiles/.git
+git status

@@ -23,7 +23,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     sudo apt install gimp
     # htop
     sudo apt install htop
-    # ibus-bamboo
+    # ibus-bamboo: remember to go to the setting
     sudo add-apt-repository ppa:bamboo-engine/ibus-bamboo
     sudo apt update -y
     sudo apt install ibus-bamboo
@@ -32,7 +32,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     cd $HOME/.dotfiles
     stow -S bash
     stow -S conda
-    stow -S config
+    # stow -S config
     stow -S fd
     stow -S fzf
     stow -S git
