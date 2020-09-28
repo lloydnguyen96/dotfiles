@@ -1,3 +1,15 @@
 2020/09/28-18:41:50.302 7a224 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
 2020/09/28-18:41:50.302 7a224 Recovering log #1440
 2020/09/28-18:41:50.302 7a224 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/001440.log 
+2020/09/28-19:06:50.129 80be0 Level-0 table #1445: started
+2020/09/28-19:06:50.182 80be0 Level-0 table #1445: 9674 bytes OK
+2020/09/28-19:06:50.252 80be0 Delete type=0 #1440
+2020/09/28-19:06:50.252 80be0 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/09/28-19:06:50.252 80be0 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x16\x00a\x00p\x00p\x00l\x00i\x00c\x00a\x00t\x00i\x00o\x00n\x00_\x00s\x00e\x00r\x00v\x00e\x00r\x00_\x00k\x00e\x00y' @ 244788 : 1
+2020/09/28-19:06:50.252 80be0 Compacting 1@1 + 1@2 files
+2020/09/28-19:06:50.342 80be0 Generated table #1446@1: 51 keys, 2387 bytes
+2020/09/28-19:06:50.342 80be0 Compacted 1@1 + 1@2 files => 2387 bytes
+2020/09/28-19:06:50.385 80be0 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/09/28-19:06:50.385 80be0 Delete type=2 #1445
+2020/09/28-19:06:50.385 80be0 Delete type=2 #1442
+2020/09/28-19:06:50.386 80be0 Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x16\x00a\x00p\x00p\x00l\x00i\x00c\x00a\x00t\x00i\x00o\x00n\x00_\x00s\x00e\x00r\x00v\x00e\x00r\x00_\x00k\x00e\x00y' @ 244788 : 1 .. (end); will stop at (end)

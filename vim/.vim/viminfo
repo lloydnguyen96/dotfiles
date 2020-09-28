@@ -255,6 +255,9 @@ $&
 	bind -n M-l resize-pane -R 2
 |3,0,0,1,4,0,1601289193,"bind -n M-h resize-pane -L 2","bind -n M-j resize-pane -D 2","bind -n M-k resize-pane -U 2","bind -n M-l resize-pane -R 2"
 ""1	LINE	0
+	- ssh
+|3,1,1,1,1,0,1601295432,"- ssh"
+"2	LINE	0
 	# create pane
 	unbind _
 	unbind -
@@ -267,37 +270,34 @@ $&
 	bind -n C-K split-window -bv -c "#{pane_current_path}"
 	bind -n C-J split-window -v -c "#{pane_current_path}"
 	
-|3,1,1,1,12,0,1601290190,"# create pane","unbind _","unbind -","# i: down","# p: right","# u: left","# o: up","bind -n C-H split-window -bh -c \"#{pane_current_path}\"","bind -n C-L split-window -h -c \"#{pane_current_path}\"","bind -n C-K split-window -bv -c \"#{pane_current_path}\"","bind -n C-J split-window -v -c \"#{pane_current_path}\"",""
-"2	LINE	0
+|3,0,2,1,12,0,1601290190,"# create pane","unbind _","unbind -","# i: down","# p: right","# u: left","# o: up","bind -n C-H split-window -bh -c \"#{pane_current_path}\"","bind -n C-L split-window -h -c \"#{pane_current_path}\"","bind -n C-K split-window -bv -c \"#{pane_current_path}\"","bind -n C-J split-window -v -c \"#{pane_current_path}\"",""
+"3	LINE	0
 	bind -n C-H resize-pane -L 2
 	bind -n C-J resize-pane -D 2
 	bind -n C-K resize-pane -U 2
 	bind -n C-L resize-pane -R 2
-|3,0,2,1,4,0,1601289709,"bind -n C-H resize-pane -L 2","bind -n C-J resize-pane -D 2","bind -n C-K resize-pane -U 2","bind -n C-L resize-pane -R 2"
-"3	BLOCK	0
+|3,0,3,1,4,0,1601289709,"bind -n C-H resize-pane -L 2","bind -n C-J resize-pane -D 2","bind -n C-K resize-pane -U 2","bind -n C-L resize-pane -R 2"
+"4	BLOCK	0
 	M
 	M
 	M
 	M
-|3,0,3,2,4,0,1601289201,"M","M","M","M"
-"4	LINE	0
-	# navigation
-|3,0,4,1,1,0,1601288217,"# navigation"
+|3,0,4,2,4,0,1601289201,"M","M","M","M"
 "5	LINE	0
-	unbind Enter
-|3,0,5,1,1,0,1601284550,"unbind Enter"
+	# navigation
+|3,0,5,1,1,0,1601288217,"# navigation"
 "6	LINE	0
-	
-|3,0,6,1,1,0,1601111385,""
+	unbind Enter
+|3,0,6,1,1,0,1601284550,"unbind Enter"
 "7	LINE	0
 	
-|3,0,7,1,1,0,1601111113,""
+|3,0,7,1,1,0,1601111385,""
 "8	LINE	0
 	
-|3,0,8,1,1,0,1601103622,""
+|3,0,8,1,1,0,1601111113,""
 "9	LINE	0
-	    pirnt()
-|3,0,9,1,1,0,1601031440,"    pirnt()"
+	
+|3,0,9,1,1,0,1601103622,""
 "a@	CHAR	0
 	hello!
 |3,2,10,0,1,0,1593762729,"hello!"
@@ -318,30 +318,38 @@ $&
 |3,0,36,0,1,0,1601289685,"M-i"
 
 # File marks:
-'0  130  0  ~/.tmux.conf
-|4,48,130,0,1601294419,"~/.tmux.conf"
-'1  369  2  ~/.tmux.conf.local
-|4,49,369,2,1601291472,"~/.tmux.conf.local"
-'2  1  0  /etc/passwd
-|4,50,1,0,1601268155,"/etc/passwd"
-'3  237  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,51,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
-'4  2  0  ~/NERD_tree_1
-|4,52,2,0,1601112031,"~/NERD_tree_1"
-'5  1  0  ~/NERD_tree_1
-|4,53,1,0,1601112031,"~/NERD_tree_1"
-'6  2  0  ~/NERD_tree_1
-|4,54,2,0,1601112031,"~/NERD_tree_1"
-'7  35  9  ~/.dotfiles/setup.sh
-|4,55,35,9,1601105837,"~/.dotfiles/setup.sh"
-'8  6  1  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch/dlwpt-code/data/p1ch4/bike-sharing-dataset/hour-fixed.csv
-|4,56,6,1,1601053406,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch/dlwpt-code/data/p1ch4/bike-sharing-dataset/hour-fixed.csv"
-'9  128  29  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch/p1ch4/main.py
-|4,57,128,29,1601040335,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch/p1ch4/main.py"
+'0  44  0  ~/.dotfiles/README.md
+|4,48,44,0,1601295440,"~/.dotfiles/README.md"
+'1  130  0  ~/.tmux.conf
+|4,49,130,0,1601294419,"~/.tmux.conf"
+'2  369  2  ~/.tmux.conf.local
+|4,50,369,2,1601291472,"~/.tmux.conf.local"
+'3  1  0  /etc/passwd
+|4,51,1,0,1601268155,"/etc/passwd"
+'4  237  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,52,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
+'5  2  0  ~/NERD_tree_1
+|4,53,2,0,1601112031,"~/NERD_tree_1"
+'6  1  0  ~/NERD_tree_1
+|4,54,1,0,1601112031,"~/NERD_tree_1"
+'7  2  0  ~/NERD_tree_1
+|4,55,2,0,1601112031,"~/NERD_tree_1"
+'8  35  9  ~/.dotfiles/setup.sh
+|4,56,35,9,1601105837,"~/.dotfiles/setup.sh"
+'9  6  1  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch/dlwpt-code/data/p1ch4/bike-sharing-dataset/hour-fixed.csv
+|4,57,6,1,1601053406,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch/dlwpt-code/data/p1ch4/bike-sharing-dataset/hour-fixed.csv"
 
 # Jumplist (newest first):
+-'  44  0  ~/.dotfiles/README.md
+|4,39,44,0,1601295440,"~/.dotfiles/README.md"
+-'  12  0  ~/.dotfiles/README.md
+|4,39,12,0,1601295431,"~/.dotfiles/README.md"
 -'  130  0  ~/.tmux.conf
 |4,39,130,0,1601294419,"~/.tmux.conf"
+-'  130  0  ~/.tmux.conf
+|4,39,130,0,1601294419,"~/.tmux.conf"
+-'  369  2  ~/.tmux.conf.local
+|4,39,369,2,1601291472,"~/.tmux.conf.local"
 -'  369  2  ~/.tmux.conf.local
 |4,39,369,2,1601291472,"~/.tmux.conf.local"
 -'  83  10  ~/.tmux.conf
@@ -350,12 +358,30 @@ $&
 |4,39,82,10,1601289178,"~/.tmux.conf"
 -'  81  10  ~/.tmux.conf
 |4,39,81,10,1601289178,"~/.tmux.conf"
+-'  83  10  ~/.tmux.conf
+|4,39,83,10,1601289178,"~/.tmux.conf"
+-'  82  10  ~/.tmux.conf
+|4,39,82,10,1601289178,"~/.tmux.conf"
+-'  81  10  ~/.tmux.conf
+|4,39,81,10,1601289178,"~/.tmux.conf"
+-'  55  0  ~/.tmux.conf
+|4,39,55,0,1601289177,"~/.tmux.conf"
 -'  55  0  ~/.tmux.conf
 |4,39,55,0,1601289177,"~/.tmux.conf"
 -'  66  7  ~/.tmux.conf
 |4,39,66,7,1601287920,"~/.tmux.conf"
+-'  66  7  ~/.tmux.conf
+|4,39,66,7,1601287920,"~/.tmux.conf"
 -'  1228  9  ~/.tmux.conf
 |4,39,1228,9,1601286148,"~/.tmux.conf"
+-'  1228  9  ~/.tmux.conf
+|4,39,1228,9,1601286148,"~/.tmux.conf"
+-'  1223  9  ~/.tmux.conf
+|4,39,1223,9,1601286147,"~/.tmux.conf"
+-'  722  131  ~/.tmux.conf
+|4,39,722,131,1601286147,"~/.tmux.conf"
+-'  720  162  ~/.tmux.conf
+|4,39,720,162,1601286147,"~/.tmux.conf"
 -'  1223  9  ~/.tmux.conf
 |4,39,1223,9,1601286147,"~/.tmux.conf"
 -'  722  131  ~/.tmux.conf
@@ -370,12 +396,32 @@ $&
 |4,39,700,101,1601286146,"~/.tmux.conf"
 -'  698  105  ~/.tmux.conf
 |4,39,698,105,1601286146,"~/.tmux.conf"
+-'  713  18  ~/.tmux.conf
+|4,39,713,18,1601286146,"~/.tmux.conf"
+-'  707  18  ~/.tmux.conf
+|4,39,707,18,1601286146,"~/.tmux.conf"
+-'  700  101  ~/.tmux.conf
+|4,39,700,101,1601286146,"~/.tmux.conf"
+-'  698  105  ~/.tmux.conf
+|4,39,698,105,1601286146,"~/.tmux.conf"
+-'  659  13  ~/.tmux.conf
+|4,39,659,13,1601286145,"~/.tmux.conf"
+-'  656  13  ~/.tmux.conf
+|4,39,656,13,1601286145,"~/.tmux.conf"
 -'  659  13  ~/.tmux.conf
 |4,39,659,13,1601286145,"~/.tmux.conf"
 -'  656  13  ~/.tmux.conf
 |4,39,656,13,1601286145,"~/.tmux.conf"
 -'  652  14  ~/.tmux.conf
 |4,39,652,14,1601286144,"~/.tmux.conf"
+-'  652  14  ~/.tmux.conf
+|4,39,652,14,1601286144,"~/.tmux.conf"
+-'  143  21  ~/.tmux.conf
+|4,39,143,21,1601283444,"~/.tmux.conf"
+-'  141  21  ~/.tmux.conf
+|4,39,141,21,1601283444,"~/.tmux.conf"
+-'  139  21  ~/.tmux.conf
+|4,39,139,21,1601283444,"~/.tmux.conf"
 -'  143  21  ~/.tmux.conf
 |4,39,143,21,1601283444,"~/.tmux.conf"
 -'  141  21  ~/.tmux.conf
@@ -390,24 +436,52 @@ $&
 |4,39,133,21,1601283443,"~/.tmux.conf"
 -'  132  5  ~/.tmux.conf
 |4,39,132,5,1601283443,"~/.tmux.conf"
+-'  137  21  ~/.tmux.conf
+|4,39,137,21,1601283443,"~/.tmux.conf"
+-'  135  21  ~/.tmux.conf
+|4,39,135,21,1601283443,"~/.tmux.conf"
+-'  133  21  ~/.tmux.conf
+|4,39,133,21,1601283443,"~/.tmux.conf"
+-'  132  5  ~/.tmux.conf
+|4,39,132,5,1601283443,"~/.tmux.conf"
+-'  70  9  ~/.tmux.conf
+|4,39,70,9,1601283437,"~/.tmux.conf"
 -'  70  9  ~/.tmux.conf
 |4,39,70,9,1601283437,"~/.tmux.conf"
 -'  129  0  ~/.tmux.conf
 |4,39,129,0,1601281104,"~/.tmux.conf"
+-'  129  0  ~/.tmux.conf
+|4,39,129,0,1601281104,"~/.tmux.conf"
+-'  62  41  ~/.tmux.conf
+|4,39,62,41,1601280955,"~/.tmux.conf"
 -'  62  41  ~/.tmux.conf
 |4,39,62,41,1601280955,"~/.tmux.conf"
 -'  59  9  ~/.tmux.conf
 |4,39,59,9,1601280417,"~/.tmux.conf"
+-'  59  9  ~/.tmux.conf
+|4,39,59,9,1601280417,"~/.tmux.conf"
 -'  734  89  ~/.tmux.conf
 |4,39,734,89,1601279725,"~/.tmux.conf"
+-'  734  89  ~/.tmux.conf
+|4,39,734,89,1601279725,"~/.tmux.conf"
+-'  731  93  ~/.tmux.conf
+|4,39,731,93,1601279724,"~/.tmux.conf"
 -'  731  93  ~/.tmux.conf
 |4,39,731,93,1601279724,"~/.tmux.conf"
 -'  729  40  ~/.tmux.conf
 |4,39,729,40,1601279723,"~/.tmux.conf"
 -'  679  88  ~/.tmux.conf
 |4,39,679,88,1601279723,"~/.tmux.conf"
+-'  729  40  ~/.tmux.conf
+|4,39,729,40,1601279723,"~/.tmux.conf"
+-'  679  88  ~/.tmux.conf
+|4,39,679,88,1601279723,"~/.tmux.conf"
 -'  13  0  ~/.tmux.conf
 |4,39,13,0,1601279720,"~/.tmux.conf"
+-'  13  0  ~/.tmux.conf
+|4,39,13,0,1601279720,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1601279281,"~/.tmux.conf"
 -'  1  0  ~/.tmux.conf
 |4,39,1,0,1601279281,"~/.tmux.conf"
 -'  1  0  /etc/passwd
@@ -424,6 +498,20 @@ $&
 |4,39,1,0,1601268155,"/etc/passwd"
 -'  1  0  /etc/passwd
 |4,39,1,0,1601268155,"/etc/passwd"
+-'  1  0  /etc/passwd
+|4,39,1,0,1601268155,"/etc/passwd"
+-'  1  0  /etc/passwd
+|4,39,1,0,1601268155,"/etc/passwd"
+-'  1  0  /etc/passwd
+|4,39,1,0,1601268155,"/etc/passwd"
+-'  1  0  /etc/passwd
+|4,39,1,0,1601268155,"/etc/passwd"
+-'  1  0  /etc/passwd
+|4,39,1,0,1601268155,"/etc/passwd"
+-'  1  0  /etc/passwd
+|4,39,1,0,1601268155,"/etc/passwd"
+-'  1  0  /etc/passwd
+|4,39,1,0,1601268155,"/etc/passwd"
 -'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
 |4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
 -'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
@@ -452,94 +540,87 @@ $&
 |4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
 -'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
 |4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
--'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
--'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
--'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
--'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
--'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
--'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
--'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
--'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
--'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
--'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
--'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
--'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
--'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
--'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
--'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
--'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
--'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
--'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
--'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
--'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
--'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
--'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
--'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
--'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
--'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
--'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
-|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
--'  17  0  ~/.dotfiles/tmux/.tmux.conf
-|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
--'  17  0  ~/.dotfiles/tmux/.tmux.conf
-|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
--'  17  0  ~/.dotfiles/tmux/.tmux.conf
-|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
--'  17  0  ~/.dotfiles/tmux/.tmux.conf
-|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
--'  17  0  ~/.dotfiles/tmux/.tmux.conf
-|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
--'  17  0  ~/.dotfiles/tmux/.tmux.conf
-|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
--'  17  0  ~/.dotfiles/tmux/.tmux.conf
-|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
--'  17  0  ~/.dotfiles/tmux/.tmux.conf
-|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
--'  17  0  ~/.dotfiles/tmux/.tmux.conf
-|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
--'  17  0  ~/.dotfiles/tmux/.tmux.conf
-|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
--'  17  0  ~/.dotfiles/tmux/.tmux.conf
-|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
--'  17  0  ~/.dotfiles/tmux/.tmux.conf
-|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
--'  17  0  ~/.dotfiles/tmux/.tmux.conf
-|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
--'  17  0  ~/.dotfiles/tmux/.tmux.conf
-|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
--'  17  0  ~/.dotfiles/tmux/.tmux.conf
-|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
--'  17  0  ~/.dotfiles/tmux/.tmux.conf
-|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
--'  17  0  ~/.dotfiles/tmux/.tmux.conf
-|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
 
 # History of marks within files (newest to oldest):
+
+> ~/.dotfiles/README.md
+	*	1601295439	0
+	"	44	0
+	^	7	33
+	.	45	0
+	+	1	6
+	+	1	4
+	+	1	6
+	+	11	0
+	+	1	13
+	+	11	19
+	+	12	6
+	+	14	0
+	+	13	67
+	+	14	46
+	+	17	54
+	+	19	75
+	+	19	16
+	+	26	0
+	+	19	0
+	+	13	3
+	+	14	3
+	+	15	3
+	+	17	3
+	+	26	31
+	+	28	0
+	+	26	54
+	+	28	0
+	+	42	0
+	+	31	0
+	+	3	78
+	+	4	73
+	+	5	4
+	+	4	30
+	+	31	0
+	+	29	1
+	+	31	0
+	+	29	3
+	+	31	3
+	+	32	44
+	+	33	45
+	+	31	6
+	+	37	0
+	+	45	0
+	+	37	0
+	+	45	0
+	+	43	5
+	+	37	0
+	+	38	0
+	+	42	73
+	+	26	45
+	+	45	12
+	+	46	0
+	+	45	0
+	+	37	0
+	+	19	0
+	+	20	22
+	+	21	59
+	+	22	50
+	+	23	70
+	+	24	9
+	+	11	0
+	+	19	0
+	+	8	0
+	+	18	0
+	+	25	0
+	+	27	0
+	+	36	0
+	+	42	0
+	+	29	10
+	+	30	42
+	+	42	0
+	+	9	0
+	+	10	0
+	+	2	0
+	+	44	0
+	+	7	33
+	+	45	0
 
 > ~/.tmux.conf
 	*	1601294418	0
@@ -1253,84 +1334,6 @@ $&
 	+	906	76
 	+	907	22
 	+	905	0
-
-> ~/.dotfiles/README.md
-	*	1599905324	0
-	"	12	0
-	^	7	33
-	.	7	33
-	+	1	6
-	+	1	4
-	+	1	6
-	+	11	0
-	+	1	13
-	+	11	19
-	+	12	6
-	+	14	0
-	+	13	67
-	+	14	46
-	+	17	54
-	+	19	75
-	+	19	16
-	+	26	0
-	+	19	0
-	+	13	3
-	+	14	3
-	+	15	3
-	+	17	3
-	+	26	31
-	+	28	0
-	+	26	54
-	+	28	0
-	+	42	0
-	+	31	0
-	+	3	78
-	+	4	73
-	+	5	4
-	+	4	30
-	+	31	0
-	+	29	1
-	+	31	0
-	+	29	3
-	+	31	3
-	+	32	44
-	+	33	45
-	+	31	6
-	+	37	0
-	+	46	0
-	+	37	0
-	+	46	0
-	+	43	5
-	+	37	0
-	+	38	0
-	+	42	73
-	+	26	45
-	+	46	12
-	+	47	0
-	+	45	0
-	+	37	0
-	+	19	0
-	+	20	22
-	+	21	59
-	+	22	50
-	+	23	70
-	+	24	9
-	+	11	0
-	+	19	0
-	+	8	0
-	+	18	0
-	+	25	0
-	+	27	0
-	+	36	0
-	+	42	0
-	+	29	10
-	+	30	42
-	+	42	0
-	+	9	0
-	+	10	0
-	+	2	0
-	+	44	0
-	+	7	33
 
 > ~/.dotfiles/vim/.vim/plugged/fzf/README.md
 	*	1599904085	0

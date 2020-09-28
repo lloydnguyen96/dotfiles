@@ -42,5 +42,4 @@ multilanguages)
 
 # TODO LIST
 
-- ssh
 - tmuxinator

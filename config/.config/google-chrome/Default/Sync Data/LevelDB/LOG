@@ -4,3 +4,15 @@
 2020/09/28-10:36:10.500 ac7 Level-0 table #1540: started
 2020/09/28-10:36:11.135 ac7 Level-0 table #1540: 107804 bytes OK
 2020/09/28-10:36:12.056 ac7 Delete type=0 #1536
+2020/09/28-19:14:42.304 ac7 Level-0 table #1542: started
+2020/09/28-19:14:42.384 ac7 Level-0 table #1542: 107697 bytes OK
+2020/09/28-19:14:42.428 ac7 Delete type=0 #1539
+2020/09/28-19:14:42.428 ac7 Compacting 4@0 + 1@1 files
+2020/09/28-19:14:42.485 ac7 Generated table #1543@0: 635 keys, 88740 bytes
+2020/09/28-19:14:42.485 ac7 Compacted 4@0 + 1@1 files => 88740 bytes
+2020/09/28-19:14:42.527 ac7 compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/09/28-19:14:42.528 ac7 Delete type=2 #1540
+2020/09/28-19:14:42.528 ac7 Delete type=2 #1537
+2020/09/28-19:14:42.528 ac7 Delete type=2 #1542
+2020/09/28-19:14:42.528 ac7 Delete type=2 #1532
+2020/09/28-19:14:42.528 ac7 Delete type=2 #1534
