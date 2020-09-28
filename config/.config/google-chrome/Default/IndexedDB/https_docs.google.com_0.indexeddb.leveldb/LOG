@@ -1,3 +1,3 @@
-2020/09/12-11:38:39.218 ece Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/09/12-11:38:39.221 ece Recovering log #32075
-2020/09/12-11:38:39.222 ece Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/032075.log 
+2020/09/15-23:32:54.400 d48 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/09/15-23:32:54.401 d48 Recovering log #32075
+2020/09/15-23:32:55.278 d48 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/032075.log 

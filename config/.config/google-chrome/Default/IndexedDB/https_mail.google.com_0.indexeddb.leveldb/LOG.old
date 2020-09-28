@@ -1,6 +1,9 @@
-2020/09/11-20:47:05.669 b1ba6 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/09/11-20:47:05.959 b1ba6 Recovering log #26
-2020/09/11-20:47:08.617 b1ba6 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000026.log 
-2020/09/11-20:47:40.092 b2212 Level-0 table #31: started
-2020/09/11-20:47:40.420 b2212 Level-0 table #31: 1725514 bytes OK
-2020/09/11-20:47:40.836 b2212 Delete type=0 #26
+2020/09/26-13:53:20.324 fd9 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/09/26-13:53:20.325 fd9 Recovering log #74
+2020/09/26-13:53:20.619 fd9 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000074.log 
+2020/09/26-13:53:56.727 12e1 Compacting 1@1 + 1@2 files
+2020/09/26-13:53:56.918 12e1 Generated table #77@1: 86 keys, 35311 bytes
+2020/09/26-13:53:56.918 12e1 Compacted 1@1 + 1@2 files => 35311 bytes
+2020/09/26-13:53:57.073 12e1 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/09/26-13:53:57.074 12e1 Delete type=2 #75
+2020/09/26-13:53:57.074 12e1 Delete type=2 #72

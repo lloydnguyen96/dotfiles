@@ -11,23 +11,39 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/<leader>c
+~MSle0~/-n
 
 # Last Substitute Search Pattern:
 ~MSle0&-1
 
 # Last Substitute String:
-$new_mean
+$&
 
 # Command Line History (newest to oldest):
-:set colorcolumn=80
-|2,0,1599898197,,"set colorcolumn=80"
+:call ManFor('tmux')
+|2,0,1601287810,,"call ManFor('tmux')"
+:pwd
+|2,0,1601287207,,"pwd"
+:bd 
+|2,0,1601280815,,"bd "
 :b 
-|2,0,1599836696,,"b "
+|2,0,1601116407,,"b "
+:bd 15
+|2,0,1600853733,,"bd 15"
+:15
+|2,0,1600837194,,"15"
+:q!
+|2,0,1599931670,,"q!"
+:w!
+|2,0,1599931665,,"w!"
+:PlugStatus
+|2,0,1599897038,,"PlugStatus"
+:set colorcolumn=80
+|2,0,1599896343,,"set colorcolumn=80"
+:colorcolumn=80
+|2,0,1599896339,,"colorcolumn=80"
 :OpenSession ML_TextBoxes++
 |2,0,1599790766,,"OpenSession ML_TextBoxes++"
-:pwd
-|2,0,1599558696,,"pwd"
 :%s/image.shape/shapes/gc
 |2,0,1599577980,,"%s/image.shape/shapes/gc"
 :%s/np_image.shape/shapes/gc
@@ -90,8 +106,6 @@ $new_mean
 |2,0,1598437659,,"229"
 :PlugClean
 |2,0,1598270818,,"PlugClean"
-:PlugStatus
-|2,0,1598270803,,"PlugStatus"
 :PlugDiff
 |2,0,1598270795,,"PlugDiff"
 :PlugUpdate
@@ -102,26 +116,102 @@ $new_mean
 |2,0,1598203178,,"bd 4"
 :'<,'>s/-1/new_mean/gc
 |2,0,1598203045,,"'<,'>s/-1/new_mean/gc"
-:bd 
-|2,0,1598200990,,"bd "
 :bd 3
 |2,0,1598200987,,"bd 3"
 :PlugInstall
 |2,0,1598191387,,"PlugInstall"
-:highlight
-|2,0,1598190048,,"highlight"
-:set background=light
-|2,0,1598188721,,"set background=light"
-:echo synIDattr(hlID("Normal"), "bg")
-|2,0,1598188504,,"echo synIDattr(hlID(\"Normal\"), \"bg\")"
-:let g:indentLine_bgcolor_gui='#1D2021'
-|2,0,1598188399,,"let g:indentLine_bgcolor_gui='#1D2021'"
-:'<,'>norm A = 
-|2,0,1598187259,,"'<,'>norm A = "
-:'<,'>A = 
-|2,0,1598187253,,"'<,'>A = "
 
 # Search String History (newest to oldest):
+?/-n
+|2,1,1601291264,47,"-n"
+?/send-key
+|2,1,1601294185,47,"send-key"
+?/M-w
+|2,1,1601291731,47,"M-w"
+?/Space
+|2,1,1601291680,47,"Space"
+?/new-window
+|2,1,1601291118,47,"new-window"
+?/M-q
+|2,1,1601290919,47,"M-q"
+?/resize-pane
+|2,1,1601289172,47,"resize-pane"
+?/M-t
+|2,1,1601288226,47,"M-t"
+?/source-file
+|2,1,1601288111,47,"source-file"
+?/M-n
+|2,1,1601288015,47,"M-n"
+?/M-y
+|2,1,1601288010,47,"M-y"
+?/reload
+|2,1,1601287920,47,"reload"
+?/M-s
+|2,1,1601287110,47,"M-s"
+?/choose-tree
+|2,1,1601287065,47,"choose-tree"
+?/split-window
+|2,1,1601286141,47,"split-window"
+?/M-m
+|2,1,1601284675,47,"M-m"
+?/copy-mode
+|2,1,1601283443,47,"copy-mode"
+?/copy
+|2,1,1601283437,47,"copy"
+?/mode-keys
+|2,1,1601282882,47,"mode-keys"
+?/send-keys
+|2,1,1601281104,47,"send-keys"
+?/M-c
+|2,1,1601281006,47,"M-c"
+?/switch-client
+|2,1,1601280417,47,"switch-client"
+?/new-session
+|2,1,1601279720,47,"new-session"
+?/kill-session
+|2,1,1601279516,47,"kill-session"
+?/kill-server
+|2,1,1601279453,47,"kill-server"
+?/has-session
+|2,1,1601279432,47,"has-session"
+?/detach-client
+|2,1,1601279298,47,"detach-client"
+?/bind-key
+|2,1,1601279769,47,"bind-key"
+?/set
+|2,1,1601120657,47,"set"
+?/set-option
+|2,1,1601120420,47,"set-option"
+? \<default-shell\>
+|2,1,1601111228,,"\\<default-shell\\>"
+?/control mode
+|2,1,1601105914,47,"control mode"
+?/control
+|2,1,1601105906,47,"control"
+?/CONTROL_MODE
+|2,1,1601105902,47,"CONTROL_MODE"
+? \V:
+|2,1,1601043723,,"\\V:"
+??col_list
+|2,1,1601031117,63,"col_list"
+??target
+|2,1,1601030470,63,"target"
+? [\u0009\u0020\u00a0\u1680\u180e\u2000-\u200b\u202f\u205f\u3000\ufeff]\+$
+|2,1,1600852901,,"[\\u0009\\u0020\\u00a0\\u1680\\u180e\\u2000-\\u200b\\u202f\\u205f\\u3000\\ufeff]\\+$"
+?/Port
+|2,1,1599931534,47,"Port"
+?/project_path
+|2,1,1599897261,47,"project_path"
+?/polyg
+|2,1,1599897008,47,"polyg"
+?/polyglot
+|2,1,1599896954,47,"polyglot"
+?/polyglot_di
+|2,1,1599896883,47,"polyglot_di"
+?/fixer
+|2,1,1599896435,47,"fixer"
+?/linter
+|2,1,1599896433,47,"linter"
 ?/<leader>c
 |2,1,1599556962,47,"<leader>c"
 ?/nms_topk
@@ -132,102 +222,12 @@ $new_mean
 |2,1,1599626731,47,"print"
 ?/tf.shape
 |2,1,1599625474,47,"tf.shape"
-?/return
-|2,1,1599623652,47,"return"
-? \<image_shape\>
-|2,1,1599623185,,"\\<image_shape\\>"
-? \<keep_topk\>
-|2,1,1599623144,,"\\<keep_topk\\>"
-? \<select_threshold\>
-|2,1,1599622255,,"\\<select_threshold\\>"
-? \<min_size\>
-|2,1,1599621950,,"\\<min_size\\>"
-? image.shape
-|2,1,1599577980,,"image.shape"
-? np_image.shape
-|2,1,1599575841,,"np_image.shape"
-? \<os\>
-|2,1,1599575293,,"\\<os\\>"
-? \<shapes\>
-|2,1,1599575290,,"\\<shapes\\>"
-?/tf.stack
-|2,1,1599574849,47,"tf.stack"
-? \<bboxes_pred\>
-|2,1,1599574658,,"\\<bboxes_pred\\>"
-? \<pairs\>
-|2,1,1599574111,,"\\<pairs\\>"
-? \<input_shape\>
-|2,1,1599564103,,"\\<input_shape\\>"
-? \<image\>
-|2,1,1599561722,,"\\<image\\>"
-? \<images\>
-|2,1,1599561658,,"\\<images\\>"
-? \<feature_layers\>
-|2,1,1599561442,,"\\<feature_layers\\>"
-? \<features\>
-|2,1,1599561431,,"\\<features\\>"
-? \<batch_size\>
-|2,1,1599500186,,"\\<batch_size\\>"
-? \<anchor_cy\>
-|2,1,1599499280,,"\\<anchor_cy\\>"
-? \<class_predictions\>
-|2,1,1599499118,,"\\<class_predictions\\>"
-?/\<num\>
-|2,1,1599498200,47,"\\<num\\>"
-?/num
-|2,1,1599498195,47,"num"
-? \<num\>
-|2,1,1599497977,,"\\<num\\>"
-? \<output_shape\>
-|2,1,1599494434,,"\\<output_shape\\>"
-? \<_ImageDimensions\>
-|2,1,1599494212,,"\\<_ImageDimensions\\>"
-?/backbone
-|2,1,1599480921,47,"backbone"
-?/checkpoint_path
-|2,1,1599478110,47,"checkpoint_path"
-? \<location_predictions\>
-|2,1,1599477003,,"\\<location_predictions\\>"
-? \<input_image\>
-|2,1,1599476882,,"\\<input_image\\>"
-? \<output_directory\>
-|2,1,1599473916,,"\\<output_directory\\>"
-?/storage_directory
-|2,1,1599473846,47,"storage_directory"
-?/store
-|2,1,1599473831,47,"store"
-?/\<np_image\>
-|2,1,1599473688,47,"\\<np_image\\>"
-?/\<image_paths\>
-|2,1,1599473649,47,"\\<image_paths\\>"
-?/\<image_path\>
-|2,1,1599473633,47,"\\<image_path\\>"
-?/np_image
-|2,1,1599473610,47,"np_image"
-?/\<image\>
-|2,1,1599473603,47,"\\<image\\>"
-? \<np_image\>
-|2,1,1599473583,,"\\<np_image\\>"
-? \<image_input\>
-|2,1,1599473226,,"\\<image_input\\>"
-? \<shape_input\>
-|2,1,1599473219,,"\\<shape_input\\>"
-? \<out_shape\>
-|2,1,1599473173,,"\\<out_shape\\>"
-?/device
-|2,1,1599473082,47,"device"
-?/name_scope
-|2,1,1599472986,47,"name_scope"
-? \<textboxes_plusplus_preprocessing\>
-|2,1,1599470818,,"\\<textboxes_plusplus_preprocessing\\>"
-? \<bboxes\>
-|2,1,1599468943,,"\\<bboxes\\>"
 
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
 @y
-|2,3,1598270654,,"y"
+|2,3,1599897017,,"y"
 @N
 |2,3,1594366748,,"N"
 @abc
@@ -249,58 +249,61 @@ $new_mean
 
 # Registers:
 "0	LINE	0
-	        nr16 = [(2, 0.6), (4, 0.4)]
-|3,0,0,1,1,0,1599749961,"        nr16 = [(2, 0.6), (4, 0.4)]"
-"1	LINE	0
-	        nr17 = [(2, 0.6)]
-|3,0,1,1,1,0,1599749986,"        nr17 = [(2, 0.6)]"
-"2	LINE	0
-	        y, x = os[i]
-|3,0,2,1,1,0,1599709107,"        y, x = os[i]"
-"3	LINE	0
-	        nr13 = [(2, 0.4)]
-|3,0,3,1,1,0,1599650075,"        nr13 = [(2, 0.4)]"
-"4	LINE	0
-	        images, shapes, os =\
-	            zip(*([[image, shape, o]
-	                   for n, r in nr12
-	                   for image, shape, o in split_image_into_overlapped_images(
-	                       input_image,
-	                       (n, n),
-	                       (r, r))]))
-|3,0,4,1,7,0,1599650049,"        images, shapes, os =\\","            zip(*([[image, shape, o]","                   for n, r in nr12","                   for image, shape, o in split_image_into_overlapped_images(","                       input_image,","                       (n, n),","                       (r, r))]))"
-"5	LINE	0
-	                if i < 30:
-	                    continue
-|3,0,5,1,2,0,1599648674,"                if i < 30:","                    continue"
-"6	LINE	0
-	                if i < 30:
-	                    continue
-|3,0,6,1,2,0,1599648570,"                if i < 30:","                    continue"
-"7	LINE	0
-	        images, shapes, os =\
-	            zip(*([[image, shape, o]
-	                   for n, r in nr10
-	                   for image, shape, o in split_image_into_overlapped_images(
-	                       input_image,
-	                       (n, n),
-	                       (r, r))]))
-|3,0,7,1,7,0,1599648413,"        images, shapes, os =\\","            zip(*([[image, shape, o]","                   for n, r in nr10","                   for image, shape, o in split_image_into_overlapped_images(","                       input_image,","                       (n, n),","                       (r, r))]))"
-"8	LINE	0
-	                                    tf.shape(input_image), [0, 0]]]))
-|3,0,8,1,1,0,1599648244,"                                    tf.shape(input_image), [0, 0]]]))"
-"9	LINE	0
+	bind -n M-h resize-pane -L 2
+	bind -n M-j resize-pane -D 2
+	bind -n M-k resize-pane -U 2
+	bind -n M-l resize-pane -R 2
+|3,0,0,1,4,0,1601289193,"bind -n M-h resize-pane -L 2","bind -n M-j resize-pane -D 2","bind -n M-k resize-pane -U 2","bind -n M-l resize-pane -R 2"
+""1	LINE	0
+	# create pane
+	unbind _
+	unbind -
+	# i: down
+	# p: right
+	# u: left
+	# o: up
+	bind -n C-H split-window -bh -c "#{pane_current_path}"
+	bind -n C-L split-window -h -c "#{pane_current_path}"
+	bind -n C-K split-window -bv -c "#{pane_current_path}"
+	bind -n C-J split-window -v -c "#{pane_current_path}"
 	
-|3,0,9,1,1,0,1599644726,""
+|3,1,1,1,12,0,1601290190,"# create pane","unbind _","unbind -","# i: down","# p: right","# u: left","# o: up","bind -n C-H split-window -bh -c \"#{pane_current_path}\"","bind -n C-L split-window -h -c \"#{pane_current_path}\"","bind -n C-K split-window -bv -c \"#{pane_current_path}\"","bind -n C-J split-window -v -c \"#{pane_current_path}\"",""
+"2	LINE	0
+	bind -n C-H resize-pane -L 2
+	bind -n C-J resize-pane -D 2
+	bind -n C-K resize-pane -U 2
+	bind -n C-L resize-pane -R 2
+|3,0,2,1,4,0,1601289709,"bind -n C-H resize-pane -L 2","bind -n C-J resize-pane -D 2","bind -n C-K resize-pane -U 2","bind -n C-L resize-pane -R 2"
+"3	BLOCK	0
+	M
+	M
+	M
+	M
+|3,0,3,2,4,0,1601289201,"M","M","M","M"
+"4	LINE	0
+	# navigation
+|3,0,4,1,1,0,1601288217,"# navigation"
+"5	LINE	0
+	unbind Enter
+|3,0,5,1,1,0,1601284550,"unbind Enter"
+"6	LINE	0
+	
+|3,0,6,1,1,0,1601111385,""
+"7	LINE	0
+	
+|3,0,7,1,1,0,1601111113,""
+"8	LINE	0
+	
+|3,0,8,1,1,0,1601103622,""
+"9	LINE	0
+	    pirnt()
+|3,0,9,1,1,0,1601031440,"    pirnt()"
 "a@	CHAR	0
 	hello!
 |3,2,10,0,1,0,1593762729,"hello!"
 "i	CHAR	0
-	823
-<i1jkvjkvi1jkllllhbllibjklllhi1jkjhhhhhi3jkllhvlllllllxllsby1jkjhhhhhvllllllls3jklllvllllllllsby3jkjhhhhhhli1jklllvllllllllllhhsby3jk,wjjjjjjjjjjjjjjjjjjjjkkkkkkkkkjjjhhhhhhhhhhhhhhhhhhhhrblllllrblllllrbllllllrbhbruluuhrbhhhhhhhhhhhhhhrxlllllllr,hr1hryllllllhrxlr1lhr3llllrylr3,wjhlhkhhhhhhhhhhhhhhhhinew_jkllllllinew_jkllllllinew_jkllllllinewjkli_jk,wjjjjjVdkkkkkwjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjjjjjjjjjjjjjkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkVdVjjjj<VjjkVjjjjjdkkkkkpjjjjujjjpVjjjjj>VkkkkkkjwkkkkkkkkkkkkkkVjjjjjdjjjjjjjjjjjjjjpkkkkkkkkkocontinuejkkkkjjjjjjjjjjjVdkkkkkkkVdVjjjjj<VkkkkkkjjVVkVjjjjjdjjjjjpkkjjjjjjjonewa€kb_areaif new_area > area:jkkkkkkkkkVdkkkkkkkkkkpuu
-|3,0,18,0,1,0,1598434243,>822
-|<"i1jkvjkvi1jkllllhbllibjklllhi1jkjhhhhhi3jkllhvlllllllxllsby1jkjhhhhhvllllllls3jklllvllllllllsby3jkjhhhhhhli1jklllvllllllllllhhsby3jk,wjjjjjjjjjjjjjjjjjjjjkkkkkkkkkjjjhhhhhhhhhhhhhhhhhhhhrblllllrblllllrbllllllrbhbruluuhrbhhhhhhhhhhhhhhrxlllllllr,hr1hryllllllhrxlr1lhr3llllrylr3,wjhlhkhhhhhhhhhhhhhhhhinew_jkllllllinew_jkllllllinew_jkllllllinewjkli_jk,wjjjjjVdkkkkkwjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjjjjjjjjjjjjjkjjjjjj
-|<jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkVdVjjjj<VjjkVjjjjjdkkkkkpjjjjujjjpVjjjjj>VkkkkkkjwkkkkkkkkkkkkkkVjjjjjdjjjjjjjjjjjjjjpkkkkkkkkkocontinuejkkkkjjjjjjjjjjjVdkkkkkkkVdVjjjjj<VkkkkkkjjVVkVjjjjjdjjjjjpkkjjjjjjjonewa€kb_areaif new_area > area:jkkkkkkkkkVdkkkkkkkkkkpuu"
+	iq€kbjkll
+|3,0,18,0,1,0,1601014822,"iq€kbjkll"
 "j	CHAR	0
 	jjjjjjllllll,Ajkllll,A€ýa
 |3,0,19,0,1,0,1597814305,"jjjjjjllllll,Ajkllll,A€ýa"
@@ -310,358 +313,833 @@ $new_mean
 "u	CHAR	0
 	uuuuuuu
 |3,0,30,0,1,0,1595176726,"uuuuuuu"
-""-	CHAR	0
-	vim
-|3,1,36,0,1,0,1599897067,"vim"
+"-	CHAR	0
+	M-i
+|3,0,36,0,1,0,1601289685,"M-i"
 
 # File marks:
-'0  1  0  ~/.dotfiles/.gitmodules
-|4,48,1,0,1599902295,"~/.dotfiles/.gitmodules"
-'1  136  22  ~/.bashrc
-|4,49,136,22,1599899224,"~/.bashrc"
-'2  3  0  ~/.bashrc
-|4,50,3,0,1599897027,"~/.bashrc"
-'3  3  0  ~/.bashrc
-|4,51,3,0,1599897027,"~/.bashrc"
-'4  3  0  ~/.bashrc
-|4,52,3,0,1599896960,"~/.bashrc"
-'5  3  0  ~/.bashrc
-|4,53,3,0,1599896960,"~/.bashrc"
-'6  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,54,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
-'7  58  39  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/cv2/split_image_into_overlapped_images.py
-|4,55,58,39,1599758326,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/cv2/split_image_into_overlapped_images.py"
-'8  49  29  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/scripts/train_eval.sh
-|4,56,49,29,1599116216,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/scripts/train_eval.sh"
-'9  49  29  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/scripts/train_eval.sh
-|4,57,49,29,1599116216,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/scripts/train_eval.sh"
+'0  130  0  ~/.tmux.conf
+|4,48,130,0,1601294419,"~/.tmux.conf"
+'1  369  2  ~/.tmux.conf.local
+|4,49,369,2,1601291472,"~/.tmux.conf.local"
+'2  1  0  /etc/passwd
+|4,50,1,0,1601268155,"/etc/passwd"
+'3  237  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,51,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
+'4  2  0  ~/NERD_tree_1
+|4,52,2,0,1601112031,"~/NERD_tree_1"
+'5  1  0  ~/NERD_tree_1
+|4,53,1,0,1601112031,"~/NERD_tree_1"
+'6  2  0  ~/NERD_tree_1
+|4,54,2,0,1601112031,"~/NERD_tree_1"
+'7  35  9  ~/.dotfiles/setup.sh
+|4,55,35,9,1601105837,"~/.dotfiles/setup.sh"
+'8  6  1  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch/dlwpt-code/data/p1ch4/bike-sharing-dataset/hour-fixed.csv
+|4,56,6,1,1601053406,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch/dlwpt-code/data/p1ch4/bike-sharing-dataset/hour-fixed.csv"
+'9  128  29  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch/p1ch4/main.py
+|4,57,128,29,1601040335,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch/p1ch4/main.py"
 
 # Jumplist (newest first):
--'  1  0  ~/.dotfiles/.gitmodules
-|4,39,1,0,1599902295,"~/.dotfiles/.gitmodules"
--'  136  22  ~/.bashrc
-|4,39,136,22,1599899224,"~/.bashrc"
--'  136  22  ~/.bashrc
-|4,39,136,22,1599899224,"~/.bashrc"
--'  136  22  ~/.bashrc
-|4,39,136,22,1599899224,"~/.bashrc"
--'  136  22  ~/.bashrc
-|4,39,136,22,1599899224,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1599897059,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1599897059,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1599897059,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1599897059,"~/.bashrc"
--'  3  0  ~/.bashrc
-|4,39,3,0,1599897028,"~/.bashrc"
--'  3  0  ~/.bashrc
-|4,39,3,0,1599897028,"~/.bashrc"
--'  3  0  ~/.bashrc
-|4,39,3,0,1599897028,"~/.bashrc"
--'  3  0  ~/.bashrc
-|4,39,3,0,1599897028,"~/.bashrc"
--'  3  0  ~/.bashrc
-|4,39,3,0,1599897027,"~/.bashrc"
--'  3  0  ~/.bashrc
-|4,39,3,0,1599897027,"~/.bashrc"
--'  3  0  ~/.bashrc
-|4,39,3,0,1599897027,"~/.bashrc"
--'  3  0  ~/.bashrc
-|4,39,3,0,1599897027,"~/.bashrc"
--'  3  0  ~/.bashrc
-|4,39,3,0,1599896960,"~/.bashrc"
--'  3  0  ~/.bashrc
-|4,39,3,0,1599896960,"~/.bashrc"
--'  3  0  ~/.bashrc
-|4,39,3,0,1599896960,"~/.bashrc"
--'  3  0  ~/.bashrc
-|4,39,3,0,1599896960,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1599896858,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1599896858,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1599896858,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1599896858,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1599896858,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1599896858,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1599896858,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1599896858,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1599896858,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1599896858,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1599896858,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1599896858,"~/.bashrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  6  22  ~/.dotfiles/vim/.vim/vimrc
-|4,39,6,22,1599895273,"~/.dotfiles/vim/.vim/vimrc"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  4  4  ~/.dotfiles/setup.sh
-|4,39,4,4,1599895078,"~/.dotfiles/setup.sh"
--'  78  0  ~/.dotfiles/setup.sh
-|4,39,78,0,1599895046,"~/.dotfiles/setup.sh"
--'  78  0  ~/.dotfiles/setup.sh
-|4,39,78,0,1599895046,"~/.dotfiles/setup.sh"
--'  78  0  ~/.dotfiles/setup.sh
-|4,39,78,0,1599895046,"~/.dotfiles/setup.sh"
+-'  130  0  ~/.tmux.conf
+|4,39,130,0,1601294419,"~/.tmux.conf"
+-'  369  2  ~/.tmux.conf.local
+|4,39,369,2,1601291472,"~/.tmux.conf.local"
+-'  83  10  ~/.tmux.conf
+|4,39,83,10,1601289178,"~/.tmux.conf"
+-'  82  10  ~/.tmux.conf
+|4,39,82,10,1601289178,"~/.tmux.conf"
+-'  81  10  ~/.tmux.conf
+|4,39,81,10,1601289178,"~/.tmux.conf"
+-'  55  0  ~/.tmux.conf
+|4,39,55,0,1601289177,"~/.tmux.conf"
+-'  66  7  ~/.tmux.conf
+|4,39,66,7,1601287920,"~/.tmux.conf"
+-'  1228  9  ~/.tmux.conf
+|4,39,1228,9,1601286148,"~/.tmux.conf"
+-'  1223  9  ~/.tmux.conf
+|4,39,1223,9,1601286147,"~/.tmux.conf"
+-'  722  131  ~/.tmux.conf
+|4,39,722,131,1601286147,"~/.tmux.conf"
+-'  720  162  ~/.tmux.conf
+|4,39,720,162,1601286147,"~/.tmux.conf"
+-'  713  18  ~/.tmux.conf
+|4,39,713,18,1601286146,"~/.tmux.conf"
+-'  707  18  ~/.tmux.conf
+|4,39,707,18,1601286146,"~/.tmux.conf"
+-'  700  101  ~/.tmux.conf
+|4,39,700,101,1601286146,"~/.tmux.conf"
+-'  698  105  ~/.tmux.conf
+|4,39,698,105,1601286146,"~/.tmux.conf"
+-'  659  13  ~/.tmux.conf
+|4,39,659,13,1601286145,"~/.tmux.conf"
+-'  656  13  ~/.tmux.conf
+|4,39,656,13,1601286145,"~/.tmux.conf"
+-'  652  14  ~/.tmux.conf
+|4,39,652,14,1601286144,"~/.tmux.conf"
+-'  143  21  ~/.tmux.conf
+|4,39,143,21,1601283444,"~/.tmux.conf"
+-'  141  21  ~/.tmux.conf
+|4,39,141,21,1601283444,"~/.tmux.conf"
+-'  139  21  ~/.tmux.conf
+|4,39,139,21,1601283444,"~/.tmux.conf"
+-'  137  21  ~/.tmux.conf
+|4,39,137,21,1601283443,"~/.tmux.conf"
+-'  135  21  ~/.tmux.conf
+|4,39,135,21,1601283443,"~/.tmux.conf"
+-'  133  21  ~/.tmux.conf
+|4,39,133,21,1601283443,"~/.tmux.conf"
+-'  132  5  ~/.tmux.conf
+|4,39,132,5,1601283443,"~/.tmux.conf"
+-'  70  9  ~/.tmux.conf
+|4,39,70,9,1601283437,"~/.tmux.conf"
+-'  129  0  ~/.tmux.conf
+|4,39,129,0,1601281104,"~/.tmux.conf"
+-'  62  41  ~/.tmux.conf
+|4,39,62,41,1601280955,"~/.tmux.conf"
+-'  59  9  ~/.tmux.conf
+|4,39,59,9,1601280417,"~/.tmux.conf"
+-'  734  89  ~/.tmux.conf
+|4,39,734,89,1601279725,"~/.tmux.conf"
+-'  731  93  ~/.tmux.conf
+|4,39,731,93,1601279724,"~/.tmux.conf"
+-'  729  40  ~/.tmux.conf
+|4,39,729,40,1601279723,"~/.tmux.conf"
+-'  679  88  ~/.tmux.conf
+|4,39,679,88,1601279723,"~/.tmux.conf"
+-'  13  0  ~/.tmux.conf
+|4,39,13,0,1601279720,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1601279281,"~/.tmux.conf"
+-'  1  0  /etc/passwd
+|4,39,1,0,1601268155,"/etc/passwd"
+-'  1  0  /etc/passwd
+|4,39,1,0,1601268155,"/etc/passwd"
+-'  1  0  /etc/passwd
+|4,39,1,0,1601268155,"/etc/passwd"
+-'  1  0  /etc/passwd
+|4,39,1,0,1601268155,"/etc/passwd"
+-'  1  0  /etc/passwd
+|4,39,1,0,1601268155,"/etc/passwd"
+-'  1  0  /etc/passwd
+|4,39,1,0,1601268155,"/etc/passwd"
+-'  1  0  /etc/passwd
+|4,39,1,0,1601268155,"/etc/passwd"
+-'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  237  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,237,0,1601121313,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  14  0  ~/.dotfiles/tmux/.tmux.conf.local
+|4,39,14,0,1601112102,"~/.dotfiles/tmux/.tmux.conf.local"
+-'  17  0  ~/.dotfiles/tmux/.tmux.conf
+|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
+-'  17  0  ~/.dotfiles/tmux/.tmux.conf
+|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
+-'  17  0  ~/.dotfiles/tmux/.tmux.conf
+|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
+-'  17  0  ~/.dotfiles/tmux/.tmux.conf
+|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
+-'  17  0  ~/.dotfiles/tmux/.tmux.conf
+|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
+-'  17  0  ~/.dotfiles/tmux/.tmux.conf
+|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
+-'  17  0  ~/.dotfiles/tmux/.tmux.conf
+|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
+-'  17  0  ~/.dotfiles/tmux/.tmux.conf
+|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
+-'  17  0  ~/.dotfiles/tmux/.tmux.conf
+|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
+-'  17  0  ~/.dotfiles/tmux/.tmux.conf
+|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
+-'  17  0  ~/.dotfiles/tmux/.tmux.conf
+|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
+-'  17  0  ~/.dotfiles/tmux/.tmux.conf
+|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
+-'  17  0  ~/.dotfiles/tmux/.tmux.conf
+|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
+-'  17  0  ~/.dotfiles/tmux/.tmux.conf
+|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
+-'  17  0  ~/.dotfiles/tmux/.tmux.conf
+|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
+-'  17  0  ~/.dotfiles/tmux/.tmux.conf
+|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
+-'  17  0  ~/.dotfiles/tmux/.tmux.conf
+|4,39,17,0,1601112095,"~/.dotfiles/tmux/.tmux.conf"
 
 # History of marks within files (newest to oldest):
 
-> ~/.dotfiles/.gitmodules
-	*	1599902292	0
+> ~/.tmux.conf
+	*	1601294418	0
+	"	130	0
+
+> ~/.tmux.conf.local
+	*	1601294416	0
+	"	426	0
+	^	352	22
+	.	352	21
+	+	338	0
+	+	349	18
+	+	349	0
+	+	347	33
+	+	346	35
+	+	353	0
+	+	361	32
+	+	363	0
+	+	377	0
+	+	363	17
+	+	434	0
+	+	364	0
+	+	377	12
+	+	416	0
+	+	434	0
+	+	427	30
+	+	429	0
+	+	428	0
+	+	432	7
+	+	319	7
+	+	323	7
+	+	339	9
+	+	343	9
+	+	431	7
+	+	432	10
+	+	431	0
+	+	432	10
+	+	438	60
+	+	432	10
+	+	430	21
+	+	431	0
+	+	432	0
+	+	433	25
+	+	132	0
+	+	134	0
+	+	436	0
+	+	433	0
+	+	432	0
+	+	433	0
+	+	440	34
+	+	440	0
+	+	272	10
+	+	275	34
+	+	440	1
+	+	439	0
+	+	441	0
+	+	377	10
+	+	377	0
+	+	377	8
+	+	377	9
+	+	377	6
+	+	377	2
+	+	377	10
+	+	377	26
+	+	433	10
+	+	377	10
+	+	377	0
+	+	377	2
+	+	442	0
+	+	447	10
+	+	444	11
+	+	447	10
+	+	445	21
+	+	445	0
+	+	443	10
+	+	446	0
+	+	447	10
+	+	426	0
+	+	425	0
+	+	426	0
+	+	426	10
+	+	377	10
+	+	426	0
+	+	425	0
+	+	377	0
+	+	426	0
+	+	449	24
+	+	449	0
+	+	351	0
+	+	352	21
+
+> /usr/share/vim/vim81/doc/help.txt
+	*	1601293166	0
 	"	1	0
 
-> ~/.bashrc
-	*	1599899223	0
-	"	136	22
-	^	136	2
-	.	136	1
-	+	134	22
-	+	135	68
-	+	137	0
-	+	136	1
+> ~/NERD_tree_1
+	*	1601287240	0
+	"	24	6
+	.	1	0
+	+	1	0
 
-> ~/.dotfiles/vim/.vim/vimrc
-	*	1599895273	0
-	"	6	22
+> /etc/passwd
+	*	1601268152	0
+	"	1	0
+
+> ~/.dotfiles/tmux/.tmux.conf.local
+	*	1601121313	0
+	"	237	0
+
+> ~/.dotfiles/tmux/.tmux.conf
+	*	1601120663	0
+	"	12	0
 
 > ~/.dotfiles/setup.sh
-	*	1599895248	0
-	"	6	4
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/scripts/rctw_task1_evaluation.sh
-	*	1599836697	0
-	"	11	25
-	^	13	23
-	.	11	0
-	+	1	0
-	+	5	0
-	+	1	0
-	+	21	0
-	+	7	32
-	+	21	0
-	+	8	0
-	+	9	6
-	+	21	0
-	+	10	0
-	+	11	26
-	+	12	17
-	+	13	24
-	+	14	17
-	+	15	19
-	+	16	28
-	+	21	0
-	+	20	23
-	+	16	30
-	+	20	57
-	+	18	96
-	+	21	0
-	+	21	4
-	+	18	6
-	+	21	0
-	+	18	75
-	+	19	58
+	*	1601105796	0
+	"	35	9
+	^	9	35
+	.	8	0
+	+	98	0
+	+	121	0
+	+	4	22
+	+	6	0
+	+	4	6
+	+	7	35
+	+	1	41
+	+	2	0
+	+	46	0
+	+	11	0
 	+	18	0
 	+	19	0
-	+	20	97
-	+	20	11
-	+	1	0
-	+	10	0
-	+	1	0
-	+	4	0
-	+	18	77
-	+	4	0
-	+	1	0
-	+	18	77
-	+	10	31
-	+	1	0
+	+	17	5
+	+	19	45
+	+	19	0
+	+	17	28
+	+	20	33
+	+	21	4
+	+	46	6
+	+	46	0
+	+	46	19
+	+	46	0
+	+	15	0
+	+	5	21
+	+	10	28
+	+	12	27
 	+	13	0
-	+	11	0
-	+	20	99
-	+	11	0
-	+	20	104
-	+	11	26
-	+	20	104
-	+	13	22
-	+	20	103
-	+	11	0
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/scripts/train_eval.sh
-	*	1599831364	0
-	"	45	27
-	^	42	29
-	.	45	27
-	+	77	0
-	+	1	0
-	+	78	2
-	+	51	0
-	+	54	0
-	+	75	0
-	+	32	37
-	+	49	25
-	+	32	0
+	+	14	31
 	+	45	0
-	+	33	65
-	+	45	27
-	+	32	29
-	+	33	27
-	+	45	27
-	+	49	39
-	+	32	34
-	+	29	13
-	+	32	29
-	+	33	27
-	+	45	27
-	+	49	39
-	+	45	27
-	+	33	23
-	+	32	37
-	+	49	36
-	+	50	35
-	+	49	52
-	+	50	46
-	+	49	55
-	+	41	33
-	+	42	28
+	+	22	17
+	+	23	0
+	+	24	22
+	+	25	24
+	+	27	24
+	+	26	9
+	+	45	0
+	+	29	0
+	+	30	21
+	+	15	6
+	+	17	6
+	+	20	6
+	+	22	32
+	+	35	15
+	+	36	0
+	+	38	0
+	+	39	0
+	+	40	0
 	+	41	0
-	+	45	27
+	+	36	16
+	+	38	17
+	+	38	13
+	+	39	14
+	+	40	14
+	+	41	17
+	+	42	0
+	+	43	0
+	+	42	17
+	+	43	15
+	+	44	14
+	+	37	0
+	+	28	47
+	+	9	34
+	+	8	0
+
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch/p1ch4/main.py
+	*	1601053405	0
+	"	181	26
+	^	181	27
+	.	181	26
+	+	67	19
+	+	76	0
+	+	71	0
+	+	72	0
+	+	75	53
+	+	73	0
+	+	74	34
+	+	78	15
+	+	77	0
+	+	79	0
+	+	85	61
+	+	86	24
+	+	82	21
+	+	84	23
+	+	89	20
+	+	88	0
+	+	89	0
+	+	95	33
+	+	99	42
+	+	101	14
+	+	100	0
+	+	102	17
+	+	102	0
+	+	103	17
+	+	182	0
+	+	105	3
+	+	105	0
+	+	106	0
+	+	112	0
+	+	117	8
+	+	119	29
+	+	122	0
+	+	125	0
+	+	126	0
+	+	127	0
+	+	130	29
+	+	129	0
+	+	131	71
+	+	129	0
+	+	134	0
+	+	137	39
+	+	137	0
+	+	139	52
+	+	139	0
+	+	140	0
+	+	142	43
+	+	142	45
+	+	182	0
+	+	142	44
+	+	143	0
+	+	146	33
+	+	147	33
+	+	147	51
+	+	147	0
+	+	152	12
+	+	151	46
+	+	154	23
+	+	150	11
+	+	151	13
+	+	152	13
+	+	146	0
+	+	154	29
+	+	154	0
+	+	153	0
+	+	154	0
+	+	153	0
+	+	154	0
+	+	153	0
+	+	155	3
+	+	156	15
+	+	158	0
+	+	162	35
+	+	164	14
+	+	164	0
+	+	166	16
+	+	168	68
+	+	171	22
+	+	172	32
+	+	173	25
+	+	172	0
+	+	169	0
+	+	172	0
+	+	169	0
+	+	174	28
+	+	176	0
+	+	177	76
+	+	178	73
+	+	179	28
+	+	180	52
+	+	182	0
+	+	181	26
+
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch/dlwpt-code/data/p1ch4/bike-sharing-dataset/hour-fixed.csv
+	*	1601053405	0
+	"	6	1
+
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch/dlwpt-code/data/p1ch4/tabular-wine/winequality-white.csv
+	*	1601032505	0
+	"	2	35
+	.	2	0
+	+	2	0
+
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch/p1ch3/main.py
+	*	1601016748	0
+	"	105	10
+	^	105	10
+	.	105	0
+	+	4	0
+	+	108	0
+	+	109	0
+	+	6	0
+	+	11	0
+	+	7	0
+	+	6	9
+	+	7	0
+	+	11	7
+	+	107	0
+	+	5	0
+	+	12	25
+	+	12	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	24	0
+	+	26	26
+	+	27	24
+	+	27	0
+	+	31	31
+	+	32	17
+	+	34	22
+	+	34	0
+	+	35	18
+	+	36	32
+	+	37	28
+	+	39	11
+	+	41	41
+	+	42	38
+	+	43	40
+	+	45	42
+	+	46	41
+	+	48	29
+	+	49	32
+	+	51	5
+	+	53	0
+	+	54	26
+	+	55	18
+	+	55	0
+	+	56	0
+	+	57	0
+	+	58	22
+	+	60	0
+	+	61	34
+	+	60	0
+	+	61	0
+	+	62	0
+	+	63	0
+	+	106	0
+	+	2	10
+	+	68	0
+	+	69	0
+	+	66	0
+	+	68	47
+	+	106	0
+	+	69	0
+	+	70	0
+	+	67	15
+	+	73	29
+	+	73	0
+	+	76	29
+	+	76	0
+	+	78	13
+	+	80	14
+	+	80	0
+	+	82	15
+	+	82	0
+	+	85	0
+	+	83	0
+	+	87	18
+	+	88	18
+	+	90	0
+	+	106	0
+	+	93	0
+	+	95	0
+	+	99	0
+	+	97	10
+	+	95	0
+	+	96	10
+	+	101	25
+	+	101	0
+	+	3	17
+	+	100	0
+	+	103	10
+	+	103	0
+	+	104	4
+	+	105	10
+	+	105	0
+
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch/p1ch2/3_cyclegan.py
+	*	1600911510	0
+	"	101	19
+	^	101	20
+	.	101	19
+	+	89	16
+	+	89	63
+	+	89	0
+	+	90	0
+	+	92	15
+	+	3	0
+	+	102	0
+	+	92	0
+	+	95	58
+	+	96	23
+	+	97	28
+	+	98	29
+	+	99	50
+	+	100	38
+	+	99	0
+	+	101	19
+
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch/p1ch2/2_pre_trained_networks.py
+	*	1600853972	0
+	"	15	25
+
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch/chapter22.py
+	*	1600853765	0
+	"	79	0
+	^	86	28
+	.	86	27
+	+	1	0
+	+	4	0
+	+	17	0
+	+	24	0
+	+	30	36
+	+	5	30
+	+	36	68
+	+	77	30
+	+	78	0
+	+	36	74
+	+	81	0
+	+	86	0
+	+	82	0
+	+	81	9
+	+	82	0
+	+	86	8
+	+	89	0
+	+	90	0
+	+	88	0
+	+	80	0
+	+	86	27
+
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch/chapter21.py
+	*	1600853756	0
+	"	47	0
+	.	59	61
+	+	31	0
+	+	8	11
+	+	32	0
+	+	18	0
+	+	21	0
+	+	18	19
+	+	17	0
+	+	18	10
+	+	21	0
+	+	18	25
+	+	17	0
+	+	18	60
+	+	1	9
+	+	21	0
+	+	21	3
+	+	19	21
+	+	21	3
+	+	20	21
+	+	21	0
+	+	20	20
+	+	19	27
+	+	20	0
+	+	19	29
+	+	21	26
+	+	16	36
+	+	21	26
+	+	17	24
+	+	17	0
+	+	21	41
+	+	22	0
+	+	33	14
+	+	35	16
+	+	32	0
+	+	35	22
+	+	33	19
+	+	8	0
+	+	5	0
+	+	1	0
+	+	3	0
+	+	33	0
+	+	34	0
+	+	33	0
+	+	7	29
+	+	14	0
+	+	15	0
+	+	37	0
+	+	36	0
+	+	38	16
+	+	39	23
+	+	40	18
+	+	40	22
+	+	39	0
+	+	60	0
+	+	41	0
+	+	42	51
+	+	47	69
+	+	60	15
+	+	47	34
+	+	44	0
+	+	43	14
+	+	46	0
+	+	49	0
+	+	48	15
+	+	49	10
+	+	48	16
+	+	43	15
+	+	60	0
+	+	52	25
+	+	51	0
+	+	48	0
+	+	51	0
+	+	48	0
+	+	51	0
+	+	52	0
+	+	53	0
+	+	54	49
+	+	53	0
+	+	54	65
+	+	55	0
+	+	60	0
+	+	54	0
+	+	56	0
+	+	55	0
+	+	56	0
+	+	55	0
+	+	56	0
+	+	58	0
+	+	55	0
+	+	60	0
+	+	59	61
+
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch/imagenet_classes.txt
+	*	1600853723	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /etc/ssh/sshd_config
+	*	1600103907	0
+	"	16	6
+	^	16	9
+	.	16	8
+	+	15	0
+	+	16	8
+
+> /etc/hosts.deny
+	*	1600078268	0
+	"	3	0
+
+> /var/log/secure
+	*	1600078180	0
+	"	1	0
+
+> /var/log/auth.log
+	*	1600078131	0
+	"	367	78
+	^	368	67
+
+> ~/.ssh/known_hosts
+	*	1599971747	0
+	"	1	220
+
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/.gitignore
+	*	1599926983	0
+	"	141	9
+	^	143	12
+	.	143	11
+	+	1	0
+	+	141	9
+	+	144	0
+	+	140	23
+	+	144	8
+	+	144	4
+	+	144	0
+	+	145	3
+	+	145	11
+	+	146	0
+	+	145	1
+	+	146	6
+	+	145	0
+	+	147	3
+	+	147	0
+	+	144	0
+	+	144	12
+	+	144	1
+	+	144	0
+	+	147	0
+	+	144	0
+	+	142	7
+	+	147	6
+	+	142	12
+	+	143	11
 
 > /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/dataset/dataset_common.py
-	*	1599831346	0
-	"	27	10
+	*	1599925982	0
+	"	538	8
 	^	23	17
 	.	23	16
 	+	443	30
@@ -764,6 +1242,210 @@ $new_mean
 	+	29	0
 	+	30	17
 	+	23	16
+
+> ~/.dotfiles/vim/.vim/vimrc
+	*	1599905324	0
+	"	144	4
+	^	907	23
+	.	905	0
+	+	4	0
+	+	905	0
+	+	906	76
+	+	907	22
+	+	905	0
+
+> ~/.dotfiles/README.md
+	*	1599905324	0
+	"	12	0
+	^	7	33
+	.	7	33
+	+	1	6
+	+	1	4
+	+	1	6
+	+	11	0
+	+	1	13
+	+	11	19
+	+	12	6
+	+	14	0
+	+	13	67
+	+	14	46
+	+	17	54
+	+	19	75
+	+	19	16
+	+	26	0
+	+	19	0
+	+	13	3
+	+	14	3
+	+	15	3
+	+	17	3
+	+	26	31
+	+	28	0
+	+	26	54
+	+	28	0
+	+	42	0
+	+	31	0
+	+	3	78
+	+	4	73
+	+	5	4
+	+	4	30
+	+	31	0
+	+	29	1
+	+	31	0
+	+	29	3
+	+	31	3
+	+	32	44
+	+	33	45
+	+	31	6
+	+	37	0
+	+	46	0
+	+	37	0
+	+	46	0
+	+	43	5
+	+	37	0
+	+	38	0
+	+	42	73
+	+	26	45
+	+	46	12
+	+	47	0
+	+	45	0
+	+	37	0
+	+	19	0
+	+	20	22
+	+	21	59
+	+	22	50
+	+	23	70
+	+	24	9
+	+	11	0
+	+	19	0
+	+	8	0
+	+	18	0
+	+	25	0
+	+	27	0
+	+	36	0
+	+	42	0
+	+	29	10
+	+	30	42
+	+	42	0
+	+	9	0
+	+	10	0
+	+	2	0
+	+	44	0
+	+	7	33
+
+> ~/.dotfiles/vim/.vim/plugged/fzf/README.md
+	*	1599904085	0
+	"	24	0
+
+> ~/.dotfiles/.gitmodules
+	*	1599902292	0
+	"	1	0
+
+> ~/.bashrc
+	*	1599899223	0
+	"	136	22
+	^	136	2
+	.	136	1
+	+	134	22
+	+	135	68
+	+	137	0
+	+	136	1
+
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/scripts/rctw_task1_evaluation.sh
+	*	1599836697	0
+	"	11	25
+	^	13	23
+	.	11	0
+	+	1	0
+	+	5	0
+	+	1	0
+	+	21	0
+	+	7	32
+	+	21	0
+	+	8	0
+	+	9	6
+	+	21	0
+	+	10	0
+	+	11	26
+	+	12	17
+	+	13	24
+	+	14	17
+	+	15	19
+	+	16	28
+	+	21	0
+	+	20	23
+	+	16	30
+	+	20	57
+	+	18	96
+	+	21	0
+	+	21	4
+	+	18	6
+	+	21	0
+	+	18	75
+	+	19	58
+	+	18	0
+	+	19	0
+	+	20	97
+	+	20	11
+	+	1	0
+	+	10	0
+	+	1	0
+	+	4	0
+	+	18	77
+	+	4	0
+	+	1	0
+	+	18	77
+	+	10	31
+	+	1	0
+	+	13	0
+	+	11	0
+	+	20	99
+	+	11	0
+	+	20	104
+	+	11	26
+	+	20	104
+	+	13	22
+	+	20	103
+	+	11	0
+
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/scripts/train_eval.sh
+	*	1599831364	0
+	"	45	27
+	^	42	29
+	.	45	27
+	+	77	0
+	+	1	0
+	+	78	2
+	+	51	0
+	+	54	0
+	+	75	0
+	+	32	37
+	+	49	25
+	+	32	0
+	+	45	0
+	+	33	65
+	+	45	27
+	+	32	29
+	+	33	27
+	+	45	27
+	+	49	39
+	+	32	34
+	+	29	13
+	+	32	29
+	+	33	27
+	+	45	27
+	+	49	39
+	+	45	27
+	+	33	23
+	+	32	37
+	+	49	36
+	+	50	35
+	+	49	52
+	+	50	46
+	+	49	55
+	+	41	33
+	+	42	28
+	+	41	0
+	+	45	27
 
 > /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/config/textboxes_plusplus_config.py
 	*	1599831345	0
@@ -2380,116 +3062,6 @@ $new_mean
 	.	1	0
 	+	1	0
 
-> ~/.tmux.conf.local
-	*	1598200576	0
-	"	369	2
-	^	370	7
-	.	369	2
-	+	357	10
-	+	318	0
-	+	317	0
-	+	320	10
-	+	324	10
-	+	433	10
-	+	433	21
-	+	433	18
-	+	322	0
-	+	324	10
-	+	302	0
-	+	311	0
-	+	325	0
-	+	303	0
-	+	331	0
-	+	315	0
-	+	326	0
-	+	327	0
-	+	307	0
-	+	334	0
-	+	310	0
-	+	307	0
-	+	335	0
-	+	336	0
-	+	337	30
-	+	338	0
-	+	345	0
-	+	340	7
-	+	344	5
-	+	340	6
-	+	344	7
-	+	338	0
-	+	349	18
-	+	349	0
-	+	347	33
-	+	346	35
-	+	352	0
-	+	360	32
-	+	362	0
-	+	375	0
-	+	362	17
-	+	433	0
-	+	363	0
-	+	364	12
-	+	415	0
-	+	433	0
-	+	426	30
-	+	428	0
-	+	427	0
-	+	431	7
-	+	319	7
-	+	323	7
-	+	339	9
-	+	343	9
-	+	430	7
-	+	431	10
-	+	430	0
-	+	431	10
-	+	437	60
-	+	431	10
-	+	429	21
-	+	430	0
-	+	431	0
-	+	432	25
-	+	132	0
-	+	134	0
-	+	435	0
-	+	432	0
-	+	431	0
-	+	432	0
-	+	439	34
-	+	439	0
-	+	272	10
-	+	275	34
-	+	439	1
-	+	438	0
-	+	440	0
-	+	371	10
-	+	373	0
-	+	367	8
-	+	368	9
-	+	370	6
-	+	367	2
-	+	370	2
-	+	368	2
-	+	370	2
-	+	371	10
-	+	373	10
-	+	372	26
-	+	374	26
-	+	432	10
-	+	371	10
-	+	372	10
-	+	373	10
-	+	374	10
-	+	368	0
-	+	370	2
-	+	369	2
-	+	368	2
-	+	369	2
-
-> ~/.tmux.conf
-	*	1598199374	0
-	"	10	0
-
 > /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/matplotlib/__doc__
 	*	1598198614	0
 	"	15	0
@@ -3062,317 +3634,3 @@ $new_mean
 > /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/RCTW/icdar2017rctw_train_v1.2/train/part1/image_0.txt
 	*	1597663417	0
 	"	1	0
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/tensorflow/tf-image-random_brightness.py
-	*	1597590166	0
-	"	70	4
-	^	53	26
-	.	61	36
-	+	31	0
-	+	31	66
-	+	31	45
-	+	31	0
-	+	31	35
-	+	31	0
-	+	37	55
-	+	32	0
-	+	31	0
-	+	36	65
-	+	31	0
-	+	32	0
-	+	36	122
-	+	36	0
-	+	36	122
-	+	36	0
-	+	36	65
-	+	36	0
-	+	36	65
-	+	32	0
-	+	36	0
-	+	13	0
-	+	14	0
-	+	15	0
-	+	17	0
-	+	19	0
-	+	23	0
-	+	26	0
-	+	28	0
-	+	29	0
-	+	30	0
-	+	31	0
-	+	40	0
-	+	41	0
-	+	42	0
-	+	43	0
-	+	45	0
-	+	46	0
-	+	78	0
-	+	32	0
-	+	36	13
-	+	36	12
-	+	36	0
-	+	39	0
-	+	31	55
-	+	39	0
-	+	37	41
-	+	38	0
-	+	31	42
-	+	31	0
-	+	32	0
-	+	34	0
-	+	36	0
-	+	34	49
-	+	32	0
-	+	34	34
-	+	32	0
-	+	35	16
-	+	32	0
-	+	34	41
-	+	35	72
-	+	32	0
-	+	34	44
-	+	32	0
-	+	35	73
-	+	36	0
-	+	32	0
-	+	35	0
-	+	32	0
-	+	31	0
-	+	19	0
-	+	45	0
-	+	49	0
-	+	51	59
-	+	50	0
-	+	53	53
-	+	54	0
-	+	56	36
-	+	54	0
-	+	59	45
-	+	60	37
-	+	61	55
-	+	62	42
-	+	62	0
-	+	63	0
-	+	53	25
-	+	61	36
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/tensorflow/tf-image-random_saturation.py
-	*	1597590164	0
-	"	31	0
-	^	82	16
-	.	82	15
-	+	80	25
-	+	80	19
-	+	80	14
-	+	80	22
-	+	80	17
-	+	80	0
-	+	80	16
-	+	80	0
-	+	80	18
-	+	80	0
-	+	23	14
-	+	33	18
-	+	52	16
-	+	52	22
-	+	52	0
-	+	52	31
-	+	52	8
-	+	52	0
-	+	52	22
-	+	52	0
-	+	52	35
-	+	52	0
-	+	52	21
-	+	52	0
-	+	33	18
-	+	52	20
-	+	52	0
-	+	52	55
-	+	52	0
-	+	52	23
-	+	52	46
-	+	52	0
-	+	35	24
-	+	35	14
-	+	35	24
-	+	34	0
-	+	35	25
-	+	34	0
-	+	52	0
-	+	35	45
-	+	34	0
-	+	36	27
-	+	37	32
-	+	39	32
-	+	49	24
-	+	52	6
-	+	52	0
-	+	40	12
-	+	42	12
-	+	44	12
-	+	46	30
-	+	44	30
-	+	42	30
-	+	40	30
-	+	38	29
-	+	52	0
-	+	31	22
-	+	32	14
-	+	37	13
-	+	47	12
-	+	41	10
-	+	39	9
-	+	49	10
-	+	51	11
-	+	79	52
-	+	76	0
-	+	6	20
-	+	6	0
-	+	6	6
-	+	30	36
-	+	51	0
-	+	50	25
-	+	65	51
-	+	76	72
-	+	75	33
-	+	76	0
-	+	77	21
-	+	80	30
-	+	6	0
-	+	80	0
-	+	81	28
-	+	81	0
-	+	84	41
-	+	52	0
-	+	79	51
-	+	83	37
-	+	81	0
-	+	83	38
-	+	83	0
-	+	82	15
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/ImageProcessing/hsv_to_rgb.py
-	*	1597575736	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/ImageProcessing/rgb_to_hsv.py
-	*	1597575715	0
-	"	22	0
-	.	1	0
-	+	1	0
-
-> ~/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/image_ops_impl.py
-	*	1597569219	0
-	"	2023	27
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/tensorflow/__doc__
-	*	1597569045	0
-	"	8	10
-	.	1	0
-	+	1	0
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/tensorflow/enew tf-image-random_saturation.py
-	*	1597568090	0
-	"	1	0
-
-> ~/anaconda3/envs/ML_TextBoxes++/lib/python3.7/site-packages/tensorflow/python/ops/image_ops_impl.py
-	*	1597565044	0
-	"	38	0
-
-> ~/anaconda3/envs/ML_TextBoxes++/lib/python3.7/site-packages/tensorflow/python/ops/random_ops.py
-	*	1597480259	0
-	"	239	4
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/tensorflow/random_ops-random_uniform.py
-	*	1597480227	0
-	"	22	23
-	^	17	25
-	.	15	0
-	+	4	0
-	+	1	22
-	+	4	0
-	+	1	43
-	+	12	5
-	+	4	0
-	+	3	0
-	+	6	0
-	+	14	7
-	+	2	22
-	+	14	27
-	+	16	0
-	+	14	30
-	+	14	0
-	+	16	34
-	+	17	0
-	+	21	16
-	+	20	0
-	+	21	25
-	+	22	20
-	+	14	14
-	+	20	0
-	+	19	16
-	+	14	0
-	+	20	0
-	+	14	0
-	+	15	22
-	+	16	0
-	+	15	27
-	+	16	0
-	+	19	23
-	+	17	0
-	+	19	23
-	+	15	0
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/uncategorized/CV2Module.py
-	*	1597466475	0
-	"	1	0
-	^	1	2
-	.	1	0
-	+	1	0
-
-> /usr/share/vim/vim81/doc/cmdline.txt
-	*	1597465106	0
-	"	710	16
-
-> /usr/share/vim/vim81/doc/help.txt
-	*	1597464983	0
-	"	2	0
-
-> /usr/share/vim/vim81/doc/message.txt
-	*	1597464969	0
-	"	736	0
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/uncategorized/NumpyModule.py
-	*	1597464362	0
-	"	18	0
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/uncategorized/OSModule.py
-	*	1597464340	0
-	"	1	0
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/uncategorized/PyTorch_NN.py
-	*	1597464327	0
-	"	39	0
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/tensorflow/TensorflowModule_tfcond.py
-	*	1597464258	0
-	"	9	0
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/tensorflow/TensorflowModule9_Saver.py
-	*	1597464216	0
-	"	21	0
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/tensorflow/tf-metrics.py
-	*	1597464191	0
-	"	15	0
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/tensorflow/TensorflowModule8.py
-	*	1597464176	0
-	"	34	20
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/tensorflow/TensorflowModule7.py
-	*	1597464147	0
-	"	104	12

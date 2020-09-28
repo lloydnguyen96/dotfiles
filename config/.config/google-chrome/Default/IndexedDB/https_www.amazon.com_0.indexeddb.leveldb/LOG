@@ -1,15 +1,15 @@
-2020/08/19-21:29:44.668 c5d16 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.amazon.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/08/19-21:29:44.668 c5d16 Recovering log #75
-2020/08/19-21:29:44.668 c5d16 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.amazon.com_0.indexeddb.leveldb/000075.log 
-2020/08/19-21:29:47.347 18c7 Level-0 table #80: started
-2020/08/19-21:29:47.401 18c7 Level-0 table #80: 534 bytes OK
-2020/08/19-21:29:47.442 18c7 Delete type=0 #75
-2020/08/19-21:29:47.442 18c7 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
-2020/08/19-21:29:47.442 18c7 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x1f\x03\x00\xf0\x16ru@wB\x00\x01\x14\x005\x00Z\x00J\x00M\x005\x000\x00A\x00F\x00A\x00E\x008\x00N\x00K\x00S\x00C\x00M\x00E\x006\x007\x00Q' @ 481 : 1
-2020/08/19-21:29:47.442 18c7 Compacting 1@1 + 1@2 files
-2020/08/19-21:29:47.479 18c7 Generated table #81@1: 37 keys, 1062 bytes
-2020/08/19-21:29:47.480 18c7 Compacted 1@1 + 1@2 files => 1062 bytes
-2020/08/19-21:29:47.519 18c7 compacted to: files[ 0 0 1 0 0 0 0 ]
-2020/08/19-21:29:47.519 18c7 Delete type=2 #77
-2020/08/19-21:29:47.519 18c7 Delete type=2 #80
-2020/08/19-21:29:47.520 18c7 Manual compaction at level-1 from '\x00\x01\x01\x1f\x03\x00\xf0\x16ru@wB\x00\x01\x14\x005\x00Z\x00J\x00M\x005\x000\x00A\x00F\x00A\x00E\x008\x00N\x00K\x00S\x00C\x00M\x00E\x006\x007\x00Q' @ 481 : 1 .. (end); will stop at (end)
+2020/09/21-22:57:07.804 4828 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.amazon.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/09/21-22:57:07.804 4828 Recovering log #79
+2020/09/21-22:57:07.804 4828 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.amazon.com_0.indexeddb.leveldb/000079.log 
+2020/09/21-22:57:29.147 1cbe Level-0 table #84: started
+2020/09/21-22:57:29.187 1cbe Level-0 table #84: 1147 bytes OK
+2020/09/21-22:57:29.227 1cbe Delete type=0 #79
+2020/09/21-22:57:29.227 1cbe Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/09/21-22:57:29.227 1cbe Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x1f\x03\x00\xd0\xfc\x8f\x19KwB\x00\x01\x14\x00J\x00A\x00Q\x00V\x00X\x008\x00X\x00W\x00D\x00A\x007\x00P\x00B\x00Z\x00K\x00P\x00Y\x00B\x00D\x00E' @ 496 : 1
+2020/09/21-22:57:29.227 1cbe Compacting 1@1 + 1@2 files
+2020/09/21-22:57:29.276 1cbe Generated table #85@1: 30 keys, 978 bytes
+2020/09/21-22:57:29.276 1cbe Compacted 1@1 + 1@2 files => 978 bytes
+2020/09/21-22:57:29.315 1cbe compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/09/21-22:57:29.316 1cbe Delete type=2 #81
+2020/09/21-22:57:29.316 1cbe Delete type=2 #84
+2020/09/21-22:57:29.316 1cbe Manual compaction at level-1 from '\x00\x01\x01\x1f\x03\x00\xd0\xfc\x8f\x19KwB\x00\x01\x14\x00J\x00A\x00Q\x00V\x00X\x008\x00X\x00W\x00D\x00A\x007\x00P\x00B\x00Z\x00K\x00P\x00Y\x00B\x00D\x00E' @ 496 : 1 .. (end); will stop at (end)

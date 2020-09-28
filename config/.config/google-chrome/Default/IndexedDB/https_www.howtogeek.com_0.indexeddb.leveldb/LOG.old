@@ -1,0 +1,5 @@
+2020/09/14-23:46:35.835 9f6 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.howtogeek.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/09/14-23:47:02.277 1028 Level-0 table #5: started
+2020/09/14-23:47:02.430 1028 Level-0 table #5: 344 bytes OK
+2020/09/14-23:47:02.687 1028 Delete type=0 #3
+2020/09/14-23:47:02.687 1028 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

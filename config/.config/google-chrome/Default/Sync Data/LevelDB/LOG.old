@@ -1,6 +1,6 @@
-2020/09/11-20:46:40.149 b1b79 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
-2020/09/11-20:46:40.150 b1b79 Recovering log #1373
-2020/09/11-20:46:40.294 b1b79 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/Sync Data/LevelDB/001373.log 
-2020/09/11-20:47:00.323 b1e50 Level-0 table #1377: started
-2020/09/11-20:47:00.562 b1e50 Level-0 table #1377: 163094 bytes OK
-2020/09/11-20:47:01.354 b1e50 Delete type=0 #1373
+2020/09/26-13:53:04.640 fd1 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
+2020/09/26-13:53:04.668 fd1 Recovering log #1533
+2020/09/26-13:53:04.955 fd1 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/Sync Data/LevelDB/001533.log 
+2020/09/26-15:46:35.276 13d38 Level-0 table #1537: started
+2020/09/26-15:46:35.326 13d38 Level-0 table #1537: 138282 bytes OK
+2020/09/26-15:46:35.362 13d38 Delete type=0 #1533

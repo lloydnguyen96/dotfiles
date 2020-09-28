@@ -1,57 +1,6 @@
-2020/09/12-11:38:23.471 ec8 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
-2020/09/12-11:38:23.472 ec8 Recovering log #1376
-2020/09/12-11:38:23.572 ec8 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/Sync Data/LevelDB/001376.log 
-2020/09/12-11:38:53.617 1034 Level-0 table #1380: started
-2020/09/12-11:38:53.773 1034 Level-0 table #1380: 153833 bytes OK
-2020/09/12-11:38:54.071 1034 Delete type=0 #1376
-2020/09/12-11:38:54.136 1034 Compacting 4@0 + 1@1 files
-2020/09/12-11:38:54.289 1034 Generated table #1381@0: 525 keys, 86007 bytes
-2020/09/12-11:38:54.289 1034 Compacted 4@0 + 1@1 files => 86007 bytes
-2020/09/12-11:38:54.458 1034 compacted to: files[ 0 1 1 0 0 0 0 ]
-2020/09/12-11:38:54.458 1034 Delete type=2 #1380
-2020/09/12-11:38:54.459 1034 Delete type=2 #1372
-2020/09/12-11:38:54.459 1034 Delete type=2 #1377
-2020/09/12-11:38:54.459 1034 Delete type=2 #1374
-2020/09/12-11:38:54.459 1034 Delete type=2 #1370
-2020/09/12-11:51:52.639 1034 Level-0 table #1383: started
-2020/09/12-11:51:52.744 1034 Level-0 table #1383: 127309 bytes OK
-2020/09/12-11:51:52.782 1034 Delete type=0 #1379
-2020/09/12-11:57:10.358 1034 Level-0 table #1385: started
-2020/09/12-11:57:10.441 1034 Level-0 table #1385: 86386 bytes OK
-2020/09/12-11:57:10.483 1034 Delete type=0 #1382
-2020/09/12-12:11:57.319 1034 Level-0 table #1387: started
-2020/09/12-12:11:57.396 1034 Level-0 table #1387: 99966 bytes OK
-2020/09/12-12:11:57.432 1034 Delete type=0 #1384
-2020/09/12-14:10:59.016 1034 Level-0 table #1389: started
-2020/09/12-14:10:59.085 1034 Level-0 table #1389: 132945 bytes OK
-2020/09/12-14:10:59.124 1034 Delete type=0 #1386
-2020/09/12-14:10:59.124 1034 Compacting 4@0 + 1@1 files
-2020/09/12-14:10:59.175 1034 Generated table #1390@0: 525 keys, 93920 bytes
-2020/09/12-14:10:59.175 1034 Compacted 4@0 + 1@1 files => 93920 bytes
-2020/09/12-14:10:59.242 1034 compacted to: files[ 0 1 1 0 0 0 0 ]
-2020/09/12-14:10:59.243 1034 Delete type=2 #1389
-2020/09/12-14:10:59.243 1034 Delete type=2 #1383
-2020/09/12-14:10:59.243 1034 Delete type=2 #1387
-2020/09/12-14:10:59.243 1034 Delete type=2 #1385
-2020/09/12-14:10:59.243 1034 Delete type=2 #1381
-2020/09/12-14:52:36.421 1034 Level-0 table #1392: started
-2020/09/12-14:52:36.487 1034 Level-0 table #1392: 160014 bytes OK
-2020/09/12-14:52:36.522 1034 Delete type=0 #1388
-2020/09/12-15:36:10.377 1034 Level-0 table #1394: started
-2020/09/12-15:36:10.449 1034 Level-0 table #1394: 161812 bytes OK
-2020/09/12-15:36:10.492 1034 Delete type=0 #1391
-2020/09/12-15:41:05.944 1034 Level-0 table #1396: started
-2020/09/12-15:41:06.047 1034 Level-0 table #1396: 179761 bytes OK
-2020/09/12-15:41:06.087 1034 Delete type=0 #1393
-2020/09/12-16:56:36.187 1034 Level-0 table #1398: started
-2020/09/12-16:56:36.253 1034 Level-0 table #1398: 153857 bytes OK
-2020/09/12-16:56:36.288 1034 Delete type=0 #1395
-2020/09/12-16:56:36.288 1034 Compacting 4@0 + 1@1 files
-2020/09/12-16:56:36.332 1034 Generated table #1399@0: 525 keys, 96524 bytes
-2020/09/12-16:56:36.332 1034 Compacted 4@0 + 1@1 files => 96524 bytes
-2020/09/12-16:56:36.377 1034 compacted to: files[ 0 1 1 0 0 0 0 ]
-2020/09/12-16:56:36.377 1034 Delete type=2 #1396
-2020/09/12-16:56:36.377 1034 Delete type=2 #1392
-2020/09/12-16:56:36.377 1034 Delete type=2 #1398
-2020/09/12-16:56:36.377 1034 Delete type=2 #1394
-2020/09/12-16:56:36.377 1034 Delete type=2 #1390
+2020/09/28-10:35:45.835 9e3 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
+2020/09/28-10:35:45.952 9e3 Recovering log #1536
+2020/09/28-10:35:46.144 9e3 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/Sync Data/LevelDB/001536.log 
+2020/09/28-10:36:10.500 ac7 Level-0 table #1540: started
+2020/09/28-10:36:11.135 ac7 Level-0 table #1540: 107804 bytes OK
+2020/09/28-10:36:12.056 ac7 Delete type=0 #1536

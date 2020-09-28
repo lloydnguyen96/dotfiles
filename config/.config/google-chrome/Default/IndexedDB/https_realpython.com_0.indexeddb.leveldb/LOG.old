@@ -1,15 +1,3 @@
-2020/09/07-15:22:09.851 218e Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_realpython.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/09/07-15:22:09.852 218e Recovering log #43
-2020/09/07-15:22:09.852 218e Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_realpython.com_0.indexeddb.leveldb/000043.log 
-2020/09/09-18:35:19.643 28a8 Level-0 table #48: started
-2020/09/09-18:35:22.496 28a8 Level-0 table #48: 3662 bytes OK
-2020/09/09-18:35:23.455 28a8 Delete type=0 #43
-2020/09/09-18:35:25.567 28a8 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
-2020/09/09-18:35:25.569 28a8 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x03\x02\x01\x1f\x00w\x00e\x00b\x00h\x00o\x00o\x00k\x00s\x00.\x00n\x00o\x00t\x00i\x00f\x00i\x00c\x00a\x00t\x00i\x00o\x00n\x00.\x00d\x00i\x00s\x00p\x00l\x00a\x00y\x00e\x00d' @ 7492 : 1
-2020/09/09-18:35:25.569 28a8 Compacting 1@1 + 1@2 files
-2020/09/09-18:35:26.037 28a8 Generated table #49@1: 96 keys, 2128 bytes
-2020/09/09-18:35:26.037 28a8 Compacted 1@1 + 1@2 files => 2128 bytes
-2020/09/09-18:35:26.333 28a8 compacted to: files[ 0 0 1 0 0 0 0 ]
-2020/09/09-18:35:26.333 28a8 Delete type=2 #45
-2020/09/09-18:35:26.333 28a8 Delete type=2 #48
-2020/09/09-18:35:26.333 28a8 Manual compaction at level-1 from '\x00\x01\x03\x02\x01\x1f\x00w\x00e\x00b\x00h\x00o\x00o\x00k\x00s\x00.\x00n\x00o\x00t\x00i\x00f\x00i\x00c\x00a\x00t\x00i\x00o\x00n\x00.\x00d\x00i\x00s\x00p\x00l\x00a\x00y\x00e\x00d' @ 7492 : 1 .. (end); will stop at (end)
+2020/09/26-13:53:52.401 f88 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_realpython.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/09/26-13:53:52.401 f88 Recovering log #51
+2020/09/26-13:53:52.523 f88 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_realpython.com_0.indexeddb.leveldb/000051.log 

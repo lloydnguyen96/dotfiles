@@ -1,3 +1,15 @@
-2020/09/11-20:47:09.785 b1ba6 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.tensorflow.org_0.indexeddb.leveldb/MANIFEST-000001
-2020/09/11-20:47:09.785 b1ba6 Recovering log #87
-2020/09/11-20:47:10.058 b1ba6 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.tensorflow.org_0.indexeddb.leveldb/000087.log 
+2020/09/21-21:31:03.330 fb2 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.tensorflow.org_0.indexeddb.leveldb/MANIFEST-000001
+2020/09/21-21:31:03.331 fb2 Recovering log #91
+2020/09/21-21:31:03.331 fb2 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.tensorflow.org_0.indexeddb.leveldb/000091.log 
+2020/09/21-22:32:51.557 1cbe Level-0 table #96: started
+2020/09/21-22:32:51.602 1cbe Level-0 table #96: 850 bytes OK
+2020/09/21-22:32:51.643 1cbe Delete type=0 #91
+2020/09/21-22:32:51.644 1cbe Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/09/21-22:32:51.644 1cbe Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01 \x01\x02\x00e\x00n\x00\x01\x13\x00l\x00a\x00n\x00g\x00u\x00a\x00g\x00e\x00_\x00p\x00r\x00e\x00f\x00e\x00r\x00e\x00n\x00c\x00e' @ 9846 : 1
+2020/09/21-22:32:51.644 1cbe Compacting 1@1 + 1@2 files
+2020/09/21-22:32:51.691 1cbe Generated table #97@1: 30 keys, 810 bytes
+2020/09/21-22:32:51.691 1cbe Compacted 1@1 + 1@2 files => 810 bytes
+2020/09/21-22:32:51.732 1cbe compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/09/21-22:32:51.732 1cbe Delete type=2 #96
+2020/09/21-22:32:51.732 1cbe Delete type=2 #93
+2020/09/21-22:32:51.733 1cbe Manual compaction at level-1 from '\x00\x01\x01 \x01\x02\x00e\x00n\x00\x01\x13\x00l\x00a\x00n\x00g\x00u\x00a\x00g\x00e\x00_\x00p\x00r\x00e\x00f\x00e\x00r\x00e\x00n\x00c\x00e' @ 9846 : 1 .. (end); will stop at (end)

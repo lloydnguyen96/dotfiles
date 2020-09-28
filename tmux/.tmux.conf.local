@@ -349,6 +349,7 @@ bind -n M-f command-prompt -p find-session 'switch-client -t %%'
 # ********** Window **********
 
 # create window: default <prefix> c
+bind -n M-w new-window
 
 # shift arrow to switch windows
 unbind C-h
@@ -438,3 +439,11 @@ bind C-l send-keys 'C-l'
 
 # vim-tmux-focus-events
 set -g focus-events on
+
+# yank mode
+unbind Enter
+bind -n M-y copy-mode
+
+bind -n M-t choose-tree
+
+bind -n M-q display-panes

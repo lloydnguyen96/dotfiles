@@ -1,896 +1,3 @@
-ls -la
-vim
-tmux
-tmux ls
-tmux
-vim /home/loinguyenvan/Projects/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/train.sh 
-vim
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-sh train.sh 
-htop
-top
-watch -n 0.5 nvidia-smi
-tmux
-exit
-ls -l
-
-rm Projects
-ls -la
-mkdir Projects
-cd Projects/
-ln --help
-ln -s '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/' OneDriveHUST
-ls -la
-cd Projects/
-ls
-ls OneDriveHUST/
-def _ImageDimensions(image, rank=3):
-cd OneDriveHUST/DellDocuments/
-ls
-ls -la
-exit
-vim
-exit
-vim
-vim /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TensorFlow_Official_Tutorial/image_dimensions.py 
-exit
-vim
-clear
-vim
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-vim
-exit
-conda activate ML_TextBoxes++
-
-cd /home/loinguyenvan/Projects/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-ls -la
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TensorFlow_Official_Tutorial
-ls -la
-touch image_dimensions.py
-ls
-python3 image_dimensions.py 
-top
-watch -n 0.5 nvidia-smi
-tmux
-tmux ls
-tmux
-cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets
-ls
-cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/RCTW
-ls
-cd icdar2017rctw_train_v1.2/
-ls
-cd json_annotations/
-ls
-cd part1
-ls
-vim
-cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/RCTW/icdar2017rctw_train_v1.2/json_annotations/part1
-ls
-python
-vim inspect.py
-ls -la
-rm inspect.py 
-ls -la
-tmux ls
-tmux a
-ls -la
-vim
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-vim
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TensorFlow_Official_Tutorial
-ls -la
-conda activate ML_TextBoxes++
-touch tfmultinomial.py
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-sh train.sh 
-clear -x
-vim
-sh train.sh
-cd logs/
-ls
-ls -la
-rm *
-ls -la
-cd ..
-cd models/
-ls -la
-cd temp/
-ls
-cd ..
-ls
-rm -r temp/
-ls -la
-cd ..
-sh train.sh
-ls -la logs/
-sh train.sh
-cd logs/
-ls
-cd ..
-sh train.sh
-ls -la logs/
-sh train.sh
-sh train.sh 
-top
-watch -n 0.5 nvidia-smi
-ls -la
-tmux
-ls -la
-xclip
-sudo apt install xclip
-
-tmux
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TensorFlow_Official_Tutorial
-ls
-touch tfboolean_mask.py
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TensorFlow_Official_Tutorial
-ls
-touch tfmetrics.py
-top
-vim
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-conda activate ML_TextBoxes++
-vim
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-conda activate ML_TextBoxes++
-sh train.sh 
-
-sh train.sh 
-clear
-sh train.sh 
-tmux ls
-tmux
-tmux ls
-tmux
-cd
-vim
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TensorFlow_Official_Tutorial
-ls
-touch tfadd_n.py
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TensorFlow_Official_Tutorial
-ls
-touch tfl2_loss.py
-python tfl2_loss.py 
-cd logs/
-ls
-tmux ls
-tmux
-tmux a
-tmux ls
-tmux a
-tmux ls
-ls
-touch textboxes_plusplus.py
-python
-ls -la
-mkdir unused_modules
-mv train_textboxes_plusplus.py eval.py unused_modules/
-ls -la
-ls unused_modules/
-ls shell_scripts/
-ls -la shell_scripts/
-rm -r shell_scripts/
-ls -la
-tmux a
-tmux ls
-ls -la
-rm eval.py 
-ls -la
-ls -la unused_modules/
-rm train_textboxes_plusplus.py 
-clear
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-sh train.sh 
-clear
-sh train.sh 
-clear
-sh train.sh 
-clear
-sh train.sh 
-ls
-cd logs/
-ls
-mv 1/* .
-ls
-rm -r 1/
-ls
-cd ..
-sh train.sh 
-cd logs/
-mkdir temp
-mv * temp/
-ls
-ls temp/
-cd ..
-sh train.sh 
-sh train.sh \
-sh train.sh
-clear
-sh train.sh
-clear
-sh train.sh
-clear
-sh train.sh
-clear
-sh train.sh
-clear
-sh train.sh
-clear
-sh train.sh
-clear
-sh train.sh
-clear
-sh train.sh
-clear
-sh train.sh
-clear
-sh train.sh
-clear
-sh train.sh
-clear
-sh train.sh
-clear
-sh train.sh
-clear
-sh train.sh
-clear
-sh train.sh
-clear
-sh train.sh
-clear
-sh train.sh
-clear
-sh train.sh
-clear
-sh train.sh
-clear
-sh train.sh
-clear
-sh train.sh
-clear
-sh train.sh
-clear
-sh train.sh
-clear
-sh train.sh
-vim
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-vim
-top
-watch -n 0.5 nvidia-smi
-tmux a
-ls -la
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-mv train.sh tb.sh
-ls -la
-mv tb.sh train_eval.sh
-ls -la
-sh train_eval.sh 
-clear
-sh train_eval.sh 
-clear
-sh train_eval.sh 
-clear
-sh train_eval.sh 
-clear
-sh train_eval.sh 
-clear
-ls -la
-rm train_eval.sh 
-mv train.sh train_eval.sh
-clear
-sh train_eval.sh
-clear
-sh train_eval.sh
-vim
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-conda activate ML_TextBoxes++
-vim
-top
-watch -n 0.5 nvidia-smi
-tmux
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-clear
-sh train_eval.sh 
-clear
-sh train_eval.sh 
-clear
-sh train_eval.sh 
-clear
-sh train_eval.sh 
-clear
-sh train_eval.sh 
-clear
-sh train_eval.sh 
-clear
-sh train_eval.sh 
-clear
-sh train_eval.sh 
-clear
-sh train_eval.sh 
-clear
-sh train_eval.sh 
-clear
-sh train_eval.sh 
-clear
-sh train_eval.sh 
-clear
-sh train_eval.sh 
-ls
-cd logs/
-ls
-cd ../models/
-ls
-mkdir textboxes_plusplus_trained_ctwd_new
-mv ../logs/* textboxes_plusplus_trained_ctwd_new/
-clear
-cd ..
-sh train_eval.sh 
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-vim
-top
-watch -n 0.5 nvidia-smi
-tmux ls
-tmux
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/models/textboxes_plusplus_trained_ctwd_new/
-ls
-ls eval/
-cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/CTWD
-ls
-mkdir Preprocessed
-ls
-mv -r training-dataset/ Preprocessed/
-mv training-dataset/ Preprocessed/
-ls
-ls Preprocessed/
-mv validation-dataset/ Preprocessed/
-ls
-mv Preprocessed/ CTWD_p1
-ls
-vim
-cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/CTWD/Raw
-vim
-python
-anaconda-navigator
-cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/CTWD/Raw
-ls -la
-cd ..
-ls
-mv Raw/ CTWD_raw
-ls
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/CTWD/Raw
-conda deactivate
-vim
-tmux ls
-watch -n 0.5 nvidia-smi
-tmux
-cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/CTWD/Raw
-cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/CTWD/CTWD_raw/
-ls -la
-watch -n 0.5 nvidia-smi
-tmux ls
-vim
-python
-conda install shapely
-python
-clear
-cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/CTWD/CTWD_p1
-mv preprocess_test_data.py ../CTWD_raw/
-cd ../CTWD_raw/
-ls
-ls -la
-cd ..
-mkdir CTWD_p2
-mv CTWD_raw/preprocess_test_data.py CTWD_p2
-cd CTWD_p2/
-ls
-cp ../CTWD_p1/preprocess.py .
-ls
-ls ../CTWD_p1/
-vim preprocess.py 
-ls
-rm preprocess.py 
-ls
-vim preprocess.py
-python
-vim
-clear
-ls
-cd ../CTWD_raw/
-ls
-touch split_images_trainval.py
-ls
-conda install copy2
-conda install json_lines
-pip install json_lines
-pip install opencv-python
-ls
-rm split_images_trainval.py 
-ls
-htop
-sudo apt install htop
-python
-ls
-ls training-dataset/
-ls training-dataset/images/
-ls training-dataset/images/*.jpg | wc -l
-ls training-dataset/images/ctw-train-01-of-26/*.jpg | wc -l
-ls training-dataset/images/ | wc -l
-ls training-dataset/images/
-cd ../CTWD_p2
-ls training-dataset/images/ctw-train-01-of-26/* | wc -l
-ls training-dataset/images/ctw-train-02-of-26/* | wc -l
-ls training-dataset/annotations/ctw-train-02-of-26/* | wc -l
-ls training-dataset/annotations/ctw-train-01-of-26/* | wc -l
-ls training-dataset/images/ctw-train-01-of-26/* | wc -l
-watch -n 0.5 nvidia-smi
-clear
-top
-htop
-tmux
-python
-cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/CTWD/CTWD_p2
-vim
-cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/CTWD/CTWD_p2
-cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/CTWD/CTWD_raw/training-dataset/annotations/ctw-train-01-of-26
-ls
-python
-cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/CTWD/CTWD_p2/training-dataset/annotations/ctw-train-01-of-26
-python
-ls
-cd ../../..
-ls
-cd training-dataset/annotations/ctw-train-01-of-26/
-ls
-python
-cd ../../..
-python preprocess.py 
-clear
-python preprocess.py 
-clear
-python preprocess.py 
-vim /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/dataset/dataset_common.py 
-htop
-cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/CTWD/CTWD_p2
-vim
-cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/CTWD/CTWD_p2
-tmux ls
-tmux a
-tmux ls
-tmux
-vim
-vim
-clear
-tmux
-tmux ls
-vim
-python
-ls
-python
-ls
-mkdir unused_modules
-mv convert_annotations_to_json.py unused_modules/
-ls
-tmux
-vim .bashrc 
-fd
-fdfind
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/models/textboxes_plusplus_trained_ctwd
-complete | grep _fzf
-complete | grep _fzf
-
-tmux
-clear
-vim ~/,,
-ls -la
-vim '$'\r
-ls -la
-vim tagbardebug.log 
-
-ls -a
-ls -l
-ls | wc -l
-ls
-ls -ls | wc -l
-ls -la | wc -l
-l
-ls
-
-clear
-clear
-htop
-vim
-ls
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-conda activate ML_TextBoxes++
-clear
-ls
-pwd
-find -f
-find -n
-find -f .
-pwd ~
-cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/RCTW
-ls RCTW_raw/
-cd RCTW_raw/
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/dataset/raw_rctw
-vim
-conda deactivate
-vim
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu
-ls
-mv convert_to_tfrecords.py ML_TextBoxes++/dataset/
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/dataset
-ls
-python
-clear
-python
-cd ..
-ls
-mkdir scripts
-mv train_eval.sh scripts/
-mkdir evaluation
-mv rctw_task1_evaluation evaluation/
-ls -la *.txt
-mv *.txt evaluation/
-ls -la evaluation/
-ls -la
-conda activate ML_TextBoxes++
-vim plot_sizes.py 
-rm plot_sizes.py 
-ls
-ls -la
-ls raw_dataset/CTWD/
-ls -la raw_dataset/CTWD/
-ls -la raw_dataset/RCTW/
-rm -r raw_dataset/
-ls -la
-cd dataset/
-ls
-vim __pycache__/
-cd rctw/
-ls
-mkdir RCTW_p1
-ls
-ls -la
-ls RCTW_p1
-ls RCTW_p1/
-ls -la RCTW_p1/
-rm -r RCTW_p1/
-ls -la
-mv /home/loinguyenvan/Projects/OneDriveHUST/Datasets/RCTW/RCTW_p* .
-ls
-mv /home/loinguyenvan/Projects/OneDriveHUST/Datasets/RCTW/RCTW_raw/* /home/loinguyenvan/Projects/OneDriveHUST/Datasets/RCTW/
-rm -r /home/loinguyenvan/Projects/OneDriveHUST/Datasets/RCTW/RCTW_raw /home/loinguyenvan/Projects/OneDriveHUST/Datasets/RCTW/__pycache__/
-ls -la
-ls
-mv tfrecords/ rctw_to_tfrecords.py RCTW_p1/
-ls -la
-cd ..
-ls -la
-rm -r __pycache__/
-ls
-ls -la raw_rctw/
-mv raw_rctw/tfrecords/ rctw/RCTW_p2/
-rm -r raw_rctw/
-ls
-cd ctwd/
-ls
-fd --help
-fzf --help
-fd --help
-clear
-ls -la
-ls
-ls -la ~ | wc -l
-ls -la
-ls -la ~
-ls
-vim
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-clear
-conda activate ML_TextBoxes++
-vim
-cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/RCTW
-ls
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-clear
-vim /home/loinguyenvan/.fzf.bash 
-vim
-cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/RCTW
-ls
-mkdir RCTW_raw
-ls -la visualizations/
-rm -r visualizations/
-ls
-mv icdar2017rctw_test RCTW_raw/
-mkdir RCTW_p1
-mv icdar2017rctw_train_v1.2/convert_annotations_to_json.py RCTW_p1/
-
-mkdir RCTW_p2_old
-mv icdar2017rctw_train_v1.2/processed_train/ RCTW_p2_old/
-mv icdar2017rctw_train_v1.2/processed_train2/ RCTW_p2_old/
-mv icdar2017rctw_train_v1.2/train_chinese_textboxes_annotations/ RCTW_p1/
-mv icdar2017rctw_train_v1.2/convert_train_data_small_images.py RCTW_p2_old/
-mv icdar2017rctw_train_v1.2/ RCTW_raw/
-mkdir RCTW_p2
-mv RCTW_p1/json_annotations/ RCTW_p2
-mv RCTW_p1/convert_annotations_to_json.py RCTW_p2
-clear
-cd RCTW_p2
-ls
-vim convert_annotations_to_json.py 
-ls
-vim convert_annotations_to_json.py 
-watch -n 0.5 nvidia-smi
-tmux
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/dataset/ctwd
-ls
-mv /home/loinguyenvan/Projects/OneDriveHUST/Datasets/CTWD/CTWD_p* .
-ls
-ls -la /home/loinguyenvan/Projects/OneDriveHUST/Datasets/CTWD/
-cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/CTWD/
-ls
-mv CTWD_raw/* .
-ls
-ls -la CTWD_raw/
-rm -r CTWD_raw/
-ls
-cd 
-cd ~/Projects/OneDriveHUST/Datasets/CTWD
-cd ..
-ls
-vim /home/loinguyenvan/.fzf.bash 
-ls -la ~
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-ls
-mv scripts/train_eval.sh .
-vim
-vim
-ls -la
-ls -la | wc -l
-vim
-ls -la | wc -l
-vim
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-vim
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-ls
-mv scripts/train_eval.sh .
-mv train_eval.sh scripts/
-ls scripts/
-mv scripts/train_eval.sh .
-mv train_eval.sh scripts/
-mv scripts/train_eval.sh .
-mv train_eval.sh scripts/
-mv scripts/train_eval.sh .
-mv train_eval.sh scripts/
-htop
-watch -n 0.5 nvidia-smi
-tmux
-python
-vim
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/dataset/ctwd/CTWD_p2
-tmux ls
-tmux
-tmux ls
-tmux a
-cd ..
-ls
-python
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-vim
-,q
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-mv scripts/train_eval.sh .
-mv train_eval.sh scripts/
-cd dataset/
-cd rctw/RCTW_p2
-ls
-ls -la tfrecords/
-rm tfrecords/*
-ls -la tfrecords/
-cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/RCTW
-ls
-python
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/dataset/rctw/RCTW_p2
-ls
-cd tfrecords/
-ls -la
-rm *
-ls
-ls -la
-cd ..
-ls
-cd ../../..
-python conver
-python convert_to_tfrecords.py 
-conda install tqdm
-conda update -n base -c defaults conda
-python convert_to_tfrecords.py 
-clear
-ls -la logs/
-rm -r logs/
-python scripts/train_eval.sh
-source scripts/train_eval.sh 
-ls -la dataset/ctwd/CTWD_p1/tfrecords/ | wc -l
-
-source scripts/train_eval.sh 
-htop
-watch -n 0.5 nvidia-smi
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython
-ls
-cd tensorflow/
-ls ../example/
-cat ../example/Source.py 
-rm -r ../example/
-ls ../geometry/
-rm -r ../geometry/
-ls
-ls ../
-ls ../matrix/
-vim ../matrix/making_pizzas.py 
-ls
-cd ..
-ls
-ls matrix/
-cd matrix/
-ls
-vim Experiment.py 
-vim making_pizzas
-cd ..
-ls
-rm -r matrix/
-ls pandas/
-ls ImageProcessing/
-ls ImageProcessing/Canny/
-ls
-mv PCA.py ImageProcessing/
-ls
-cd tensorflow/
-ls
-mv Guide/Data_Input_Pipelines/ .
-ls
-ls -la Guide
-rm -r Guide
-ls
-mv optimizerVisualization/ OptimizerVisualization
-vim guideOne.py 
-ls
-rm guideOne.py
-ls
-vim image_dimensions.py 
-ls
-vim TensorflowModule2.py 
-clear
-vim TensorflowModule2.py 
-mv TensorflowModule2.py tfnn_softmax_cross_entropy_with_logits.py
-ls
-vim TensorflowModule.py
-rm TensorflowModule.py 
-ls
-vim TensorflowModule3.py
-rm TensorflowModule3.py
-ls
-vim TensorflowModule4.py
-ls
-mv TensorflowModule4.py Data_Input_Pipelines/
-vim TensorflowModule5.py
-ls
-vim TensorflowModule5.py
-ls
-mv TensorflowModule5.py tf_imagesample_distorted_bounding_box
-mv tfnn_softmax_cross_entropy_with_logits.py tf-nn-softmax_cross_entropy_with_logits.py
-mv tf_imagesample_distorted_bounding_box tf-image-sample_distorted_bounding_box.py
-ls
-vim TensorflowModule6.py
-mv TensorflowModule6.py tf-FIFOQueue.py
-mv tfwhile_loop.py tf-while_loop.py
-ls
-mv tfmultinomial.py tf-multinomial.py
-mv tfl2_loss.py tf-l2_loss.py
-mv tfmetrics.py tf-metrics.py
-mv tfadd_n.py tf-add_n.py
-mv tfboolean_mask.py tf-boolean_mask.py
-ls
-vim TensorflowModule7.py
-rm TensorflowModule7.py
-vim TensorflowModule8.py
-ls
-vim tf-metrics.py 
-rm TensorflowModule8.py
-ls
-vim TensorflowModule9_Saver.py
-mv TensorflowModule9_Saver.py tf-train-Saver.py
-ls
-vim TensorflowModule_tfcond.py
-mv TensorflowModule_tfcond.py tf-cond.py
-ls
-cd ..
-ls
-ls uncategorized/
-cd uncategorized/
-ls
-vim PyTorch_NN.py 
-vim OSModule.py 
-rm OSModule.py 
-vim NumpyModule.py 
-rm NumpyModule.py 
-ls
-vim CV2Module.py
-rm CV2Module.py
-ls
-rm -r __pycache__/
-cd graphs/
-ls
-cd ..
-rm -r graphs/
-ls
-rm cat.jpg 
-cd ..
-mv uncategorized/PyTorch_NN.py ML_PyTorch_Tutorial/
-ls
-ls -la uncategorized/
-rm -r uncategorized/
-ls
-cd ML_PyTorch_Tutorial/
-ls
-rm PyTorch
-rm PyTorch_NN.py 
-cd ..
-ls
-mv ML_PyTorch_Official_Tutorial ML_PyTorch_Tutorial
-mv ML_Theano_Official_Tutorial ML_Theano_Tutorial
-ls
-mv ML_PyTorch_Tutorial pytorch
-mv ML_Theano_Tutorial theano
-ls
-cd tensorflow/
-ls
-vim random_ops-random_uniform.py
-ls
-vim random_ops-random_uniform.py
-ls
-vim tf-image-random_brightness.py
-ls
-mv random_ops-random_uniform.py tf-python-ops-random_ops-random_uniform.py
-ls
-vim tf-image-random_brightness.py
-ls
-vim tf-image-random_brightness.py
-python tf-image-random_brightness.py 
-python
-python tf-image-random_brightness.py 
-python\
-python
-python tf-image-random_brightness.py 
-python
-python tf-image-random_brightness.py 
-ls
-mv 'enew tf-image-random_saturation.py' tf-image-random_saturation.py
-python tf-image-random_saturation.py 
-python
-python tf-image-random_saturation.py 
-cd ..
-ls
-cd ImageProcessing/
-ls
 vim rgb_to_hsv.py
 vim hsv_to_rgb.py
 ls
@@ -2068,3 +1175,826 @@ du -h ~/.dotfiles/tmux/
 du -h ~/.dotfiles/bash
 du -h ~/.dotfiles/.git
 git status
+git add .
+git status
+git commit -m "add two comments to .dotfiles/setup.sh"
+git push -u origin master
+sudo apt install gnome-terminal
+git add .
+git commit -m "add sudo apt install gnome-terminal to .dotfiles/setup.sh"
+git push -u origin master
+git add .
+git commit -m "modify .dotfiles/setup.sh"
+git push -u origin master
+ls -la
+vim setup.sh 
+brew install stow
+sudo apt install stow
+stow --help
+mkdir .dotfiles
+cd ~/.dotfiles/
+git init .
+ls -la
+nautilus
+ls -la ~
+ls -la ~/.vim/
+mkdir vim
+cd vim
+mv ~/.vim/ .
+ls
+ls -la
+mv .vim/setup.sh ..
+ls ..
+ls -la ~/.config/
+ls -la
+ls -la .vim/
+rm -r .vim/.git/
+cd .vim
+ls
+ls -la
+rm -rf .git/
+ls -la
+cd ..
+ls -la
+cd ..
+ls -la
+ls -la ~/.config/
+ls -la
+ls -la ~
+mkdir fzf
+rm ~/.fzf
+ls -la
+ls -la ~
+ln --help
+cd fzf
+ln -s ../vim/.vim/plugged/fzf/ .fzf
+ls -la
+cd ..
+ls -la
+mkdir config
+mv ~/.config/ config/
+ls -la
+ls -la config/
+ls -la
+ls -la ~
+mkdir tmux
+ls -la ~/.tmux
+ls -la
+cd tmux
+mv ~/.tmux .
+ls -la
+mv ~/.tmux.conf.local .
+ls -la
+rm ~/.tmux.conf
+ln -s .tmux/.tmux.conf .tmux.conf
+ls -la
+cd ..
+ls -la
+ls -la ~
+ls -la
+ls -la vim/.vim/plugged/fzf
+ls -la fzf
+mv ~/.fzf.bash fzf/
+ls -la fzf/
+ls -la
+ls -la ~
+mkdir fd
+mv ~/.fdignore fd/
+vim ~/.bash_logout 
+mkdir bash
+mv ~/.bash_history ~/.bash_logout ~/.bashrc bash/
+ls -la bash/
+mkdir conda
+mv ~/.condarc conda/
+ls -la
+ls -la ~/.con
+ls -la ~/.config/
+ls -la config/
+ls -la config/.config/
+ls -la ~
+ls -la
+ls -la bash
+ls -la ~/.conda/
+vim ~/.conda/environments.txt 
+mv ~/.inputrc bash/
+mkdir git
+mv ~/.gitconfig git
+ls -la
+mkdir nvidia
+mv ~/.nvidia-settings-rc nvidia/
+ls -la ~ 
+ls -la bash/
+mv ~/.profile bash/
+echo $0
+ls -la bash/
+vim ~/.python_history
+mkdir python
+mv ~/.python_history ~/.python_history-16875.tmp python/
+ls -la python/
+ls -la ~
+rm -rf ~/.config/ ~/.viminfo
+ls -la ~
+ls -la
+stow --help
+stow bash
+ls -la ~
+ls -la
+tmux
+stow -D bash
+ls -la
+ls -la ~
+stow -S bash
+ls -la ~
+stow -S conda
+stow -S config
+ls -la ~
+stow -D config
+ls -la ~
+ls -la
+rm -rf ~/.config
+stow -S config
+ls -la ~
+stow -S fd
+stow -S fzf
+stow -S git
+stow -S nvidia
+stow -S python
+stow -S tmux
+stow -S vim
+ls -la ~
+tmux
+vim
+ls -la tmux
+ls -la ~
+ls -la
+vim setup.sh 
+tmux
+ls -la
+conda activate ML_TextBoxes++
+conda activate ML_TextBoxes++
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
+ls -la
+du -h ../ML_TextBoxes++/
+du -d 1 | sort -n -r
+du -dh 1 | sort -n -r
+du -h -d 1 | sort -n -r
+du ./dataset/ -dh 1 | sort -n -r
+cd dataset/
+du -dh 1 | sort -n -r
+du -d 1 | sort -n -r
+ls -la
+du 1 | sort -n -r
+cd ..
+ls -la ..
+ls -la RNN
+ls -la ../RNN
+ls -la ../ML_RNN
+ls -la ../ML_RNN/rnn-tutorial-rnnlm/
+ls -la ../ML_RNN/rnn-tutorial-rnnlm/rnn-tutorial-rnnlm/
+ls -la ../SSD.TensorFlow/
+du -h ../SSD.TensorFlow/
+cd ../SSD.TensorFlow/
+du -d 1 | sort -n
+ls -la model/
+ls -la model/temp/
+ls -la model/checkpoint 
+ls -la dataset/
+du -h dataset/
+ls -la logs/
+du -h logs/
+git branch -a
+ls -la ..
+du -h ../../Project_Ubuntu/
+ls -la
+cd ..
+ls -la
+nautilus
+rm -r SSD.TensorFlow/
+ls -la
+ls -la ML_MaskRCNN/
+ls -la ML_MaskRCNN/Mask_RCNN-master
+ls -la
+mkdir UnusedProjects
+mv cnn_lstm_ctc_ocr-master/ UnusedProjects/
+mv CRNN_WEINMAN/ UnusedProjects/
+mv CRNN-with-STN UnusedProjects/
+mv CRNN-with-STN-master/ UnusedProjects/
+ls -la
+mv ML_SceneTextRecognition_STN_CRNN/ UnusedProjects/
+ls -la
+du -h UnusedProjects/
+cd ML_TextBoxes++/
+ls -la
+git init
+git status
+git branch -a
+ls -la
+cd dataset/
+ls -la
+ls -la ctwd/
+ls -la rctw/
+ls -la ../logs/
+cd ..
+git status
+ls -la
+git status
+ls -la dataset/
+git status
+vim dataset/dataset_common.py 
+git status
+git add .
+git status
+git add dataset/
+git status
+git add .
+git status
+conda export --help
+conda --help
+conda env --help
+conda env export requirements.yaml 
+conda env export -f requirements.yaml 
+rm requirements.yaml 
+conda env export -f requirements.yaml 
+ls -la
+git status
+pip export -f requirements.txt
+pip --help
+pip freeze -f requirements.txt
+ls -la
+pip freeze -f requirements.txt
+pip --help
+pip freeze > requirements.txt
+ls -la
+git status
+git add requirements.*
+git status
+git rm --cached dataset/dataset_common.py 
+git status
+git add .
+git status
+git commit -m "first commit"
+git branch -a
+git branch --help
+git branch -M master
+git branch -M abc
+git branch -a
+git branch -M master
+git branch -a
+git remote add origin https://github.com/lloydnguyen96/ML_TextBoxesPlusPlus.git
+git branch -a
+git push -u origin master
+git branch -a
+ls -la
+cd ..
+ls -la
+cd ..
+cd Project
+ls -la
+cd ML_HDC_CNN
+ls -la
+git status
+git branch -a
+git pull
+git status
+git branch -a
+conda list | grep bleach
+pip list | grep bleach
+ls -la
+cd ..
+ls -la
+cd ML_AutomaticLicensePlateRecognition/
+git status
+git pull
+ls -la
+rm -r __pycache__/
+git status
+git commit -m "delete __pycache__ folder"
+git add .
+git status
+git commit -m "delete __pycache__ folder"
+ls -la
+git push -u origin master
+git branch -a
+git pull
+cd ..
+ls -la
+cd ..
+ls -la
+cd Project_Ubuntu/
+ls -la
+ssh
+sudo -l
+groups
+ssh -v
+ssh -V
+sudo apt update -y
+sudo apt install openssh-server
+ls -la /etc/ssh
+sudo systemctl status sshd
+netstat
+sudo apt install net-tools
+netstat -tulpn | grep 22
+netstat -tulpn | grep 22^
+netstat --help
+sudo ufw status
+sudo ufw status verbose
+sudo ufw enable
+sudo ufw status verbose
+sudo ufw show raw
+sudo ufw allow ssh
+sudo ufw status
+sudo ufw status verbose
+sudo ufw deny ssh
+sudo ufw status verbose
+sudo ufw allow ssh
+sudo ufw status verbose
+sudo ufw delete allow ssh
+sudo ufw status verbose
+sudo ufw allow ssh
+sudo ufw status verbose
+sudo systemctl list-unit-files | grep enabled | grep ssh
+systemctl --help
+sudo systemctl enable ssh
+sudo systemctl enable sshd
+ls -la /etc/ssh
+vim /etc/ssh/sshd_config
+SUDO VIM /ETC/SSH/SSHD_CONFIg
+sudo systemctl restart sshd
+sudo systemctl status sshd
+sudo netstat -tulpn | grep 1996 
+ssh --help 
+ls -la ~
+ls -la ~/.ssh
+ls -la ~/.ssh/
+ssh --help
+sudo ifconfig
+ssh -p 1996 loinguyenvan@127.0.0.1
+ssh LloydPc 
+ssh localhost 
+ls -la ~/.ssh
+ls -la ~/.ssh/known_hosts 
+cd ~/.ssh/
+vim known_hosts 
+ssh -p 1996 loinguyenvan@127.0.0.1
+ssh --help
+conda activate ML_TextBoxes++
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
+ls -la config/
+ls -la config/__pycache__/
+rm -r config/__pycache__/
+ls -la config/
+find . -t d -n '__pycache_'
+find . -type d -n '__pycache_'
+find . -type d -name '__pycache_'
+find . -type d -name '__pycache_' -print
+find . -type d -name '__pycache__' -print
+rm -r dataset/__pycache__/ net/__pycache__/ preprocessing/__pycache__/ utility/__pycache__/
+find . -type d -name '__pycache__' -print
+git add README.md
+git add config
+git status
+git add convert_to_tfrecords.py draw_precision_recall_curve.py predict_textboxes_plusplus.py rctw_task1_evaluation.py requirements.yaml simple_demo.py textboxes_plusplus.py visualize_default_boxes.py 
+mv train_textboxes_plusplus.py unused_modules/
+git status
+ls -la
+vim .gitignore
+htop
+watch -n 0.5 nvidia-smi
+conda activate ML_TextBoxes++
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
+sudo ifconfig
+sudo systemctl ufw status
+sudo systemctl status sshd
+sudo vim /etc/ssh/ssh_config
+sudo vim /etc/ssh/sshd_config
+sudo systemctl status sshd
+sudo systemctl restart sshd
+sudo systemctl status sshd
+sudo vim /etc/hosts
+ssh -p 2222 loinguyenvan@LloydPc
+ls -la ~/.ssh/
+ls -la ~/.ssh/known_hosts 
+vim ~/.ssh/known_hosts 
+ssh LloydPc
+sudo systemctl status sshd
+sudo service ssh status
+ifconfig
+curl ifconfig.me
+curl --help
+ifconfig -a
+ip addr (ip a)
+conda activate ML_TextBoxes++
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
+ifconfig
+htop
+tmux
+ls -la
+exit
+ifconfig
+ifconfig -a
+sudo vim /etc/ssh/ssh_config
+sudo vim /etc/ssh/sshd_config
+sudo systemctl sshd restart
+sudo systemctl ssh restart
+sudo systemctl restart sshd
+sudo systemctl status sshd
+ip addr
+sudo ufw status
+sudo systemctl status sshd
+sudo iptables -L
+sudo ufw status
+sudo ufw allow ssh
+sudo ufw status
+sudo ufw allow 22
+sudo ufw status
+vim /var/log/auth.log
+vim /var/log/secure
+ls -la /var/log/
+vim /etc/hosts.deny 
+sudo ufw disable
+sudo ufw status
+service iptables stop
+ifconfig
+sudo ufw status
+sudo ufw enable ssh
+sudo ufw enable
+sudo ufw status
+iptables -L
+service iptables start
+iptables -L
+sudo iptables -L
+sudo ufw status
+sudo ststenctl stop sshd
+sudo ststemctl stop sshd
+sudo systemctl stop sshd
+sudo systemctl status sshd
+sudo systemctl start sshd
+sudo systemctl status sshd
+sudo ufw allow 22/tcp
+sudo ufw disable
+sudo ufw status
+sudo iptables -L
+ls -la
+conda activate ML_TextBoxes++
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
+tmux
+sudo systemctl status sshd
+sudo ufw status
+sudo iptables -L
+sudo ufw allow 22
+sudo ufw status
+ifconfig
+ssh --help
+sudo ufw enable
+sudo ufw status
+ufw reload
+sudo ufw reload
+sudo ufw status
+sudo iptables -L
+vim /etc/ssh/sshd_config
+sudo vim /etc/ssh/sshd_config
+sudo ufw allow 2222
+sudo ufw status
+sudo ufw allow 2222/tcp
+sudo ufw status
+sudo systemctl stop sshd
+sudo systemctl start sshd
+sudo systemctl status
+sudo systemctl status ssh
+sudo systemctl status sshd
+netstat -tulpn | grep 222
+netstat -tulpn | grep 2222
+sudo ufw disallow 2222/tcp
+sudo ufw deny 2222/tcp
+sudo ufw deny 2222
+sudo ufw status
+sudo ufw delete 2222
+sudo ufw reset
+sudo ufw status
+sudo ufw enable
+sudo ufw status
+sudo ufw allow ssh
+sudo ufw status
+sudo vim /etc/ssh/sshd_config
+sudo systemctl stop sshd
+sudo systemctl start sshd
+sudo systemctl status sshd
+sudo ufw status
+sudo ufw disable
+sudo ufw status
+ifconfig
+sudo ufw status
+sudo ufw enable
+sudo ufw status
+sudo ufw reload
+sudo ufw status
+sudo ufw allow 22
+sudo ufw status
+sudo ufw reload
+sudo ufw restart
+sudo ufw reset
+sudo ufw status
+sudo iptables -L
+sudo ufw status
+sudo systemctl status sshd
+sudo systemctl status ssh
+sudo ufw status
+ifconfig
+ipconfig
+ifconfig
+htop
+arp -a
+arp --help
+arp -e
+ls -la
+exit
+arp -a
+sudo systemctl status sshd
+sudo systemctl restart sshd
+sudo systemctl restart ssh
+sudo systemctl status sshd
+sudo systemctl status ssh
+vim /etc/ssh/sshd_config
+sudo ufw status
+ifconfig
+sudo ufw status
+sudo systemctl status ssh
+arp -a
+ifconfig
+arg -a
+arp -a
+exit
+ls -la
+ifconfig
+ssh -p 22 loinguyenvan@171.224.179.98
+ssh -p 22 loinguyenvan@10.137.178.43
+arp -a
+curl ifconfig.me
+sudo ufw status
+sudo ufw disable
+sudo iptables -L
+sudo ufw reload
+sudo iptables -L
+sudo systemctl status ssh
+sudo systemctl stop ssh
+sudo systemctl stop sshd
+sudo systemctl status ssh
+sudo systemctl statufdss ssh
+sudo systemctl stop sshd
+sudo systemctl status ssh
+sudo systemctl status sshd
+sudo vim /etc/ssh/sshd_config
+sudo systemctl disable ssh.service
+sudo systemctl stop ssh.service
+sudo 
+ls -la ~/.ssh
+sudo systemctl start sshd
+sudo systemctl enable ssh
+sudo systemctl disable ssh
+sudo systemctl disable sshd
+sudo systemctl stop ssh.service
+sudo systemctl status ssh
+sudo systemctl disable sshd
+sudo 
+sudo e
+sudo systemctl stop ssh.servic
+sudo systemctl stop ssh.service
+sudo systemctl status ssh
+sudo systemctl disable ssh.service
+sudo systemctl stop ssh.service
+sudo systemctl status sshd
+sudo ufw status
+sudo iptables -L
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch
+ls -la
+cd ML_PyTorch_Official_Tutorial/
+ls -la
+ls -la GettingStarted/
+ls -la Text/
+cd ../pytorch-tutorial/
+ls -la
+ls -la tutorials/
+ls -la tutorials/01-basics/
+ls -la tutorials/02-intermediate/
+ls -la tutorials/02-intermediate/deep_residual_network/
+ls -la tutorials/02-intermediate/language_model/
+cd ..
+ls -la
+ls -la ML_PyTorch_Official_Tutorial/GettingStarted/
+htop
+watch -n 0.5 nvidia-smi
+tmux
+shutdown
+cd /home/loinguyenvan/.cache/torch/hub
+ls -la
+cd checkpoints/
+ls -la
+ls -la dlwpt-code/
+ls -la
+touch chapter22.py 
+ls -las
+find ~ -name 'fix-broken.sh'
+find / -name 'fix-broken.sh'
+conda search torchvision
+python --version
+conda list | grep torch
+conda list | grep torchvision
+conda list | grep cudatoolkit
+conda deactivate
+conda list | grep cudatoolkit
+conda activate ML_TextBoxes++
+conda list | grep cudatoolkit
+conda deactivate
+conda activate base
+conda search cudatoolkit
+conda list | grep cudnn
+conda search cudnn
+conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
+conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
+python
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch
+cd DeepLearningWithPytorch/
+ls -la
+python chapter21.py 
+touch imagenet_classes.txt
+python chapter21.py 
+eog 2-dog.jpg 
+ls -la
+mkdir temp
+cd temp
+git clone https://github.com/deep-learning-with-pytorch/dlwpt-code
+cd ..
+rm -r temp/
+git clone https://github.com/deep-learning-with-pytorch/dlwpt-code
+ls -la
+ls -la dlwpt-code/
+ls -la dlwpt-code/p1ch2
+ls -la
+mkdir p1ch2
+mv 2-dog.jpg chapter2*.py p1ch2/
+ls -la
+ls -la p1ch2/
+cd p1ch2/
+python chapter21.py 
+mv ../imagenet_classes.txt .
+python chapter21.py 
+ls -la
+mv chapter21.py 2_pre_trained_networks.py
+ls -la
+cd ..
+cd p1ch2/
+mv chapter22.py 3_cyclegan.py
+ls -la
+python 3_cyclegan.py 
+ls -la
+cd ../dlwpt-code/p1ch2/
+ls -la
+ls -la ../..
+ls -la ../
+git status
+ls -la
+ls -la ..
+conda search torchvision
+glibc --version
+ldd --version
+conda list | grep cudatoolkit
+ls -la /home/loinguyenvan/.cache/torch/hub/checkpoints/
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch
+ls -la
+mv DeepLearningUsingPytorch/ DeepLearningWithPytorch/
+ls -la
+cd DeepLearningWithPytorch/
+ls -la
+eog 2-dog.jpg 
+touch chapter21.py
+vim
+vim p1ch2/2_pre_trained_networks.py 
+vim p1ch2/3_cyclegan.py 
+htop
+watch -n 0.5 nvidia-smi
+tmux
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch
+cd p1ch2/
+cd ..
+python
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython
+ls -la
+cd pytorch/
+ls -la
+cd dlwpt-code/
+ls -la
+htop
+watch -n 0.5 nvidia-smi
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch
+ls -la
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch
+ls -la
+htop
+tmux
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch
+cd p1ch3
+ls -la
+vim main.py
+cd ..
+mkdir p1ch4
+cd p1ch4
+vim main.py
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch
+ls -la
+mkdir p1ch3
+cd p1ch3
+touch main.py
+ls -la
+du -h main.py
+python main.py
+ls -la
+python main.py
+ls -la
+du -h ourpoints.t 
+rm ourpoints.t 
+python main.py
+ls -la
+rm ourpoints.t 
+ls -la
+python main.py
+ls -la
+python main.py
+conda install h5py
+python main.py
+ls -la
+du -h ourpoints.hdf5 
+python main.py
+python main.py\
+python main.py
+ls -la
+python main.py
+cd ../p1ch4
+ls -la
+conda install imageio
+python main.py
+eog ../dlwpt-code/data/p1ch4/image-dog/bobby.jpg 
+python main.py
+python
+python main.py
+ls -la
+ls -la ../dlwpt-code/data/p1ch4/volumetric-dicom/2-LUNG\ 3.0\ \ B70f-04083/
+python main.py
+mv ~/Downloads/winequality-white.csv .
+ls -la
+rm winequality-white.csv 
+python main.py
+ls -la
+python main.py
+htop
+watch -n 0.5 nvidia-smi
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch
+cd p1ch4
+python main.py 
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch
+cd p1ch4
+ls -la
+vim main.py
+htop
+tmux
+shutdown
+tmux -ls
+tmux -a
+tmux -l
+vim ~/.dotfiles/setup.sh 
+tmux -a
+tmux -ls
+tmux -C
+tmux -CC
+vim
+tmux ls
+tmux kill-session -a
+tmux ls
+tmux kill-session -t 0
+tmux ls
+tmux
+tmux ls
+vim
+tmux ls
+vim
+tmux
+vim ~/.dotfiles/tmux/.tmux
+vim ~/.dotfiles/tmux/.tmux.conf
+tmux ls
+tmux
+vim
+tmux
+fdsf
+fds
+tmux
+fsdf
+fdf
+tmux
+fds
+tmux
+ls -la
+tmux
+tmux ls
+tmux
+ls -la /dev/ttyp*
+ls -la /dev/pts/
+vim

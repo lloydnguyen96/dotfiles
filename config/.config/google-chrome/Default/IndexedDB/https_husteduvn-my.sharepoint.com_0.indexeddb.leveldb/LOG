@@ -1,8 +1,25 @@
-2020/07/12-14:58:20.770 30a6 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_husteduvn-my.sharepoint.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/07/12-14:58:20.771 30a6 Recovering log #644
-2020/07/12-14:58:20.771 30a6 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_husteduvn-my.sharepoint.com_0.indexeddb.leveldb/000644.log 
-2020/07/12-14:58:52.775 e19 Level-0 table #648: started
-2020/07/12-14:58:52.776 e19 Level-0 table #648: 0 bytes OK
-2020/07/12-14:58:52.835 e19 Delete type=0 #644
-2020/07/12-14:58:52.835 e19 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
-2020/07/12-14:58:52.836 e19 Manual compaction at level-1 from (begin) .. (end); will stop at (end)
+2020/09/21-21:49:41.206 16f4 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_husteduvn-my.sharepoint.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/09/21-21:49:41.207 16f4 Recovering log #650
+2020/09/21-21:49:41.207 16f4 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_husteduvn-my.sharepoint.com_0.indexeddb.leveldb/000650.log 
+2020/09/21-22:09:00.033 1cbe Level-0 table #660: started
+2020/09/21-22:09:00.074 1cbe Level-0 table #660: 2839 bytes OK
+2020/09/21-22:09:00.114 1cbe Delete type=0 #650
+2020/09/21-22:09:00.114 1cbe Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/09/21-22:09:00.114 1cbe Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01%\x04\x02\x01\x17\x00s\x00t\x00s\x00-\x00p\x00a\x00g\x00e\x00-\x00r\x00e\x00s\x00p\x00o\x00n\x00s\x00e\x00-\x00c\x00a\x00c\x00h\x00e\x03\x00\x00\x00\x00\x00\x00\x08@\x00\x01~\x00_\x00o\x00d\x00s\x00p\x00c\x00a\x00c\x00h\x00e\x00_\x00h\x00t\x00t\x00p\x00s\x00%\x003\x00A\x00%\x002\x00F\x00%\x002\x00F\x00h\x00u\x00s\x00t\x00e\x00d\x00u\x00v\x00n\x00-\x00m\x00y\x00.\x00s\x00h\x00a\x00r\x00e\x00p\x00o\x00i\x00n\x00t\x00.\x00c\x00o\x00m\x00%\x002\x00F\x00p\x00e\x00r\x00s\x00o\x00n\x00a\x00l\x00%\x002\x00F\x00l\x00o\x00i\x00_\x00n\x00v\x001\x004\x002\x007\x003\x002\x00_\x00s\x00i\x00s\x00_\x00h\x00u\x00s\x00t\x00_\x00e\x00d\x00u\x00_\x00v\x00n\x00%\x002\x00F\x00_\x00l\x00a\x00y\x00o\x00u\x00t\x00s\x00%\x002\x00F\x001\x005\x00%\x002\x00F\x00o\x00n\x00e\x00d\x00r\x00i\x00v\x00e\x00.\x00a\x00s\x00p\x00x' @ 2639 : 1
+2020/09/21-22:09:00.114 1cbe Compacting 1@1 + 6@2 files
+2020/09/21-22:09:00.230 1cbe Generated table #661@1: 95 keys, 2377162 bytes
+2020/09/21-22:09:00.353 1cbe Generated table #662@1: 12 keys, 2419457 bytes
+2020/09/21-22:09:00.498 1cbe Generated table #663@1: 12 keys, 2142557 bytes
+2020/09/21-22:09:00.631 1cbe Generated table #664@1: 10 keys, 2163903 bytes
+2020/09/21-22:09:00.721 1cbe Generated table #665@1: 13 keys, 2202983 bytes
+2020/09/21-22:09:00.799 1cbe Generated table #666@1: 559 keys, 615388 bytes
+2020/09/21-22:09:00.799 1cbe Compacted 1@1 + 6@2 files => 11921450 bytes
+2020/09/21-22:09:00.866 1cbe compacted to: files[ 0 0 6 0 0 0 0 ]
+2020/09/21-22:09:00.867 1cbe Delete type=2 #652
+2020/09/21-22:09:00.867 1cbe Delete type=2 #654
+2020/09/21-22:09:00.867 1cbe Delete type=2 #653
+2020/09/21-22:09:00.867 1cbe Delete type=2 #660
+2020/09/21-22:09:00.867 1cbe Delete type=2 #655
+2020/09/21-22:09:00.867 1cbe Delete type=2 #656
+2020/09/21-22:09:00.867 1cbe Delete type=2 #657
+2020/09/21-22:09:00.870 1cbe Manual compaction at level-1 from '\x00\x01\x01%\x04\x02\x01\x17\x00s\x00t\x00s\x00-\x00p\x00a\x00g\x00e\x00-\x00r\x00e\x00s\x00p\x00o\x00n\x00s\x00e\x00-\x00c\x00a\x00c\x00h\x00e\x03\x00\x00\x00\x00\x00\x00\x08@\x00\x01~\x00_\x00o\x00d\x00s\x00p\x00c\x00a\x00c\x00h\x00e\x00_\x00h\x00t\x00t\x00p\x00s\x00%\x003\x00A\x00%\x002\x00F\x00%\x002\x00F\x00h\x00u\x00s\x00t\x00e\x00d\x00u\x00v\x00n\x00-\x00m\x00y\x00.\x00s\x00h\x00a\x00r\x00e\x00p\x00o\x00i\x00n\x00t\x00.\x00c\x00o\x00m\x00%\x002\x00F\x00p\x00e\x00r\x00s\x00o\x00n\x00a\x00l\x00%\x002\x00F\x00l\x00o\x00i\x00_\x00n\x00v\x001\x004\x002\x007\x003\x002\x00_\x00s\x00i\x00s\x00_\x00h\x00u\x00s\x00t\x00_\x00e\x00d\x00u\x00_\x00v\x00n\x00%\x002\x00F\x00_\x00l\x00a\x00y\x00o\x00u\x00t\x00s\x00%\x002\x00F\x001\x005\x00%\x002\x00F\x00o\x00n\x00e\x00d\x00r\x00i\x00v\x00e\x00.\x00a\x00s\x00p\x00x' @ 2639 : 1 .. (end); will stop at (end)

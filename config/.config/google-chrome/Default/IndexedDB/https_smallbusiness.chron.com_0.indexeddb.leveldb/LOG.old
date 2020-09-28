@@ -1,0 +1,15 @@
+2020/09/14-21:16:10.571 58df Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_smallbusiness.chron.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/09/14-21:16:10.571 58df Recovering log #4
+2020/09/14-21:16:10.571 58df Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_smallbusiness.chron.com_0.indexeddb.leveldb/000004.log 
+2020/09/14-21:25:15.470 1176 Level-0 table #8: started
+2020/09/14-21:25:15.547 1176 Level-0 table #8: 1688970 bytes OK
+2020/09/14-21:25:15.591 1176 Delete type=0 #4
+2020/09/14-21:25:15.592 1176 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/09/14-21:25:15.592 1176 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x02\x00\x00\x05' @ 425 : 1
+2020/09/14-21:25:15.592 1176 Compacting 1@1 + 1@2 files
+2020/09/14-21:25:15.626 1176 Generated table #9@1: 34 keys, 46627 bytes
+2020/09/14-21:25:15.626 1176 Compacted 1@1 + 1@2 files => 46627 bytes
+2020/09/14-21:25:15.668 1176 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/09/14-21:25:15.668 1176 Delete type=2 #5
+2020/09/14-21:25:15.668 1176 Delete type=2 #8
+2020/09/14-21:25:15.669 1176 Manual compaction at level-1 from '\x00\x02\x00\x00\x05' @ 425 : 1 .. (end); will stop at (end)
