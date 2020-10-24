@@ -107,6 +107,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'Yggdroot/indentLine'
 
 " Language Packs (syntax, ...)
+let g:polyglot_disabled=['python']
 Plug 'sheerun/vim-polyglot'
 
 " Vimrc Samples
@@ -1215,7 +1216,6 @@ function ToggleQuickfix()
 endfunction
 
 " Default highlight is better than polyglot.
-let g:polyglot_disabled=['python']
 let g:python_highlight_all=1
 
 " ********** vim-multiple-cursors **********

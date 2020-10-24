@@ -6,7 +6,8 @@ home.
 
 - if use python, install anaconda
 
-- source ~/.dotfiles/setup.sh to install packages, ... for new environment
+- source ~/.dotfiles/setup.sh to install packages, ... for vim development environment
+- optionally source ~/.dotfiles/install_optional_packages.sh for new Linux environment
 
 - install linters and fixers for automatically checking and fixing syntax
 errors:
@@ -35,10 +36,10 @@ multilanguages)
         + c-s-k: move to terminal's tab in the right
 
 - deoplete's requirements:
-    + python -m pip install --user pynvim (system environment)
-    + python -m pip install --user neovim (system environment)
     + python -m pip install msgpack (system environment)
     + python -m pip install --user jedi (current environment)
+    + python -m pip install --user pynvim (current environment)
+    + python -m pip install --user neovim (current environment)
 
 # TODO LIST
 

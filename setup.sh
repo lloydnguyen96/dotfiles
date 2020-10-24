@@ -19,17 +19,6 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     sudo apt install tree
     # fd for terminal fzf
     sudo apt install fd-find
-    # gimp for image manipulation
-    sudo add-apt-repository ppa:otto-kesselgulasch/gimp
-    sudo apt update -y
-    sudo apt install gimp
-    # htop
-    sudo apt install htop
-    # ibus-bamboo: remember to go to the setting
-    sudo add-apt-repository ppa:bamboo-engine/ibus-bamboo
-    sudo apt update -y
-    sudo apt install ibus-bamboo
-    ibus restart
     # stow configuration files
     cd $HOME/.dotfiles
     stow -S bash

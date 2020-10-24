@@ -1,5 +1,0 @@
-2020/07/05-17:43:00.023 1637 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_subscription.packtpub.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/07/05-17:43:16.769 f28 Level-0 table #5: started
-2020/07/05-17:43:16.858 f28 Level-0 table #5: 1268 bytes OK
-2020/07/05-17:43:16.914 f28 Delete type=0 #3
-2020/07/05-17:43:16.914 f28 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

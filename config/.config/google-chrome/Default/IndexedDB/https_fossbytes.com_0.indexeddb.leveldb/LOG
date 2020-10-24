@@ -1,5 +1,0 @@
-2020/07/03-16:40:48.721 9886 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_fossbytes.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/07/03-16:42:12.124 e63 Level-0 table #5: started
-2020/07/03-16:42:12.180 e63 Level-0 table #5: 11840 bytes OK
-2020/07/03-16:42:12.215 e63 Delete type=0 #3
-2020/07/03-16:42:12.215 e63 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

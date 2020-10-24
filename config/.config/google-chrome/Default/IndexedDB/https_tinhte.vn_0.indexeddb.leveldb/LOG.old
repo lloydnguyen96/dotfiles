@@ -1,5 +1,0 @@
-2020/07/17-21:38:18.279 12b9 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_tinhte.vn_0.indexeddb.leveldb/MANIFEST-000001
-2020/07/17-22:08:14.494 115d Level-0 table #5: started
-2020/07/17-22:08:14.538 115d Level-0 table #5: 1920 bytes OK
-2020/07/17-22:08:14.574 115d Delete type=0 #3
-2020/07/17-22:08:14.574 115d Manual compaction at level-0 from (begin) .. (end); will stop at (end)

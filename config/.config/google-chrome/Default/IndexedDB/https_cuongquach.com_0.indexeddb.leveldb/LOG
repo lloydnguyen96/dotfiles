@@ -1,5 +1,0 @@
-2020/09/26-16:34:26.797 1ab2b Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_cuongquach.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/09/26-16:39:43.619 12e1 Level-0 table #5: started
-2020/09/26-16:39:43.664 12e1 Level-0 table #5: 6258 bytes OK
-2020/09/26-16:39:43.702 12e1 Delete type=0 #3
-2020/09/26-16:39:43.702 12e1 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

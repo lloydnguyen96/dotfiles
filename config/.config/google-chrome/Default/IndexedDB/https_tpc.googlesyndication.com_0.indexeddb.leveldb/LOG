@@ -1,8 +1,0 @@
-2020/07/18-09:11:05.188 14b3 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_tpc.googlesyndication.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/07/18-09:11:05.188 14b3 Recovering log #7
-2020/07/18-09:11:05.188 14b3 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_tpc.googlesyndication.com_0.indexeddb.leveldb/000007.log 
-2020/07/18-09:11:10.547 ee9 Level-0 table #12: started
-2020/07/18-09:11:10.548 ee9 Level-0 table #12: 0 bytes OK
-2020/07/18-09:11:10.589 ee9 Delete type=0 #7
-2020/07/18-09:11:10.589 ee9 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
-2020/07/18-09:11:10.589 ee9 Manual compaction at level-1 from (begin) .. (end); will stop at (end)

@@ -1,8 +1,0 @@
-2020/07/12-10:43:05.981 e3e Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.microsoft.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/07/12-10:43:05.982 e3e Recovering log #7
-2020/07/12-10:43:05.982 e3e Reusing old log /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.microsoft.com_0.indexeddb.leveldb/000007.log 
-2020/07/12-10:43:09.525 e19 Level-0 table #12: started
-2020/07/12-10:43:09.525 e19 Level-0 table #12: 0 bytes OK
-2020/07/12-10:43:09.582 e19 Delete type=0 #7
-2020/07/12-10:43:09.583 e19 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
-2020/07/12-10:43:09.583 e19 Manual compaction at level-1 from (begin) .. (end); will stop at (end)

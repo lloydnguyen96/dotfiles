@@ -1,5 +1,0 @@
-2020/08/18-23:52:31.800 de98e Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_www.onivim.io_0.indexeddb.leveldb/MANIFEST-000001
-2020/08/18-23:52:51.751 cf9 Level-0 table #5: started
-2020/08/18-23:52:51.796 cf9 Level-0 table #5: 1139 bytes OK
-2020/08/18-23:52:51.863 cf9 Delete type=0 #3
-2020/08/18-23:52:51.863 cf9 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

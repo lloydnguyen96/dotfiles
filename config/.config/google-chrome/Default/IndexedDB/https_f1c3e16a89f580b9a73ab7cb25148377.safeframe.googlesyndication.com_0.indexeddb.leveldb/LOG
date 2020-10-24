@@ -1,5 +1,0 @@
-2020/08/29-22:58:03.432 f498b Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_f1c3e16a89f580b9a73ab7cb25148377.safeframe.googlesyndication.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/08/29-22:58:06.591 fa9 Level-0 table #5: started
-2020/08/29-22:58:06.636 fa9 Level-0 table #5: 460 bytes OK
-2020/08/29-22:58:06.692 fa9 Delete type=0 #3
-2020/08/29-22:58:06.692 fa9 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

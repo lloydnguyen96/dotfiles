@@ -1,507 +1,3 @@
-vim rgb_to_hsv.py
-vim hsv_to_rgb.py
-ls
-cd ..
-ls
-ls theano/
-ls pytorch/
-ls
-ls pytorch/pytorch-tutorial/
-ls
-ls pandas/
-ls
-ls ImageProcessing/
-python
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/dataset/rctw/RCTW_p2/json_annotations
-ls
-cd train/part1/
-ls
-vim
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/
-ls
-vim
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-ls
-ls -la logs/
-. scripts/train_eval.sh 
-clear
-. scripts/train_eval.sh 
-python convert_to_tfrecords.py 
-mdkir dataset/rctw/RCTW_p2/tfrecords_v2
-mkdir dataset/rctw/RCTW_p2/tfrecords_v2
-cd dataset/rctw/RCTW_p2/tfrecords_v2
-cd ../../../..
-ls
-python convert_to_tfrecords.py 
-cd dataset/rctw/RCTW_p2/tfrecords_v2
-rm -r
-rm *
-ls
-cd ../../../..
-ls
-python convert_to_tfrecords.py 
-cd dataset/rctw/RCTW_p2/tfrecords_v2
-ls -la | wc -l
-clear
-ls -la | wc -l
-rm ../tfrecords/*
-mv * ../tfrecords/
-cd ..
-rm -r tfrecords_v2/
-ls -l tfrecords/ | wc -l
-ls -l
-ls
-ls tfrecords/ | wc -l
-cd ../../../..
-ls
-cd ML_TextBoxes++/
-ls
-cd models/
-ls
-mkdir textboxes_plusplus_trained_rctw_p2_train
-ls
-mv ../logs/* textboxes_plusplus_trained_rctw_p2_train/
-cd ..
-du --help
-ls
-. scripts/train_eval.sh 
-htop
-watch -n 0.5 nvidia-smi
-tmux ls
-tmux
-vim
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-ls
-vim
-clear
-vim
-pip list | grep neovim
-pip list | grep msgpack
-pip list | grep pynvim
-vim
-conda deactivate
-python3 -m pip install --user neovim
-conda activate ML_TextBoxes++
-vim
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-cd dataset/rctw/
-ls
-ls RCTW_p2
-ls -la RCTW_p2
-ls | wc -l
-du RCTW_p2/tfrecords/
-du --help
-du -ha .
-du -h .
-du -h ./RCTW_p1/
-ls
-cd RCTW_p1
-ls
-mkdir unused_modules
-mv rctw_to_tfrecords.py unused_modules/
-ls
-cd ..
-ls
-cd RCTW_p2/
-ls
-touch cal_statistics.py
-ls
-read -l
-read -f
-read -f .
-python
-cd ../../..
-python
-ls
-cd dataset/rctw/
-ls
-mkdir RCTW_p3
-ls
-cd RCTW_p3/
-ls
-touch preprocess.py
-fd --type d
-fd
-cd ../..
-fd -t d
-fd --help
-fd -t d
-fd -t d .
-fd -t d ~
-fd -t d . ~
-find ~/* -path '**/anaconda3/**' -prune -o -path '*/\.*' -prune -o -type d -print -o -type l -print 2>/dev/null
-find ~/* -path '**/anaconda3/**' -prune -o -path '*/\.*' -prune -o -type f -print -o -type l -print 2>/dev/null
-find ~/* -path '**/anaconda3/**' -prune -o -path '*/\.*' -prune -o -type l -print 2>/dev/null
-find --help
-fd -t d
-find -h
-find --help
-find -L ~/* -path '**/anaconda3/**' -prune -o -path '*/\.*' -prune -o -type l -print 2>/dev/null
-find -L ~/* -path '**/anaconda3/**' -prune -o -path '*/\.*' -prune -o -type d -print -o -type l -print 2>/dev/null
-vim --version | grep timer
-vim --version | grep con
-vim --version | grep if_python
-vim --version | grep if_
-vim --version | grep if
-pip list | grep pynvim
-conda list | grep pynvim
-conda deactivate
-conda list | grep pynvim
-pip list | grep pynvim
-python -m pip install --user pynvim
-conda activate ML_TextBoxes++
-cd ..
-python -m pip install --user pynvim
-conda deactivate
-pip list | grep pynvim
-which python
-conda deactivate
-which python
-which python3
-python3 -m pip list | grep pynvim
-conda activate root
-which python
-pip list | grep msgpack
-conda activate ML_TextBoxes++
-pip list | grep msgpack
-python -m pip install msgpack
-python -m pip install neovim
-python
-conda deactivate
-jedi
-pip list | grep jedi
-pip3 list | grep jedi
-conda activate ML_TextBoxes++
-pip3 list | grep jedi
-pip list | grep jedi
-which python
-python -m pip list | grep jedi
-conda activate base
-which python
-python -m pip list | grep jedi
-conda activate ML_TextBoxes++
-which python
-python -m pip list | grep jedi
-python -m pip install --user jedi
-htop
-watch -n 0.5 nvidia-smi
-tmux ls
-tmux
-python
-vim
-ls -la
-cd Documents/
-ls
-cd ../Downloads/
-ls
-vim temp.py
-ls
-rm temp.py 
-cd ..
-ls | wc -l
-l | wc -l
-l
-ls
-ls -l
-ls
-ls -a
-ls -l
-ls
-ls -a
-ls -a | wc -l
-ls -la
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython
-ls
-mkdir numpy
-ls
-cd numpy/
-ls
-vim np-random-RandomState.py
-ls
-mkdir ../matplotlib
-cp np-random-RandomState.py ../matplotlib/
-cd ../matplotlib/
-ls
-mv np-random-RandomState.py plt-hist.py
-ls
-cd ../numpy/
-vim np-random-RandomState.py 
-cd ../matplotlib/
-vim
-vim plt-hist.py 
-ls
-vim plt-subplots.py
-ls
-clear
-vim plt-subplots.py
-vim ax-add_patch.py
-ls
-vim ax-add_patch.py
-vim plt-fill_between.py
-ls
-watch -n 0.5 nvidia-smi
-htop
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-which python
-python -m pip install opencv-python
-ls dataset/rctw/RCTW_p3 
-rm -r dataset/rctw/RCTW_p3/icda* dataset/rctw/RCTW_p3/json_annotatio
-rm -r dataset/rctw/RCTW_p3/icda* dataset/rctw/RCTW_p3/json_annotatio*
-ls dataset/rctw/RCTW_p3 
-python -m pip install matplotlib
-python -m pip install shapely
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-vim
-python
-vim
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/matplotlib
-ls
-vim ax-add_patch.py 
-vim ax-add_patch.py
-tmux
-vim
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/matplotlib
-ls
-vim ax-add_patch.py 
-python
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/matplotlib
-vim ax-add_patch.py 
-conda deactivate
-which python
-vim plt-fill_between.py 
-vim /home/loinguyenvan/.tmux.conf.local 
-vim
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/matplotlib
-which python
-vim
-cd 
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython
-vim
-ls
-cd ..
-ls
-mkdir scipy
-ls
-cd scipy/
-ls
-touch scipy-stats-norm.py
-ls
-clear
-tmux
-clear
-tmux
-vim
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython
-cd scipy/
-ls
-cd ..
-mkdir sklearn
-cd sklea
-cd sklearn/
-ls
-vim sklearn-neighbors-KernelDensity.py 
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-ls
-clear
-vim
-touch sklearn-neighbors-KernelDensity
-mv sklearn-neighbors-KernelDensity sklearn-neighbors-KernelDensity.py
-python
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-ls
-clear
-cd dataset/ctwd/CTWD_p2/
-ls
-cd training-dataset/annotations/
-la
-ls -la ~
-cd ../../../..
-cd ..
-ls
-conda list | grep sklearn
-conda search sklearn
-pip search sklearn
-conda search scikit-learn
-conda install scikit-learn
-htop
-watch -n 0.5 nvidia-smi
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/sklearn
-ls
-vim sklearn-neighbors-KernelDensity.py 
-conda list | grep sklearn
-pip list | grep sklearn
-ls
-ls -la
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/dataset/rctw/RCTW_p3/json_annotations/train/part1
-vim
-ls
-conda activate ML_TextBoxes++
-touch visualize.py
-vim visualize.py 
-htop
-watch -n 0.5 nvidia-smi
-conda activate ML_TextBoxes++
-
-
-vim
-tmux
-fdqkjkqkfd
-clearfdfkjkcle
-vim
-tmux ls
-tmux a
-tmux
-python
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-vim
-cd dataset/rctw/RCTW_p3/
-vim
-vim
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-conda activate ML_TextBoxes++
-vim
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-python
-cd dataset/rctw/RCTW_p3/
-ls
-rm -r visualizations/
-ls -la
-ls
-touch inspect.py
-python inspect.py 
-ls
-rm -r visualizations/
-ls
-mkdir temp
-ls
-mv icdar2017rctw_train_v1.2/ json_annotations/ temp/
-ls
-ls -la temp
-htop
-watch -n 0.5 nvidia-smi
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/sklearn
-ls
-vim sklearn-neighbors-KernelDensity.py 
-cd ../../../..
-cd ML_TextBoxes++/
-ls
-conda activate ML_TextBoxes++
-python dataset/rctw/RCTW_p3/preprocess.py 
-cd dataset/rctw/RCTW_p3/
-ls
-touch log2.txt
-vim log2.txt 
-ls
-cd visualizations/icdar2017rctw_train_v1.2/train/
-ls
-mkdir temp
-ls
-mv part*/* temp/
-ls
-rm part*/*
-rm part1/*
-ls
-rm temp/*
-mv part*/* temp/
-ls
-rm temp/*
-ls
-rm part*/*
-rm temp/*
-mv part*/* temp/
-mkdir temp
-mv part*/* temp/
-rm temp/*
-rm part*/*
-mv part*/* temp/
-rm part*/*
-rm temp/*
-mv part*/* temp/
-rm part*/*
-rm temp/*
-rm part*/*
-mv part*/* temp/
-rm part*/*
-rm temp/*
-mv part*/* temp/
-ls
-cd ..
-vim
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-vim
-cd dataset/rctw/RCTW_p3/
-ls
-python
-ls
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-ls
-python
-ls
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-ls
-python
-ls
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-ls
-rm -r visualizations/
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-ls
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-ls
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-rm -r visualizations/
-ls
-rm -r visualizations/
-ls
-ls -la visualizations/
-rm -r visualizations/
-ls
-rm -r visualizations/
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-cd ../RCTW_p2
-ls
-rm -r json_annotations/
-ls
-python preprocess.py 
-ls
-conda activate ML_TextBoxes++
-ls
-python preprocess.py 
-ls
-python preprocess.py 
-cd ../RCTW_p3
-ls
-rm -r temp/
-ls
-rm -r visualizations/
-ls
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-ls
-rm -r visualizations/
-ls
-rm -r visualizations/
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-ls
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-rm -r visualizations/
-ls
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-cd dataset/rctw/RCTW_p3/
-ls
-cat inspect.py 
 rm inspect.py
 python
 ls
@@ -1998,3 +1494,507 @@ tmux
 ls -la /dev/ttyp*
 ls -la /dev/pts/
 vim
+vim
+cd .dotfiles/
+git status
+git add .
+git status
+git commit -m 'Modified .tmux.conf.local - bind four more keys including M-w for opening new window, M-y for switching to tmux copy-mode mode, M-t for opening tree for browsing sessions, windows, panes and M-q for displaying pane indicator'
+git push
+vim README.md 
+git status
+git add .
+git commit -m 'update README.md'
+git push
+tmux ls
+tmux a
+tmux ls
+tmux a
+tmux ls
+tmux
+tmux ls
+tmux a
+tmux
+vim .tmux.conf.local 
+shutdown
+reboot
+cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/ReCTS2019
+ls -la
+cd train/
+ls -la
+cd gt
+ls -la
+ls -la | wc -l
+ls -la *.json | wc -l
+python
+cd ../..
+python check.py 
+python
+cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/ReCTS2019/train/gt
+ls -la train_ReCTS_000001.json
+cd ..
+ls -la
+cd ..
+ls -la
+ls -la test/
+ls -la
+vim check.py
+rm check.py 
+ls -la
+python check.py 
+clear
+python check.py 
+clear
+python check.py 
+clear
+python check.py 
+clear
+python check.py 
+python
+clear
+python check.py 
+clear
+python check.py 
+clear
+python check.py 
+clear
+python check.py 
+clear
+python check.py 
+clear
+python check.py 
+htop
+watch -n 0.5 nvidia-smi
+tmux
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
+cd ..
+ls -la
+cd CRAFT-Reimplementation/
+ls -la
+conda env list
+conda create -n ML_CRAFT python=3.7.7 anaconda
+conda activate ML_CRAFT
+conda list | grep pytorch
+conda list | grep torch
+conda list | grep torchvision
+pip install python-opencv
+pip install opencv-python
+conda install scikit-image=0.14.21
+conda install scikit-image=0.14.2
+conda install scipy
+conda install scipy=1.1.0
+conda install Polygon3
+pip install Polygon3
+vim
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/
+ls -la
+git clone https://github.com/backtime92/CRAFT-Reimplementation
+ls -la
+cd CRAFT-Reimplementation/
+ls -la
+python --version
+conda activate ML_TextBoxes++
+python --version
+conda create --help
+conda env list
+conda activate ML_CRAFT
+conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
+ls -la requirements.txt 
+vim requirements.txt 
+ls -la
+mkdir models
+mkdir models/backbones
+mv /home/loinguyenvan/Downloads/vgg16_bn-6c64b313.pth models/backbones/
+ls -la pretrain/
+touch basenet/check.py
+python basenet/check.py 
+cd basenet/
+python check.py 
+cd ..
+mkdir models/pretrained_models
+python basenet/check.py 
+ls -la pretrain/
+mv models/backbones/vgg16_bn-6c64b313.pth pretrain/
+ls -la pretrain/
+mkdir data
+ls -la
+ls -la data
+rm -r data
+mkdir pretrain/data
+ls -la pretrain
+mv pretrain/vgg16_bn-6c64b313.pth pretrain/data/
+rm basenet/check.py 
+ls -la /
+ls -la pretrain/
+ls -la pretrain/data/
+git status
+ls -la models/
+ls -la
+ls -la models/
+ls -la models/backbones/
+ls -la models/pretrained_models/
+rm -r models/
+ls -la
+ls -la basenet/
+ls -la eval
+ls -la image
+ls -la pretrain
+ls -la pretrain/data
+mv /home/loinguyenvan/Downloads/Syndata.pth pretrain/data/
+ls -la pretrain/data
+mkdir models
+ls -la models
+htop
+watch -n 0.5 nvidia-smi
+reboot
+ls -la /media/loinguyenvan/
+ls -la /mnt/9A743BCF743BAD3F/
+cd /mnt/9A743BCF743BAD3F/Lloyd/Downloads/
+ls -la
+cd SynthText/SynthText/
+ls -la
+ls -la 5/* | wc -l
+python
+ls -la 5/*.jpg | wc -l
+python
+ls -la ._.DS_Store 
+ls -la .DS_Store 
+ls | wc -l
+ls
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/CRAFT-Reimplementation/
+conda activate ML_CRAFT
+python trainic15data.py
+conda install water
+
+conda install water
+pip install water
+python trainic15data.py
+conda install water
+pip install -r requirements.txt 
+python trainic15data.py
+pip install water
+python trainic15data.py
+ls -la
+mkdir result
+ls -la models
+ls -la pretrain/
+ls -la pretrain/data/
+mkdir result
+python trainic15data.py
+conda install augmentation
+pip install augmentation
+python trainic15data.py
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/CRAFT-Reimplementation/
+conda activate ML_CRAFT
+vim
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch
+conda deactivate
+which python
+ls -la
+cd p1ch4
+vim main.py 
+cd ../p1ch5
+vim main.py
+cd ..
+cd p1ch6
+vim main.py
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch
+conda deactivate
+which python
+type python
+which python
+conda activate base
+which python
+cd p1ch4
+ls -la
+python main.py 
+cd ..
+mkdir p1ch5
+python main.py 
+cd p1ch5
+python main.py 
+clear
+python main.py 
+clear
+python main.py 
+clear
+python main.py 
+clear
+python main.py 
+clear
+python main.py 
+clear
+python main.py 
+cd ..
+mkdir p1ch6
+htop
+watch -n 0.5 nvidia-smi
+tmux
+shutdown
+cd ../p1ch7
+ls -la
+cd ../dlwpt-code/data-unversioned/
+ls -la
+cd p1ch7/
+ls -la
+du -h cifar-10-python.tar.gz 
+ls -la
+cd ../dlwpt-code/data-unversioned/p1ch7/
+ls -la
+mv * ~/Projects/OneDriveHUST/Datasets/
+cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets
+ls -la
+mkdir CIFAR10
+mv cifar-10* CIFAR10/
+cd CIFAR10/
+ls -la
+quit
+exit
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch
+cd p1ch5
+vim main.py 
+cd ../p1ch6/
+vim main.py 
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch
+cd p1ch5
+ls -la
+cd ../p1ch6
+ls
+python main.py 
+clear
+python main.py 
+mkdir ../p1ch7
+cd ../p1ch7
+touch main.py
+python main.py 
+clear
+python main.py 
+python
+clear
+python
+python main.py 
+python
+python main.py 
+htop
+watch -n 0.5 nvidia-smi
+tmux
+shutdown
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch
+cd p1ch8
+vim main.py
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch
+cd p1ch7/
+cd ..
+mkdir p1ch8
+cd p1ch8
+python main.py 
+python
+clear
+python main.py 
+clear
+python main.py 
+ls -la
+python main.py 
+python
+htop
+watch -n 0.5 nvidia-smi
+tmux
+cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/LUNA16
+ls -la
+du -h annotations.csv 
+du -h candidates.csv 
+du -h annotations_with_malignancy.csv 
+mv ~/Downloads/* ~/Projects/OneDriveHUST/Datasets/LUNA16/
+ls -la ~/Projects/OneDriveHUST/Datasets/LUNA16/
+apt search p7zip-full
+sudo apt install p7zip-full
+ls -la
+p7zip --version
+p7zip-full --version
+p7 --version
+7z --version
+7z --help
+z7
+7z
+7z i
+7z
+ls -la
+mv /media/loinguyenvan/631CA1895F547AE0/*zip .
+7z l subset8.zip 
+wc -l candidates.csv 
+head candidates.csv 
+head --version
+head --help
+head candidates.csv 
+grep ',1$' candidates.csv | wc -l
+grep ',1$' candidates.csv
+wc --help
+ls | wc -l
+ls
+ls -a
+ls -l
+ls | wc -w
+ls | wc -l
+ls | wc -m
+grep ',1$' candidates.csv | wc -w
+grep ',1$' candidates.csv | wc
+ls | wc
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch
+ls -la
+mkdir p2ch10
+cd p2ch10
+vim main.py
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch
+ls -la
+mkdir ~/Projects/OneDriveHUST/Datasets/LUNA16
+ls -la dlwpt-code/p2ch09/
+mv dlwpt-code/data/part2/luna/*csv ~/Projects/OneDriveHUST/Datasets/LUNA16/
+ls -la ~/Projects/OneDriveHUST/Datasets/LUNA16/
+ls -la
+cd ..
+ls -la
+du -h DeepLearningWithPytorch/
+cd DeepLearningWithPytorch/
+ls -la ~/Projects/OneDriveHUST/Datasets/LUNA16/
+htop
+watch -n 0.5 nvidia-smi
+shutdown
+cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/LUNA16
+ls -la
+ls -la subset
+rm *.mhd *.raw
+ls -la
+ls -la subsets
+ls -la
+wc -l annotations.csv 
+head annotations.csv
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch
+cd p2ch10
+ls -la
+vim main.py
+htop
+cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/LUNA16
+mv /media/loinguyenvan/631CA1895F547AE0/*zip .
+grep ',1$' candidates_V2.zip | wc
+ls -la
+7z e subset0.zip 
+ls -la
+rm *mhd *.raw
+ls -la
+mkdir subset0 && mv subset0.zip subset0
+ls -la
+ls -la subset0
+mv subset0 subset
+ls -la
+mv subset1.zip subset
+7z --help
+mv subset/subset0.zip .
+mv subset/subset1.zip .
+ls -la
+7z e subset0.zip subset1.zip subset/
+7z e subset0.zip subset/
+mv subset0.zip subset
+ls -la subset
+7z e subset/subset0.zip 
+mv subset/subset0.zip .
+cd subset/
+ls -la
+cd ..
+mv subset subsets
+cd subsets/
+7z e ../subset{1,2}.zip
+ls -la
+7z e ../subset{0,1}.zip
+7z e ../subset0.zip
+ls -la
+ls | wc
+cd ..
+ls -la
+mv subsets/ subset0
+ls -la
+mkdir subset1
+ls -la
+cd subset1
+7z e ../subset1.zip 
+ls -la
+ls | wc
+cd ..
+ls -la
+ls subset0 | w
+ls subset0
+ls subset0 | w
+ls subset0 | wc
+ls subset1 | wc
+w --help
+python
+ls -la subset0
+python
+ls -la
+head annotations.csv 
+python
+head annotations.csv 
+python
+head candidates.csv 
+head annotations.csv
+wc annotations.csv
+wc candidates.csv
+wc -l candidates.csv
+python
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch
+cd p2ch10
+7z --help
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython
+ls -la
+mkdir decorators
+ls -la
+cd decorators
+vim primer-on-python-decorators.py
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch/p2ch10
+ls -la
+watch -n 0.5 nvidia-smi
+tmux
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch
+ls -la ~/Projects/OneDriveHUST/Datasets/LUNA16/
+mv /media/loinguyenvan/631CA1895F547AE0/subset*.zip ~/Projects/OneDriveHUST/Datasets/LUNA16/
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch/DeepLearningWithPytorch
+htop
+watch -n 0.5 nvidia-smi
+shutdown
+tmux
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch
+ls -la
+python pytorch_root.py 
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch
+ls -la
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch
+ls 
+vim pytorch_root.py 
+htop
+watch -n 0.5 nvidia-smi
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch
+ls -la
+python pytorch_root.py 
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch
+vim pytorch_root.py 
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch
+ls -la
+htop
+tmux
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython/pytorch
+python pytorch_root.py 
+python pytorch_root.py
+python pytorch_root.py 
+tmux
+conda deactivate
+which python
+python3 --version
+tmux
+f
+reboot
+tmux
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_CRAFT
+vim README.md 
+tmux
+shutdown
+tmux
+python

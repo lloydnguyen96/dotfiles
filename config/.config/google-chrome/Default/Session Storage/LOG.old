@@ -1,8 +1,0 @@
-2020/09/26-13:53:10.065 fd9 Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/Session Storage/MANIFEST-000001
-2020/09/26-13:53:10.066 fd9 Recovering log #553
-2020/09/26-13:53:10.341 fd9 Level-0 table #556: started
-2020/09/26-13:53:10.622 fd9 Level-0 table #556: 19250 bytes OK
-2020/09/26-13:53:10.622 fd9 Recovering log #556
-2020/09/26-13:53:10.670 fd9 Reusing old log /home/loinguyenvan/.config/google-chrome/Default/Session Storage/000556.log 
-2020/09/26-13:53:10.977 fd9 Delete type=2 #557
-2020/09/26-13:53:10.977 fd9 Delete type=0 #553

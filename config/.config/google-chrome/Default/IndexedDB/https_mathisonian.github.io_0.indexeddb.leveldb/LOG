@@ -1,5 +1,0 @@
-2020/08/19-21:43:50.097 cae5c Reusing MANIFEST /home/loinguyenvan/.config/google-chrome/Default/IndexedDB/https_mathisonian.github.io_0.indexeddb.leveldb/MANIFEST-000001
-2020/08/19-21:45:29.090 18c7 Level-0 table #5: started
-2020/08/19-21:45:29.136 18c7 Level-0 table #5: 5326 bytes OK
-2020/08/19-21:45:29.174 18c7 Delete type=0 #3
-2020/08/19-21:45:29.175 18c7 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
