@@ -1,175 +1,3 @@
-rm inspect.py
-python
-ls
-rm -r visualizations/
-cd ../../../
-ls
-rm -r visualizations/
-ls
-cd dataset/rctw/RCTW_p3/
-ls
-rm -r visualizations/
-ls 
-touch keep_original.txt
-vim keep_original.txt 
-ls
-rm keep_original.txt 
-ls
-rm -r visualizations/
-ls
-rm -r temp/
-ls
-rm log.txt log2.txt 
-ls
-rm -r __pycache__/
-ls
-cd ../../../
-ls
-python dataset/rctw/RCTW_p3/preprocess.py 
-ls
-python dataset/rctw/RCTW_p3/preprocess.py 
-ls
-python dataset/rctw/RCTW_p3/preprocess.py 
-ls
-python dataset/rctw/RCTW_p3/preprocess.py 
-python
-python dataset/rctw/RCTW_p3/preprocess.py 
-ls
-python dataset/rctw/RCTW_p3/preprocess.py 
-htop
-tmux
-ls
-ls -la logs/
-cd /home/loinguyenvan/Downloads
-ls
-unzip drive-download-20200901T024448Z-001.zip 
-ls
-rm drive-download-20200901T024448Z-001.zip 
-ls
-ls | wc -l
-ls -la | wc -l
-ls -la
-ls
-cd /home/loinguyenvan/Downloads
-ls -la
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu
-ls
-mkdir ML_Paper_TextBoxes++
-cd ML_Paper_TextBoxes++/
-ls
-mv ~/Downloads/* .
-ls
-cp ../ML_TextBoxes++/scripts/ .
-cp -r ../ML_TextBoxes++/scripts/ .
-ls
-mkdir models
-mkdir logs
-mkdir datasets
-mkdir datasets/ctwd
-mkdir datasets/ctwd/CTWD_p1
-cp -r ../ML_TextBoxes++/dataset/ctwd/CTWD_p1/* datasets/ctwd/CTWD_p1/
-ls
-mv datasets/ dataset
-ls
-conda activate ML_TextBoxes++
-. scripts/train_eval.sh 
-ls -la dataset/
-mv ~/Downloads/dataset_common.py dataset/
-ls
-. scripts/train_eval.sh 
-vim train_textboxes_plusplus.py 
-. scripts/train_eval.sh 
-tmux
-tmux a
-cd dataset/rctw/RCTW_p3/
-conda activate ML_TextBoxes++
-ls
-clear
-ls
-rm -r tfrecords2/
-ls
-cd ../../ctwd/
-ls
-cd ../../logs/
-ls
-mkdir temp
-ls
-cd temp/
-ls
-ls ..
-cd ../../dataset/ctwd/CTWD_p1/tfrecords/
-ls
-kill 1189597 
-htop
-watch -n 0.5 nvidia-smi
-tmux a
-tmux
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-. scripts/train_eval.sh 
-ls
-clear
-conda activate ML_TextBoxes++
-cd dataset/rctw/RCTW_p3/
-ls
-mkdir temp
-ls
-mv tfrecords/train-00000-of-00144.tfrecord temp/
-ls temp/
-mv tfrecords/train-00001-of-00144.tfrecord temp/
-mv tfrecords/train-00002-of-00144.tfrecord temp/
-mv ~/Downloads/* /home/loinguyenvan/Projects/OneDriveHUST/Datasets 
-kill -9 1779385
-kill -9 2174896 
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-ls
-ls logs/
-vim
-kill -9 7741
-vim
-tmux a
-zzfdjkiifgf
-tmux
-tmux ls
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-ls
-cd dataset/rctw/RCTW_p3/
-ls
-mv temp/* tfrecords/
-ls -la temp/
-rm -r temp/
-cd ../../..
-ls
-vim scripts/train_eval.sh 
-
-vim scripts/train_eval.sh 
-. scripts/train_eval.sh 
-cd dataset/rctw/RCTW_p3/
-ls
-mkdir temp
-ls
-mv tfrecords/train-001* temp/
-ls tfrecords/ | wc -l
-mv tfrecords/train-000[6-9]* temp/
-ls tfrecords/ | wc -l
-ls tfrecords/
-ls temp/ | wc -l
-ls tfrecords/ | wc -l
-kill -9 2235295 
-ls tfrecords/
-mv tfrecords/train-000[5-6]* temp/
-ls tfrecords/ | wc -l
-ls tfrecords/
-htopo
-htop
-watch -n 0.5 nvidia-smi
-tmux a
-vim /etc/initramfs-tools/initramfs.conf 
-sudo update-initramfs -c -k $(uname -r)
-reboot
-tmux
 conda activate ML_TextBoxes++
 cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
 ls
@@ -1998,3 +1826,175 @@ tmux
 shutdown
 tmux
 python
+conda list | grep flake8
+conda activate STR
+conda activate ML_STR
+conda list | grep flake8
+conda list | grep mypy
+conda list | grep pylint
+conda list | grep pyright
+cd ~/.dotfiles/
+ls -la
+vim install_optional_packages.sh
+vim README.md 
+vim install_optional_packages.sh
+vim README.md 
+git staus
+git status
+git add .
+git status
+ls -la
+stow --help
+ls -la
+ls -la ~
+stow -D config
+ls -la ~
+ls -la
+mv config ~
+ls -la
+ls -la ~
+cd ~
+mv config/ .config
+ls -la ~
+cd .dotfiles/
+ls -la
+vim setup.sh 
+vim
+ls -la
+git status
+git add .
+git status
+ls -la ~/.config/
+ls -la ~/.config/.config/
+ls -la ~
+ls -la .cof*
+ls -la .con*
+ls -la ~/.con*
+cd ~
+mv .config config
+mv config/.config/ .
+mv config/google-chrome/ .config/
+ls -la
+ls -la config/
+rm -r config/
+ls -la
+ls -la .config/
+ls -la con*
+ls -la .con*
+ls -la
+ls -la .nv
+ls -la .local
+ls -la .gnome
+ls -la .dotfiles/
+mkdir config
+ls -la .config
+rm -r config
+ls -la
+cd .dotfiles/
+ls -la
+git status
+git add .
+git commit -m 'Create new file named install_optional_packages.sh for installing some additional packages for your operating system; Move some auxiliary packages from setup.sh to new file install_optional_packages.sh; Some deoplete packages is actually conda-environment-dependent (not system-dependent) so I changes README.md'
+ls -la
+git status
+git commit -m 'no longer tracking config folder'
+git add .
+git status
+git push
+ls -la .git
+cd ..
+ls -la .gnome/
+ls -la .gnome/apps/
+ls -la
+ls -la .conda
+du -h .cache
+du -h .conda
+ls -la
+cd .dotfile
+cd .dotfiles
+ls -la
+vim setup.sh 
+ls -la
+git status
+git add vim/.vim/plugged/CSApprox
+git status
+conda activate ML_CRAFT
+python --version
+which python
+conda list | grep torch
+ls -la
+pip freeze > requirements.txt 
+conda export -f requirements.yaml
+conda env export -f requirements.yaml
+conda env --help
+conda env create -f requirements.yaml 
+conda --version
+vim
+ls -la
+vim training.py 
+python training.py 
+python prediction.py 
+ls -la
+find
+cd /home/loinguyenvan/.dotfiles
+vim README.md 
+vim
+cd /home/loinguyenvan/Downloads/Compressed
+ls -la
+mkdir STR
+mv evaluation/ STR/
+ls -la
+mv training/ STR/
+mv validation/ STR/
+ls -la STR/
+mv STR/ ~/Projects/OneDriveHUST/Datasets/
+cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets
+ls mv temp/ STR/
+ls -la
+mv temp/ STR/
+cd STR/
+ls -la
+du -h temp/
+ls training/
+ls training/MJ/
+ls training/MJ/MJ_test/
+ls training/MJ/MJ_train/
+ls training/MJ/MJ_valid/
+ls training/ST/
+mv temp/data.mdb training/ST/
+ls training/ST/
+ls temp/
+ls -la
+rm -r temp/
+ls -la evaluation/
+ls -la validation/
+cd training/
+ls -la
+ls -la ST_spe
+ls -la
+cd ..
+ls -la
+cd evaluation/
+ls -la
+unzip evaluation-20201023T171032Z-001.zip 
+ls -la
+rm evaluation-20201023T171032Z-001.zip 
+mv evaluation/* .
+ls -la
+rm -r evaluation/
+cd ../validation/
+ls -la
+unzip validation-20201023T170742Z-001.zip 
+ls -la
+rm validation-20201023T170742Z-001.zip 
+mv validation/* .
+ls -la
+rm -r validation/
+ls -la
+tmux
+ls -la
+cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/STR
+ls -la
+find
+tmux
+vim
