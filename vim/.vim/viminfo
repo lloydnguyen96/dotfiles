@@ -262,37 +262,47 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	a[0, 0, 1, 2] = 6.0
-|3,0,0,1,1,0,1603075558,"a[0, 0, 1, 2] = 6.0"
+""0	LINE	0
+	    # install packages
+|3,1,0,1,1,0,1603524192,"    # install packages"
 "1	LINE	0
-	
-|3,0,1,1,1,0,1603523965,""
+	    # gimp for image manipulation
+	    sudo add-apt-repository ppa:otto-kesselgulasch/gimp
+	    sudo apt update -y
+	    sudo apt install gimp
+	    # htop
+	    sudo apt install htop
+	    # ibus-bamboo: remember to go to the setting
+	    sudo add-apt-repository ppa:bamboo-engine/ibus-bamboo
+	    sudo apt update -y
+	    sudo apt install ibus-bamboo
+	    ibus restart
+|3,0,1,1,11,0,1603524168,"    # gimp for image manipulation","    sudo add-apt-repository ppa:otto-kesselgulasch/gimp","    sudo apt update -y","    sudo apt install gimp","    # htop","    sudo apt install htop","    # ibus-bamboo: remember to go to the setting","    sudo add-apt-repository ppa:bamboo-engine/ibus-bamboo","    sudo apt update -y","    sudo apt install ibus-bamboo","    ibus restart"
 "2	LINE	0
+	    sudo apt install gnome-terminal
+|3,0,2,1,1,0,1603524011,"    sudo apt install gnome-terminal"
+"3	LINE	0
 	    + python -m pip install --user pynvim (current environment)
 	    + python -m pip install --user neovim (current environment)
-|3,0,2,1,2,0,1603522954,"    + python -m pip install --user pynvim (current environment)","    + python -m pip install --user neovim (current environment)"
-"3	LINE	0
-	let g:polyglot_disabled=['python']
-|3,0,3,1,1,0,1603522198,"let g:polyglot_disabled=['python']"
+|3,0,3,1,2,0,1603522954,"    + python -m pip install --user pynvim (current environment)","    + python -m pip install --user neovim (current environment)"
 "4	LINE	0
-	    pass
-|3,0,4,1,1,0,1603076184,"    pass"
+	let g:polyglot_disabled=['python']
+|3,0,4,1,1,0,1603522198,"let g:polyglot_disabled=['python']"
 "5	LINE	0
-	assert isinstance(a.dtype, torch.float32)
-|3,0,5,1,1,0,1603037676,"assert isinstance(a.dtype, torch.float32)"
+	    pass
+|3,0,5,1,1,0,1603076184,"    pass"
 "6	LINE	0
-	print(a.dtype)
-|3,0,6,1,1,0,1603037659,"print(a.dtype)"
+	assert isinstance(a.dtype, torch.float32)
+|3,0,6,1,1,0,1603037676,"assert isinstance(a.dtype, torch.float32)"
 "7	LINE	0
-	_single = _ntuple(1)
-|3,0,7,1,1,0,1603028639,"_single = _ntuple(1)"
+	print(a.dtype)
+|3,0,7,1,1,0,1603037659,"print(a.dtype)"
 "8	LINE	0
-	print(isinstance(l, container_abcs.Iterable))
-|3,0,8,1,1,0,1603028546,"print(isinstance(l, container_abcs.Iterable))"
+	_single = _ntuple(1)
+|3,0,8,1,1,0,1603028639,"_single = _ntuple(1)"
 "9	LINE	0
-	print(isinstance(t, container_abcs.Iterable))
-|3,0,9,1,1,0,1603028545,"print(isinstance(t, container_abcs.Iterable))"
+	print(isinstance(l, container_abcs.Iterable))
+|3,0,9,1,1,0,1603028546,"print(isinstance(l, container_abcs.Iterable))"
 "a@	CHAR	0
 	hello!
 |3,2,10,0,1,0,1593762729,"hello!"
@@ -308,27 +318,27 @@ $
 "u	CHAR	0
 	uuuuuuu
 |3,0,30,0,1,0,1595176726,"uuuuuuu"
-""-	CHAR	0
+"-	CHAR	0
 	os
-|3,1,36,0,1,0,1603524312,"os"
+|3,0,36,0,1,0,1603524312,"os"
 
 # global variables:
 
 # File marks:
-'0  26  9  ~/.dotfiles/setup.sh
-|4,48,26,9,1603525165,"~/.dotfiles/setup.sh"
-'1  10  75  ~/.dotfiles/README.md
-|4,49,10,75,1603524671,"~/.dotfiles/README.md"
-'2  30  35  ~/.dotfiles/install_optional_packages.sh
-|4,50,30,35,1603524638,"~/.dotfiles/install_optional_packages.sh"
-'3  10  75  ~/.dotfiles/README.md
-|4,51,10,75,1603524337,"~/.dotfiles/README.md"
-'4  4  4  ~/.dotfiles/install_optional_packages.sh
-|4,52,4,4,1603524210,"~/.dotfiles/install_optional_packages.sh"
+'0  67  0  ~/.dotfiles/setup.sh
+|4,48,67,0,1603526137,"~/.dotfiles/setup.sh"
+'1  26  9  ~/.dotfiles/setup.sh
+|4,49,26,9,1603525165,"~/.dotfiles/setup.sh"
+'2  10  75  ~/.dotfiles/README.md
+|4,50,10,75,1603524671,"~/.dotfiles/README.md"
+'3  30  35  ~/.dotfiles/install_optional_packages.sh
+|4,51,30,35,1603524638,"~/.dotfiles/install_optional_packages.sh"
+'4  10  75  ~/.dotfiles/README.md
+|4,52,10,75,1603524337,"~/.dotfiles/README.md"
 '5  4  4  ~/.dotfiles/install_optional_packages.sh
 |4,53,4,4,1603524210,"~/.dotfiles/install_optional_packages.sh"
-'6  35  13  ~/.dotfiles/README.md
-|4,54,35,13,1603523355,"~/.dotfiles/README.md"
+'6  4  4  ~/.dotfiles/install_optional_packages.sh
+|4,54,4,4,1603524210,"~/.dotfiles/install_optional_packages.sh"
 '7  34  13  ~/.dotfiles/README.md
 |4,55,34,13,1603523355,"~/.dotfiles/README.md"
 '8  35  13  ~/.dotfiles/README.md
@@ -337,6 +347,8 @@ $
 |4,57,34,13,1603523355,"~/.dotfiles/README.md"
 
 # Jumplist (newest first):
+-'  67  0  ~/.dotfiles/setup.sh
+|4,39,67,0,1603526137,"~/.dotfiles/setup.sh"
 -'  26  9  ~/.dotfiles/setup.sh
 |4,39,26,9,1603525165,"~/.dotfiles/setup.sh"
 -'  26  9  ~/.dotfiles/setup.sh
@@ -539,19 +551,18 @@ $
 # History of marks within files (newest to oldest):
 
 > ~/.dotfiles/setup.sh
-	*	1603525162	0
-	"	26	9
-	^	9	35
-	.	8	0
-	+	98	0
-	+	121	0
+	*	1603526136	0
+	"	67	0
+	.	22	0
+	+	87	0
+	+	110	0
 	+	4	22
 	+	6	0
 	+	4	6
 	+	7	35
 	+	1	41
 	+	2	0
-	+	46	0
+	+	35	0
 	+	11	0
 	+	18	0
 	+	19	0
@@ -561,51 +572,52 @@ $
 	+	17	28
 	+	20	33
 	+	21	4
-	+	46	6
-	+	46	0
-	+	46	19
-	+	46	0
+	+	35	6
+	+	35	0
+	+	35	19
+	+	35	0
 	+	15	0
 	+	5	21
 	+	10	28
 	+	12	27
 	+	13	0
 	+	14	31
-	+	45	0
+	+	34	0
 	+	22	17
-	+	23	0
-	+	24	22
-	+	25	24
-	+	27	24
-	+	26	9
-	+	45	0
-	+	29	0
-	+	30	21
+	+	22	0
+	+	22	22
+	+	22	24
+	+	22	9
+	+	34	0
+	+	22	0
+	+	22	21
 	+	15	6
 	+	17	6
 	+	20	6
 	+	22	32
-	+	35	15
-	+	36	0
-	+	38	0
-	+	39	0
-	+	40	0
-	+	41	0
-	+	36	16
-	+	38	17
-	+	38	13
-	+	39	14
-	+	40	14
-	+	41	17
-	+	42	0
-	+	43	0
-	+	42	17
-	+	43	15
-	+	44	14
-	+	37	0
-	+	28	47
-	+	9	34
+	+	24	15
+	+	25	0
+	+	27	0
+	+	28	0
+	+	29	0
+	+	30	0
+	+	25	16
+	+	27	17
+	+	27	13
+	+	28	14
+	+	29	14
+	+	30	17
+	+	31	0
+	+	32	0
+	+	31	17
+	+	32	15
+	+	33	14
+	+	26	0
+	+	22	47
+	+	10	34
 	+	8	0
+	+	9	0
+	+	22	0
 
 > ~/.dotfiles/README.md
 	*	1603524664	0
