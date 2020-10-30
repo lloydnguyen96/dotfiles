@@ -2003,3 +2003,11 @@ cd models/
 ls -la
 cd ..
 ls -la
+cd ~/.dotfiles/
+git status
+git add .
+git diff vim/.vim/vimrc
+git diff
+git status
+git commit -m 'add pretty print command and mapping for xml, html and json files'
+git push

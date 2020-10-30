@@ -1441,18 +1441,21 @@ augroup end
 augroup filetype_html
     autocmd!
     autocmd FileType html nnoremap <buffer> <localleader>f Vatzf
+    " check PrettyPrintHTML
     autocmd FileType html
         \ nnoremap <buffer> <localleader>p :!tidy -mi -html -wrap 0 %<cr>
 augroup end
 
 augroup filetype_xml
     autocmd!
+    " check PrettyPrintXML
     autocmd FileType xml
         \ nnoremap <buffer> <localleader>p :!tidy -mi -xml -wrap 0 %<cr>
 augroup end
 
 augroup filetype_json
     autocmd!
+    " check PrettyPrintJSON
     autocmd FileType json
         \ nnoremap <buffer> <localleader>p :%!python -m json.tool<cr>
 augroup end
