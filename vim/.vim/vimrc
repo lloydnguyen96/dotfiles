@@ -468,6 +468,9 @@ iabbrev exlucde exclude
 " - \s\+$ is one or more whitespace to end of line
 " - e flag means no error is displayed
 command! FixWhitespace :%s/\s\+$//e
+command! PrettyPrintJSON %!python -m json.tool
+command! PrettyPrintHTML !tidy -mi -html -wrap 0 %
+command! PrettyPrintXML !tidy -mi -xml -wrap 0 %
 
 "*****************************************************************************
 "" Functions
@@ -1438,6 +1441,20 @@ augroup end
 augroup filetype_html
     autocmd!
     autocmd FileType html nnoremap <buffer> <localleader>f Vatzf
+    autocmd FileType html
+        \ nnoremap <buffer> <localleader>p :!tidy -mi -html -wrap 0 %<cr>
+augroup end
+
+augroup filetype_xml
+    autocmd!
+    autocmd FileType xml
+        \ nnoremap <buffer> <localleader>p :!tidy -mi -xml -wrap 0 %<cr>
+augroup end
+
+augroup filetype_json
+    autocmd!
+    autocmd FileType json
+        \ nnoremap <buffer> <localleader>p :%!python -m json.tool<cr>
 augroup end
 
 augroup filetype_vim

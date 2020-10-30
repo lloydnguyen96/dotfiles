@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/num_processes
+~MSle0~/json
 
 # Last Substitute Search Pattern:
 ~MSle0&-1
@@ -20,20 +20,36 @@
 $
 
 # Command Line History (newest to oldest):
+:b 
+|2,0,1604063294,,"b "
+:PrettyPrintJSON
+|2,0,1604063277,,"PrettyPrintJSON"
+:%!python -m json.tool
+|2,0,1604062649,,"%!python -m json.tool"
+:SaveSession ML_STR
+|2,0,1603994278,,"SaveSession ML_STR"
+:vs
+|2,0,1603983949,,"vs"
+:160
+|2,0,1603983083,,"160"
+:OpenSession ML_STR
+|2,0,1603937600,,"OpenSession ML_STR"
+:pwd
+|2,0,1603854003,,"pwd"
+:bd 6 7
+|2,0,1603853195,,"bd 6 7"
+:bd 13
+|2,0,1603853171,,"bd 13"
+:bd 8 11
+|2,0,1603853166,,"bd 8 11"
 : ./vim/.vim/vimrc
 |2,0,1603872344,," ./vim/.vim/vimrc"
 :help deoplete
 |2,0,1603852905,,"help deoplete"
-:OpenSession ML_STR
-|2,0,1603852870,,"OpenSession ML_STR"
 :messages
 |2,0,1603852718,,"messages"
 :bd 6 7 8 11 13
 |2,0,1603852708,,"bd 6 7 8 11 13"
-:b 
-|2,0,1603852630,,"b "
-:SaveSession ML_STR
-|2,0,1603852377,,"SaveSession ML_STR"
 :PlugDiff
 |2,0,1603851405,,"PlugDiff"
 :PlugStatus
@@ -50,12 +66,8 @@ $
 |2,0,1603850752,,"PlugUpgrade"
 :SaveSession ML_STR\
 |2,0,1603850123,,"SaveSession ML_STR\\"
-:pwd
-|2,0,1603719906,,"pwd"
 :q!
 |2,0,1603849244,,"q!"
-:vs
-|2,0,1603612730,,"vs"
 :vp
 |2,0,1603612728,,"vp"
 :sp
@@ -148,6 +160,90 @@ $
 |2,0,1599790766,,"OpenSession ML_TextBoxes++"
 
 # Search String History (newest to oldest):
+?/json
+|2,1,1604062922,47,"json"
+?/html
+|2,1,1604062917,47,"html"
+?/xml
+|2,1,1604062912,47,"xml"
+?/command
+|2,1,1604062805,47,"command"
+? \<charsstr\>
+|2,1,1604057147,,"\\<charsstr\\>"
+? \<converter\>
+|2,1,1603993375,,"\\<converter\\>"
+?/opt.num_class
+|2,1,1603992810,47,"opt.num_class"
+? \<num_class\>
+|2,1,1603989794,,"\\<num_class\\>"
+?/num_cla
+|2,1,1603989793,47,"num_cla"
+?/num_classes
+|2,1,1603989765,47,"num_classes"
+? \<SequenceModeling_output\>
+|2,1,1603987083,,"\\<SequenceModeling_output\\>"
+?/[EOS]
+|2,1,1603986795,47,"[EOS]"
+? \<downsample\>
+|2,1,1603984446,,"\\<downsample\\>"
+? \<_make_layer\>
+|2,1,1603981827,,"\\<_make_layer\\>"
+? \<visual_feature\>
+|2,1,1603979112,,"\\<visual_feature\\>"
+? \<FeatureExtraction\>
+|2,1,1603977597,,"\\<FeatureExtraction\\>"
+? \<image_tensors\>
+|2,1,1603963997,,"\\<image_tensors\\>"
+? \<PAD\>
+|2,1,1603963186,,"\\<PAD\\>"
+?/PAD
+|2,1,1603963177,47,"PAD"
+?/opt.PAD
+|2,1,1603963169,47,"opt.PAD"
+? \<keep_ratio_with_pad\>
+|2,1,1603963134,,"\\<keep_ratio_with_pad\\>"
+?/keep_ratio_with
+|2,1,1603963132,47,"keep_ratio_with"
+? \<img\>
+|2,1,1603962768,,"\\<img\\>"
+? \<LmdbDataset\>
+|2,1,1603962610,,"\\<LmdbDataset\\>"
+? \<balanced_batch_images\>
+|2,1,1603962417,,"\\<balanced_batch_images\\>"
+?/model = Model
+|2,1,1603961923,47,"model = Model"
+? \<inv_delta_C\>
+|2,1,1603949426,,"\\<inv_delta_C\\>"
+? \<GridGenerator\>
+|2,1,1603942230,,"\\<GridGenerator\\>"
+?/linalg
+|2,1,1603941691,47,"linalg"
+? \<_build_P_hat\>
+|2,1,1603906555,,"\\<_build_P_hat\\>"
+? \<_build_inv_delta_C\>
+|2,1,1603906527,,"\\<_build_inv_delta_C\\>"
+? \<I_r_width\>
+|2,1,1603883771,,"\\<I_r_width\\>"
+? \<I_channel_num\>
+|2,1,1603880263,,"\\<I_channel_num\\>"
+? \<LocalizationNetwork\>
+|2,1,1603857878,,"\\<LocalizationNetwork\\>"
+? \<dataset_list\>
+|2,1,1603857440,,"\\<dataset_list\\>"
+? \<hierarchical_dataset\>
+|2,1,1603857403,,"\\<hierarchical_dataset\\>"
+? \<dataloader_iter_list\>
+|2,1,1603857150,,"\\<dataloader_iter_list\\>"
+? \<model\>
+|2,1,1603856104,,"\\<model\\>"
+? \<is_train\>
+|2,1,1603856051,,"\\<is_train\\>"
+? \<output_channel\>
+|2,1,1603855019,,"\\<output_channel\\>"
+?/input_channel
+|2,1,1603854790,47,"input_channel"
+?/git
+|2,1,1603872897,47,"git"
 ?/num_processes
 |2,1,1603852591,47,"num_processes"
 ?/preview
@@ -206,8 +302,6 @@ $
 |2,1,1603779374,,"\\<_AlignCollate\\>"
 ? \<AlignCollate\>
 |2,1,1603779372,,"\\<AlignCollate\\>"
-? \<balanced_batch_images\>
-|2,1,1603775312,,"\\<balanced_batch_images\\>"
 ? \<Total_batch_size\>
 |2,1,1603767762,,"\\<Total_batch_size\\>"
 ? \<batch_size_list\>
@@ -216,8 +310,6 @@ $
 |2,1,1603767615,,"\\<images\\>"
 ?/workers
 |2,1,1603767522,47,"workers"
-? \<hierarchical_dataset\>
-|2,1,1603720715,,"\\<hierarchical_dataset\\>"
 ?/train_data
 |2,1,1603720605,47,"train_data"
 ? \<select_data\>
@@ -228,8 +320,6 @@ $
 |2,1,1603720017,,"\\<total_data_usage_ratio\\>"
 ?/total_data
 |2,1,1603720011,47,"total_data"
-? \<LmdbDataset\>
-|2,1,1603719491,,"\\<LmdbDataset\\>"
 ?/sensitive
 |2,1,1603705464,47,"sensitive"
 ? \<batch_max_length\>
@@ -348,8 +438,6 @@ $
 |2,1,1602692027,47,"Dropout"
 ? \<Dataset\>
 |2,1,1602601504,,"\\<Dataset\\>"
-? \<model\>
-|2,1,1602599249,,"\\<model\\>"
 ? \<_transform\>
 |2,1,1602599191,,"\\<_transform\\>"
 ? \<isotropic2d_gaussian_grayscale_map\>
@@ -392,201 +480,51 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	6
-|3,0,0,0,1,0,1603849525,"6"
+"0	LINE	0
+	
+	augroup filetype_html
+	    autocmd!
+	    autocmd FileType html nnoremap <buffer> <localleader>f Vatzf
+	    command! PrettyPrintHTML !tidy -mi -html -wrap 0 %
+	augroup end
+|3,0,0,1,6,0,1604063064,"","augroup filetype_html","    autocmd!","    autocmd FileType html nnoremap <buffer> <localleader>f Vatzf","    command! PrettyPrintHTML !tidy -mi -html -wrap 0 %","augroup end"
 "1	LINE	0
-	impo
-	v
-|3,0,1,1,2,0,1603852671,"impo","v"
+	    autocmd FileType html nnoremap <buffer> <localleader>f Vatzf
+	    command! PrettyPrintHTML !tidy -mi -html -wrap 0 %
+|3,0,1,1,2,0,1604063079,"    autocmd FileType html nnoremap <buffer> <localleader>f Vatzf","    command! PrettyPrintHTML !tidy -mi -html -wrap 0 %"
 "2	LINE	0
-	call deoplete#custom#option({'refresh_always': v:false})
-|3,0,2,1,1,0,1603850190,"call deoplete#custom#option({'refresh_always': v:false})"
+	    command! PrettyPrintXML !tidy -mi -xml -wrap 0 %
+|3,0,2,1,1,0,1604063077,"    command! PrettyPrintXML !tidy -mi -xml -wrap 0 %"
 "3	LINE	0
-	
-|3,0,3,1,1,0,1603795624,""
+	    autocmd FileType html nnoremap <buffer> <localleader>f Vatzf
+	    command! PrettyPrintHTML !tidy -mi -html -wrap 0 %
+|3,0,3,1,2,0,1604063075,"    autocmd FileType html nnoremap <buffer> <localleader>f Vatzf","    command! PrettyPrintHTML !tidy -mi -html -wrap 0 %"
 "4	LINE	0
-	Docstring for torch.nn.modules.loss:class CrossEntropyLoss
-	==========================================================
-	CrossEntropyLoss(weight: Optional[Any]=..., ignore_index: int=..., reduction: str=...)
-	
-	This criterion combines :func:`nn.LogSoftmax` and :func:`nn.NLLLoss` in one single class.
-	
-	It is useful when training a classification problem with `C` classes.
-	If provided, the optional argument :attr:`weight` should be a 1D `Tensor`
-	assigning weight to each of the classes.
-	This is particularly useful when you have an unbalanced training set.
-	
-	The `input` is expected to contain raw, unnormalized scores for each class.
-	
-	`input` has to be a Tensor of size either :math:`(minibatch, C)` or
-	:math:`(minibatch, C, d_1, d_2, ..., d_K)`
-	with :math:`K \geq 1` for the `K`-dimensional case (described later).
-	
-	This criterion expects a class index in the range :math:`[0, C-1]` as the
-	`target` for each value of a 1D tensor of size `minibatch`; if `ignore_index`
-	is specified, this criterion also accepts this class index (this index may not
-	necessarily be in the class range).
-	
-	The loss can be described as:
-	
-	.. math::
-	    \text{loss}(x, class) = -\log\left(\frac{\exp(x[class])}{\sum_j \exp(x[j])}\right)
-	                   = -x[class] + \log\left(\sum_j \exp(x[j])\right)
-	
-	or in the case of the :attr:`weight` argument being specified:
-	
-	.. math::
-	    \text{loss}(x, class) = weight[class] \left(-x[class] + \log\left(\sum_j \exp(x[j])\right)\right)
-	
-	The losses are averaged across observations for each minibatch.
-	
-	Can also be used for higher dimension inputs, such as 2D images, by providing
-	an input of size :math:`(minibatch, C, d_1, d_2, ..., d_K)` with :math:`K \geq 1`,
-	where :math:`K` is the number of dimensions, and a target of appropriate shape
-	(see below).
-	
-	
-	Args:
-	    weight (Tensor, optional): a manual rescaling weight given to each class.
-	        If given, has to be a Tensor of size `C`
-	    size_average (bool, optional): Deprecated (see :attr:`reduction`). By default,
-	        the losses are averaged over each loss element in the batch. Note that for
-	        some losses, there are multiple elements per sample. If the field :attr:`size_average`
-	        is set to ``False``, the losses are instead summed for each minibatch. Ignored
-	        when reduce is ``False``. Default: ``True``
-	    ignore_index (int, optional): Specifies a target value that is ignored
-|3,0,4,1,50,0,1603795624,"Docstring for torch.nn.modules.loss:class CrossEntropyLoss","==========================================================","CrossEntropyLoss(weight: Optional[Any]=..., ignore_index: int=..., reduction: str=...)","","This criterion combines :func:`nn.LogSoftmax` and :func:`nn.NLLLoss` in one single class.","","It is useful when training a classification problem with `C` classes.",>75
-|<"If provided, the optional argument :attr:`weight` should be a 1D `Tensor`","assigning weight to each of the classes.","This is particularly useful when you have an unbalanced training set.","","The `input` is expected to contain raw, unnormalized scores for each class.","","`input` has to be a Tensor of size either :math:`(minibatch, C)` or",":math:`(minibatch, C, d_1, d_2, ..., d_K)`","with :math:`K \\geq 1` for the `K`-dimensional case (described later).","",>75
-|<"This criterion expects a class index in the range :math:`[0, C-1]` as the","`target` for each value of a 1D tensor of size `minibatch`; if `ignore_index`","is specified, this criterion also accepts this class index (this index may not","necessarily be in the class range).","","The loss can be described as:","",".. math::","    \\text{loss}(x, class) = -\\log\\left(\\frac{\\exp(x[class])}{\\sum_j \\exp(x[j])}\\right)",>74
-|<"                   = -x[class] + \\log\\left(\\sum_j \\exp(x[j])\\right)","","or in the case of the :attr:`weight` argument being specified:","",".. math::","    \\text{loss}(x, class) = weight[class] \\left(-x[class] + \\log\\left(\\sum_j \\exp(x[j])\\right)\\right)","","The losses are averaged across observations for each minibatch.","","Can also be used for higher dimension inputs, such as 2D images, by providing",>85
-|<"an input of size :math:`(minibatch, C, d_1, d_2, ..., d_K)` with :math:`K \\geq 1`,","where :math:`K` is the number of dimensions, and a target of appropriate shape","(see below).","","","Args:","    weight (Tensor, optional): a manual rescaling weight given to each class.","        If given, has to be a Tensor of size `C`","    size_average (bool, optional): Deprecated (see :attr:`reduction`). By default,",>84
-|<"        the losses are averaged over each loss element in the batch. Note that for","        some losses, there are multiple elements per sample. If the field :attr:`size_average`","        is set to ``False``, the losses are instead summed for each minibatch. Ignored","        when reduce is ``False``. Default: ``True``","    ignore_index (int, optional): Specifies a target value that is ignored"
+	    command! PrettyPrintJSON %!python -m json.tool
+|3,0,4,1,1,0,1604063070,"    command! PrettyPrintJSON %!python -m json.tool"
 "5	LINE	0
-	
-|3,0,5,1,1,0,1603795401,""
+	    command! PrettyPrintJSON %!python -m json.tool
+	    command! PrettyPrintXML !tidy -mi -xml -wrap 0 %
+|3,0,5,1,2,0,1604063061,"    command! PrettyPrintJSON %!python -m json.tool","    command! PrettyPrintXML !tidy -mi -xml -wrap 0 %"
 "6	LINE	0
-	Docstring for torch.nn.modules.loss:class CTCLoss
-	=================================================
-	CTCLoss(blank: int=..., reduction: str=..., zero_infinity: bool=...)
-	
-	The Connectionist Temporal Classification loss.
-	
-	Calculates loss between a continuous (unsegmented) time series and a target sequence. CTCLoss sums over the
-	probability of possible alignments of input to target, producing a loss value which is differentiable
-	with respect to each input node. The alignment of input to target is assumed to be "many-to-one", which
-	limits the length of the target sequence such that it must be :math:`\leq` the input length.
-	
-	Args:
-	    blank (int, optional): blank label. Default :math:`0`.
-	    reduction (string, optional): Specifies the reduction to apply to the output:
-	        ``'none'`` | ``'mean'`` | ``'sum'``. ``'none'``: no reduction will be applied,
-	        ``'mean'``: the output losses will be divided by the target lengths and
-	        then the mean over the batch is taken. Default: ``'mean'``
-	    zero_infinity (bool, optional):
-	        Whether to zero infinite losses and the associated gradients.
-	        Default: ``False``
-	        Infinite losses mainly occur when the inputs are too short
-	        to be aligned to the targets.
-	
-	Shape:
-	    - Log_probs: Tensor of size :math:`(T, N, C)`,
-	      where :math:`T = \text{input length}`,
-	      :math:`N = \text{batch size}`, and
-	      :math:`C = \text{number of classes (including blank)}`.
-	      The logarithmized probabilities of the outputs (e.g. obtained with
-	      :func:`torch.nn.functional.log_softmax`).
-	    - Targets: Tensor of size :math:`(N, S)` or
-	      :math:`(\operatorname{sum}(\text{target\_lengths}))`,
-	      where :math:`N = \text{batch size}` and
-	      :math:`S = \text{max target length, if shape is } (N, S)`.
-	      It represent the target sequences. Each element in the target
-	      sequence is a class index. And the target index cannot be blank (default=0).
-	      In the :math:`(N, S)` form, targets are padded to the
-	      length of the longest sequence, and stacked.
-	      In the :math:`(\operatorname{sum}(\text{target\_lengths}))` form,
-	      the targets are assumed to be un-padded and
-	      concatenated within 1 dimension.
-	    - Input_lengths: Tuple or tensor of size :math:`(N)`,
-	      where :math:`N = \text{batch size}`. It represent the lengths of the
-	      inputs (must each be :math:`\leq T`). And the lengths are specified
-	      for each sequence to achieve masking under the assumption that sequences
-	      are padded to equal lengths.
-	    - Target_lengths: Tuple or tensor of size :math:`(N)`,
-	      where :math:`N = \text{batch size}`. It represent lengths of the targets.
-	      Lengths are specified for each sequence to achieve masking under the
-	      assumption that sequences are padded to equal lengths. If target shape is
-|3,0,6,1,50,0,1603795401,"Docstring for torch.nn.modules.loss:class CTCLoss","=================================================","CTCLoss(blank: int=..., reduction: str=..., zero_infinity: bool=...)","","The Connectionist Temporal Classification loss.","","Calculates loss between a continuous (unsegmented) time series and a target sequence. CTCLoss sums over the",>103
-|<"probability of possible alignments of input to target, producing a loss value which is differentiable","with respect to each input node. The alignment of input to target is assumed to be \"many-to-one\", which","limits the length of the target sequence such that it must be :math:`\\leq` the input length.","","Args:","    blank (int, optional): blank label. Default :math:`0`.","    reduction (string, optional): Specifies the reduction to apply to the output:",>88
-|<"        ``'none'`` | ``'mean'`` | ``'sum'``. ``'none'``: no reduction will be applied,","        ``'mean'``: the output losses will be divided by the target lengths and","        then the mean over the batch is taken. Default: ``'mean'``","    zero_infinity (bool, optional):","        Whether to zero infinite losses and the associated gradients.","        Default: ``False``","        Infinite losses mainly occur when the inputs are too short","        to be aligned to the targets.","",>8
-|<"Shape:","    - Log_probs: Tensor of size :math:`(T, N, C)`,","      where :math:`T = \\text{input length}`,","      :math:`N = \\text{batch size}`, and","      :math:`C = \\text{number of classes (including blank)}`.","      The logarithmized probabilities of the outputs (e.g. obtained with","      :func:`torch.nn.functional.log_softmax`).","    - Targets: Tensor of size :math:`(N, S)` or","      :math:`(\\operatorname{sum}(\\text{target\\_lengths}))`,",>48
-|<"      where :math:`N = \\text{batch size}` and","      :math:`S = \\text{max target length, if shape is } (N, S)`.","      It represent the target sequences. Each element in the target","      sequence is a class index. And the target index cannot be blank (default=0).","      In the :math:`(N, S)` form, targets are padded to the","      length of the longest sequence, and stacked.","      In the :math:`(\\operatorname{sum}(\\text{target\\_lengths}))` form,",>51
-|<"      the targets are assumed to be un-padded and","      concatenated within 1 dimension.","    - Input_lengths: Tuple or tensor of size :math:`(N)`,","      where :math:`N = \\text{batch size}`. It represent the lengths of the","      inputs (must each be :math:`\\leq T`). And the lengths are specified","      for each sequence to achieve masking under the assumption that sequences","      are padded to equal lengths.","    - Target_lengths: Tuple or tensor of size :math:`(N)`,",>82
-|<"      where :math:`N = \\text{batch size}`. It represent lengths of the targets.","      Lengths are specified for each sequence to achieve masking under the","      assumption that sequences are padded to equal lengths. If target shape is"
+	        print('cur_hidden.shape: ', cur_hidden.shape)
+|3,0,6,1,1,0,1603990527,"        print('cur_hidden.shape: ', cur_hidden.shape)"
 "7	LINE	0
 	
-|3,0,7,1,1,0,1603794810,""
+|3,0,7,1,1,0,1603988023,""
 "8	LINE	0
-	Docstring for torch.nn.parallel.data_parallel:class DataParallel
-	================================================================
-	DataParallel(module: Module[T_co], device_ids: Optional[_devices_t]=..., output_device: Optional[_device_t]=..., dim: int=...)
+	Docstring for torch.nn.modules.rnn:def flatten_parameters
+	=========================================================
+	flatten_parameters(self) -> List[Parameter]
 	
-	Implements data parallelism at the module level.
+	Resets parameter data pointer so that they can use faster code paths.
 	
-	This container parallelizes the application of the given :attr:`module` by
-	splitting the input across the specified devices by chunking in the batch
-	dimension (other objects will be copied once per device). In the forward
-	pass, the module is replicated on each device, and each replica handles a
-	portion of the input. During the backwards pass, gradients from each replica
-	are summed into the original module.
-	
-	The batch size should be larger than the number of GPUs used.
-	
-	See also: :ref:`cuda-nn-dataparallel-instead`
-	
-	Arbitrary positional and keyword inputs are allowed to be passed into
-	DataParallel but some types are specially handled. tensors will be
-	**scattered** on dim specified (default 0). tuple, list and dict types will
-	be shallow copied. The other types will be shared among different threads
-	and can be corrupted if written to in the model's forward pass.
-	
-	The parallelized :attr:`module` must have its parameters and buffers on
-	``device_ids[0]`` before running this :class:`~torch.nn.DataParallel`
-	module.
-	
-	.. warning::
-	    In each forward, :attr:`module` is **replicated** on each device, so any
-	    updates to the running module in ``forward`` will be lost. For example,
-	    if :attr:`module` has a counter attribute that is incremented in each
-	    ``forward``, it will always stay at the initial value because the update
-	    is done on the replicas which are destroyed after ``forward``. However,
-	    :class:`~torch.nn.DataParallel` guarantees that the replica on
-	    ``device[0]`` will have its parameters and buffers sharing storage with
-	    the base parallelized :attr:`module`. So **in-place** updates to the
-	    parameters or buffers on ``device[0]`` will be recorded. E.g.,
-	    :class:`~torch.nn.BatchNorm2d` and :func:`~torch.nn.utils.spectral_norm`
-	    rely on this behavior to update the buffers.
-	
-	.. warning::
-	    Forward and backward hooks defined on :attr:`module` and its submodules
-	    will be invoked ``len(device_ids)`` times, each with inputs located on
-	    a particular device. Particularly, the hooks are only guaranteed to be
-	    executed in correct order with respect to operations on corresponding
-	    devices. For example, it is not guaranteed that hooks set via
-	    :meth:`~torch.nn.Module.register_forward_pre_hook` be executed before
-	    `all` ``len(device_ids)`` :meth:`~torch.nn.Module.forward` calls, but
-	    that each such hook be executed before the corresponding
-	    :meth:`~torch.nn.Module.forward` call of that device.
-|3,0,8,1,50,0,1603794810,"Docstring for torch.nn.parallel.data_parallel:class DataParallel","================================================================","DataParallel(module: Module[T_co], device_ids: Optional[_devices_t]=..., output_device: Optional[_device_t]=..., dim: int=...)","","Implements data parallelism at the module level.","","This container parallelizes the application of the given :attr:`module` by",>75
-|<"splitting the input across the specified devices by chunking in the batch","dimension (other objects will be copied once per device). In the forward","pass, the module is replicated on each device, and each replica handles a","portion of the input. During the backwards pass, gradients from each replica","are summed into the original module.","","The batch size should be larger than the number of GPUs used.","","See also: :ref:`cuda-nn-dataparallel-instead`","",>71
-|<"Arbitrary positional and keyword inputs are allowed to be passed into","DataParallel but some types are specially handled. tensors will be","**scattered** on dim specified (default 0). tuple, list and dict types will","be shallow copied. The other types will be shared among different threads","and can be corrupted if written to in the model's forward pass.","","The parallelized :attr:`module` must have its parameters and buffers on",>71
-|<"``device_ids[0]`` before running this :class:`~torch.nn.DataParallel`","module.","",".. warning::","    In each forward, :attr:`module` is **replicated** on each device, so any","    updates to the running module in ``forward`` will be lost. For example,","    if :attr:`module` has a counter attribute that is incremented in each","    ``forward``, it will always stay at the initial value because the update","    is done on the replicas which are destroyed after ``forward``. However,",>68
-|<"    :class:`~torch.nn.DataParallel` guarantees that the replica on","    ``device[0]`` will have its parameters and buffers sharing storage with","    the base parallelized :attr:`module`. So **in-place** updates to the","    parameters or buffers on ``device[0]`` will be recorded. E.g.,","    :class:`~torch.nn.BatchNorm2d` and :func:`~torch.nn.utils.spectral_norm`","    rely on this behavior to update the buffers.","",".. warning::",>77
-|<"    Forward and backward hooks defined on :attr:`module` and its submodules","    will be invoked ``len(device_ids)`` times, each with inputs located on","    a particular device. Particularly, the hooks are only guaranteed to be","    executed in correct order with respect to operations on corresponding","    devices. For example, it is not guaranteed that hooks set via","    :meth:`~torch.nn.Module.register_forward_pre_hook` be executed before",>75
-|<"    `all` ``len(device_ids)`` :meth:`~torch.nn.Module.forward` calls, but","    that each such hook be executed before the corresponding","    :meth:`~torch.nn.Module.forward` call of that device."
+	Right now, this works only if the module is on the GPU and cuDNN is enabled.
+	Otherwise, it's a no-op.
+|3,0,8,1,8,0,1603988023,"Docstring for torch.nn.modules.rnn:def flatten_parameters","=========================================================","flatten_parameters(self) -> List[Parameter]","","Resets parameter data pointer so that they can use faster code paths.","","Right now, this works only if the module is on the GPU and cuDNN is enabled.","Otherwise, it's a no-op."
 "9	LINE	0
-	    print('saved_model: ', opt.saved_model)
-|3,0,9,1,1,0,1603794725,"    print('saved_model: ', opt.saved_model)"
+	
+|3,0,9,1,1,0,1603985406,""
 "a@	CHAR	0
 	hello!
 |3,2,10,0,1,0,1593762729,"hello!"
@@ -600,288 +538,315 @@ $
 	uuuuuuu
 |3,0,30,0,1,0,1595176726,"uuuuuuu"
 ""-	CHAR	0
-	0
-|3,1,36,0,1,0,1603852935,"0"
+	 
+|3,1,36,0,1,0,1604063238," "
 
 # global variables:
 
 # File marks:
 'M  2  0  ~/.dotfiles/.git/index
 |4,77,2,0,1603872333,"~/.dotfiles/.git/index"
-'0  1434  0  ~/.dotfiles/vim/.vim/vimrc
-|4,48,1434,0,1603872402,"~/.dotfiles/vim/.vim/vimrc"
-'1  9  0  ~/.dotfiles/setup.sh
-|4,49,9,0,1603851675,"~/.dotfiles/setup.sh"
-'2  13  0  ~/.dotfiles/setup.sh
-|4,50,13,0,1603851640,"~/.dotfiles/setup.sh"
-'3  13  0  ~/.dotfiles/setup.sh
-|4,51,13,0,1603851640,"~/.dotfiles/setup.sh"
-'4  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,52,2,0,1603850166,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
-'5  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,53,2,0,1603850166,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
-'6  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,54,2,0,1603850166,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
-'7  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,55,2,0,1603850166,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
-'8  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,56,2,0,1603850166,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
-'9  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,57,2,0,1603850166,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
+'0  45  12  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/examine.py
+|4,48,45,12,1604063435,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/examine.py"
+'1  10  16  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.sh
+|4,49,10,16,1603909660,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.sh"
+'2  10  16  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.sh
+|4,50,10,16,1603909660,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.sh"
+'3  105  0  ~/.dotfiles/vim/.vim/vimrc
+|4,51,105,0,1603872943,"~/.dotfiles/vim/.vim/vimrc"
+'4  105  0  ~/.dotfiles/vim/.vim/vimrc
+|4,52,105,0,1603872943,"~/.dotfiles/vim/.vim/vimrc"
+'5  105  0  ~/.dotfiles/vim/.vim/vimrc
+|4,53,105,0,1603872943,"~/.dotfiles/vim/.vim/vimrc"
+'6  105  0  ~/.dotfiles/vim/.vim/vimrc
+|4,54,105,0,1603872943,"~/.dotfiles/vim/.vim/vimrc"
+'7  1437  0  ~/.dotfiles/vim/.vim/vimrc
+|4,55,1437,0,1603872402,"~/.dotfiles/vim/.vim/vimrc"
+'8  1437  0  ~/.dotfiles/vim/.vim/vimrc
+|4,56,1437,0,1603872402,"~/.dotfiles/vim/.vim/vimrc"
+'9  1437  0  ~/.dotfiles/vim/.vim/vimrc
+|4,57,1437,0,1603872402,"~/.dotfiles/vim/.vim/vimrc"
 
 # Jumplist (newest first):
--'  1434  0  ~/.dotfiles/vim/.vim/vimrc
-|4,39,1434,0,1603872402,"~/.dotfiles/vim/.vim/vimrc"
--'  1280  26  ~/.dotfiles/vim/.vim/vimrc
-|4,39,1280,26,1603872369,"~/.dotfiles/vim/.vim/vimrc"
--'  1282  53  ~/.dotfiles/vim/.vim/vimrc
-|4,39,1282,53,1603872319,"~/.dotfiles/vim/.vim/vimrc"
--'  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,2,0,1603852941,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,2,0,1603852941,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  3  11  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,3,11,1603852939,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  3  11  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,3,11,1603852939,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  256  4  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py
-|4,39,256,4,1603852871,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py"
--'  256  4  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py
-|4,39,256,4,1603852871,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py"
--'  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,2,0,1603852866,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,2,0,1603852866,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  3  7  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,3,7,1603852863,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  3  7  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,3,7,1603852863,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  256  4  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py
-|4,39,256,4,1603852814,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py"
--'  256  4  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py
-|4,39,256,4,1603852814,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py"
--'  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,2,0,1603852807,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,2,0,1603852807,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  3  17  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,3,17,1603852799,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  3  17  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,3,17,1603852799,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  256  4  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py
-|4,39,256,4,1603852733,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py"
--'  256  4  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py
-|4,39,256,4,1603852733,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py"
--'  4  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,4,0,1603852726,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  4  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,4,0,1603852726,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  4  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,4,0,1603852726,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  4  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,4,0,1603852726,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  4  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,4,0,1603852726,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  4  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,4,0,1603852726,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  4  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,4,0,1603852726,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  4  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,4,0,1603852726,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  3  3  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,3,3,1603852689,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  3  3  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,3,3,1603852689,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,2,0,1603852649,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  256  4  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py
-|4,39,256,4,1603852649,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py"
--'  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,2,0,1603852649,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  256  4  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py
-|4,39,256,4,1603852649,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py"
--'  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,2,0,1603852644,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,2,0,1603852644,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  3  17  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,3,17,1603852641,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  3  17  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,3,17,1603852641,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
-|4,39,1,0,1603852625,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0"
--'  256  4  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py
-|4,39,256,4,1603852602,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py"
--'  256  4  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py
-|4,39,256,4,1603852602,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py"
--'  3  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,3,0,1603852597,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  3  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,3,0,1603852597,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,2,0,1603852385,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  256  4  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py
-|4,39,256,4,1603852385,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py"
--'  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,2,0,1603852385,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  256  4  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py
-|4,39,256,4,1603852385,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py"
--'  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,2,0,1603852378,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,2,0,1603852378,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  3  5  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,3,5,1603851797,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  3  5  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-|4,39,3,5,1603851797,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py"
--'  9  0  ~/.dotfiles/setup.sh
-|4,39,9,0,1603851675,"~/.dotfiles/setup.sh"
--'  9  0  ~/.dotfiles/setup.sh
-|4,39,9,0,1603851675,"~/.dotfiles/setup.sh"
--'  9  0  ~/.dotfiles/setup.sh
-|4,39,9,0,1603851675,"~/.dotfiles/setup.sh"
--'  9  0  ~/.dotfiles/setup.sh
-|4,39,9,0,1603851675,"~/.dotfiles/setup.sh"
--'  9  0  ~/.dotfiles/setup.sh
-|4,39,9,0,1603851675,"~/.dotfiles/setup.sh"
--'  9  0  ~/.dotfiles/setup.sh
-|4,39,9,0,1603851675,"~/.dotfiles/setup.sh"
--'  9  0  ~/.dotfiles/setup.sh
-|4,39,9,0,1603851675,"~/.dotfiles/setup.sh"
--'  9  0  ~/.dotfiles/setup.sh
-|4,39,9,0,1603851675,"~/.dotfiles/setup.sh"
--'  9  0  ~/.dotfiles/setup.sh
-|4,39,9,0,1603851675,"~/.dotfiles/setup.sh"
--'  9  0  ~/.dotfiles/setup.sh
-|4,39,9,0,1603851675,"~/.dotfiles/setup.sh"
--'  9  0  ~/.dotfiles/setup.sh
-|4,39,9,0,1603851675,"~/.dotfiles/setup.sh"
--'  9  0  ~/.dotfiles/setup.sh
-|4,39,9,0,1603851675,"~/.dotfiles/setup.sh"
--'  9  0  ~/.dotfiles/setup.sh
-|4,39,9,0,1603851675,"~/.dotfiles/setup.sh"
--'  9  0  ~/.dotfiles/setup.sh
-|4,39,9,0,1603851675,"~/.dotfiles/setup.sh"
--'  9  0  ~/.dotfiles/setup.sh
-|4,39,9,0,1603851675,"~/.dotfiles/setup.sh"
--'  9  0  ~/.dotfiles/setup.sh
-|4,39,9,0,1603851675,"~/.dotfiles/setup.sh"
--'  9  0  ~/.dotfiles/setup.sh
-|4,39,9,0,1603851675,"~/.dotfiles/setup.sh"
+-'  45  12  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/examine.py
+|4,39,45,12,1604063435,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/examine.py"
+-'  48  26  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/examine.py
+|4,39,48,26,1604062401,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/examine.py"
+-'  54  16  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/examine.py
+|4,39,54,16,1604057148,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/examine.py"
+-'  52  12  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/examine.py
+|4,39,52,12,1604057147,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/examine.py"
+-'  24  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/examine.py
+|4,39,24,0,1604056540,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/examine.py"
+-'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/examine.py
+|4,39,1,0,1604056538,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/examine.py"
+-'  87  44  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,87,44,1603994296,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  87  44  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,87,44,1603994296,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  86  52  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,86,52,1603994291,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  81  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,81,8,1603994291,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  79  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,79,0,1603994291,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  78  40  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,78,40,1603994291,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  86  52  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,86,52,1603994291,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  81  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,81,8,1603994291,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  79  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,79,0,1603994291,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  78  40  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,78,40,1603994291,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  88  44  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,88,44,1603994287,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  88  44  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,88,44,1603994287,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  66  44  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,66,44,1603994286,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  66  44  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,66,44,1603994286,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  67  12  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,67,12,1603987966,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  67  12  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,67,12,1603987966,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  70  35  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,70,35,1603986053,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  70  35  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,70,35,1603986053,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  95  80  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,95,80,1603986052,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  95  80  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,95,80,1603986052,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  64  45  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,64,45,1603984726,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  64  45  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,64,45,1603984726,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  60  17  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,60,17,1603984721,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  60  17  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,60,17,1603984721,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  57  17  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,57,17,1603984715,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  57  17  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,57,17,1603984715,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  21  38  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,21,38,1603984570,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  21  38  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,21,38,1603984570,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  55  16  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,55,16,1603984569,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  55  16  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,55,16,1603984569,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  50  31  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,50,31,1603980270,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  50  31  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,50,31,1603980270,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  83  40  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,83,40,1603979292,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  83  40  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,83,40,1603979292,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  77  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,77,8,1603979288,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  77  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,77,8,1603979288,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  49  40  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,49,40,1603978006,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  49  40  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,49,40,1603978006,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  48  27  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,48,27,1603977877,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  48  27  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,48,27,1603977877,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  46  36  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,46,36,1603977697,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  46  36  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,46,36,1603977697,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  45  17  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,45,17,1603977620,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  44  17  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,44,17,1603977620,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  45  17  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,45,17,1603977620,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  44  17  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,44,17,1603977620,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  43  17  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,43,17,1603977619,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  43  17  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,43,17,1603977619,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  42  17  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,42,17,1603977618,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  41  15  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,41,15,1603977618,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  42  17  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,42,17,1603977618,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  41  15  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,41,15,1603977618,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  73  25  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,73,25,1603965140,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  73  25  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,73,25,1603965140,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  91  12  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,91,12,1603962288,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  91  12  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+|4,39,91,12,1603962288,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py"
+-'  273  11  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py
+|4,39,273,11,1603937603,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py"
+-'  273  11  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py
+|4,39,273,11,1603937603,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py"
+-'  10  16  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.sh
+|4,39,10,16,1603909660,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.sh"
+-'  10  16  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.sh
+|4,39,10,16,1603909660,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.sh"
+-'  10  16  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.sh
+|4,39,10,16,1603909660,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.sh"
+-'  10  16  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.sh
+|4,39,10,16,1603909660,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.sh"
+-'  10  16  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.sh
+|4,39,10,16,1603909660,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.sh"
+-'  10  16  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.sh
+|4,39,10,16,1603909660,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.sh"
+-'  134  30  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,134,30,1603909654,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  134  30  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,134,30,1603909654,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  134  30  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,134,30,1603909654,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  134  30  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,134,30,1603909654,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  134  30  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,134,30,1603909654,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  134  30  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,134,30,1603909654,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  129  31  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,129,31,1603909490,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  129  31  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,129,31,1603909490,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  129  31  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,129,31,1603909490,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  129  31  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,129,31,1603909490,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  129  31  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,129,31,1603909490,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  129  31  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,129,31,1603909490,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  119  22  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,119,22,1603909109,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  119  22  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,119,22,1603909109,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  119  22  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,119,22,1603909109,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  119  22  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,119,22,1603909109,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  119  22  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,119,22,1603909109,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  119  22  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,119,22,1603909109,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  116  19  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,116,19,1603908328,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  116  19  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,116,19,1603908328,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  116  19  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,116,19,1603908328,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  116  19  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,116,19,1603908328,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  116  19  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,116,19,1603908328,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  116  19  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,116,19,1603908328,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  98  44  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,98,44,1603907121,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  98  44  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,98,44,1603907121,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  98  44  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,98,44,1603907121,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  98  44  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,98,44,1603907121,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  98  44  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,98,44,1603907121,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
+-'  98  44  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+|4,39,98,44,1603907121,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py"
 
 # History of marks within files (newest to oldest):
 
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/examine.py
+	*	1604063434	0
+	"	45	12
+
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/gt/train_ReCTS_019903.json
+	*	1604063432	0
+	"	1	0
+	.	2	0
+	+	2	0
+
 > ~/.dotfiles/vim/.vim/vimrc
-	*	1603872402	0
-	"	1434	0
-	^	1276	47
-	.	1282	53
+	*	1604063427	0
+	"	1451	71
+	^	1451	72
+	.	1451	71
 	+	4	0
-	+	906	0
-	+	907	76
-	+	908	22
-	+	906	0
-	+	1219	0
+	+	909	0
+	+	910	76
+	+	911	22
+	+	909	0
+	+	1222	0
 	+	110	0
-	+	1276	46
-	+	1282	54
-	+	1283	0
-	+	1276	47
+	+	1279	46
+	+	1285	54
+	+	1286	0
+	+	1279	47
 	+	159	0
-	+	1276	46
-	+	1282	53
-	+	1276	46
-	+	1282	53
+	+	1279	46
+	+	1285	53
+	+	1279	46
+	+	1285	53
+	+	474	0
+	+	1446	0
+	+	471	0
+	+	1446	0
+	+	1444	0
+	+	1446	0
+	+	1460	0
+	+	1447	0
+	+	1453	0
+	+	1460	0
+	+	1456	0
+	+	1460	0
+	+	1450	0
+	+	1448	19
+	+	1454	20
+	+	1444	25
+	+	1445	9
+	+	1450	24
+	+	1451	9
+	+	1456	25
+	+	1457	68
+	+	1451	71
 
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
-	*	1603852940	0
-	"	2	0
-	.	3	0
-	+	138	0
-	+	115	0
-	+	116	0
-	+	138	0
-	+	158	0
-	+	172	0
-	+	2	69
-	+	3	0
-	+	3	24
-	+	3	0
-	+	3	1
-	+	3	0
-	+	3	3
-	+	3	0
-
-> ~/.dotfiles/vim/.vim/plugged/deoplete.nvim/doc/deoplete.txt
-	*	1603852931	0
-	"	32	0
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
+	*	1603994294	0
+	"	87	44
+	.	87	0
+	+	72	0
+	+	46	0
+	+	49	0
+	+	48	0
+	+	79	0
+	+	75	0
+	+	78	53
+	+	81	0
+	+	83	0
+	+	79	0
+	+	86	0
+	+	87	0
+	k	22	31
 
 > /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/dataset.py
-	*	1603852871	0
-	"	342	4
-	.	151	0
+	*	1603994286	0
+	"	147	0
+	.	325	0
 	+	121	0
 	+	141	0
 	+	143	0
@@ -903,12 +868,28 @@ $
 	+	68	0
 	+	150	0
 	+	151	0
+	+	211	0
+	+	212	0
+	+	325	0
+	+	327	0
+	+	325	0
+	+	326	51
+	+	327	43
+	+	326	0
+	+	327	36
+	+	326	0
+	+	267	0
+	+	269	0
+	+	268	0
+	+	269	0
+	+	268	0
+	+	325	0
 	w	74	46
 
 > /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.py
-	*	1603852870	0
-	"	256	4
-	.	83	0
+	*	1603994283	0
+	"	164	12
+	.	165	0
 	+	247	0
 	+	261	0
 	+	35	0
@@ -930,6 +911,146 @@ $
 	+	141	0
 	+	165	0
 	+	83	0
+	+	165	0
+	a	155	33
+
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/utils.py
+	*	1603994140	0
+	"	138	33
+	.	3	0
+	+	138	0
+	+	115	0
+	+	116	0
+	+	138	0
+	+	158	0
+	+	172	0
+	+	2	69
+	+	3	0
+	+	3	24
+	+	3	0
+	+	3	1
+	+	3	0
+	+	3	3
+	+	3	0
+	+	2	87
+	+	3	0
+	+	2	69
+	+	3	0
+
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/test.py
+	*	1603994139	0
+	"	43	34
+
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/prediction.py
+	*	1603994007	0
+	"	92	8
+	^	44	43
+	.	43	52
+	+	76	0
+	+	79	49
+	+	81	57
+	+	83	27
+	+	86	35
+	+	89	0
+	+	88	39
+	+	90	46
+	+	94	0
+	+	93	0
+	+	92	27
+	+	93	0
+	+	92	14
+	+	93	35
+	+	40	0
+	+	41	47
+	+	42	0
+	+	44	42
+	+	43	52
+
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/__doc__
+	*	1603988032	0
+	"	35	0
+	.	1	0
+	+	1	0
+
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/feature_extraction.py
+	*	1603986315	0
+	"	121	13
+
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/sequence_modeling.py
+	*	1603986248	0
+	"	18	24
+
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/transformation.py
+	*	1603980748	0
+	"	27	29
+	.	30	0
+	+	72	0
+	+	143	0
+	+	97	0
+	+	98	0
+	+	149	0
+	+	163	0
+	+	164	0
+	+	30	32
+	+	31	51
+	+	32	45
+	+	33	67
+	+	38	47
+	+	32	43
+	+	33	51
+	+	30	0
+
+> ~/anaconda3/envs/ML_STR/lib/python3.6/site-packages/torch/nn/functional.py
+	*	1603964944	0
+	"	2593	4
+
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/create_lmdb_dataset.py
+	*	1603963126	0
+	"	72	23
+
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/train.sh
+	*	1603909660	0
+	"	10	16
+	^	10	17
+	.	10	16
+	+	1	0
+	+	2	41
+	+	7	23
+	+	8	25
+	+	9	27
+	+	4	21
+	+	2	74
+	+	4	76
+	+	6	16
+	+	1	29
+	+	2	13
+	+	4	13
+	+	2	65
+	+	4	65
+	+	2	79
+	+	2	13
+	+	2	80
+	+	4	0
+	+	2	72
+	+	4	0
+	+	2	72
+	+	4	0
+	+	3	11
+	+	3	72
+	+	4	0
+	+	7	19
+	+	8	25
+	+	10	16
+
+> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/NERD_tree_1
+	*	1603857747	0
+	"	19	0
+	.	1	0
+	+	1	0
+
+> ~/.dotfiles/vim/.vim/plugged/deoplete.nvim/doc/deoplete.txt
+	*	1603852931	0
+	"	32	0
 
 > /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/0
 	*	1603852621	0
@@ -1004,24 +1125,9 @@ $
 	+	9	0
 	+	22	0
 
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/model.py
-	*	1603800096	0
-	"	22	31
-	k	22	31
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/modules/prediction.py
-	*	1603800095	0
-	"	44	49
-
 > ~/anaconda3/envs/ML_STR/lib/python3.6/site-packages/torch/nn/parallel/data_parallel.py
 	*	1603798519	0
 	"	41	6
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/__doc__
-	*	1603795689	0
-	"	5	11
-	.	1	0
-	+	1	0
 
 > /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFT/models/backbone.py
 	*	1603793031	0
@@ -1123,10 +1229,6 @@ $
 	+	112	30
 	+	71	0
 	+	28	38
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_STR/deep-text-recognition-benchmark/create_lmdb_dataset.py
-	*	1603781310	0
-	"	63	12
 
 > ~/.dotfiles/vim/.vim/plugged/jedi-vim/pythonx/jedi/jedi/third_party/typeshed/stdlib/2and3/builtins.pyi
 	*	1603775072	0
@@ -4349,395 +4451,3 @@ $
 	+	29	0
 	+	30	17
 	+	23	16
-
-> ~/.dotfiles/vim/.vim/plugged/fzf/README.md
-	*	1599904085	0
-	"	24	0
-
-> ~/.dotfiles/.gitmodules
-	*	1599902292	0
-	"	1	0
-
-> ~/.bashrc
-	*	1599899223	0
-	"	136	22
-	^	136	2
-	.	136	1
-	+	134	22
-	+	135	68
-	+	137	0
-	+	136	1
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/scripts/rctw_task1_evaluation.sh
-	*	1599836697	0
-	"	11	25
-	^	13	23
-	.	11	0
-	+	1	0
-	+	5	0
-	+	1	0
-	+	21	0
-	+	7	32
-	+	21	0
-	+	8	0
-	+	9	6
-	+	21	0
-	+	10	0
-	+	11	26
-	+	12	17
-	+	13	24
-	+	14	17
-	+	15	19
-	+	16	28
-	+	21	0
-	+	20	23
-	+	16	30
-	+	20	57
-	+	18	96
-	+	21	0
-	+	21	4
-	+	18	6
-	+	21	0
-	+	18	75
-	+	19	58
-	+	18	0
-	+	19	0
-	+	20	97
-	+	20	11
-	+	1	0
-	+	10	0
-	+	1	0
-	+	4	0
-	+	18	77
-	+	4	0
-	+	1	0
-	+	18	77
-	+	10	31
-	+	1	0
-	+	13	0
-	+	11	0
-	+	20	99
-	+	11	0
-	+	20	104
-	+	11	26
-	+	20	104
-	+	13	22
-	+	20	103
-	+	11	0
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/scripts/train_eval.sh
-	*	1599831364	0
-	"	45	27
-	^	42	29
-	.	45	27
-	+	77	0
-	+	1	0
-	+	78	2
-	+	51	0
-	+	54	0
-	+	75	0
-	+	32	37
-	+	49	25
-	+	32	0
-	+	45	0
-	+	33	65
-	+	45	27
-	+	32	29
-	+	33	27
-	+	45	27
-	+	49	39
-	+	32	34
-	+	29	13
-	+	32	29
-	+	33	27
-	+	45	27
-	+	49	39
-	+	45	27
-	+	33	23
-	+	32	37
-	+	49	36
-	+	50	35
-	+	49	52
-	+	50	46
-	+	49	55
-	+	41	33
-	+	42	28
-	+	41	0
-	+	45	27
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/config/textboxes_plusplus_config.py
-	*	1599831345	0
-	"	1	0
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/evaluation/rctw_task1_evaluation/visualize.py
-	*	1599799138	0
-	"	20	56
-	^	20	9
-	.	20	0
-	+	1	0
-	+	4	0
-	+	16	5
-	+	13	22
-	+	14	63
-	+	13	22
-	+	14	0
-	+	16	0
-	+	15	31
-	+	16	9
-	+	16	0
-	+	18	82
-	+	17	27
-	+	18	43
-	+	19	78
-	+	18	0
-	+	20	54
-	+	34	30
-	+	34	76
-	+	30	0
-	+	35	0
-	+	25	59
-	+	24	0
-	+	23	0
-	+	24	0
-	+	23	0
-	+	24	0
-	+	23	0
-	+	24	0
-	+	25	41
-	+	25	0
-	+	27	29
-	+	27	32
-	+	27	0
-	+	26	63
-	+	27	9
-	+	27	0
-	+	31	0
-	+	30	63
-	+	31	0
-	+	32	69
-	+	31	0
-	+	33	0
-	+	34	0
-	+	36	10
-	+	36	47
-	+	37	0
-	+	36	27
-	+	40	37
-	+	36	12
-	+	40	41
-	+	56	36
-	+	57	18
-	+	56	38
-	+	57	17
-	+	56	39
-	+	56	38
-	+	57	25
-	+	56	36
-	+	57	67
-	+	58	69
-	+	61	52
-	+	35	0
-	+	20	0
-	+	21	0
-	+	20	0
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++/rctw_task1_evaluation.py
-	*	1599799138	0
-	"	146	26
-	^	144	53
-	.	144	26
-	+	136	21
-	+	152	33
-	+	135	32
-	+	136	0
-	+	137	0
-	+	136	0
-	+	137	10
-	+	152	33
-	+	137	21
-	+	138	0
-	+	137	0
-	+	138	21
-	+	152	33
-	+	139	0
-	+	138	0
-	+	139	21
-	+	152	33
-	+	139	0
-	+	150	0
-	+	140	0
-	+	150	0
-	+	140	21
-	+	152	33
-	+	141	0
-	+	140	0
-	+	141	10
-	+	152	33
-	+	141	21
-	+	142	0
-	+	150	0
-	+	141	0
-	+	142	10
-	+	152	33
-	+	142	30
-	+	143	22
-	+	152	34
-	+	142	0
-	+	436	18
-	+	436	27
-	+	158	0
-	+	157	0
-	+	158	30
-	+	158	0
-	+	157	0
-	+	158	0
-	+	436	0
-	+	143	0
-	+	144	0
-	+	143	0
-	+	144	11
-	+	158	34
-	+	144	0
-	+	145	11
-	+	158	34
-	+	144	0
-	+	158	0
-	+	157	0
-	+	145	0
-	+	134	0
-	+	150	0
-	+	150	42
-	+	150	0
-	+	158	0
-	+	146	0
-	+	145	0
-	+	146	11
-	+	158	34
-	+	146	22
-	+	147	0
-	+	146	0
-	+	147	22
-	+	158	34
-	+	147	0
-	+	146	33
-	+	158	0
-	+	157	0
-	+	148	42
-	+	152	34
-	+	148	0
-	+	152	0
-	+	148	0
-	+	149	0
-	+	148	0
-	+	150	0
-	+	149	0
-	+	150	0
-	+	149	0
-	+	150	0
-	+	144	0
-	+	152	34
-	+	144	0
-	+	142	0
-	+	152	33
-	+	142	0
-	+	152	34
-	+	149	61
-	+	148	62
-	+	144	26
-
-> /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/FundamentalPython/cv2/split_image_into_overlapped_images.py
-	*	1599758326	0
-	"	58	39
-	.	57	0
-	+	46	0
-	+	47	0
-	+	46	0
-	+	47	0
-	+	46	0
-	+	47	0
-	+	46	0
-	+	47	0
-	+	46	0
-	+	47	0
-	+	46	0
-	+	47	0
-	+	46	0
-	+	47	0
-	+	46	0
-	+	47	0
-	+	46	0
-	+	47	0
-	+	46	0
-	+	47	0
-	+	46	0
-	+	47	0
-	+	46	0
-	+	47	0
-	+	46	0
-	+	47	0
-	+	46	0
-	+	47	0
-	+	46	0
-	+	47	0
-	+	46	0
-	+	47	0
-	+	46	0
-	+	47	0
-	+	49	0
-	+	50	10
-	+	50	0
-	+	51	26
-	+	34	0
-	+	6	0
-	+	15	0
-	+	7	0
-	+	17	0
-	+	19	33
-	+	19	0
-	+	21	19
-	+	24	0
-	+	26	34
-	+	24	4
-	+	26	0
-	+	22	14
-	+	26	0
-	+	31	0
-	+	29	0
-	+	25	24
-	+	27	28
-	+	27	0
-	+	32	16
-	+	50	0
-	+	52	28
-	+	52	0
-	+	53	22
-	+	52	0
-	+	27	0
-	+	22	0
-	+	24	0
-	+	29	0
-	+	51	59
-	+	50	44
-	+	51	59
-	+	49	0
-	+	23	10
-	+	27	0
-	+	32	20
-	+	51	13
-	+	53	0
-	+	55	11
-	+	55	0
-	+	57	0
-	+	56	0
-	+	61	0
-	+	55	0
-	+	59	0
-	+	52	13
-	+	55	0
-	+	52	0
-	+	54	0
-	+	57	51
-	+	4	12
-	+	57	0
-	+	58	52
-	+	57	0

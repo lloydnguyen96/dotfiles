@@ -1,6 +1,6 @@
 " ~/.dotfiles/vim/.vim/sessions/ML_CRAFT.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 16 Tháng 10 2020 at 13:58:17.
+" Created by session.vim 2.13.1 on 30 Tháng 10 2020 at 19:50:14.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrti
@@ -58,19 +58,19 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe '1resize ' . ((&lines * 17 + 28) / 57)
+exe '1resize ' . ((&lines * 17 + 28) / 56)
 exe 'vert 1resize ' . ((&columns * 78 + 118) / 236)
-exe '2resize ' . ((&lines * 18 + 28) / 57)
+exe '2resize ' . ((&lines * 17 + 28) / 56)
 exe 'vert 2resize ' . ((&columns * 78 + 118) / 236)
-exe '3resize ' . ((&lines * 17 + 28) / 57)
+exe '3resize ' . ((&lines * 17 + 28) / 56)
 exe 'vert 3resize ' . ((&columns * 78 + 118) / 236)
-exe '4resize ' . ((&lines * 26 + 28) / 57)
+exe '4resize ' . ((&lines * 26 + 28) / 56)
 exe 'vert 4resize ' . ((&columns * 78 + 118) / 236)
-exe '5resize ' . ((&lines * 26 + 28) / 57)
+exe '5resize ' . ((&lines * 26 + 28) / 56)
 exe 'vert 5resize ' . ((&columns * 78 + 118) / 236)
-exe '6resize ' . ((&lines * 27 + 28) / 57)
+exe '6resize ' . ((&lines * 26 + 28) / 56)
 exe 'vert 6resize ' . ((&columns * 78 + 118) / 236)
-exe '7resize ' . ((&lines * 27 + 28) / 57)
+exe '7resize ' . ((&lines * 26 + 28) / 56)
 exe 'vert 7resize ' . ((&columns * 78 + 118) / 236)
 argglobal
 setlocal fdm=manual
@@ -82,12 +82,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 23 - ((3 * winheight(0) + 8) / 17)
+let s:l = 35 - ((12 * winheight(0) + 8) / 17)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-23
-normal! 019|
+35
+normal! 047|
 wincmd w
 argglobal
 if bufexists("project_config.py") | buffer project_config.py | else | edit project_config.py | endif
@@ -99,11 +99,11 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 5 - ((4 * winheight(0) + 9) / 18)
+let s:l = 1 - ((0 * winheight(0) + 8) / 17)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-5
+1
 normal! 0
 wincmd w
 argglobal
@@ -117,7 +117,7 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 158 - ((6 * winheight(0) + 8) / 17)
+let s:l = 158 - ((3 * winheight(0) + 8) / 17)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -225,11 +225,11 @@ silent! normal! zo
 silent! normal! zo
 53
 silent! normal! zo
-let s:l = 46 - ((12 * winheight(0) + 13) / 26)
+let s:l = 45 - ((3 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-46
+45
 normal! 030|
 wincmd w
 argglobal
@@ -296,8 +296,6 @@ silent! normal! zo
 silent! normal! zo
 201
 silent! normal! zo
-209
-silent! normal! zo
 219
 silent! normal! zo
 227
@@ -310,12 +308,12 @@ silent! normal! zo
 silent! normal! zo
 232
 silent! normal! zo
-let s:l = 84 - ((10 * winheight(0) + 13) / 27)
+let s:l = 83 - ((17 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-84
-normal! 015|
+83
+normal! 019|
 wincmd w
 argglobal
 if bufexists("datasets/synthtext/dataset.py") | buffer datasets/synthtext/dataset.py | else | edit datasets/synthtext/dataset.py | endif
@@ -328,27 +326,27 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 173 - ((14 * winheight(0) + 13) / 27)
+let s:l = 173 - ((1 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 173
 normal! 015|
 wincmd w
-6wincmd w
-exe '1resize ' . ((&lines * 17 + 28) / 57)
+3wincmd w
+exe '1resize ' . ((&lines * 17 + 28) / 56)
 exe 'vert 1resize ' . ((&columns * 78 + 118) / 236)
-exe '2resize ' . ((&lines * 18 + 28) / 57)
+exe '2resize ' . ((&lines * 17 + 28) / 56)
 exe 'vert 2resize ' . ((&columns * 78 + 118) / 236)
-exe '3resize ' . ((&lines * 17 + 28) / 57)
+exe '3resize ' . ((&lines * 17 + 28) / 56)
 exe 'vert 3resize ' . ((&columns * 78 + 118) / 236)
-exe '4resize ' . ((&lines * 26 + 28) / 57)
+exe '4resize ' . ((&lines * 26 + 28) / 56)
 exe 'vert 4resize ' . ((&columns * 78 + 118) / 236)
-exe '5resize ' . ((&lines * 26 + 28) / 57)
+exe '5resize ' . ((&lines * 26 + 28) / 56)
 exe 'vert 5resize ' . ((&columns * 78 + 118) / 236)
-exe '6resize ' . ((&lines * 27 + 28) / 57)
+exe '6resize ' . ((&lines * 26 + 28) / 56)
 exe 'vert 6resize ' . ((&columns * 78 + 118) / 236)
-exe '7resize ' . ((&lines * 27 + 28) / 57)
+exe '7resize ' . ((&lines * 26 + 28) / 56)
 exe 'vert 7resize ' . ((&columns * 78 + 118) / 236)
 tabnext 1
 badd +1 README.md
@@ -356,14 +354,14 @@ badd +152 datasets/transforms.py
 badd +10 datasets/datasets.py
 badd +4 project_config.py
 badd +251 datasets/synthtext/dataset.py
+badd +232 training.py
+badd +15 prediction.py
 badd +58 models/backbone.py
-badd +192 training.py
 badd +71 models/craft.py
 badd +101 datasets/synthtext/transforms.py
 badd +2 datasets/synthtext/config.py
 badd +3 __doc__
 badd +144 ~/.dotfiles/vim/.vim/vimrc
-badd +15 prediction.py
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
 "   silent exe 'bwipe ' . s:wipebuf
 endif
@@ -381,7 +379,7 @@ nohlsearch
 " Everything down here is generated by vim-session (not supported
 " by :mksession out of the box).
 
-6wincmd w
+3wincmd w
 tabnext 1
 if exists('s:wipebuf')
   if empty(bufname(s:wipebuf))

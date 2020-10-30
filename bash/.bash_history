@@ -1,7 +1,3 @@
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-ls
-cd dataset/rctw/RCTW_p3/
 ls
 ls temp/ 
 ls temp/ | wc -l
@@ -1998,3 +1994,12 @@ ls -la
 find
 tmux
 vim
+conda activate ML_STR
+cd deep-text-recognition-benchmark/
+python
+tmux
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_CRAFT
+cd models/
+ls -la
+cd ..
+ls -la
