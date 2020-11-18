@@ -1,295 +1,3 @@
-ls
-ls temp/ 
-ls temp/ | wc -l
-kill -9 64440 
-cd ../../..
-vim scripts/train_eval.sh 
-kill -9 664159 
-vim scripts/train_eval.sh 
-cd dataset/rctw/RCTW_p3/
-mv temp/* tfrecords/
-ls tfrecords/ | wc -l
-rm -r temp/
-ls
-ls tfrecords/ | wc -l
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-ls
-vim scripts/train_eval.sh 
-vim
-cd dataset/rctw/RCTW_p3/
-ls
-cd ../../../logs/
-ls
-cd ..
-python
-cd dataset/rctw/RCTW_p3/
-ls
-mkdir temp
-ls
-mv icdar* json* temp/
-ls
-cd ../../..
-python dataset/rctw/RCTW_p3/preprocess.py 
-clear
-python dataset/rctw/RCTW_p3/preprocess.py 
-clear
-python dataset/rctw/RCTW_p3/preprocess.py 
-clear
-python dataset/rctw/RCTW_p3/preprocess.py 
-clear
-python dataset/rctw/RCTW_p3/preprocess.py 
-python
-clear
-python dataset/rctw/RCTW_p3/preprocess.py 
-clear
-python dataset/rctw/RCTW_p3/preprocess.py 
-clear
-python dataset/rctw/RCTW_p3/preprocess.py 
-clear
-python dataset/rctw/RCTW_p3/preprocess.py 
-clear
-python dataset/rctw/RCTW_p3/preprocess.py 
-cd dataset/rctw/RCTW_p3/
-ls
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-ls
-rm -r visualizations/
-
-rm -r visualizations/
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-rm -r visualizations/
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-rm -r visualizations/
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-rm -r visualizations/
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-python
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-rm -r visualizations/
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-clear
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-rm -r visualizations/
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-rm -r visualizations/
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-rm -r visualizations/
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-rm -r visualizations/
-
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-rm -r visualizations/
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-. scripts/train_eval.sh 
-vim scripts/train_eval.sh 
-. scripts/train_eval.sh 
-htop
-watch -n 0.5 nvidia-smi
-cd /home/loinguyenvan/.vim/sessions/
-ls -la
-cd dataset/rctw/RCTW_p3/
-ls
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-rm -r visualizations/
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-python
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-rm -r visualizations/
-rm -r icdar2017rctw_train_v1.2/ json_annotations/
-rm -r visualizations/
-ls
-ls -la
-rm -r visualizations/
-ls -la
-ls -la temp/
-rm -r visualizations/
-ls -la
-cat test.py 
-rm test.py 
-ls -la
-ls -la temp/
-mv tfrecords/ tfrecords_temp
-ls
-mkdir tfrecords
-ls -la
-ls icdar2017rctw_train_v1.2/train/part*/* | wc -l
-ls icdar2017rctw_train_v1.2/train/part1/* | wc -l
-ls icdar2017rctw_train_v1.2/train/part2/* | wc -l
-ls icdar2017rctw_train_v1.2/train/part3/* | wc -l
-ls icdar2017rctw_train_v1.2/train/part4/* | wc -l
-ls icdar2017rctw_train_v1.2/train/part5/* | wc -l
-ls icdar2017rctw_train_v1.2/train/part6/* | wc -l
-ls tfrecords | wc -l
-kill -9 1138268 
-kill -9 1731435 
-kill -9 1899972 
-kill -9 1 
-kill -9 2140030 
-ls ../../..
-cd ../../..
-ls
-clear
-cd scripts/
-touch rctw_task1_evaluation.sh
-ls -la
-kill -9 2367499 
-kill -9 2601359 
-kill -9 3412037 
-kill -9 3664282 
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-python dataset/rctw/RCTW_p3/preprocess.py 
-clear
-python dataset/rctw/RCTW_p3/preprocess.py 
-clear
-python dataset/rctw/RCTW_p3/preprocess.py 
-python convert_to_tfrecords.py 
-clear
-. scripts/train_eval.sh 
-vim
-conda activate ML_TextBoxes++
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-vim
-which python
-pip install Pillow
-vim
-htop
-tmux
-sudo add-apt-repository ppa:bamboo-engine/ibus-bamboo
-sudo apt update
-sudo apt install ibus-bamboo
-ibus restart
-clear
-cd evaluation/rctw_task1_evaluation/
-ls
-mkdir temp
-ls -la
-clear
-ls -la
-rm -r temp/
-ls -la textboxes_plusplus_trained_rctw_p3_train/
-clear
-ls -la
-rm textboxes_plusplus_trained_rctw_p3_train/*
-clear
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-clear
-mv scripts/rctw_task1_evaluation.sh .
-ls
-mv rctw_task1_evaluation.sh scripts/
-ls scripts/
-kill -9 782480 
-kill -9 1231390 
-python
-cd dataset/rctw/RCTW_p3/
-ls
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython
-ls
-mkdir cv2
-ls
-cd cv2
-ls
-python
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
-conda activate ML_TextBoxes++
-cd evaluation/rctw_task1_evaluation/textboxes_plusplus_trained_rctw_p3_train/
-ls
-rm *
-ls
-rm *
-ls
-ls -la
-rm *
-ls
-rm *
-kill -9 2294684
-rm *
-python
-rm *
-cd ..
-ls
-touch visualize.py
-ls
-mkdir visualizations
-ls
-rm textboxes_plusplus_trained_rctw_p3_train/* visualizations/*
-rm textboxes_plusplus_trained_rctw_p3_train/* visualizations/icdar2017rctw_test/*
-ls visualizations/icdar2017rctw_test/ | wc -l
-mkdir visualizations/nr1
-mv visualizations/icdar2017rctw_test/* visualizations/nr1/
-rm textboxes_plusplus_trained_rctw_p3_train/*
-mkdir visualizations/nr2
-mv visualizations/icdar2017rctw_test/* visualizations/nr2/
-rm textboxes_plusplus_trained_rctw_p3_train/*
-mkdir visualizations/nr3
-mv visualizations/icdar2017rctw_test/* visualizations/nr3/
-rm textboxes_plusplus_trained_rctw_p3_train/*
-mkdir visualizations/nr4
-mv visualizations/icdar2017rctw_test/* visualizations/nr4/
-rm textboxes_plusplus_trained_rctw_p3_train/*
-mkdir visualizations/nr5
-mv visualizations/icdar2017rctw_test/* visualizations/nr5/
-rm textboxes_plusplus_trained_rctw_p3_train/*
-mkdir visualizations/nr6
-mv visualizations/icdar2017rctw_test/* visualizations/nr6/
-rm textboxes_plusplus_trained_rctw_p3_train/*
-mkdir visualizations/nr7
-mv visualizations/icdar2017rctw_test/* visualizations/nr7/
-rm textboxes_plusplus_trained_rctw_p3_train/*
-mkdir visualizations/nr8
-mv visualizations/icdar2017rctw_test/* visualizations/nr8/
-rm textboxes_plusplus_trained_rctw_p3_train/*
-mkdir visualizations/nr9
-mv visualizations/icdar2017rctw_test/* visualizations/nr9/
-rm textboxes_plusplus_trained_rctw_p3_train/*
-
-mkdir visualizations/nr10
-mv visualizations/icdar2017rctw_test/* visualizations/nr10/
-rm textboxes_plusplus_trained_rctw_p3_train/*
-mkdir visualizations/nr11
-mv visualizations/icdar2017rctw_test/* visualizations/nr11/
-rm textboxes_plusplus_trained_rctw_p3_train/*
-mkdir visualizations/nr12
-mv visualizations/icdar2017rctw_test/* visualizations/nr12/
-rm textboxes_plusplus_trained_rctw_p3_train/*
-mkdir visualizations/nr13
-mv visualizations/icdar2017rctw_test/* visualizations/nr13/
-rm textboxes_plusplus_trained_rctw_p3_train/*
-mkdir visualizations/nr14
-mv visualizations/icdar2017rctw_test/* visualizations/nr14/
-rm textboxes_plusplus_trained_rctw_p3_train/*
-kill -9 3640973
-kill -9 3751436
-kill -9 3906848
-kill -9 3982526
-kill -9 194835
-rm textboxes_plusplus_trained_rctw_p3_train/*
-rm visualizations/icdar2017rctw_test/
-rm visualizations/icdar2017rctw_test/*
-ls -la ../../logs/*
-ls -la textboxes_plusplus_trained_rctw_p3_train/*
-ls -la textboxes_plusplus_trained_rctw_p3_train/
-eog --help
-ls -la textboxes_plusplus_trained_rctw_p3_train/
-
-eog visualizations/icdar2017rctw_test/image_0.jpg
-rm visualizations/icdar2017rctw_test/*
-rm textboxes_plusplus_trained_rctw_p3_train/*
-eog visualizations/icdar2017rctw_test/image_0.jpg
-rm visualizations/icdar2017rctw_test/*
-rm textboxes_plusplus_trained_rctw_p3_train/*
-eog visualizations/icdar2017rctw_test/image_0.jpg
-rm visualizations/icdar2017rctw_test/*
-rm textboxes_plusplus_trained_rctw_p3_train/*
-eog visualizations/icdar2017rctw_test/image_0.jpg
-rm visualizations/icdar2017rctw_test/*
-rm textboxes_plusplus_trained_rctw_p3_train/*
-eog visualizations/icdar2017rctw_test/image_0.jpg
-rm visualizations/icdar2017rctw_test/*
-rm textboxes_plusplus_trained_rctw_p3_train/*
-eog visualizations/icdar2017rctw_test/image_0.jpg
 rm visualizations/icdar2017rctw_test/*
 rm textboxes_plusplus_trained_rctw_p3_train/*
 eog visualizations/icdar2017rctw_test/image_0.jpg
@@ -2011,3 +1719,282 @@ git diff
 git status
 git commit -m 'add pretty print command and mapping for xml, html and json files'
 git push
+cd /home/loinguyenvan/.dotfiles
+git add .
+git commit -m 'add pretty print comments'
+git push
+python
+conda activate ML_CRAFT
+python
+cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/RCTW
+ls -la
+cd icdar2017rctw_train_v1.2/
+ls -la
+cd train/
+ls -la
+cd ../..
+ls
+ls -la
+cd icdar2017rctw_train_v1.2/
+ls -la
+cd train/
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_TextBoxes++
+cd dataset/
+ls -la
+cd rctw
+ls -la
+cd RCTW_p1
+ls -la
+vim preprocess.py 
+cd /home/loinguyenvan/Pictures/test
+rm *
+cd /home/loinguyenvan/Pictures/test
+rm *
+cd ..
+mkdir test2
+cd test2
+wc -l
+wc
+ls -la | wc -l
+wc ls
+rm *
+
+rm *
+ls -la
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_009968.jpg'
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_011159.jpg'
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_011510.jpg'
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_014095.jpg'
+python
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000480.jpg'
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000105.jpg'
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_001473.jpg'
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_015555.jpg'
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_019311.jpg'
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000066.jpg'
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000055.jpg'
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000015.jpg'
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000014.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000014.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000960.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000951.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000946.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000945.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000931.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000894.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000679.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000511.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000491.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000454.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000492.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000165.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000159.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000117.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000110.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000075.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_001597.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_001525.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_001513.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_001253.jpg'
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_001251.jpg'
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_001070.jpg'
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_001031.jpg'
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_001025.jpg'
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_001018.jpg'
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_001013.jpg'
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000951.jpg'
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000945.jpg'
+watch -n 0.5 nvidia-smi
+clear
+python examine.py 
+eog /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000051.jpg
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000051.jpg'
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000208.jpg'
+python examine.py 
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000411.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000411.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000530.jpg'
+python examine.py 
+gimp 'V'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_003750.jpg'
+python examine.py 
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_003734.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_003485.jpg'
+python examine.py 
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000508.jpg'
+python examine.py 
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000046.jpg'
+python examine.py 
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000051.jpg'
+python examine.py 
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000005.jpg'
+python examine.py 
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000003.jpg'
+python examine.py 
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000005.jpg'
+python examine.py 
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000008.jpg'
+python examine.py 
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_001078.jpg'
+python examine.py 
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_001078.jpg'
+python examine.py 
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_004996.jpg'
+python examine.py 
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000531.jpg'
+python examine.py 
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000531.jpg'
+python examine.py 
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000531.jpg'
+python examine.py 
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_001089.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000037.jpg'
+python examine.py 
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000037.jpg'
+python examine.py 
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000646.jpg'
+python examine.py 
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_001046.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_001112.jpg'
+python examine.py 
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000333.jpg'
+python examine.py 
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000333.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000333.jpg'
+python examine.py 
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000646.jpg'
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000928.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000928.jpg'
+python examine.py 
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000928.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_001089.jpg'
+gimp '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_001112.jpg'
+python examine.py 
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_000928.jpg'
+python examine.py 
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_001305.jpg'
+python examine.py 
+eog '/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/img/train_ReCTS_005129.jpg'
+python examine.py 
+ls -la
+python examine.py 
+cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/ReCTS2019
+vim examine.py 
+conda activate ML_CRAFT
+cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets
+conda deactivate
+which python
+cd ReCTS2019/
+ls -la
+vim examine.py 
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_CRAFT
+conda activate ML_CRAFT
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_CRAFT
+conda activate ML_CRAFT
+vim
+conda activate ML_CRAFT
+htop
+tmux ls
+tmux a
+tmux
+tmux ls
+tmux
+tmux ls
+tmux a
+d
+python examine.py 
+vim
+tmux
+tmux ls
+watch -n 0.5 nvidia-smi
+htop
+vim /home/loinguyenvan/Projects/OneDriveHUST/Datasets/ReCTS2019/examine.py 
+cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/ReCTS2019
+vim
+python examine.py
+cd train/
+ls -la
+cd ..
+python examine.py
+ls -la
+ls -la train/
+cd /home/loinguyenvan/Pictures
+ls -la
+conda activate ML_CRAFT
+python training.py 
+cd models/
+ls -la
+watch -n 0.5 nvidia-smi
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_CRAFT
+conda activate ML_CRAFT
+vim
+tmux
+conda activate ML_CRAFTS
+python prediction.py 
+
+cd models
+rm crafts.pth 
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_CRAFT
+vim training.py 
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS
+cd models/
+rm crafts.pth 
+ls -la
+rm crafts.pth 
+ls -la
+cd ..
+python prediction.py 
+ls -la models/
+ls -la
+ls -la models/
+python prediction.py 
+python datasets/rects2019/dataset.py 
+python prediction.py 
+ls -la models/
+python prediction.py 
+python datasets/rects2019/dataset.py 
+python prediction.py 
+python datasets/rects2019/dataset.py 
+python prediction.py 
+ls -la models/
+python prediction.py 
+rm models/crafts.pth 
+cd models/
+ls -la
+cd ..
+python prediction.py 
+cd ..
+cd ML_CRAFTS
+python prediction.py 
+rm models/crafts.pth 
+ls -la models/
+python prediction.py 
+python datasets/rects2019/dataset.py 
+python prediction.py 
+python datasets/rects2019/dataset.py 
+python prediction.py 
+ls -la models/
+cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython
+cd pytorch/
+ls -la
+cd DeepLearningWithPytorch/
+ls -la
+vim
+conda activate ML_CRAFTS
+ls -la models/
+tmux
+conda activate ML_CRAFTS
+python prediction.py 
+cd datasets/
+ls -las
+ls -la
+ls -la rects2019/
+clear
+ls -la
+ls -la rects2019/
+cp /home/loinguyenvan/anaconda3/envs/ML_CRAFTS/lib/python3.8/site-packages/torch/utils/data/_utils/collate.py .
+ls -la
+python prediction.py 
+cd ..
+python prediction.py 
+python datasets/rects2019/dataset.py 

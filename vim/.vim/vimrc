@@ -1276,13 +1276,14 @@ inoremap <expr> ; pumvisible() ? "\<c-n>\<c-y>" : ";"
 let g:deoplete#enable_at_startup = 1
 call deoplete#custom#option({'auto_complete_popup': 'auto'})
 call deoplete#custom#option({'max_list': 10})
-call deoplete#custom#option({'num_processes': 1})
+call deoplete#custom#option({'num_processes': 6})
 " call deoplete#custom#option('sources', {
 "     \ '_': ['buffer'],
 "     \ 'cpp': ['buffer', 'tag'],
 "     \ 'python': ['omni'],
 "     \})
-call deoplete#custom#option({'auto_refresh_delay': 10})
+call deoplete#custom#option({'auto_refresh_delay': 100})
+call deoplete#custom#option({'refresh_always': v:false})
 
 " fix error: vim-multiple-cursors auto insert <Plug> ...
 function g:Multiple_cursors_before()

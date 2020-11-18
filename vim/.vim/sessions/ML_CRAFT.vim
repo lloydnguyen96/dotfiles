@@ -1,6 +1,6 @@
 " ~/.dotfiles/vim/.vim/sessions/ML_CRAFT.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 30 Tháng 10 2020 at 20:12:19.
+" Created by session.vim 2.13.1 on 12 Tháng 11 2020 at 15:46:39.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrti
@@ -82,7 +82,7 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 35 - ((11 * winheight(0) + 8) / 17)
+let s:l = 35 - ((3 * winheight(0) + 8) / 17)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -99,12 +99,12 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 8) / 17)
+let s:l = 6 - ((5 * winheight(0) + 8) / 17)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
-normal! 0
+6
+normal! 023|
 wincmd w
 argglobal
 if bufexists("datasets/synthtext/dataset.py") | buffer datasets/synthtext/dataset.py | else | edit datasets/synthtext/dataset.py | endif
@@ -117,12 +117,54 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 158 - ((3 * winheight(0) + 8) / 17)
+let s:l = 158 - ((7 * winheight(0) + 8) / 17)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 158
 normal! 05|
+wincmd w
+argglobal
+if bufexists("datasets/transforms.py") | buffer datasets/transforms.py | else | edit datasets/transforms.py | endif
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+128
+silent! normal! zo
+272
+silent! normal! zo
+303
+silent! normal! zo
+309
+silent! normal! zo
+let s:l = 394 - ((7 * winheight(0) + 13) / 26)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+394
+normal! 05|
+wincmd w
+argglobal
+if bufexists("project_config.py") | buffer project_config.py | else | edit project_config.py | endif
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 11 - ((10 * winheight(0) + 13) / 26)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+11
+normal! 0
 wincmd w
 argglobal
 if bufexists("training.py") | buffer training.py | else | edit training.py | endif
@@ -200,12 +242,12 @@ silent! normal! zo
 silent! normal! zo
 232
 silent! normal! zo
-let s:l = 3 - ((2 * winheight(0) + 13) / 26)
+let s:l = 230 - ((17 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-3
-normal! 0
+230
+normal! 05|
 wincmd w
 argglobal
 if bufexists("prediction.py") | buffer prediction.py | else | edit prediction.py | endif
@@ -217,121 +259,20 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-12
+18
 silent! normal! zo
-26
+90
 silent! normal! zo
-44
+103
 silent! normal! zo
-53
+120
 silent! normal! zo
-let s:l = 45 - ((3 * winheight(0) + 13) / 26)
+let s:l = 127 - ((21 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-45
-normal! 030|
-wincmd w
-argglobal
-if bufexists("training.py") | buffer training.py | else | edit training.py | endif
-setlocal fdm=indent
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=10
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-29
-silent! normal! zo
-47
-silent! normal! zo
-49
-silent! normal! zo
-72
-silent! normal! zo
-79
-silent! normal! zo
-88
-silent! normal! zo
-115
-silent! normal! zo
-116
-silent! normal! zo
-128
-silent! normal! zo
-131
-silent! normal! zo
-131
-silent! normal! zo
-131
-silent! normal! zo
-136
-silent! normal! zo
-137
-silent! normal! zo
-142
-silent! normal! zo
-144
-silent! normal! zo
-152
-silent! normal! zo
-159
-silent! normal! zo
-160
-silent! normal! zo
-168
-silent! normal! zo
-177
-silent! normal! zo
-178
-silent! normal! zo
-179
-silent! normal! zo
-180
-silent! normal! zo
-181
-silent! normal! zo
-189
-silent! normal! zo
-201
-silent! normal! zo
-219
-silent! normal! zo
-227
-silent! normal! zo
-232
-silent! normal! zo
-232
-silent! normal! zo
-232
-silent! normal! zo
-232
-silent! normal! zo
-let s:l = 97 - ((13 * winheight(0) + 13) / 26)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-97
-normal! 05|
-wincmd w
-argglobal
-if bufexists("datasets/synthtext/dataset.py") | buffer datasets/synthtext/dataset.py | else | edit datasets/synthtext/dataset.py | endif
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 173 - ((3 * winheight(0) + 13) / 26)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-173
-normal! 015|
+127
+normal! 042|
 wincmd w
 6wincmd w
 exe '1resize ' . ((&lines * 17 + 28) / 56)
@@ -350,16 +291,16 @@ exe '7resize ' . ((&lines * 26 + 28) / 56)
 exe 'vert 7resize ' . ((&columns * 78 + 118) / 236)
 tabnext 1
 badd +1 README.md
-badd +152 datasets/transforms.py
+badd +1 datasets/transforms.py
 badd +10 datasets/datasets.py
-badd +4 project_config.py
-badd +251 datasets/synthtext/dataset.py
-badd +232 training.py
-badd +15 prediction.py
-badd +58 models/backbone.py
-badd +71 models/craft.py
+badd +11 project_config.py
+badd +130 datasets/synthtext/dataset.py
+badd +71 models/backbone.py
+badd +224 training.py
+badd +1 prediction.py
+badd +63 models/craft.py
 badd +101 datasets/synthtext/transforms.py
-badd +2 datasets/synthtext/config.py
+badd +4 datasets/synthtext/config.py
 badd +3 __doc__
 badd +144 ~/.dotfiles/vim/.vim/vimrc
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
