@@ -1,6 +1,6 @@
 " ~/.dotfiles/vim/.vim/sessions/ML_STR.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 30 Tháng 10 2020 at 00:57:58.
+" Created by session.vim 2.13.1 on 25 Tháng 2 2021 at 11:56:28.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrti
@@ -13,7 +13,7 @@ if &background != 'dark'
 	set background=dark
 endif
 if !exists('g:colors_name') || g:colors_name != 'gruvbox' | colorscheme gruvbox | endif
-call setqflist([{'lnum': 5, 'col': 7, 'pattern': '', 'valid': 1, 'vcol': 0, 'nr': 0, 'type': '', 'module': '', 'filename': 'utils.py', 'text': '[instance] class CTCLabelConverter(object):'}, {'lnum': 55, 'col': 7, 'pattern': '', 'valid': 1, 'vcol': 0, 'nr': 0, 'type': '', 'module': '', 'filename': 'utils.py', 'text': '[instance] class CTCLabelConverterForBaiduWarpctc(object):'}, {'lnum': 102, 'col': 7, 'pattern': '', 'valid': 1, 'vcol': 0, 'nr': 0, 'type': '', 'module': '', 'filename': 'utils.py', 'text': '[instance] class AttnLabelConverter(object):'}])
+call setqflist([{'lnum': 54, 'col': 9, 'pattern': '', 'valid': 1, 'vcol': 0, 'nr': 0, 'type': '', 'module': '', 'filename': 'train.py', 'text': 'converter = AttnLabelConverter(opt.character)'}, {'lnum': 50, 'col': 13, 'pattern': '', 'valid': 1, 'vcol': 0, 'nr': 0, 'type': '', 'module': '', 'filename': 'train.py', 'text': 'converter = CTCLabelConverterForBaiduWarpctc(opt.character)'}, {'lnum': 52, 'col': 13, 'pattern': '', 'valid': 1, 'vcol': 0, 'nr': 0, 'type': '', 'module': '', 'filename': 'train.py', 'text': 'converter = CTCLabelConverter(opt.character)'}])
 let SessionLoad = 1
 if &cp | set nocp | endif
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
@@ -55,18 +55,18 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe '1resize ' . ((&lines * 26 + 28) / 56)
-exe 'vert 1resize ' . ((&columns * 78 + 118) / 236)
-exe '2resize ' . ((&lines * 26 + 28) / 56)
-exe 'vert 2resize ' . ((&columns * 78 + 118) / 236)
-exe '3resize ' . ((&lines * 26 + 28) / 56)
-exe 'vert 3resize ' . ((&columns * 78 + 118) / 236)
-exe '4resize ' . ((&lines * 26 + 28) / 56)
-exe 'vert 4resize ' . ((&columns * 78 + 118) / 236)
-exe '5resize ' . ((&lines * 26 + 28) / 56)
-exe 'vert 5resize ' . ((&columns * 78 + 118) / 236)
-exe '6resize ' . ((&lines * 26 + 28) / 56)
-exe 'vert 6resize ' . ((&columns * 78 + 118) / 236)
+exe '1resize ' . ((&lines * 25 + 27) / 54)
+exe 'vert 1resize ' . ((&columns * 105 + 158) / 317)
+exe '2resize ' . ((&lines * 25 + 27) / 54)
+exe 'vert 2resize ' . ((&columns * 105 + 158) / 317)
+exe '3resize ' . ((&lines * 25 + 27) / 54)
+exe 'vert 3resize ' . ((&columns * 105 + 158) / 317)
+exe '4resize ' . ((&lines * 25 + 27) / 54)
+exe 'vert 4resize ' . ((&columns * 105 + 158) / 317)
+exe '5resize ' . ((&lines * 25 + 27) / 54)
+exe 'vert 5resize ' . ((&columns * 105 + 158) / 317)
+exe '6resize ' . ((&lines * 25 + 27) / 54)
+exe 'vert 6resize ' . ((&columns * 105 + 158) / 317)
 argglobal
 setlocal fdm=indent
 setlocal fde=0
@@ -98,77 +98,21 @@ silent! normal! zo
 silent! normal! zo
 155
 silent! normal! zo
-179
+188
 silent! normal! zo
-182
+191
 silent! normal! zo
-233
+242
 silent! normal! zo
-253
-silent! normal! zo
-253
-silent! normal! zo
-253
-silent! normal! zo
-253
-silent! normal! zo
-255
-silent! normal! zo
-255
-silent! normal! zo
-255
-silent! normal! zo
-255
-silent! normal! zo
-257
-silent! normal! zo
-257
-silent! normal! zo
-257
-silent! normal! zo
-257
-silent! normal! zo
-263
-silent! normal! zo
-263
-silent! normal! zo
-263
-silent! normal! zo
-263
-silent! normal! zo
-270
-silent! normal! zo
-270
-silent! normal! zo
-270
-silent! normal! zo
-270
-silent! normal! zo
-275
-silent! normal! zo
-275
-silent! normal! zo
-275
-silent! normal! zo
-275
-silent! normal! zo
-277
-silent! normal! zo
-277
-silent! normal! zo
-277
-silent! normal! zo
-277
-silent! normal! zo
-let s:l = 158 - ((19 * winheight(0) + 13) / 26)
+let s:l = 183 - ((20 * winheight(0) + 12) / 25)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-158
-normal! 034|
+183
+normal! 0
 wincmd w
 argglobal
-if bufexists("test.py") | buffer test.py | else | edit test.py | endif
+if bufexists("train.py") | buffer train.py | else | edit train.py | endif
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -177,24 +121,36 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-21
+23
 silent! normal! zo
-44
+48
+silent! normal! zo
+149
+silent! normal! zo
+155
+silent! normal! zo
+188
 silent! normal! zo
 191
 silent! normal! zo
-225
+193
 silent! normal! zo
-228
+242
 silent! normal! zo
-245
+284
 silent! normal! zo
-let s:l = 43 - ((13 * winheight(0) + 13) / 26)
+284
+silent! normal! zo
+284
+silent! normal! zo
+284
+silent! normal! zo
+let s:l = 159 - ((9 * winheight(0) + 12) / 25)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-43
-normal! 035|
+159
+normal! 017|
 wincmd w
 argglobal
 if bufexists("dataset.py") | buffer dataset.py | else | edit dataset.py | endif
@@ -260,11 +216,11 @@ silent! normal! zo
 silent! normal! zo
 311
 silent! normal! zo
-let s:l = 147 - ((18 * winheight(0) + 13) / 26)
+let s:l = 146 - ((16 * winheight(0) + 12) / 25)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-147
+146
 normal! 0
 wincmd w
 argglobal
@@ -291,15 +247,15 @@ silent! normal! zo
 silent! normal! zo
 71
 silent! normal! zo
-let s:l = 66 - ((4 * winheight(0) + 13) / 26)
+let s:l = 97 - ((21 * winheight(0) + 12) / 25)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-66
-normal! 045|
+97
+normal! 09|
 wincmd w
 argglobal
-if bufexists("modules/prediction.py") | buffer modules/prediction.py | else | edit modules/prediction.py | endif
+if bufexists("utils.py") | buffer utils.py | else | edit utils.py | endif
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -308,64 +264,77 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-9
+6
 silent! normal! zo
-24
+10
 silent! normal! zo
-38
+20
 silent! normal! zo
-51
+56
 silent! normal! zo
-let s:l = 41 - ((10 * winheight(0) + 13) / 26)
+103
+silent! normal! zo
+118
+silent! normal! zo
+let s:l = 33 - ((12 * winheight(0) + 12) / 25)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-41
-normal! 033|
+33
+normal! 021|
 wincmd w
 argglobal
-if bufexists("modules/prediction.py") | buffer modules/prediction.py | else | edit modules/prediction.py | endif
-setlocal fdm=manual
+if bufexists("demo.py") | buffer demo.py | else | edit demo.py | endif
+setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
-setlocal fdl=0
+setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-silent! normal! zE
-let s:l = 92 - ((5 * winheight(0) + 13) / 26)
+16
+silent! normal! zo
+53
+silent! normal! zo
+54
+silent! normal! zo
+117
+silent! normal! zo
+let s:l = 70 - ((8 * winheight(0) + 12) / 25)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-92
-normal! 09|
+70
+normal! 023|
 wincmd w
-exe '1resize ' . ((&lines * 26 + 28) / 56)
-exe 'vert 1resize ' . ((&columns * 78 + 118) / 236)
-exe '2resize ' . ((&lines * 26 + 28) / 56)
-exe 'vert 2resize ' . ((&columns * 78 + 118) / 236)
-exe '3resize ' . ((&lines * 26 + 28) / 56)
-exe 'vert 3resize ' . ((&columns * 78 + 118) / 236)
-exe '4resize ' . ((&lines * 26 + 28) / 56)
-exe 'vert 4resize ' . ((&columns * 78 + 118) / 236)
-exe '5resize ' . ((&lines * 26 + 28) / 56)
-exe 'vert 5resize ' . ((&columns * 78 + 118) / 236)
-exe '6resize ' . ((&lines * 26 + 28) / 56)
-exe 'vert 6resize ' . ((&columns * 78 + 118) / 236)
+2wincmd w
+exe '1resize ' . ((&lines * 25 + 27) / 54)
+exe 'vert 1resize ' . ((&columns * 105 + 158) / 317)
+exe '2resize ' . ((&lines * 25 + 27) / 54)
+exe 'vert 2resize ' . ((&columns * 105 + 158) / 317)
+exe '3resize ' . ((&lines * 25 + 27) / 54)
+exe 'vert 3resize ' . ((&columns * 105 + 158) / 317)
+exe '4resize ' . ((&lines * 25 + 27) / 54)
+exe 'vert 4resize ' . ((&columns * 105 + 158) / 317)
+exe '5resize ' . ((&lines * 25 + 27) / 54)
+exe 'vert 5resize ' . ((&columns * 105 + 158) / 317)
+exe '6resize ' . ((&lines * 25 + 27) / 54)
+exe 'vert 6resize ' . ((&columns * 105 + 158) / 317)
 tabnext 1
+badd +149 train.py
 badd +294 dataset.py
-badd +256 train.py
-badd +258 test.py
 badd +79 model.py
+badd +1 utils.py
+badd +93 modules/prediction.py
+badd +43 test.py
 badd +27 modules/transformation.py
-badd +138 utils.py
 badd +72 create_lmdb_dataset.py
-badd +65 modules/prediction.py
 badd +2593 ~/anaconda3/envs/ML_STR/lib/python3.6/site-packages/torch/nn/functional.py
 badd +35 __doc__
 badd +121 modules/feature_extraction.py
 badd +18 modules/sequence_modeling.py
+badd +0 demo.py
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
 "   silent exe 'bwipe ' . s:wipebuf
 endif
@@ -383,7 +352,7 @@ nohlsearch
 " Everything down here is generated by vim-session (not supported
 " by :mksession out of the box).
 
-1wincmd w
+2wincmd w
 tabnext 1
 if exists('s:wipebuf')
   if empty(bufname(s:wipebuf))

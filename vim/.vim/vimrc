@@ -1326,7 +1326,7 @@ augroup end
 " resize window size
 augroup vimrc_resize_window
     autocmd!
-    autocmd VimResized,WinNew,WinLeave * wincmd =
+    autocmd VimResized,WinNew,WinLeave,TabEnter * wincmd =
 augroup end
 
 " triger `autoread` when files changes on disk
