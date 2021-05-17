@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/textwidth
+~MSle0~/tango
 
 # Last Substitute Search Pattern:
 ~MSle0&-1
@@ -20,6 +20,10 @@
 $
 
 # Command Line History (newest to oldest):
+:ALEInfo
+|2,0,1621222268,,"ALEInfo"
+:PlugInstall
+|2,0,1621221406,,"PlugInstall"
 :OpenSession ML_CRAFTS
 |2,0,1619691627,,"OpenSession ML_CRAFTS"
 :34
@@ -340,16 +344,12 @@ $
 |2,0,1603851075,,"OpenSession ML_S"
 :PlugClean
 |2,0,1603850986,,"PlugClean"
-:PlugInstall
-|2,0,1603850962,,"PlugInstall"
 :PlugUpgrade
 |2,0,1603850752,,"PlugUpgrade"
 :SaveSession ML_STR\
 |2,0,1603850123,,"SaveSession ML_STR\\"
 :vp
 |2,0,1603612728,,"vp"
-:ALEInfo
-|2,0,1603523070,,"ALEInfo"
 :OpenSession 
 |2,0,1603522571,,"OpenSession "
 :170
@@ -410,6 +410,8 @@ $
 |2,0,1599790766,,"OpenSession ML_TextBoxes++"
 
 # Search String History (newest to oldest):
+?/tango
+|2,1,1621222880,47,"tango"
 ?/textwidth
 |2,1,1620636930,47,"textwidth"
 ?/cos_map
@@ -2408,8 +2410,6 @@ $
 |2,1,1602758724,,"\\<pos_masks\\>"
 ? \<num_epochs\>
 |2,1,1602753047,,"\\<num_epochs\\>"
-?/training_loop
-|2,1,1602728122,47,"training_loop"
 
 # Expression History (newest to oldest):
 
@@ -2505,232 +2505,230 @@ $
 |4,77,2,0,1603872333,"~/.dotfiles/.git/index"
 '0  1382  12  ~/.dotfiles/vim/.vim/vimrc
 |4,48,1382,12,1620636947,"~/.dotfiles/vim/.vim/vimrc"
-'1  107  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,49,107,8,1617296484,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
-'2  105  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,50,105,8,1617296484,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
-'3  100  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,51,100,8,1617296484,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
-'4  99  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,52,99,8,1617296484,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
-'5  105  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,53,105,8,1617296484,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
-'6  104  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,54,104,8,1617296484,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
-'7  99  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,55,99,8,1617296484,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
-'8  98  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,56,98,8,1617296484,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
-'9  107  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,57,107,8,1617296484,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
+'1  1382  12  ~/.dotfiles/vim/.vim/vimrc
+|4,49,1382,12,1620636947,"~/.dotfiles/vim/.vim/vimrc"
+'2  107  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
+|4,50,107,8,1617296484,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
+'3  105  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
+|4,51,105,8,1617296484,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
+'4  100  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
+|4,52,100,8,1617296484,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
+'5  99  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
+|4,53,99,8,1617296484,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
+'6  105  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
+|4,54,105,8,1617296484,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
+'7  104  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
+|4,55,104,8,1617296484,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
+'8  99  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
+|4,56,99,8,1617296484,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
+'9  98  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
+|4,57,98,8,1617296484,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
 
 # Jumplist (newest first):
 -'  1382  12  ~/.dotfiles/vim/.vim/vimrc
 |4,39,1382,12,1620636947,"~/.dotfiles/vim/.vim/vimrc"
+-'  1382  12  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1382,12,1620636947,"~/.dotfiles/vim/.vim/vimrc"
+-'  1382  12  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1382,12,1620636947,"~/.dotfiles/vim/.vim/vimrc"
+-'  1382  12  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1382,12,1620636947,"~/.dotfiles/vim/.vim/vimrc"
+-'  1382  12  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1382,12,1620636947,"~/.dotfiles/vim/.vim/vimrc"
+-'  1382  12  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1382,12,1620636947,"~/.dotfiles/vim/.vim/vimrc"
+-'  1382  12  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1382,12,1620636947,"~/.dotfiles/vim/.vim/vimrc"
+-'  1382  12  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1382,12,1620636947,"~/.dotfiles/vim/.vim/vimrc"
+-'  1382  12  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1382,12,1620636947,"~/.dotfiles/vim/.vim/vimrc"
+-'  1382  12  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1382,12,1620636947,"~/.dotfiles/vim/.vim/vimrc"
+-'  1382  12  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1382,12,1620636947,"~/.dotfiles/vim/.vim/vimrc"
+-'  1382  12  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1382,12,1620636947,"~/.dotfiles/vim/.vim/vimrc"
+-'  1382  12  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1382,12,1620636947,"~/.dotfiles/vim/.vim/vimrc"
+-'  1382  12  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1382,12,1620636947,"~/.dotfiles/vim/.vim/vimrc"
+-'  1382  12  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1382,12,1620636947,"~/.dotfiles/vim/.vim/vimrc"
+-'  1382  12  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1382,12,1620636947,"~/.dotfiles/vim/.vim/vimrc"
+-'  1382  12  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1382,12,1620636947,"~/.dotfiles/vim/.vim/vimrc"
+-'  1475  45  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1475,45,1620636945,"~/.dotfiles/vim/.vim/vimrc"
+-'  1475  45  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1475,45,1620636945,"~/.dotfiles/vim/.vim/vimrc"
+-'  1475  45  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1475,45,1620636945,"~/.dotfiles/vim/.vim/vimrc"
+-'  1475  45  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1475,45,1620636945,"~/.dotfiles/vim/.vim/vimrc"
+-'  1475  45  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1475,45,1620636945,"~/.dotfiles/vim/.vim/vimrc"
+-'  1475  45  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1475,45,1620636945,"~/.dotfiles/vim/.vim/vimrc"
+-'  1475  45  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1475,45,1620636945,"~/.dotfiles/vim/.vim/vimrc"
+-'  1475  45  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1475,45,1620636945,"~/.dotfiles/vim/.vim/vimrc"
+-'  1475  45  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1475,45,1620636945,"~/.dotfiles/vim/.vim/vimrc"
+-'  1475  45  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1475,45,1620636945,"~/.dotfiles/vim/.vim/vimrc"
+-'  1475  45  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1475,45,1620636945,"~/.dotfiles/vim/.vim/vimrc"
+-'  1475  45  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1475,45,1620636945,"~/.dotfiles/vim/.vim/vimrc"
+-'  1475  45  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1475,45,1620636945,"~/.dotfiles/vim/.vim/vimrc"
+-'  1475  45  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1475,45,1620636945,"~/.dotfiles/vim/.vim/vimrc"
+-'  1475  45  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1475,45,1620636945,"~/.dotfiles/vim/.vim/vimrc"
+-'  1475  45  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1475,45,1620636945,"~/.dotfiles/vim/.vim/vimrc"
 -'  1475  45  ~/.dotfiles/vim/.vim/vimrc
 |4,39,1475,45,1620636945,"~/.dotfiles/vim/.vim/vimrc"
 -'  1468  34  ~/.dotfiles/vim/.vim/vimrc
 |4,39,1468,34,1620636943,"~/.dotfiles/vim/.vim/vimrc"
+-'  1468  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1468,34,1620636943,"~/.dotfiles/vim/.vim/vimrc"
+-'  1468  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1468,34,1620636943,"~/.dotfiles/vim/.vim/vimrc"
+-'  1468  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1468,34,1620636943,"~/.dotfiles/vim/.vim/vimrc"
+-'  1468  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1468,34,1620636943,"~/.dotfiles/vim/.vim/vimrc"
+-'  1468  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1468,34,1620636943,"~/.dotfiles/vim/.vim/vimrc"
+-'  1468  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1468,34,1620636943,"~/.dotfiles/vim/.vim/vimrc"
+-'  1468  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1468,34,1620636943,"~/.dotfiles/vim/.vim/vimrc"
+-'  1468  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1468,34,1620636943,"~/.dotfiles/vim/.vim/vimrc"
+-'  1468  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1468,34,1620636943,"~/.dotfiles/vim/.vim/vimrc"
+-'  1468  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1468,34,1620636943,"~/.dotfiles/vim/.vim/vimrc"
+-'  1468  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1468,34,1620636943,"~/.dotfiles/vim/.vim/vimrc"
+-'  1468  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1468,34,1620636943,"~/.dotfiles/vim/.vim/vimrc"
+-'  1468  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1468,34,1620636943,"~/.dotfiles/vim/.vim/vimrc"
+-'  1468  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1468,34,1620636943,"~/.dotfiles/vim/.vim/vimrc"
+-'  1468  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1468,34,1620636943,"~/.dotfiles/vim/.vim/vimrc"
+-'  1468  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1468,34,1620636943,"~/.dotfiles/vim/.vim/vimrc"
+-'  1411  37  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1411,37,1620636940,"~/.dotfiles/vim/.vim/vimrc"
+-'  1411  37  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1411,37,1620636940,"~/.dotfiles/vim/.vim/vimrc"
+-'  1411  37  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1411,37,1620636940,"~/.dotfiles/vim/.vim/vimrc"
+-'  1411  37  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1411,37,1620636940,"~/.dotfiles/vim/.vim/vimrc"
+-'  1411  37  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1411,37,1620636940,"~/.dotfiles/vim/.vim/vimrc"
+-'  1411  37  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1411,37,1620636940,"~/.dotfiles/vim/.vim/vimrc"
+-'  1411  37  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1411,37,1620636940,"~/.dotfiles/vim/.vim/vimrc"
+-'  1411  37  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1411,37,1620636940,"~/.dotfiles/vim/.vim/vimrc"
+-'  1411  37  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1411,37,1620636940,"~/.dotfiles/vim/.vim/vimrc"
+-'  1411  37  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1411,37,1620636940,"~/.dotfiles/vim/.vim/vimrc"
+-'  1411  37  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1411,37,1620636940,"~/.dotfiles/vim/.vim/vimrc"
+-'  1411  37  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1411,37,1620636940,"~/.dotfiles/vim/.vim/vimrc"
+-'  1411  37  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1411,37,1620636940,"~/.dotfiles/vim/.vim/vimrc"
+-'  1411  37  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1411,37,1620636940,"~/.dotfiles/vim/.vim/vimrc"
+-'  1411  37  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1411,37,1620636940,"~/.dotfiles/vim/.vim/vimrc"
+-'  1411  37  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1411,37,1620636940,"~/.dotfiles/vim/.vim/vimrc"
 -'  1411  37  ~/.dotfiles/vim/.vim/vimrc
 |4,39,1411,37,1620636940,"~/.dotfiles/vim/.vim/vimrc"
 -'  1  0  ~/.dotfiles/vim/.vim/vimrc
 |4,39,1,0,1620636932,"~/.dotfiles/vim/.vim/vimrc"
 -'  1466  34  ~/.dotfiles/vim/.vim/vimrc
 |4,39,1466,34,1620636932,"~/.dotfiles/vim/.vim/vimrc"
--'  1429  78  ~/.dotfiles/vim/.vim/vimrc
-|4,39,1429,78,1620636930,"~/.dotfiles/vim/.vim/vimrc"
--'  1351  4  ~/.dotfiles/vim/.vim/vimrc
-|4,39,1351,4,1620636892,"~/.dotfiles/vim/.vim/vimrc"
--'  1330  4  ~/.dotfiles/vim/.vim/vimrc
-|4,39,1330,4,1620636887,"~/.dotfiles/vim/.vim/vimrc"
--'  63  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,63,0,1620034107,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  63  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,63,0,1620034107,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  41  10  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,41,10,1619958467,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  41  10  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,41,10,1619958467,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  40  10  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,40,10,1619957870,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  40  10  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,40,10,1619957870,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  45  16  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,45,16,1619957381,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  45  16  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,45,16,1619957381,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  106  55  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,106,55,1619691636,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  106  55  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,106,55,1619691636,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  483  12  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/dataset.py
-|4,39,483,12,1619691631,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/dataset.py"
--'  483  12  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/dataset.py
-|4,39,483,12,1619691631,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/dataset.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/dataset.py
-|4,39,1,0,1619691627,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/dataset.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/dataset.py
-|4,39,1,0,1619691627,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/dataset.py"
--'  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py
-|4,39,2,0,1619690640,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py"
--'  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py
-|4,39,2,0,1619690640,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py"
--'  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py
-|4,39,2,0,1619690640,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py"
--'  2  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py
-|4,39,2,0,1619690640,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py"
--'  4  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py
-|4,39,4,0,1619690638,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py"
--'  4  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py
-|4,39,4,0,1619690638,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py"
--'  4  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py
-|4,39,4,0,1619690638,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py"
--'  4  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py
-|4,39,4,0,1619690638,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py"
--'  3  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py
-|4,39,3,0,1619689554,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py"
--'  3  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py
-|4,39,3,0,1619689554,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py"
--'  3  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py
-|4,39,3,0,1619689554,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py"
--'  3  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py
-|4,39,3,0,1619689554,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py"
--'  4  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py
-|4,39,4,0,1619688978,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py
-|4,39,1,0,1619688978,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py"
--'  4  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py
-|4,39,4,0,1619688978,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py
-|4,39,1,0,1619688978,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py"
--'  4  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py
-|4,39,4,0,1619688978,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py
-|4,39,1,0,1619688978,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py"
--'  4  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py
-|4,39,4,0,1619688978,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py
-|4,39,1,0,1619688978,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/connections/rocpooling/rocpooling.py
-|4,39,1,0,1619688974,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/connections/rocpooling/rocpooling.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/connections/rocpooling/rocpooling.py
-|4,39,1,0,1619688974,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/connections/rocpooling/rocpooling.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/dataset.py
-|4,39,1,0,1619688974,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/dataset.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/connections/rocpooling/rocpooling.py
-|4,39,1,0,1619688974,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/connections/rocpooling/rocpooling.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/connections/rocpooling/rocpooling.py
-|4,39,1,0,1619688974,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/connections/rocpooling/rocpooling.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/dataset.py
-|4,39,1,0,1619688974,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/dataset.py"
--'  149  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/dataset.py
-|4,39,149,0,1619356146,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/dataset.py"
--'  149  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/dataset.py
-|4,39,149,0,1619356146,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/dataset.py"
--'  149  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/dataset.py
-|4,39,149,0,1619356146,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/dataset.py"
--'  149  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/dataset.py
-|4,39,149,0,1619356146,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/dataset.py"
--'  149  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/dataset.py
-|4,39,149,0,1619356146,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/dataset.py"
--'  149  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/dataset.py
-|4,39,149,0,1619356146,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/dataset.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/config.py
-|4,39,1,0,1618580828,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/config.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/config.py
-|4,39,1,0,1618580828,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/config.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/config.py
-|4,39,1,0,1618580828,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/config.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/config.py
-|4,39,1,0,1618580828,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/config.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/config.py
-|4,39,1,0,1618580828,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/config.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/config.py
-|4,39,1,0,1618580828,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/config.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py
-|4,39,1,0,1618580818,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/connections/rocpooling/rocpooling.py
-|4,39,1,0,1618580818,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/connections/rocpooling/rocpooling.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/dataset.py
-|4,39,1,0,1618580818,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/dataset.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py
-|4,39,1,0,1618580818,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/connections/rocpooling/rocpooling.py
-|4,39,1,0,1618580818,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/connections/rocpooling/rocpooling.py"
--'  1  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/dataset.py
-|4,39,1,0,1618580818,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/dataset.py"
--'  35  20  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,35,20,1618506411,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  35  20  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,35,20,1618506411,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  35  20  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,35,20,1618506411,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  35  20  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,35,20,1618506411,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  35  20  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,35,20,1618506411,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  35  20  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,35,20,1618506411,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  35  20  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,35,20,1618506411,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  35  20  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,35,20,1618506411,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  34  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,34,8,1618506390,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  34  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,34,8,1618506390,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  34  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,34,8,1618506390,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  34  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,34,8,1618506390,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  34  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,34,8,1618506390,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  34  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,34,8,1618506390,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  34  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,34,8,1618506390,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  34  8  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,34,8,1618506390,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  104  45  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,104,45,1618506389,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  104  45  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,104,45,1618506389,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  104  45  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,104,45,1618506389,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  104  45  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,104,45,1618506389,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  104  45  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,104,45,1618506389,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  104  45  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,104,45,1618506389,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  104  45  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,104,45,1618506389,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  104  45  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,104,45,1618506389,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  33  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,33,0,1618427848,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  33  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,33,0,1618427848,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  33  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,33,0,1618427848,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  33  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,33,0,1618427848,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  33  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,33,0,1618427848,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  33  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,33,0,1618427848,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  33  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,33,0,1618427848,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  33  0  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,33,0,1618427848,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
--'  44  18  /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-|4,39,44,18,1618427120,"/mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py"
+-'  1  0  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1,0,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1466  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1466,34,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1  0  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1,0,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1466  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1466,34,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1  0  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1,0,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1466  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1466,34,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1  0  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1,0,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1466  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1466,34,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1  0  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1,0,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1466  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1466,34,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1  0  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1,0,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1466  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1466,34,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1  0  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1,0,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1466  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1466,34,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1  0  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1,0,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1466  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1466,34,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1  0  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1,0,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1466  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1466,34,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1  0  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1,0,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1466  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1466,34,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1  0  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1,0,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1466  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1466,34,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1  0  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1,0,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1466  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1466,34,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1  0  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1,0,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1466  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1466,34,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1  0  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1,0,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1466  34  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1466,34,1620636932,"~/.dotfiles/vim/.vim/vimrc"
+-'  1  0  ~/.dotfiles/vim/.vim/vimrc
+|4,39,1,0,1620636932,"~/.dotfiles/vim/.vim/vimrc"
 
 # History of marks within files (newest to oldest):
 
 > ~/.dotfiles/vim/.vim/vimrc
-	*	1620636946	0
-	"	1382	12
+	*	1621223371	0
+	"	617	29
 	^	1329	48
 	.	1329	47
 	+	1329	47

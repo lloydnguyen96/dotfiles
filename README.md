@@ -9,6 +9,9 @@ home.
 - source ~/.dotfiles/setup.sh to install packages, ... for vim development environment
 - optionally source ~/.dotfiles/install_optional_packages.sh for new Linux environment
 
+- start vim and type ':PlugInstall' to install vim plugins
+- git clone https://github.com/gpakosz/.tmux.git in dir ~/.dotfiles/tmux
+
 - install linters and fixers for automatically checking and fixing syntax
 errors:
     + run ':ALEInfo' for suggested linters and fixers for your languages
@@ -26,7 +29,7 @@ multilanguages)
 
 - run ~/.fzf/install if fuzzy completion (**) is not working
 
-- change terminal:
+- change terminal:+
     + text
     + background color and terminal theme (based on tango)
     + shortcut (c-s-hjkl):
