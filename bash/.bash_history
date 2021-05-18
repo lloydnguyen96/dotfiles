@@ -1,78 +1,3 @@
-tmux ls
-tmux a
-tmux
-tmux ls
-tmux
-tmux ls
-tmux a
-d
-python examine.py 
-vim
-tmux
-tmux ls
-watch -n 0.5 nvidia-smi
-htop
-vim /home/loinguyenvan/Projects/OneDriveHUST/Datasets/ReCTS2019/examine.py 
-cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/ReCTS2019
-vim
-python examine.py
-cd train/
-ls -la
-cd ..
-python examine.py
-ls -la
-ls -la train/
-cd /home/loinguyenvan/Pictures
-ls -la
-conda activate ML_CRAFT
-python training.py 
-cd models/
-ls -la
-watch -n 0.5 nvidia-smi
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_CRAFT
-conda activate ML_CRAFT
-vim
-tmux
-conda activate ML_CRAFTS
-python prediction.py 
-
-cd models
-rm crafts.pth 
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_CRAFT
-vim training.py 
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS
-cd models/
-rm crafts.pth 
-ls -la
-rm crafts.pth 
-ls -la
-cd ..
-python prediction.py 
-ls -la models/
-ls -la
-ls -la models/
-python prediction.py 
-python datasets/rects2019/dataset.py 
-python prediction.py 
-ls -la models/
-python prediction.py 
-python datasets/rects2019/dataset.py 
-python prediction.py 
-python datasets/rects2019/dataset.py 
-python prediction.py 
-ls -la models/
-python prediction.py 
-rm models/crafts.pth 
-cd models/
-ls -la
-cd ..
-python prediction.py 
-cd ..
-cd ML_CRAFTS
-python prediction.py 
-rm models/crafts.pth 
-ls -la models/
-python prediction.py 
 python datasets/rects2019/dataset.py 
 python prediction.py 
 python datasets/rects2019/dataset.py 
@@ -1998,3 +1923,78 @@ conda activate ML_CRAFTS
 cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS
 tmux
 shutdown
+ls -la
+ls -la .dotfiles/
+ls -la .dotfiles/bash/
+ls -la .dotfiles/conda/
+cd ~/.dotfiles/
+stow -S bash/
+ls -la ~
+mkdir .temp
+ls -la
+rm -r .temp/
+cd ~
+mkdir ~/.temp
+mv .profile .temp/
+mv .bash_history .temp/
+mv .bash_logout .temp/
+mv .bashrc .temp/
+cd .dotfiles/
+stow -S bash/
+ls -la
+git status
+cd ..
+ls -la
+source ~/.inputrc 
+vim ~/.dotfiles/setup.sh 
+git remote --help
+git push --help
+mv ~/Downloads/Web_LearningLog.zip ~/Projects/
+cd ~/Projects/
+ls -la
+unzip Web_LearningLog.zip 
+cd ~/Downloads/
+unzip Web_LearningLog.zip 
+conda env list
+python --version
+clear
+git ~/.dotfiles/
+git status
+cd ~/.dotfiles/
+git status
+git branch -a
+git commit --help
+git push --help
+git remote --help
+cd ~/Projects/
+ls -la
+git clone https://github.com/lloydnguyen96/Demo.git
+ls -la
+cd Demo/
+git branch -a
+git checkout -b new_branch
+git branch -a
+git remote add upstream https://github.com/kedark3/Demo.git
+git branch -a
+git branch
+git branch -a
+cd ..
+rm -r Demo/
+ls -la
+set --help
+set vi
+export --help
+export -p
+set --help
+set o vi
+set -o vi
+ls -la
+tmux
+conda env list
+conda activate base
+conda env list
+ls -la
+tmux
+vim .inputrc 
+ls -la .temp/
+vim .bashrc 
