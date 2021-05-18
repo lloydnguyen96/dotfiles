@@ -2522,28 +2522,52 @@ $
 # File marks:
 'M  2  0  ~/.dotfiles/.git/index
 |4,77,2,0,1603872333,"~/.dotfiles/.git/index"
-'0  612  29  ~/.dotfiles/vim/.vim/vimrc
-|4,48,612,29,1621328850,"~/.dotfiles/vim/.vim/vimrc"
-'1  15  0  ~/.fzf.bash
-|4,49,15,0,1621328576,"~/.fzf.bash"
-'2  1  0  ~/.fdignore
-|4,50,1,0,1621328445,"~/.fdignore"
-'3  1  0  ~/.fdignore
-|4,51,1,0,1621328445,"~/.fdignore"
-'4  135  0  ~/.bashrc
-|4,52,135,0,1621328274,"~/.bashrc"
-'5  135  0  ~/.bashrc
-|4,53,135,0,1621328274,"~/.bashrc"
-'6  13  54  ~/.fzf.bash
-|4,54,13,54,1621320541,"~/.fzf.bash"
-'7  13  54  ~/.fzf.bash
-|4,55,13,54,1621320541,"~/.fzf.bash"
-'8  14  53  ~/.dotfiles/README.md
-|4,56,14,53,1621314210,"~/.dotfiles/README.md"
-'9  14  53  ~/.dotfiles/README.md
-|4,57,14,53,1621314210,"~/.dotfiles/README.md"
+'0  25  16  ~/.dotfiles/setup.sh
+|4,48,25,16,1621329040,"~/.dotfiles/setup.sh"
+'1  17  6  ~/.dotfiles/README.md
+|4,49,17,6,1621329021,"~/.dotfiles/README.md"
+'2  612  29  ~/.dotfiles/vim/.vim/vimrc
+|4,50,612,29,1621328850,"~/.dotfiles/vim/.vim/vimrc"
+'3  15  0  ~/.fzf.bash
+|4,51,15,0,1621328576,"~/.fzf.bash"
+'4  1  0  ~/.fdignore
+|4,52,1,0,1621328445,"~/.fdignore"
+'5  1  0  ~/.fdignore
+|4,53,1,0,1621328445,"~/.fdignore"
+'6  135  0  ~/.bashrc
+|4,54,135,0,1621328274,"~/.bashrc"
+'7  135  0  ~/.bashrc
+|4,55,135,0,1621328274,"~/.bashrc"
+'8  13  54  ~/.fzf.bash
+|4,56,13,54,1621320541,"~/.fzf.bash"
+'9  13  54  ~/.fzf.bash
+|4,57,13,54,1621320541,"~/.fzf.bash"
 
 # Jumplist (newest first):
+-'  25  16  ~/.dotfiles/setup.sh
+|4,39,25,16,1621329040,"~/.dotfiles/setup.sh"
+-'  24  10  ~/.dotfiles/setup.sh
+|4,39,24,10,1621329025,"~/.dotfiles/setup.sh"
+-'  17  6  ~/.dotfiles/README.md
+|4,39,17,6,1621329021,"~/.dotfiles/README.md"
+-'  17  6  ~/.dotfiles/README.md
+|4,39,17,6,1621329021,"~/.dotfiles/README.md"
+-'  14  53  ~/.dotfiles/README.md
+|4,39,14,53,1621329017,"~/.dotfiles/README.md"
+-'  14  53  ~/.dotfiles/README.md
+|4,39,14,53,1621329017,"~/.dotfiles/README.md"
+-'  612  29  ~/.dotfiles/vim/.vim/vimrc
+|4,39,612,29,1621328850,"~/.dotfiles/vim/.vim/vimrc"
+-'  612  29  ~/.dotfiles/vim/.vim/vimrc
+|4,39,612,29,1621328850,"~/.dotfiles/vim/.vim/vimrc"
+-'  612  29  ~/.dotfiles/vim/.vim/vimrc
+|4,39,612,29,1621328850,"~/.dotfiles/vim/.vim/vimrc"
+-'  612  29  ~/.dotfiles/vim/.vim/vimrc
+|4,39,612,29,1621328850,"~/.dotfiles/vim/.vim/vimrc"
+-'  612  29  ~/.dotfiles/vim/.vim/vimrc
+|4,39,612,29,1621328850,"~/.dotfiles/vim/.vim/vimrc"
+-'  612  29  ~/.dotfiles/vim/.vim/vimrc
+|4,39,612,29,1621328850,"~/.dotfiles/vim/.vim/vimrc"
 -'  612  29  ~/.dotfiles/vim/.vim/vimrc
 |4,39,612,29,1621328850,"~/.dotfiles/vim/.vim/vimrc"
 -'  612  29  ~/.dotfiles/vim/.vim/vimrc
@@ -2556,6 +2580,30 @@ $
 |4,39,15,0,1621328576,"~/.fzf.bash"
 -'  15  0  ~/.fzf.bash
 |4,39,15,0,1621328576,"~/.fzf.bash"
+-'  15  0  ~/.fzf.bash
+|4,39,15,0,1621328576,"~/.fzf.bash"
+-'  15  0  ~/.fzf.bash
+|4,39,15,0,1621328576,"~/.fzf.bash"
+-'  15  0  ~/.fzf.bash
+|4,39,15,0,1621328576,"~/.fzf.bash"
+-'  15  0  ~/.fzf.bash
+|4,39,15,0,1621328576,"~/.fzf.bash"
+-'  15  0  ~/.fzf.bash
+|4,39,15,0,1621328576,"~/.fzf.bash"
+-'  15  0  ~/.fzf.bash
+|4,39,15,0,1621328576,"~/.fzf.bash"
+-'  15  0  ~/.fzf.bash
+|4,39,15,0,1621328576,"~/.fzf.bash"
+-'  15  0  ~/.fzf.bash
+|4,39,15,0,1621328576,"~/.fzf.bash"
+-'  15  0  ~/.fzf.bash
+|4,39,15,0,1621328576,"~/.fzf.bash"
+-'  15  0  ~/.fzf.bash
+|4,39,15,0,1621328576,"~/.fzf.bash"
+-'  15  0  ~/.fzf.bash
+|4,39,15,0,1621328576,"~/.fzf.bash"
+-'  15  0  ~/.fzf.bash
+|4,39,15,0,1621328576,"~/.fzf.bash"
 -'  14  0  ~/.fzf.bash
 |4,39,14,0,1621328560,"~/.fzf.bash"
 -'  14  0  ~/.fzf.bash
@@ -2564,6 +2612,54 @@ $
 |4,39,14,0,1621328560,"~/.fzf.bash"
 -'  14  0  ~/.fzf.bash
 |4,39,14,0,1621328560,"~/.fzf.bash"
+-'  14  0  ~/.fzf.bash
+|4,39,14,0,1621328560,"~/.fzf.bash"
+-'  14  0  ~/.fzf.bash
+|4,39,14,0,1621328560,"~/.fzf.bash"
+-'  14  0  ~/.fzf.bash
+|4,39,14,0,1621328560,"~/.fzf.bash"
+-'  14  0  ~/.fzf.bash
+|4,39,14,0,1621328560,"~/.fzf.bash"
+-'  14  0  ~/.fzf.bash
+|4,39,14,0,1621328560,"~/.fzf.bash"
+-'  14  0  ~/.fzf.bash
+|4,39,14,0,1621328560,"~/.fzf.bash"
+-'  14  0  ~/.fzf.bash
+|4,39,14,0,1621328560,"~/.fzf.bash"
+-'  14  0  ~/.fzf.bash
+|4,39,14,0,1621328560,"~/.fzf.bash"
+-'  14  0  ~/.fzf.bash
+|4,39,14,0,1621328560,"~/.fzf.bash"
+-'  14  0  ~/.fzf.bash
+|4,39,14,0,1621328560,"~/.fzf.bash"
+-'  14  0  ~/.fzf.bash
+|4,39,14,0,1621328560,"~/.fzf.bash"
+-'  14  0  ~/.fzf.bash
+|4,39,14,0,1621328560,"~/.fzf.bash"
+-'  13  54  ~/.fzf.bash
+|4,39,13,54,1621328520,"~/.fzf.bash"
+-'  13  54  ~/.fzf.bash
+|4,39,13,54,1621328520,"~/.fzf.bash"
+-'  13  54  ~/.fzf.bash
+|4,39,13,54,1621328520,"~/.fzf.bash"
+-'  13  54  ~/.fzf.bash
+|4,39,13,54,1621328520,"~/.fzf.bash"
+-'  13  54  ~/.fzf.bash
+|4,39,13,54,1621328520,"~/.fzf.bash"
+-'  13  54  ~/.fzf.bash
+|4,39,13,54,1621328520,"~/.fzf.bash"
+-'  13  54  ~/.fzf.bash
+|4,39,13,54,1621328520,"~/.fzf.bash"
+-'  13  54  ~/.fzf.bash
+|4,39,13,54,1621328520,"~/.fzf.bash"
+-'  13  54  ~/.fzf.bash
+|4,39,13,54,1621328520,"~/.fzf.bash"
+-'  13  54  ~/.fzf.bash
+|4,39,13,54,1621328520,"~/.fzf.bash"
+-'  13  54  ~/.fzf.bash
+|4,39,13,54,1621328520,"~/.fzf.bash"
+-'  13  54  ~/.fzf.bash
+|4,39,13,54,1621328520,"~/.fzf.bash"
 -'  13  54  ~/.fzf.bash
 |4,39,13,54,1621328520,"~/.fzf.bash"
 -'  13  54  ~/.fzf.bash
@@ -2588,6 +2684,54 @@ $
 |4,39,1,0,1621328445,"~/.fdignore"
 -'  1  0  ~/.fdignore
 |4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
+-'  1  0  ~/.fdignore
+|4,39,1,0,1621328445,"~/.fdignore"
 -'  135  0  ~/.bashrc
 |4,39,135,0,1621328274,"~/.bashrc"
 -'  135  0  ~/.bashrc
@@ -2600,150 +2744,22 @@ $
 |4,39,135,0,1621328274,"~/.bashrc"
 -'  135  0  ~/.bashrc
 |4,39,135,0,1621328274,"~/.bashrc"
--'  135  0  ~/.bashrc
-|4,39,135,0,1621328274,"~/.bashrc"
--'  135  0  ~/.bashrc
-|4,39,135,0,1621328274,"~/.bashrc"
--'  135  0  ~/.bashrc
-|4,39,135,0,1621328274,"~/.bashrc"
--'  135  0  ~/.bashrc
-|4,39,135,0,1621328274,"~/.bashrc"
--'  135  0  ~/.bashrc
-|4,39,135,0,1621328274,"~/.bashrc"
--'  135  0  ~/.bashrc
-|4,39,135,0,1621328274,"~/.bashrc"
--'  133  0  ~/.dotfiles/bash/.bashrc
-|4,39,133,0,1621328270,"~/.dotfiles/bash/.bashrc"
--'  133  0  ~/.dotfiles/bash/.bashrc
-|4,39,133,0,1621328270,"~/.dotfiles/bash/.bashrc"
--'  133  0  ~/.dotfiles/bash/.bashrc
-|4,39,133,0,1621328270,"~/.dotfiles/bash/.bashrc"
--'  133  0  ~/.dotfiles/bash/.bashrc
-|4,39,133,0,1621328270,"~/.dotfiles/bash/.bashrc"
--'  133  0  ~/.dotfiles/bash/.bashrc
-|4,39,133,0,1621328270,"~/.dotfiles/bash/.bashrc"
--'  133  0  ~/.dotfiles/bash/.bashrc
-|4,39,133,0,1621328270,"~/.dotfiles/bash/.bashrc"
--'  133  0  ~/.dotfiles/bash/.bashrc
-|4,39,133,0,1621328270,"~/.dotfiles/bash/.bashrc"
--'  133  0  ~/.dotfiles/bash/.bashrc
-|4,39,133,0,1621328270,"~/.dotfiles/bash/.bashrc"
--'  133  0  ~/.dotfiles/bash/.bashrc
-|4,39,133,0,1621328270,"~/.dotfiles/bash/.bashrc"
--'  133  0  ~/.dotfiles/bash/.bashrc
-|4,39,133,0,1621328270,"~/.dotfiles/bash/.bashrc"
--'  133  0  ~/.dotfiles/bash/.bashrc
-|4,39,133,0,1621328270,"~/.dotfiles/bash/.bashrc"
--'  133  0  ~/.dotfiles/bash/.bashrc
-|4,39,133,0,1621328270,"~/.dotfiles/bash/.bashrc"
--'  133  0  ~/.bashrc
-|4,39,133,0,1621328267,"~/.bashrc"
--'  133  0  ~/.bashrc
-|4,39,133,0,1621328267,"~/.bashrc"
--'  133  0  ~/.bashrc
-|4,39,133,0,1621328267,"~/.bashrc"
--'  133  0  ~/.bashrc
-|4,39,133,0,1621328267,"~/.bashrc"
--'  133  0  ~/.bashrc
-|4,39,133,0,1621328267,"~/.bashrc"
--'  133  0  ~/.bashrc
-|4,39,133,0,1621328267,"~/.bashrc"
--'  133  0  ~/.bashrc
-|4,39,133,0,1621328267,"~/.bashrc"
--'  133  0  ~/.bashrc
-|4,39,133,0,1621328267,"~/.bashrc"
--'  133  0  ~/.bashrc
-|4,39,133,0,1621328267,"~/.bashrc"
--'  133  0  ~/.bashrc
-|4,39,133,0,1621328267,"~/.bashrc"
--'  133  0  ~/.bashrc
-|4,39,133,0,1621328267,"~/.bashrc"
--'  133  0  ~/.bashrc
-|4,39,133,0,1621328267,"~/.bashrc"
--'  143  0  ~/.dotfiles/bash/.bashrc
-|4,39,143,0,1621328263,"~/.dotfiles/bash/.bashrc"
--'  143  0  ~/.dotfiles/bash/.bashrc
-|4,39,143,0,1621328263,"~/.dotfiles/bash/.bashrc"
--'  143  0  ~/.dotfiles/bash/.bashrc
-|4,39,143,0,1621328263,"~/.dotfiles/bash/.bashrc"
--'  143  0  ~/.dotfiles/bash/.bashrc
-|4,39,143,0,1621328263,"~/.dotfiles/bash/.bashrc"
--'  143  0  ~/.dotfiles/bash/.bashrc
-|4,39,143,0,1621328263,"~/.dotfiles/bash/.bashrc"
--'  143  0  ~/.dotfiles/bash/.bashrc
-|4,39,143,0,1621328263,"~/.dotfiles/bash/.bashrc"
--'  143  0  ~/.dotfiles/bash/.bashrc
-|4,39,143,0,1621328263,"~/.dotfiles/bash/.bashrc"
--'  143  0  ~/.dotfiles/bash/.bashrc
-|4,39,143,0,1621328263,"~/.dotfiles/bash/.bashrc"
--'  143  0  ~/.dotfiles/bash/.bashrc
-|4,39,143,0,1621328263,"~/.dotfiles/bash/.bashrc"
--'  143  0  ~/.dotfiles/bash/.bashrc
-|4,39,143,0,1621328263,"~/.dotfiles/bash/.bashrc"
--'  143  0  ~/.dotfiles/bash/.bashrc
-|4,39,143,0,1621328263,"~/.dotfiles/bash/.bashrc"
--'  143  0  ~/.dotfiles/bash/.bashrc
-|4,39,143,0,1621328263,"~/.dotfiles/bash/.bashrc"
--'  134  0  ~/.dotfiles/bash/.bashrc
-|4,39,134,0,1621328256,"~/.dotfiles/bash/.bashrc"
--'  134  0  ~/.dotfiles/bash/.bashrc
-|4,39,134,0,1621328256,"~/.dotfiles/bash/.bashrc"
--'  134  0  ~/.dotfiles/bash/.bashrc
-|4,39,134,0,1621328256,"~/.dotfiles/bash/.bashrc"
--'  134  0  ~/.dotfiles/bash/.bashrc
-|4,39,134,0,1621328256,"~/.dotfiles/bash/.bashrc"
--'  134  0  ~/.dotfiles/bash/.bashrc
-|4,39,134,0,1621328256,"~/.dotfiles/bash/.bashrc"
--'  134  0  ~/.dotfiles/bash/.bashrc
-|4,39,134,0,1621328256,"~/.dotfiles/bash/.bashrc"
--'  134  0  ~/.dotfiles/bash/.bashrc
-|4,39,134,0,1621328256,"~/.dotfiles/bash/.bashrc"
--'  134  0  ~/.dotfiles/bash/.bashrc
-|4,39,134,0,1621328256,"~/.dotfiles/bash/.bashrc"
--'  134  0  ~/.dotfiles/bash/.bashrc
-|4,39,134,0,1621328256,"~/.dotfiles/bash/.bashrc"
--'  134  0  ~/.dotfiles/bash/.bashrc
-|4,39,134,0,1621328256,"~/.dotfiles/bash/.bashrc"
--'  134  0  ~/.dotfiles/bash/.bashrc
-|4,39,134,0,1621328256,"~/.dotfiles/bash/.bashrc"
--'  134  0  ~/.dotfiles/bash/.bashrc
-|4,39,134,0,1621328256,"~/.dotfiles/bash/.bashrc"
--'  35  0  ~/.bashrc
-|4,39,35,0,1621328253,"~/.bashrc"
--'  35  0  ~/.bashrc
-|4,39,35,0,1621328253,"~/.bashrc"
--'  35  0  ~/.bashrc
-|4,39,35,0,1621328253,"~/.bashrc"
--'  35  0  ~/.bashrc
-|4,39,35,0,1621328253,"~/.bashrc"
--'  35  0  ~/.bashrc
-|4,39,35,0,1621328253,"~/.bashrc"
--'  35  0  ~/.bashrc
-|4,39,35,0,1621328253,"~/.bashrc"
--'  35  0  ~/.bashrc
-|4,39,35,0,1621328253,"~/.bashrc"
--'  35  0  ~/.bashrc
-|4,39,35,0,1621328253,"~/.bashrc"
--'  35  0  ~/.bashrc
-|4,39,35,0,1621328253,"~/.bashrc"
--'  35  0  ~/.bashrc
-|4,39,35,0,1621328253,"~/.bashrc"
--'  35  0  ~/.bashrc
-|4,39,35,0,1621328253,"~/.bashrc"
--'  35  0  ~/.bashrc
-|4,39,35,0,1621328253,"~/.bashrc"
--'  1  0  ~/.dotfiles/bash/.bashrc
-|4,39,1,0,1621328237,"~/.dotfiles/bash/.bashrc"
--'  1  0  ~/.dotfiles/bash/.bashrc
-|4,39,1,0,1621328237,"~/.dotfiles/bash/.bashrc"
--'  1  0  ~/.dotfiles/bash/.bashrc
-|4,39,1,0,1621328237,"~/.dotfiles/bash/.bashrc"
--'  1  0  ~/.dotfiles/bash/.bashrc
-|4,39,1,0,1621328237,"~/.dotfiles/bash/.bashrc"
--'  1  0  ~/.dotfiles/bash/.bashrc
-|4,39,1,0,1621328237,"~/.dotfiles/bash/.bashrc"
 
 # History of marks within files (newest to oldest):
+
+> ~/.dotfiles/setup.sh
+	*	1621329037	0
+	"	25	16
+	^	25	17
+	.	25	16
+	+	25	16
+
+> ~/.dotfiles/README.md
+	*	1621329021	0
+	"	17	6
+	^	14	55
+	.	14	53
+	+	14	53
 
 > ~/.dotfiles/vim/.vim/vimrc
 	*	1621328633	0
@@ -2776,13 +2792,6 @@ $
 	"	133	0
 	^	143	3
 
-> ~/.dotfiles/README.md
-	*	1621314209	0
-	"	14	53
-	^	14	55
-	.	14	53
-	+	14	53
-
 > ~/.dotfiles/vim/.vim/plugged/fzf/README.md
 	*	1621313118	0
 	"	4	0
@@ -2790,10 +2799,6 @@ $
 > ~/.inputrc
 	*	1621312145	0
 	"	18	0
-
-> ~/.dotfiles/setup.sh
-	*	1621312079	0
-	"	24	10
 
 > /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
 	*	1620034106	0
