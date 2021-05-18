@@ -1,10 +1,5 @@
 tmux ls
 tmux a
-tmux
-tmux ls
-tmux
-tmux ls
-tmux a
 d
 python examine.py 
 vim
@@ -1998,3 +1993,8 @@ conda activate ML_CRAFTS
 cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS
 tmux
 shutdown
+tmux
+dir
+pwd
+ls
+tmux
