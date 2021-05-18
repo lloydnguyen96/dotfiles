@@ -1,19 +1,17 @@
 # Setup fzf
 # ---------
-if [[ ! "$PATH" == */home/lloydnguyen/.fzf/bin* ]]; then
-  export PATH="${PATH:+${PATH}:}/home/lloydnguyen/.fzf/bin"
+if [[ ! "$PATH" == */home/loinguyenvan/.fzf/bin* ]]; then
+  export PATH="${PATH:+${PATH}:}/home/loinguyenvan/.fzf/bin"
 fi
 
 # Auto-completion
 # ---------------
-[[ $- == *i* ]] && source "/home/lloydnguyen/.fzf/shell/completion.bash" 2> /dev/null
+[[ $- == *i* ]] && source "/home/loinguyenvan/.fzf/shell/completion.bash" 2> /dev/null
 
 # Key bindings
 # ------------
-source "/home/lloydnguyen/.fzf/shell/key-bindings.bash"
+source "/home/loinguyenvan/.fzf/shell/key-bindings.bash"
 
-
-# *** my configuration ***
 # don't use --exclude option for all fd commands, put excluded folders in .fdignore instead
 export FZF_DEFAULT_COMMAND="fd --type f . $HOME --color=always --hidden --follow"
 
