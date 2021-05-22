@@ -22,6 +22,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     # stow configuration files
     cd $HOME/.dotfiles
     stow -S bash
+    stow -S input
     stow -S conda
     # stow -S config
     stow -S fd

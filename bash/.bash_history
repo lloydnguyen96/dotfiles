@@ -1,130 +1,3 @@
-tmux ls
-tmux a
-d
-python examine.py 
-vim
-tmux
-tmux ls
-watch -n 0.5 nvidia-smi
-htop
-vim /home/loinguyenvan/Projects/OneDriveHUST/Datasets/ReCTS2019/examine.py 
-cd /home/loinguyenvan/Projects/OneDriveHUST/Datasets/ReCTS2019
-vim
-python examine.py
-cd train/
-ls -la
-cd ..
-python examine.py
-ls -la
-ls -la train/
-cd /home/loinguyenvan/Pictures
-ls -la
-conda activate ML_CRAFT
-python training.py 
-cd models/
-ls -la
-watch -n 0.5 nvidia-smi
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_CRAFT
-conda activate ML_CRAFT
-vim
-tmux
-conda activate ML_CRAFTS
-python prediction.py 
-
-cd models
-rm crafts.pth 
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_CRAFT
-vim training.py 
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS
-cd models/
-rm crafts.pth 
-ls -la
-rm crafts.pth 
-ls -la
-cd ..
-python prediction.py 
-ls -la models/
-ls -la
-ls -la models/
-python prediction.py 
-python datasets/rects2019/dataset.py 
-python prediction.py 
-ls -la models/
-python prediction.py 
-python datasets/rects2019/dataset.py 
-python prediction.py 
-python datasets/rects2019/dataset.py 
-python prediction.py 
-ls -la models/
-python prediction.py 
-rm models/crafts.pth 
-cd models/
-ls -la
-cd ..
-python prediction.py 
-cd ..
-cd ML_CRAFTS
-python prediction.py 
-rm models/crafts.pth 
-ls -la models/
-python prediction.py 
-python datasets/rects2019/dataset.py 
-python prediction.py 
-python datasets/rects2019/dataset.py 
-python prediction.py 
-ls -la models/
-cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/FundamentalPython
-cd pytorch/
-ls -la
-cd DeepLearningWithPytorch/
-ls -la
-vim
-conda activate ML_CRAFTS
-ls -la models/
-tmux
-conda activate ML_CRAFTS
-python prediction.py 
-cd datasets/
-ls -las
-ls -la
-ls -la rects2019/
-clear
-ls -la
-ls -la rects2019/
-cp /home/loinguyenvan/anaconda3/envs/ML_CRAFTS/lib/python3.8/site-packages/torch/utils/data/_utils/collate.py .
-ls -la
-python prediction.py 
-cd ..
-python prediction.py 
-python datasets/rects2019/dataset.py 
-sudo nvidia-xconfig -a --cool-bits=28 --allow-empty-initial-configuration
-vim /etc/xorg.conf.d/20-nvidia.conf
-cd /etc/xorg.conf.d/
-cd /etc/
-sudo apt install flatpak
-flatpak install flathub com.leinardi.gwe
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub com.leinardi.gwe
-flatpak run com.leinardi.gwe
-sudo apt install libcanberra-gtk-module libcanberra-gtk3-module
-flatpak run com.leinardi.gwe
-cd ~
-ls -la
-ls -la .x*
-vim .xprofile
-mv .xprofile .dotfiles/
-cd .dotfiles/
-ls -la
-ls -la bash
-mv .xprofile bash/
-ls -la ~
-stow bash
-ls -la ~
-flatpak run com.leinardi.gwe
-
-vim /etc/X11/xorg.conf
-vim /etc/X11/xorg.conf.backup 
-flatpak run com.leinardi.gwe
 git status
 git add .
 git commit -m 'add installation code of Green With Envy GUI for Nvidia fan control in install_optional_packages.sh'
@@ -1993,8 +1866,135 @@ conda activate ML_CRAFTS
 cd /home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS
 tmux
 shutdown
+<<<<<<< HEAD
 tmux
 dir
 pwd
 ls
+tmux
+=======
+ls -la
+ls -la .dotfiles/
+ls -la .dotfiles/bash/
+ls -la .dotfiles/conda/
+cd ~/.dotfiles/
+stow -S bash/
+ls -la ~
+mkdir .temp
+ls -la
+rm -r .temp/
+cd ~
+mkdir ~/.temp
+mv .profile .temp/
+mv .bash_history .temp/
+mv .bash_logout .temp/
+mv .bashrc .temp/
+cd .dotfiles/
+stow -S bash/
+ls -la
+git status
+cd ..
+ls -la
+source ~/.inputrc 
+vim ~/.dotfiles/setup.sh 
+git remote --help
+git push --help
+mv ~/Downloads/Web_LearningLog.zip ~/Projects/
+cd ~/Projects/
+ls -la
+unzip Web_LearningLog.zip 
+cd ~/Downloads/
+unzip Web_LearningLog.zip 
+conda env list
+python --version
+clear
+git ~/.dotfiles/
+git status
+cd ~/.dotfiles/
+git status
+git branch -a
+git commit --help
+git push --help
+git remote --help
+cd ~/Projects/
+ls -la
+git clone https://github.com/lloydnguyen96/Demo.git
+ls -la
+cd Demo/
+git branch -a
+git checkout -b new_branch
+git branch -a
+git remote add upstream https://github.com/kedark3/Demo.git
+git branch -a
+git branch
+git branch -a
+cd ..
+rm -r Demo/
+ls -la
+set --help
+set vi
+export --help
+export -p
+set --help
+set o vi
+set -o vi
+ls -la
+tmux
+conda env list
+conda activate base
+conda env list
+ls -la
+tmux
+vim .inputrc 
+ls -la .temp/
+vim .bashrc 
+>>>>>>> origin/master
+conda activate ML_CRAFTS
+conda deactivate
+conda activate Django
+vim /home/loinguyenvan/.fzf/README.md 
+vim ~/.dotfiles/README.md 
+cd .dotfiles/
+git status
+git branch -a
+git diff master origin/master 
+ls -kla
+ls -la bash/
+git fetch
+git branch -a
+git diff master origin/master 
+git branch -a
+git merge origin/master 
+git status
+git add .
+git status
+git commit -m 'put bash history and vim info to repo'
+git push
+git stash --include-untracked
+git merge origin/master 
+git branch -a
+git status
+git branch -a
+git merge origin/master 
+git fetch
+git merge origin/master 
+conda env list
+conda create -n Django --clone Web_Django
+conda env list
+conda remove -n Web_Django
+conda env remove -n Web_Django
+conda env list
+conda activate Django
+vim
+vim /home/loinguyenvan/.dotfiles/README.md 
+htop
+conda activate Django
+python -m pip install msgpack
+python -m pip install --user jedi
+python -m pip install --user pynvim
+python -m pip install --user neovim
+kill -9 2663
+kill -9 27004
+kill -9 27038
+conda env list
 tmux

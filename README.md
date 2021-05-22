@@ -9,6 +9,10 @@ home.
 - source ~/.dotfiles/setup.sh to install packages, ... for vim development environment
 - optionally source ~/.dotfiles/install_optional_packages.sh for new Linux environment
 
+- start vim and type ':PlugInstall' to install vim plugins
+- git clone https://github.com/gpakosz/.tmux.git in dir ~/.dotfiles/tmux
+- restow the ~/.dotfiles/bash if errors (restow the ~/.dotfiles/bash/.inputrc, add our own configuration code in the old ~/.dotfiles/bash/.bashrc to ~/.bashrc, ...)
+
 - install linters and fixers for automatically checking and fixing syntax
 errors:
     + run ':ALEInfo' for suggested linters and fixers for your languages
@@ -24,7 +28,7 @@ multilanguages)
     + add excluded folders (which you don't want fzf to search for) in
     $HOME/.fdignore file
 
-- run ~/.fzf/install if fuzzy completion (**) is not working
+- run ~/.fzf/install if fuzzy completion (**) is not working then add our own configuration code in the old .fzf.bash to the newly-created .fzf.bash
 
 - change terminal:
     + text
