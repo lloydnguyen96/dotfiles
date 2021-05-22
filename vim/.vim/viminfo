@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/tango
+~Msle0~/\<get_user_by_email\>
 
 # Last Substitute Search Pattern:
 ~MSle0&-1
@@ -20,10 +20,20 @@
 $
 
 # Command Line History (newest to oldest):
+:SaveSession CK
+|2,0,1621584894,,"SaveSession CK"
+:OpenSession ML_
+|2,0,1621582427,,"OpenSession ML_"
+:OpenSession 
+|2,0,1621582419,,"OpenSession "
+:pwd
+|2,0,1621565335,,"pwd"
+:ALEInfo
+|2,0,1621396479,,"ALEInfo"
+:33
+|2,0,1621395967,,"33"
 :PlugInstall
 |2,0,1621327857,,"PlugInstall"
-:ALEInfo
-|2,0,1621222268,,"ALEInfo"
 :OpenSession ML_CRAFTS
 |2,0,1619691627,,"OpenSession ML_CRAFTS"
 :34
@@ -130,8 +140,6 @@ $
 |2,0,1611484733,,"155"
 :31
 |2,0,1611484635,,"31"
-:pwd
-|2,0,1611676232,,"pwd"
 :bd 31
 |2,0,1610638657,,"bd 31"
 :99
@@ -350,8 +358,6 @@ $
 |2,0,1603850123,,"SaveSession ML_STR\\"
 :vp
 |2,0,1603612728,,"vp"
-:OpenSession 
-|2,0,1603522571,,"OpenSession "
 :170
 |2,0,1602762251,,"170"
 :161
@@ -362,8 +368,6 @@ $
 |2,0,1602750458,,"112"
 :118
 |2,0,1602750269,,"118"
-:OpenSession ML_
-|2,0,1602727724,,"OpenSession ML_"
 :5
 |2,0,1602704187,,"5"
 :26
@@ -410,6 +414,52 @@ $
 |2,0,1599790766,,"OpenSession ML_TextBoxes++"
 
 # Search String History (newest to oldest):
+? \<get_user_by_email\>
+|2,1,1621583209,,"\\<get_user_by_email\\>"
+? \<USER_NOT_FOUND\>
+|2,1,1621582322,,"\\<USER_NOT_FOUND\\>"
+?/1005
+|2,1,1621582310,47,"1005"
+? \<BaseResponse\>
+|2,1,1621582256,,"\\<BaseResponse\\>"
+? \<FogotPassWord\>
+|2,1,1621582247,,"\\<FogotPassWord\\>"
+? \<RegisterReq\>
+|2,1,1621579338,,"\\<RegisterReq\\>"
+? \<RegisterRes\>
+|2,1,1621579334,,"\\<RegisterRes\\>"
+? \<register\>
+|2,1,1621578216,,"\\<register\\>"
+? \<AuthRes\>
+|2,1,1621570688,,"\\<AuthRes\\>"
+? \<AuthReq\>
+|2,1,1621569782,,"\\<AuthReq\\>"
+? \<login\>
+|2,1,1621568561,,"\\<login\\>"
+? \<login_google\>
+|2,1,1621568552,,"\\<login_google\\>"
+? \<asyncio\>
+|2,1,1621566258,,"\\<asyncio\\>"
+? \<grpc_port\>
+|2,1,1621565285,,"\\<grpc_port\\>"
+? \<get_system_config\>
+|2,1,1621564447,,"\\<get_system_config\\>"
+?/listening on port
+|2,1,1621564433,47,"listening on port"
+?/configs
+|2,1,1621564405,47,"configs"
+? \<package\>
+|2,1,1621560512,,"\\<package\\>"
+? \<message\>
+|2,1,1621560489,,"\\<message\\>"
+?/HelloReply
+|2,1,1621495454,47,"HelloReply"
+?/HOST
+|2,1,1621408278,47,"HOST"
+?/DIRS
+|2,1,1621396425,47,"DIRS"
+?/INSTALLE
+|2,1,1621391569,47,"INSTALLE"
 ?/tango
 |2,1,1621222880,47,"tango"
 ?/textwidth
@@ -1380,8 +1430,6 @@ $
 |2,1,1609219537,47,"\"H\""
 ? \<ChuLianStory\>
 |2,1,1609219158,,"\\<ChuLianStory\\>"
-?/1005
-|2,1,1609219024,47,"1005"
 ?/533
 |2,1,1609218868,47,"533"
 ?/"R"
@@ -2366,50 +2414,6 @@ $
 |2,1,1603614528,,"\\<NormalizePAD\\>"
 ? \<filter\>
 |2,1,1603613168,,"\\<filter\\>"
-? \<opt\>
-|2,1,1603612837,,"\\<opt\\>"
-? \<train\>
-|2,1,1603611862,,"\\<train\\>"
-? \<workers\>
-|2,1,1603611749,,"\\<workers\\>"
-? \<num_gpu\>
-|2,1,1603611465,,"\\<num_gpu\\>"
-? \<string\>
-|2,1,1603609963,,"\\<string\\>"
-? \<printable\>
-|2,1,1603609959,,"\\<printable\\>"
-?/batch_size
-|2,1,1603608548,47,"batch_size"
-? \<exp_name\>
-|2,1,1603534662,,"\\<exp_name\\>"
-?/pt
-|2,1,1603531665,47,"pt"
-?/pth
-|2,1,1603531661,47,"pth"
-?/pycache
-|2,1,1603531552,47,"pycache"
-?/vim-polyglot
-|2,1,1603522187,47,"vim-polyglot"
-?/polyglot
-|2,1,1603522161,47,"polyglot"
-?/mdb
-|2,1,1603513663,47,"mdb"
-?/--train_data
-|2,1,1603513624,47,"--train_data"
-? \<log\>
-|2,1,1603509948,,"\\<log\\>"
-? \<targets\>
-|2,1,1602821768,,"\\<targets\\>"
-? \<affinity_map\>
-|2,1,1602785051,,"\\<affinity_map\\>"
-? \<dsize\>
-|2,1,1602784999,,"\\<dsize\\>"
-? \<_reference_map\>
-|2,1,1602783567,,"\\<_reference_map\\>"
-? \<pos_masks\>
-|2,1,1602758724,,"\\<pos_masks\\>"
-? \<num_epochs\>
-|2,1,1602753047,,"\\<num_epochs\\>"
 
 # Expression History (newest to oldest):
 
@@ -2437,63 +2441,39 @@ $
 
 # Registers:
 "0	LINE	0
-	
-	# *** my configuration ***
-	# set -o vi must be put before source ~/.fzf.bash for avoiding weird behavior
-	# of fzf tab completion
-	set -o vi
-	export TERM="xterm-256color"
-	export EDITOR="/usr/bin/vim"
-	
-	alias fd=fdfind
-	
-	[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-|3,0,0,1,11,0,1621328260,"","# *** my configuration ***","# set -o vi must be put before source ~/.fzf.bash for avoiding weird behavior","# of fzf tab completion","set -o vi","export TERM=\"xterm-256color\"","export EDITOR=\"/usr/bin/vim\"","","alias fd=fdfind","","[ -f ~/.fzf.bash ] && source ~/.fzf.bash"
-""1	LINE	0
-	
-|3,1,1,1,1,0,1621328272,""
+	                print('aaaa')
+|3,0,0,1,1,0,1621583415,"                print('aaaa')"
+"1	LINE	0
+	        print(OnlyOne.instance)
+|3,0,1,1,1,0,1621478392,"        print(OnlyOne.instance)"
 "2	LINE	0
 	
-	# *** my configuration ***
-	# set -o vi must be put before source ~/.fzf.bash for avoiding weird behavior
-	# of fzf tab completion
-	set -o vi
-	export TERM="xterm-256color"
-	export EDITOR="/usr/bin/vim"
-	
-	alias fd=fdfind
-	
-	[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-	
-	
-	[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-|3,0,2,1,14,0,1621312793,"","# *** my configuration ***","# set -o vi must be put before source ~/.fzf.bash for avoiding weird behavior","# of fzf tab completion","set -o vi","export TERM=\"xterm-256color\"","export EDITOR=\"/usr/bin/vim\"","","alias fd=fdfind","","[ -f ~/.fzf.bash ] && source ~/.fzf.bash","","","[ -f ~/.fzf.bash ] && source ~/.fzf.bash"
+|3,0,2,1,1,0,1621476630,""
 "3	LINE	0
-	# ********* ********* #
-	# MODE = 'fully-supervised'
-|3,0,3,1,2,0,1620034007,"# ********* ********* #","# MODE = 'fully-supervised'"
-"4	LINE	0
-	        link_map = normalize_minmax(link_map)
-|3,0,4,1,1,0,1619957952,"        link_map = normalize_minmax(link_map)"
-"5	LINE	0
-	        print(fmaps.shape)
-	        print(visualization_dict['region_map'].shape)
-|3,0,5,1,2,0,1619957726,"        print(fmaps.shape)","        print(visualization_dict['region_map'].shape)"
-"6	LINE	0
-	        ax1.imshow(region_map, cmap='gray', vmin=0, vmax=255)
-	        ax2.imshow(region_heatmap)
-	        ax3.imshow(blended_heatregion)
-|3,0,6,1,3,0,1619696252,"        ax1.imshow(region_map, cmap='gray', vmin=0, vmax=255)","        ax2.imshow(region_heatmap)","        ax3.imshow(blended_heatregion)"
-"7	LINE	0
 	
-|3,0,7,1,1,0,1618758707,""
+|3,0,3,1,1,0,1621476246,""
+"4	LINE	0
+	print(get_upper('hello'))
+|3,0,4,1,1,0,1621476081,"print(get_upper('hello'))"
+"5	LINE	0
+	    pass
+|3,0,5,1,1,0,1621476042,"    pass"
+"6	LINE	0
+	
+|3,0,6,1,1,0,1621474833,""
+"7	LINE	0
+	web: gunicorn config.wsgi --log-file -
+|3,0,7,1,1,0,1621409609,"web: gunicorn config.wsgi --log-file -"
 "8	LINE	0
-	                print(fheight)
-|3,0,8,1,1,0,1618711945,"                print(fheight)"
+	web: gunicorn config.wsgi --log-file -
+|3,0,8,1,1,0,1621409608,"web: gunicorn config.wsgi --log-file -"
 "9	LINE	0
-	                text_height = round(max(line_height * 0.3, fheight))
-	                text_width = round(text_height * fwidth / fheight)
-|3,0,9,1,2,0,1618688430,"                text_height = round(max(line_height * 0.3, fheight))","                text_width = round(text_height * fwidth / fheight)"
+	    def __init__(self):
+	        """TODO: to be defined. """
+	        SimpleTestCase.__init__(self)
+	
+	        
+|3,0,9,1,5,0,1621405129,"    def __init__(self):","        \"\"\"TODO: to be defined. \"\"\"","        SimpleTestCase.__init__(self)","","        "
 "a@	CHAR	0
 	hello!
 |3,2,10,0,1,0,1593762729,"hello!"
@@ -2513,15 +2493,16 @@ $
 "w	CHAR	0
 	w
 |3,0,32,0,1,0,1613751347,"w"
-"-	CHAR	0
-	.
-|3,0,36,0,1,0,1621313172,"."
+""-	CHAR	0
+	.id
+|3,1,36,0,1,0,1621583536,".id"
 
 # global variables:
 
 # File marks:
 'M  2  0  ~/.dotfiles/.git/index
 |4,77,2,0,1603872333,"~/.dotfiles/.git/index"
+<<<<<<< HEAD
 <<<<<<< HEAD
 '0  2  0  ~/.dotfiles/README.md
 |4,48,2,0,1621359235,"~/.dotfiles/README.md"
@@ -2788,224 +2769,691 @@ $
 |4,56,13,54,1621320541,"~/.fzf.bash"
 '9  13  54  ~/.fzf.bash
 |4,57,13,54,1621320541,"~/.fzf.bash"
+=======
+'0  12  2  ~/Projects/ck-backend/README.md
+|4,48,12,2,1621506886,"~/Projects/ck-backend/README.md"
+'1  12  2  ~/Projects/ck-backend/README.md
+|4,49,12,2,1621506886,"~/Projects/ck-backend/README.md"
+'2  75  0  ~/Projects/ck-backend/requirement.txt
+|4,50,75,0,1621504574,"~/Projects/ck-backend/requirement.txt"
+'3  75  0  ~/Projects/ck-backend/requirement.txt
+|4,51,75,0,1621504574,"~/Projects/ck-backend/requirement.txt"
+'4  31  29  ~/Projects/grpc_quick_start/grpc/examples/python/helloworld/greeter_server.py
+|4,52,31,29,1621501991,"~/Projects/grpc_quick_start/grpc/examples/python/helloworld/greeter_server.py"
+'5  31  29  ~/Projects/grpc_quick_start/grpc/examples/python/helloworld/greeter_server.py
+|4,53,31,29,1621501991,"~/Projects/grpc_quick_start/grpc/examples/python/helloworld/greeter_server.py"
+'6  13  4  ~/Projects/T2/task5.py
+|4,54,13,4,1621494648,"~/Projects/T2/task5.py"
+'7  15  0  ~/Projects/pages/pages/tests.py
+|4,55,15,0,1621474560,"~/Projects/pages/pages/tests.py"
+'8  40  11  ~/Projects/pages/config/settings.py
+|4,56,40,11,1621395974,"~/Projects/pages/config/settings.py"
+'9  40  11  ~/Projects/pages/config/settings.py
+|4,57,40,11,1621395974,"~/Projects/pages/config/settings.py"
+>>>>>>> origin/master
 
 # Jumplist (newest first):
--'  25  16  ~/.dotfiles/setup.sh
-|4,39,25,16,1621329040,"~/.dotfiles/setup.sh"
--'  24  10  ~/.dotfiles/setup.sh
-|4,39,24,10,1621329025,"~/.dotfiles/setup.sh"
--'  17  6  ~/.dotfiles/README.md
-|4,39,17,6,1621329021,"~/.dotfiles/README.md"
--'  17  6  ~/.dotfiles/README.md
-|4,39,17,6,1621329021,"~/.dotfiles/README.md"
--'  14  53  ~/.dotfiles/README.md
-|4,39,14,53,1621329017,"~/.dotfiles/README.md"
--'  14  53  ~/.dotfiles/README.md
-|4,39,14,53,1621329017,"~/.dotfiles/README.md"
--'  612  29  ~/.dotfiles/vim/.vim/vimrc
-|4,39,612,29,1621328850,"~/.dotfiles/vim/.vim/vimrc"
--'  612  29  ~/.dotfiles/vim/.vim/vimrc
-|4,39,612,29,1621328850,"~/.dotfiles/vim/.vim/vimrc"
--'  612  29  ~/.dotfiles/vim/.vim/vimrc
-|4,39,612,29,1621328850,"~/.dotfiles/vim/.vim/vimrc"
--'  612  29  ~/.dotfiles/vim/.vim/vimrc
-|4,39,612,29,1621328850,"~/.dotfiles/vim/.vim/vimrc"
--'  612  29  ~/.dotfiles/vim/.vim/vimrc
-|4,39,612,29,1621328850,"~/.dotfiles/vim/.vim/vimrc"
--'  612  29  ~/.dotfiles/vim/.vim/vimrc
-|4,39,612,29,1621328850,"~/.dotfiles/vim/.vim/vimrc"
--'  612  29  ~/.dotfiles/vim/.vim/vimrc
-|4,39,612,29,1621328850,"~/.dotfiles/vim/.vim/vimrc"
--'  612  29  ~/.dotfiles/vim/.vim/vimrc
-|4,39,612,29,1621328850,"~/.dotfiles/vim/.vim/vimrc"
--'  15  0  ~/.fzf.bash
-|4,39,15,0,1621328576,"~/.fzf.bash"
--'  15  0  ~/.fzf.bash
-|4,39,15,0,1621328576,"~/.fzf.bash"
--'  15  0  ~/.fzf.bash
-|4,39,15,0,1621328576,"~/.fzf.bash"
--'  15  0  ~/.fzf.bash
-|4,39,15,0,1621328576,"~/.fzf.bash"
--'  15  0  ~/.fzf.bash
-|4,39,15,0,1621328576,"~/.fzf.bash"
--'  15  0  ~/.fzf.bash
-|4,39,15,0,1621328576,"~/.fzf.bash"
--'  15  0  ~/.fzf.bash
-|4,39,15,0,1621328576,"~/.fzf.bash"
--'  15  0  ~/.fzf.bash
-|4,39,15,0,1621328576,"~/.fzf.bash"
--'  15  0  ~/.fzf.bash
-|4,39,15,0,1621328576,"~/.fzf.bash"
--'  15  0  ~/.fzf.bash
-|4,39,15,0,1621328576,"~/.fzf.bash"
--'  15  0  ~/.fzf.bash
-|4,39,15,0,1621328576,"~/.fzf.bash"
--'  15  0  ~/.fzf.bash
-|4,39,15,0,1621328576,"~/.fzf.bash"
--'  15  0  ~/.fzf.bash
-|4,39,15,0,1621328576,"~/.fzf.bash"
--'  15  0  ~/.fzf.bash
-|4,39,15,0,1621328576,"~/.fzf.bash"
--'  15  0  ~/.fzf.bash
-|4,39,15,0,1621328576,"~/.fzf.bash"
--'  15  0  ~/.fzf.bash
-|4,39,15,0,1621328576,"~/.fzf.bash"
--'  14  0  ~/.fzf.bash
-|4,39,14,0,1621328560,"~/.fzf.bash"
--'  14  0  ~/.fzf.bash
-|4,39,14,0,1621328560,"~/.fzf.bash"
--'  14  0  ~/.fzf.bash
-|4,39,14,0,1621328560,"~/.fzf.bash"
--'  14  0  ~/.fzf.bash
-|4,39,14,0,1621328560,"~/.fzf.bash"
--'  14  0  ~/.fzf.bash
-|4,39,14,0,1621328560,"~/.fzf.bash"
--'  14  0  ~/.fzf.bash
-|4,39,14,0,1621328560,"~/.fzf.bash"
--'  14  0  ~/.fzf.bash
-|4,39,14,0,1621328560,"~/.fzf.bash"
--'  14  0  ~/.fzf.bash
-|4,39,14,0,1621328560,"~/.fzf.bash"
--'  14  0  ~/.fzf.bash
-|4,39,14,0,1621328560,"~/.fzf.bash"
--'  14  0  ~/.fzf.bash
-|4,39,14,0,1621328560,"~/.fzf.bash"
--'  14  0  ~/.fzf.bash
-|4,39,14,0,1621328560,"~/.fzf.bash"
--'  14  0  ~/.fzf.bash
-|4,39,14,0,1621328560,"~/.fzf.bash"
--'  14  0  ~/.fzf.bash
-|4,39,14,0,1621328560,"~/.fzf.bash"
--'  14  0  ~/.fzf.bash
-|4,39,14,0,1621328560,"~/.fzf.bash"
--'  14  0  ~/.fzf.bash
-|4,39,14,0,1621328560,"~/.fzf.bash"
--'  14  0  ~/.fzf.bash
-|4,39,14,0,1621328560,"~/.fzf.bash"
--'  13  54  ~/.fzf.bash
-|4,39,13,54,1621328520,"~/.fzf.bash"
--'  13  54  ~/.fzf.bash
-|4,39,13,54,1621328520,"~/.fzf.bash"
--'  13  54  ~/.fzf.bash
-|4,39,13,54,1621328520,"~/.fzf.bash"
--'  13  54  ~/.fzf.bash
-|4,39,13,54,1621328520,"~/.fzf.bash"
--'  13  54  ~/.fzf.bash
-|4,39,13,54,1621328520,"~/.fzf.bash"
--'  13  54  ~/.fzf.bash
-|4,39,13,54,1621328520,"~/.fzf.bash"
--'  13  54  ~/.fzf.bash
-|4,39,13,54,1621328520,"~/.fzf.bash"
--'  13  54  ~/.fzf.bash
-|4,39,13,54,1621328520,"~/.fzf.bash"
--'  13  54  ~/.fzf.bash
-|4,39,13,54,1621328520,"~/.fzf.bash"
--'  13  54  ~/.fzf.bash
-|4,39,13,54,1621328520,"~/.fzf.bash"
--'  13  54  ~/.fzf.bash
-|4,39,13,54,1621328520,"~/.fzf.bash"
--'  13  54  ~/.fzf.bash
-|4,39,13,54,1621328520,"~/.fzf.bash"
--'  13  54  ~/.fzf.bash
-|4,39,13,54,1621328520,"~/.fzf.bash"
--'  13  54  ~/.fzf.bash
-|4,39,13,54,1621328520,"~/.fzf.bash"
--'  13  54  ~/.fzf.bash
-|4,39,13,54,1621328520,"~/.fzf.bash"
--'  13  54  ~/.fzf.bash
-|4,39,13,54,1621328520,"~/.fzf.bash"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  1  0  ~/.fdignore
-|4,39,1,0,1621328445,"~/.fdignore"
--'  135  0  ~/.bashrc
-|4,39,135,0,1621328274,"~/.bashrc"
--'  135  0  ~/.bashrc
-|4,39,135,0,1621328274,"~/.bashrc"
--'  135  0  ~/.bashrc
-|4,39,135,0,1621328274,"~/.bashrc"
--'  135  0  ~/.bashrc
-|4,39,135,0,1621328274,"~/.bashrc"
--'  135  0  ~/.bashrc
-|4,39,135,0,1621328274,"~/.bashrc"
--'  135  0  ~/.bashrc
-|4,39,135,0,1621328274,"~/.bashrc"
+-'  208  24  ~/Projects/ck-backend/src/controllers/auth.py
+|4,39,208,24,1621585428,"~/Projects/ck-backend/src/controllers/auth.py"
+-'  209  12  ~/Projects/ck-backend/src/controllers/auth.py
+|4,39,209,12,1621582730,"~/Projects/ck-backend/src/controllers/auth.py"
+-'  206  17  ~/Projects/ck-backend/src/controllers/auth.py
+|4,39,206,17,1621582730,"~/Projects/ck-backend/src/controllers/auth.py"
+-'  207  19  ~/Projects/ck-backend/src/controllers/auth.py
+|4,39,207,19,1621582676,"~/Projects/ck-backend/src/controllers/auth.py"
+-'  210  19  ~/Projects/ck-backend/src/controllers/auth.py
+|4,39,210,19,1621582675,"~/Projects/ck-backend/src/controllers/auth.py"
+-'  211  25  ~/Projects/ck-backend/src/controllers/auth.py
+|4,39,211,25,1621582602,"~/Projects/ck-backend/src/controllers/auth.py"
+-'  1  26  ~/Projects/ck-backend/src/controllers/auth.py
+|4,39,1,26,1621582542,"~/Projects/ck-backend/src/controllers/auth.py"
+-'  14  13  ~/Projects/ck-backend/src/controllers/auth.py
+|4,39,14,13,1621582484,"~/Projects/ck-backend/src/controllers/auth.py"
+-'  65  20  ~/Projects/ck-backend/src/controllers/auth.py
+|4,39,65,20,1621582435,"~/Projects/ck-backend/src/controllers/auth.py"
+-'  2  21  ~/Projects/ck-backend/configs/development.json
+|4,39,2,21,1621582432,"~/Projects/ck-backend/configs/development.json"
+-'  2  6  ~/Projects/ck-backend/src/controllers/auth.py
+|4,39,2,6,1621582409,"~/Projects/ck-backend/src/controllers/auth.py"
+-'  49  0  ~/Projects/ck-backend/src/controllers/auth.py
+|4,39,49,0,1621582164,"~/Projects/ck-backend/src/controllers/auth.py"
+-'  23  21  ~/Projects/ck-backend/configs/development.json
+|4,39,23,21,1621568399,"~/Projects/ck-backend/configs/development.json"
+-'  51  35  ~/Projects/ck-backend/app_grpc.py
+|4,39,51,35,1621566107,"~/Projects/ck-backend/app_grpc.py"
+-'  34  29  ~/Projects/ck-backend/app_grpc.py
+|4,39,34,29,1621565291,"~/Projects/ck-backend/app_grpc.py"
+-'  54  47  ~/Projects/ck-backend/app_grpc.py
+|4,39,54,47,1621565290,"~/Projects/ck-backend/app_grpc.py"
+-'  55  53  ~/Projects/ck-backend/app_grpc.py
+|4,39,55,53,1621565289,"~/Projects/ck-backend/app_grpc.py"
+-'  33  37  ~/Projects/ck-backend/app_grpc.py
+|4,39,33,37,1621565287,"~/Projects/ck-backend/app_grpc.py"
+-'  2  25  ~/Projects/ck-backend/app_grpc.py
+|4,39,2,25,1621565283,"~/Projects/ck-backend/app_grpc.py"
+-'  21  25  ~/Projects/ck-backend/app_grpc.py
+|4,39,21,25,1621565268,"~/Projects/ck-backend/app_grpc.py"
+-'  1  0  ~/Projects/ck-backend/app_grpc.py
+|4,39,1,0,1621564437,"~/Projects/ck-backend/app_grpc.py"
+-'  45  10  ~/Projects/ck-backend/app_grpc.py
+|4,39,45,10,1621564409,"~/Projects/ck-backend/app_grpc.py"
+-'  14  0  ~/Projects/ck-backend/configs/local.json
+|4,39,14,0,1621563885,"~/Projects/ck-backend/configs/local.json"
+-'  39  9  ~/Projects/ck-backend/configs/local.json
+|4,39,39,9,1621563863,"~/Projects/ck-backend/configs/local.json"
+-'  61  0  ~/Projects/ck-backend/requirement.txt
+|4,39,61,0,1621561819,"~/Projects/ck-backend/requirement.txt"
+-'  15  0  ~/Projects/ck-backend/app_grpc.py
+|4,39,15,0,1621561369,"~/Projects/ck-backend/app_grpc.py"
+-'  49  0  ~/Projects/ck-backend/client/client_nts.py
+|4,39,49,0,1621561368,"~/Projects/ck-backend/client/client_nts.py"
+-'  9  0  ~/Projects/ck-backend/client/client_nts.py
+|4,39,9,0,1621560650,"~/Projects/ck-backend/client/client_nts.py"
+-'  22  8  ~/Projects/ck-backend/client/client_user.py
+|4,39,22,8,1621560648,"~/Projects/ck-backend/client/client_user.py"
+-'  2  0  ~/Projects/ck-backend/client/client_user.py
+|4,39,2,0,1621560605,"~/Projects/ck-backend/client/client_user.py"
+-'  1  0  ~/Projects/ck-backend/middlewares/request_logged.py
+|4,39,1,0,1621560603,"~/Projects/ck-backend/middlewares/request_logged.py"
+-'  1  0  ~/Projects/ck-backend/middlewares/auth_interceptor.py
+|4,39,1,0,1621560591,"~/Projects/ck-backend/middlewares/auth_interceptor.py"
+-'  15  0  ~/Projects/ck-backend/middlewares/permission.py
+|4,39,15,0,1621560588,"~/Projects/ck-backend/middlewares/permission.py"
+-'  53  12  ~/Projects/ck-backend/middlewares/auth_interceptor.py
+|4,39,53,12,1621560583,"~/Projects/ck-backend/middlewares/auth_interceptor.py"
+-'  10  0  ~/Projects/ck-backend/middlewares/auth_interceptor.py
+|4,39,10,0,1621560580,"~/Projects/ck-backend/middlewares/auth_interceptor.py"
+-'  4  13  ~/Projects/ck-backend/msg/message.py
+|4,39,4,13,1621560575,"~/Projects/ck-backend/msg/message.py"
+-'  5  0  ~/Projects/ck-backend/msg/message.py
+|4,39,5,0,1621560546,"~/Projects/ck-backend/msg/message.py"
+-'  79  0  ~/Projects/ck-backend/protos/message.proto
+|4,39,79,0,1621560534,"~/Projects/ck-backend/protos/message.proto"
+-'  30  0  ~/Projects/ck-backend/protos/message.proto
+|4,39,30,0,1621560526,"~/Projects/ck-backend/protos/message.proto"
+-'  2  0  ~/Projects/ck-backend/protos/message.proto
+|4,39,2,0,1621560513,"~/Projects/ck-backend/protos/message.proto"
+-'  3  0  ~/Projects/ck-backend/protos/group.proto
+|4,39,3,0,1621560399,"~/Projects/ck-backend/protos/group.proto"
+-'  120  0  ~/Projects/ck-backend/protos/group.proto
+|4,39,120,0,1621560396,"~/Projects/ck-backend/protos/group.proto"
+-'  2  0  ~/Projects/ck-backend/protos/group.proto
+|4,39,2,0,1621560394,"~/Projects/ck-backend/protos/group.proto"
+-'  2  0  ~/Projects/ck-backend/protos/auth.proto
+|4,39,2,0,1621560393,"~/Projects/ck-backend/protos/auth.proto"
+-'  81  0  ~/Projects/ck-backend/protos/auth.proto
+|4,39,81,0,1621560370,"~/Projects/ck-backend/protos/auth.proto"
+-'  1  0  ~/Projects/ck-backend/alembic.ini
+|4,39,1,0,1621560363,"~/Projects/ck-backend/alembic.ini"
+-'  71  0  ~/Projects/ck-backend/alembic.ini
+|4,39,71,0,1621560350,"~/Projects/ck-backend/alembic.ini"
+-'  2  0  ~/Projects/ck-backend/alembic.ini
+|4,39,2,0,1621560348,"~/Projects/ck-backend/alembic.ini"
+-'  6  0  ~/Projects/ck-backend/cron_tab.py
+|4,39,6,0,1621560347,"~/Projects/ck-backend/cron_tab.py"
+-'  4  13  ~/Projects/ck-backend/app_http.py
+|4,39,4,13,1621560340,"~/Projects/ck-backend/app_http.py"
+-'  16  0  ~/Projects/ck-backend/app_grpc.py
+|4,39,16,0,1621560322,"~/Projects/ck-backend/app_grpc.py"
+-'  4  0  ~/Projects/ck-backend/utils/push_notify.py
+|4,39,4,0,1621560319,"~/Projects/ck-backend/utils/push_notify.py"
+-'  111  0  ~/Projects/ck-backend/utils/push_notify.py
+|4,39,111,0,1621560315,"~/Projects/ck-backend/utils/push_notify.py"
+-'  14  0  ~/Projects/ck-backend/utils/push_notify.py
+|4,39,14,0,1621560314,"~/Projects/ck-backend/utils/push_notify.py"
+-'  12  0  ~/Projects/ck-backend/utils/logger.py
+|4,39,12,0,1621560312,"~/Projects/ck-backend/utils/logger.py"
+-'  3  11  ~/Projects/ck-backend/utils/keycloak.py
+|4,39,3,11,1621560309,"~/Projects/ck-backend/utils/keycloak.py"
+-'  4  0  ~/Projects/ck-backend/utils/encrypt.py
+|4,39,4,0,1621560300,"~/Projects/ck-backend/utils/encrypt.py"
+-'  1  0  ~/Projects/ck-backend/utils/data.py
+|4,39,1,0,1621560294,"~/Projects/ck-backend/utils/data.py"
+-'  2  0  ~/Projects/ck-backend/utils/const.py
+|4,39,2,0,1621560292,"~/Projects/ck-backend/utils/const.py"
+-'  4  0  ~/Projects/ck-backend/utils/config.py
+|4,39,4,0,1621560290,"~/Projects/ck-backend/utils/config.py"
+-'  222  12  ~/Projects/ck-backend/src/controllers/auth.py
+|4,39,222,12,1621559888,"~/Projects/ck-backend/src/controllers/auth.py"
+-'  224  4  ~/Projects/ck-backend/src/controllers/auth.py
+|4,39,224,4,1621559885,"~/Projects/ck-backend/src/controllers/auth.py"
+-'  244  12  ~/Projects/ck-backend/src/controllers/auth.py
+|4,39,244,12,1621559826,"~/Projects/ck-backend/src/controllers/auth.py"
+-'  3  0  ~/Projects/ck-backend/src/controllers/auth.py
+|4,39,3,0,1621559824,"~/Projects/ck-backend/src/controllers/auth.py"
+-'  12  2  ~/Projects/ck-backend/README.md
+|4,39,12,2,1621506886,"~/Projects/ck-backend/README.md"
+-'  12  2  ~/Projects/ck-backend/README.md
+|4,39,12,2,1621506886,"~/Projects/ck-backend/README.md"
+-'  12  0  ~/Projects/ck-backend/run.sh
+|4,39,12,0,1621504891,"~/Projects/ck-backend/run.sh"
+-'  12  0  ~/Projects/ck-backend/run.sh
+|4,39,12,0,1621504891,"~/Projects/ck-backend/run.sh"
+-'  1  0  ~/Projects/ck-backend/run.sh
+|4,39,1,0,1621504829,"~/Projects/ck-backend/run.sh"
+-'  1  0  ~/Projects/ck-backend/run.sh
+|4,39,1,0,1621504829,"~/Projects/ck-backend/run.sh"
+-'  75  0  ~/Projects/ck-backend/requirement.txt
+|4,39,75,0,1621504574,"~/Projects/ck-backend/requirement.txt"
+-'  75  0  ~/Projects/ck-backend/requirement.txt
+|4,39,75,0,1621504574,"~/Projects/ck-backend/requirement.txt"
+-'  75  0  ~/Projects/ck-backend/requirement.txt
+|4,39,75,0,1621504574,"~/Projects/ck-backend/requirement.txt"
+-'  2  0  ~/Projects/ck-backend/requirement.txt
+|4,39,2,0,1621504573,"~/Projects/ck-backend/requirement.txt"
+-'  2  0  ~/Projects/ck-backend/requirement.txt
+|4,39,2,0,1621504573,"~/Projects/ck-backend/requirement.txt"
+-'  2  0  ~/Projects/ck-backend/requirement.txt
+|4,39,2,0,1621504573,"~/Projects/ck-backend/requirement.txt"
+-'  1  0  ~/Projects/ck-backend/requirement.txt
+|4,39,1,0,1621504572,"~/Projects/ck-backend/requirement.txt"
+-'  1  0  ~/Projects/ck-backend/requirement.txt
+|4,39,1,0,1621504572,"~/Projects/ck-backend/requirement.txt"
+-'  1  0  ~/Projects/ck-backend/requirement.txt
+|4,39,1,0,1621504572,"~/Projects/ck-backend/requirement.txt"
+-'  31  29  ~/Projects/grpc_quick_start/grpc/examples/python/helloworld/greeter_server.py
+|4,39,31,29,1621501991,"~/Projects/grpc_quick_start/grpc/examples/python/helloworld/greeter_server.py"
+-'  31  29  ~/Projects/grpc_quick_start/grpc/examples/python/helloworld/greeter_server.py
+|4,39,31,29,1621501991,"~/Projects/grpc_quick_start/grpc/examples/python/helloworld/greeter_server.py"
+-'  31  29  ~/Projects/grpc_quick_start/grpc/examples/python/helloworld/greeter_server.py
+|4,39,31,29,1621501991,"~/Projects/grpc_quick_start/grpc/examples/python/helloworld/greeter_server.py"
+-'  31  29  ~/Projects/grpc_quick_start/grpc/examples/python/helloworld/greeter_server.py
+|4,39,31,29,1621501991,"~/Projects/grpc_quick_start/grpc/examples/python/helloworld/greeter_server.py"
+-'  31  29  ~/Projects/grpc_quick_start/grpc/examples/python/helloworld/greeter_server.py
+|4,39,31,29,1621501991,"~/Projects/grpc_quick_start/grpc/examples/python/helloworld/greeter_server.py"
+-'  1  0  ~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto
+|4,39,1,0,1621495022,"~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto"
+-'  1  0  ~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto
+|4,39,1,0,1621495022,"~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto"
+-'  1  0  ~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto
+|4,39,1,0,1621495022,"~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto"
+-'  1  0  ~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto
+|4,39,1,0,1621495022,"~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto"
+-'  1  0  ~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto
+|4,39,1,0,1621495022,"~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto"
+-'  39  0  ~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto
+|4,39,39,0,1621495006,"~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto"
+-'  39  0  ~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto
+|4,39,39,0,1621495006,"~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto"
+-'  39  0  ~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto
+|4,39,39,0,1621495006,"~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto"
+-'  39  0  ~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto
+|4,39,39,0,1621495006,"~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto"
+-'  39  0  ~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto
+|4,39,39,0,1621495006,"~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto"
+-'  3  0  ~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto
+|4,39,3,0,1621495005,"~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto"
+-'  3  0  ~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto
+|4,39,3,0,1621495005,"~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto"
+-'  3  0  ~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto
+|4,39,3,0,1621495005,"~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto"
+-'  3  0  ~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto
+|4,39,3,0,1621495005,"~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto"
+-'  23  0  ~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto
+|4,39,23,0,1621495004,"~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto"
 
 # History of marks within files (newest to oldest):
 
+> ~/Projects/ck-backend/src/controllers/auth.py
+	*	1621585426	0
+	"	208	24
+	.	207	0
+	+	211	0
+	+	207	15
+	+	210	19
+	+	206	19
+	+	207	19
+	+	210	0
+	+	207	0
+
+> ~/Projects/ck-backend/NERD_tree_1
+	*	1621585424	0
+	"	59	4
+	.	1	0
+	+	1	0
+
+> ~/Projects/ck-backend/protos/auth.proto
+	*	1621585385	0
+	"	64	0
+	^	43	59
+	.	43	0
+	+	43	0
+	a	81	32
+
+> ~/Projects/ck-backend/msg/message.py
+	*	1621585385	0
+	"	64	8
+
+> ~/Projects/ck-backend/app_grpc.py
+	*	1621584866	0
+	"	64	4
+
+> ~/Projects/ck-backend/src/services/auth.py
+	*	1621584866	0
+	"	84	27
+	^	84	31
+	.	84	0
+	+	86	23
+	+	84	23
+	+	88	19
+	+	87	0
+	+	84	28
+	+	81	0
+	+	84	18
+	+	85	23
+	+	84	0
+	+	84	26
+	+	84	30
+	+	86	0
+	+	84	0
+
+> ~/Projects/ck-backend/configs/development.json
+	*	1621582470	0
+	"	25	5
+	.	2	0
+	+	2	0
+
+> ~/Projects/ck-backend/utils/config.py
+	*	1621582304	0
+	"	17	12
+
+> ~/Projects/ck-backend/configs/local.json
+	*	1621563871	0
+	"	14	0
+
+> ~/Projects/ck-backend/requirement.txt
+	*	1621561807	0
+	"	61	0
+
+> ~/Projects/ck-backend/client/client_nts.py
+	*	1621561367	0
+	"	49	0
+
+> ~/Projects/ck-backend/client/client_user.py
+	*	1621560605	0
+	"	22	8
+
+> ~/Projects/ck-backend/middlewares/request_logged.py
+	*	1621560591	0
+	"	1	0
+
+> ~/Projects/ck-backend/middlewares/auth_interceptor.py
+	*	1621560589	0
+	"	1	0
+
+> ~/Projects/ck-backend/middlewares/permission.py
+	*	1621560587	0
+	"	15	0
+
+> ~/Projects/ck-backend/protos/message.proto
+	*	1621560527	0
+	"	79	0
+
+> ~/Projects/ck-backend/protos/group.proto
+	*	1621560397	0
+	"	3	0
+
+> ~/Projects/ck-backend/alembic.ini
+	*	1621560351	0
+	"	1	0
+
+> ~/Projects/ck-backend/cron_tab.py
+	*	1621560342	0
+	"	6	0
+
+> ~/Projects/ck-backend/app_http.py
+	*	1621560335	0
+	"	4	13
+
+> ~/Projects/ck-backend/utils/push_notify.py
+	*	1621560316	0
+	"	4	0
+
+> ~/Projects/ck-backend/utils/logger.py
+	*	1621560311	0
+	"	12	0
+
+> ~/Projects/ck-backend/utils/keycloak.py
+	*	1621560308	0
+	"	3	11
+
+> ~/Projects/ck-backend/utils/encrypt.py
+	*	1621560299	0
+	"	4	0
+
+> ~/Projects/ck-backend/utils/data.py
+	*	1621560292	0
+	"	1	0
+
+> ~/Projects/ck-backend/utils/const.py
+	*	1621560291	0
+	"	2	0
+
+> ~/Projects/ck-backend/README.md
+	*	1621506886	0
+	"	12	2
+
+> ~/Projects/ck-backend/run.sh
+	*	1621504889	0
+	"	12	0
+
+> ~/Projects/grpc_quick_start/grpc/examples/python/helloworld/greeter_server.py
+	*	1621501990	0
+	"	31	29
+	^	30	28
+	.	30	27
+	+	31	41
+	+	30	0
+	+	30	27
+
+> ~/Projects/grpc_quick_start/grpc/examples/python/helloworld/greeter_client.py
+	*	1621501989	0
+	"	37	25
+	.	32	0
+	+	33	0
+	+	34	0
+	+	32	0
+
+> ~/Projects/grpc_quick_start/grpc/examples/python/helloworld/helloworld_pb2.py
+	*	1621495507	0
+	"	102	0
+
+> ~/Projects/grpc_quick_start/grpc/examples/protos/helloworld.proto
+	*	1621495006	0
+	"	1	0
+	^	29	57
+	.	29	57
+	+	28	27
+	+	29	57
+
+> ~/Projects/T2/task5.py
+	*	1621494647	0
+	"	13	4
+	.	14	0
+	+	1	0
+	+	10	19
+	+	12	0
+	+	10	0
+	+	9	10
+	+	7	0
+	+	17	0
+	+	19	0
+	+	21	0
+	+	7	0
+	+	9	0
+	+	13	0
+	+	17	0
+	+	19	0
+	+	21	0
+	+	14	0
+
+> ~/Projects/T2/task2.py
+	*	1621479420	0
+	"	17	0
+	^	20	16
+	.	15	20
+	+	1	0
+	+	13	0
+	+	17	0
+	+	11	0
+	+	1	35
+	+	12	20
+	+	16	21
+	+	15	0
+	+	11	9
+	+	2	24
+	+	7	32
+	+	8	28
+	+	3	0
+	+	1	32
+	+	4	0
+	+	5	18
+	+	5	28
+	+	9	19
+	+	18	0
+	+	19	15
+	+	20	15
+	+	15	20
+
+> ~/Projects/T2/task4.py
+	*	1621477262	0
+	"	10	16
+	^	10	46
+	.	10	45
+	+	1	0
+	+	3	36
+	+	1	66
+	+	3	23
+	+	6	25
+	+	4	25
+	+	5	24
+	+	6	35
+	+	8	47
+	+	12	33
+	+	13	27
+	+	14	0
+	+	7	21
+	+	8	0
+	+	6	25
+	+	10	45
+
+> ~/Projects/T2/task3.py
+	*	1621476902	0
+	"	20	0
+	^	1	70
+	.	1	69
+	+	1	0
+	+	7	15
+	+	13	0
+	+	14	14
+	+	17	38
+	+	12	5
+	+	16	0
+	+	18	12
+	+	19	0
+	+	1	69
+
+> ~/Projects/T2/task1.py
+	*	1621476203	0
+	"	7	12
+	.	5	0
+	+	1	0
+	+	4	0
+	+	2	0
+	+	4	0
+	+	5	0
+	+	6	0
+	+	5	0
+
+> ~/Projects/pages/pages/tests.py
+	*	1621474560	0
+	"	15	0
+	^	15	51
+	.	14	0
+	+	2	37
+	+	5	0
+	+	10	0
+	+	7	0
+	+	10	0
+	+	11	44
+	+	15	49
+	+	14	0
+
+> ~/Projects/pages/Procfile
+	*	1621474557	0
+	"	1	20
+	^	1	38
+	.	1	37
+	+	1	0
+	+	1	37
+
+> ~/Projects/pages/config/settings.py
+	*	1621411967	0
+	"	28	0
+	^	28	19
+	.	28	18
+	+	40	11
+	+	57	0
+	+	59	0
+	+	28	18
+
+> ~/Projects/pages/templates/about.html
+	*	1621407969	0
+	"	6	20
+	^	6	21
+	.	6	20
+	+	1	29
+	+	5	18
+	+	4	17
+	+	6	20
+
+> ~/Projects/pages/templates/base.html
+	*	1621405086	0
+	"	4	21
+	^	8	22
+	.	8	21
+	+	1	28
+	+	8	21
+
+> ~/Projects/pages/templates/home.html
+	*	1621401667	0
+	"	6	20
+	^	6	21
+	.	6	20
+	+	1	26
+	+	5	0
+	+	5	15
+	+	4	17
+	+	6	20
+
+> ~/Projects/pages/pages/urls.py
+	*	1621401631	0
+	"	6	49
+	^	7	58
+	.	7	57
+	+	6	49
+	+	7	22
+	+	2	30
+	+	3	31
+	+	7	57
+
+> ~/Projects/pages/config/urls.py
+	*	1621399581	0
+	"	21	4
+	.	22	0
+	+	21	7
+	+	17	36
+	+	20	0
+	+	22	0
+	+	20	0
+	+	21	35
+	+	21	0
+	+	22	0
+
+> ~/Projects/pages/pages/views.py
+	*	1621398833	0
+	"	17	0
+	^	17	31
+	.	17	30
+	+	2	44
+	+	6	0
+	+	11	0
+	+	8	0
+	+	11	0
+	+	10	0
+	+	10	31
+	+	12	4
+	+	13	0
+	+	18	0
+	+	15	0
+	+	18	0
+	+	17	30
+
+> ~/Projects/helloworld/pages/views.py
+	*	1621395858	0
+	"	12	37
+	^	12	38
+	.	11	0
+	+	2	35
+	+	5	0
+	+	12	0
+	+	6	0
+	+	12	36
+	+	11	0
+
+> ~/Projects/helloworld/config/urls.py
+	*	1621395854	0
+	"	21	35
+	^	21	36
+	.	20	0
+	+	17	36
+	+	20	0
+
+> ~/Projects/helloworld/pages/urls.py
+	*	1621393308	0
+	"	6	0
+	.	2	0
+	+	2	30
+	+	7	39
+	+	2	0
+
+> ~/Projects/helloworld/NERD_tree_1
+	*	1621392427	0
+	"	8	0
+	.	1	0
+	+	1	0
+
+> ~/Projects/helloworld/config/settings.py
+	*	1621392369	0
+	"	41	0
+	^	40	12
+	.	40	11
+	+	40	11
+
+> ~/.dotfiles/README.md
+	*	1621391551	0
+	"	46	6
+	^	14	55
+	.	14	53
+	+	14	53
+
+> /etc/postgresql/12/main/postgresql.conf
+	*	1621333086	0
+	"	747	0
+
+> ~/Projects/autoline/tutorial/settings.py
+	*	1621331860	0
+	"	85	29
+	^	85	32
+	.	85	31
+	+	80	13
+	+	81	16
+	+	82	59
+	+	83	29
+	+	84	27
+	+	85	33
+	+	86	28
+	+	88	6
+	+	89	17
+	+	90	47
+	+	92	5
+	+	93	0
+	+	85	31
+
+> ~/Projects/autoline/requirements.txt
+	*	1621329747	0
+	"	20	0
+	.	20	0
+	+	13	0
+	+	15	0
+	+	20	0
+
 > ~/.dotfiles/setup.sh
-	*	1621329037	0
+	*	1621329111	0
 	"	25	16
 	^	25	17
 	.	25	16
 	+	25	16
-
-> ~/.dotfiles/README.md
-	*	1621329021	0
-	"	17	6
-	^	14	55
-	.	14	53
-	+	14	53
 
 > ~/.dotfiles/vim/.vim/vimrc
 	*	1621328633	0
@@ -5091,6 +5539,7 @@ $
 	+	108	0
 	+	98	0
 	+	156	0
+<<<<<<< HEAD
 
 > /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string_dataset/config.py
 	*	1615353368	0
@@ -6045,5 +6494,7 @@ $
 > /mnt/9A743BCF743BAD3F/Lloyd/OneDrive - Hanoi University of Science and Technology/Datasets/ReCTS2019/train/gt_unicode/train_ReCTS_003398.json
 	*	1609300007	0
 	"	1	6
+=======
+>>>>>>> origin/master
 =======
 >>>>>>> origin/master

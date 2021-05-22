@@ -12,6 +12,8 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     sudo apt install git-all
     sudo apt update -y
     sudo apt install python3-pip
+    # sometime, we will need ag for searching
+    sudo apt install silversearcher-ag
     # xclip to use system clipboard in tmux
     sudo apt install xclip
     # highlight, tree for fzf preview in terminal
