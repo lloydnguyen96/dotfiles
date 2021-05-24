@@ -1,6 +1,6 @@
 " ~/.dotfiles/vim/.vim/sessions/CK.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 21 Tháng 5 2021 at 17:18:44.
+" Created by session.vim 2.13.1 on 21 Tháng 5 2021 at 17:37:57.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrti
