@@ -27,7 +27,7 @@ export FZF_DEFAULT_OPTS="
 #     --select-1 --exit-0'
 
 # Use ~~ as the trigger sequence instead of the default **
-export FZF_COMPLETION_TRIGGER=',,'
+export FZF_COMPLETION_TRIGGER=",,"
 
 # Options to fzf command
 # Unless otherwise specified, fzf starts in "extended-search mode" where you
@@ -35,7 +35,7 @@ export FZF_COMPLETION_TRIGGER=',,'
 
 # export FZF_COMPLETION_OPTS="+c -x"
 export FZF_COMPLETION_OPTS="$FZF_DEFAULT_OPTS"
-export FZF_PATH_COMPLETION_OPTS="--preview='bat {} | head -500'"
+# export FZF_PATH_COMPLETION_OPTS="--preview 'batcat {} | head -500'"
 
 # Use fd (https://github.com/sharkdp/fd) instead of the default find
 # command for listing path candidates.
@@ -53,17 +53,19 @@ _fzf_compgen_dir() {
 # (EXPERIMENTAL) Advanced customization of fzf options via _fzf_comprun function
 # - The first argument to the function is the name of the command.
 # - You should make sure to pass the rest of the arguments to fzf.
-# _fzf_comprun() {
-#     local command=$1
-#     shift
+export CTRL_T_PREVIEW="batcat --style=numbers --color=always --line-range :500 {}"
+_fzf_comprun() {
+    local command=$1
+    shift
 
-#     case "$command" in
-#         cd)           fzf "$@" --preview 'tree -C {} | head -200' ;;
-#         export|unset) fzf "$@" --preview "eval 'echo \$'{}" ;;
-#         ssh)          fzf "$@" --preview 'dig {}' ;;
-#         *)            fzf "$@" ;;
-#     esac
-# }
+    case "$command" in
+        cd)           fzf "$@" --preview 'tree -C {} | head -200' ;;
+        vim)          fzf "$@" --preview "$CTRL_T_PREVIEW" ;;
+        export|unset) fzf "$@" --preview "eval 'echo \$'{}" ;;
+        ssh)          fzf "$@" --preview 'dig {}' ;;
+        *)            fzf "$@" ;;
+    esac
+}
 
 # On bash, fuzzy completion is enabled only for a predefined set of commands
 # (complete | grep _fzf to see the list). But you can enable it for other
@@ -73,11 +75,15 @@ _fzf_compgen_dir() {
 
 # Using highlight (http://www.andre-simon.de/doku/highlight/en/highlight.html)
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+# export FZF_CTRL_T_OPTS="
+#     --preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
 export FZF_CTRL_T_OPTS="
-    --preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
+    --preview '$CTRL_T_PREVIEW'
+"
 
 export FZF_CTRL_R_OPTS="
-    --preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
+    --preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'
+"
 
 export FZF_ALT_C_COMMAND="fd -t d . $HOME --hidden --follow"
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
