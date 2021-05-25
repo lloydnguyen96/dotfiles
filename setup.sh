@@ -18,6 +18,9 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     sudo apt install xclip
     # highlight, tree for fzf preview in terminal
     sudo apt install highlight
+    # use bat with fzf for syntax highlighting in preview windows in addition
+    # to highlight package
+    sudo apt install bat
     sudo apt install tree
     # fd for terminal fzf
     sudo apt install fd-find
