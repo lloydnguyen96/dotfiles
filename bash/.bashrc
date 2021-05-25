@@ -139,5 +139,6 @@ export TERM="xterm-256color"
 export EDITOR="/usr/bin/vim"
 
 alias fd=fdfind
+alias bat=batcat
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
