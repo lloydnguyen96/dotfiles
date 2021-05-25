@@ -50,6 +50,9 @@ configuration code in the old .fzf.bash to the newly-created .fzf.bash
     + python -m pip install --user pynvim (current environment)
     + python -m pip install --user neovim (current environment)
 
+- fzf.vim's requirements:
+    + install ripgrep for keyword searching
+
 # TODO LIST
 
 - tmuxinator
