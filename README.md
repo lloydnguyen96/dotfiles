@@ -32,8 +32,9 @@ multilanguages)
     + add excluded folders (which you don't want fzf to search for) in
     $HOME/.fdignore file
 
-- run ~/.fzf/install if fuzzy completion (**) is not working then add our own
-configuration code in the old .fzf.bash to the newly-created .fzf.bash
+- if fuzzy completion (**) is not working, then copy our own configuration code
+in the current .fzf.bash file to the new .fzf.bash file created the following
+terminal command: '~/.fzf/install'.
 
 - change terminal:
     + text
