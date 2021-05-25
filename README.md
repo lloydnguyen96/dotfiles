@@ -51,6 +51,9 @@ terminal command: '~/.fzf/install'.
     + python -m pip install --user pynvim (current environment)
     + python -m pip install --user neovim (current environment)
 
+- fzf.vim's requirements:
+    + install ripgrep for keyword searching
+
 # TODO LIST
 
 - tmuxinator
