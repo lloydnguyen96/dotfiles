@@ -106,3 +106,73 @@
 	path = vim/.vim/plugged/vim-tmux-focus-events
 	url = https://github.com/tmux-plugins/vim-tmux-focus-events
     ignore = all
+
+[submodule "vim/.vim/plugged/delimitMate"]
+	path = vim/.vim/plugged/delimitMate
+	url = https://github.com/Raimondi/delimitMate
+    ignore = all
+
+[submodule "vim/.vim/plugged/deoplete-jedi"]
+	path = vim/.vim/plugged/deoplete-jedi
+	url = https://github.com/deoplete-plugins/deoplete-jedi
+    ignore = all
+
+[submodule "vim/.vim/plugged/grep.vim"]
+	path = vim/.vim/plugged/grep.vim
+	url = https://github.com/vim-scripts/grep.vim
+    ignore = all
+
+[submodule "vim/.vim/plugged/gruvbox"]
+	path = vim/.vim/plugged/gruvbox
+	url = https://github.com/morhetz/gruvbox
+    ignore = all
+
+[submodule "vim/.vim/plugged/indentLine"]
+	path = vim/.vim/plugged/indentLine
+	url = https://github.com/Yggdroot/indentLine
+    ignore = all
+
+[submodule "vim/.vim/plugged/nvim-yarp"]
+	path = vim/.vim/plugged/nvim-yarp
+	url = https://github.com/roxma/nvim-yarp
+    ignore = all
+
+[submodule "vim/.vim/plugged/split-manpage.vim"]
+	path = vim/.vim/plugged/split-manpage.vim
+	url = https://github.com/ludwig/split-manpage.vim
+    ignore = all
+
+[submodule "vim/.vim/plugged/vim-better-whitespace"]
+	path = vim/.vim/plugged/vim-better-whitespace
+	url = https://github.com/ntpeters/vim-better-whitespace
+    ignore = all
+
+[submodule "vim/.vim/plugged/vim-misc"]
+	path = vim/.vim/plugged/vim-misc
+	url = https://github.com/xolox/vim-misc
+    ignore = all
+
+[submodule "vim/.vim/plugged/vim-multiple-cursors"]
+	path = vim/.vim/plugged/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors
+    ignore = all
+
+[submodule "vim/.vim/plugged/vim-nerdtree-tabs"]
+	path = vim/.vim/plugged/vim-nerdtree-tabs
+	url = https://github.com/jistr/vim-nerdtree-tabs
+    ignore = all
+
+[submodule "vim/.vim/plugged/vim-session"]
+	path = vim/.vim/plugged/vim-session
+	url = https://github.com/xolox/vim-session
+    ignore = all
+
+[submodule "vim/.vim/plugged/vim-tmux-navigator"]
+	path = vim/.vim/plugged/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator
+    ignore = all
+
+[submodule "vim/.vim/plugged/vimproc.vim"]
+	path = vim/.vim/plugged/vimproc.vim
+	url = https://github.com/Shougo/vimproc.vim
+    ignore = all
