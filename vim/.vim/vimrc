@@ -770,6 +770,21 @@ let g:fzf_colors =
     \ 'spinner': ['fg', 'Label'],
     \ 'header':  ['fg', 'Comment'] }
 
+" same as in .fzf.bash
+let $FZF_DEFAULT_OPTS=
+    \"-x --cycle --keep-right
+    \ --no-height --layout=reverse --border --inline-info --ansi
+    \ --bind ctrl-j:down,ctrl-k:up
+    \ --bind ctrl-n:preview-down,ctrl-p:preview-up
+    \ --bind ctrl-b:preview-page-up,ctrl-f:preview-page-down
+    \ --bind ctrl-u:preview-half-page-up,ctrl-d:preview-half-page-down
+    \ --bind shift-up:preview-top,shift-down:preview-bottom
+    \ --bind alt-up:half-page-up,alt-down:half-page-down
+    \ --color=fg:#c7c597,bg:#121212,hl:#c42a2a
+    \ --color=fg+:#ffd000,bg+:#262626,hl+:#ff0000
+    \ --color=info:#afaf87,prompt:#d7005f,pointer:#af5fff
+    \ --color=marker:#87ff00,spinner:#af5fff,header:#87afaf"
+
 " - excludes ., node_modules, target, dist folders (library folders,
 "   repository folders, ...) from results because we don't need to search
 "   files in these kinds of folders
@@ -791,13 +806,14 @@ let g:fzf_colors =
 "   those in anaconda3 folder, node_modules folder, ... or those that starts
 "   with '.'
 set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
-let $FZF_DEFAULT_COMMAND="find * -path 'anaconda3/**' -prune"
-let $FZF_DEFAULT_COMMAND .= " -o -path '*/\.*' -prune"
-let $FZF_DEFAULT_COMMAND .= " -o -path 'node_modules/**' -prune"
-let $FZF_DEFAULT_COMMAND .= " -o -path 'target/**' -prune"
-let $FZF_DEFAULT_COMMAND .= " -o -path 'dist/**' -prune"
-let $FZF_DEFAULT_COMMAND .= " -o -name '**/*.tfrecord'"
-let $FZF_DEFAULT_COMMAND .= " -o -type f -print -o -type l -print 2>/dev/null"
+let $FZF_DEFAULT_COMMAND=
+    \"find * -path 'anaconda3/**' -prune
+    \ -o -path '*/\.*' -prune
+    \ -o -path 'node_modules/**' -prune
+    \ -o -path 'target/**' -prune
+    \ -o -path 'dist/**' -prune
+    \ -o -name '**/*.tfrecord'
+    \ -o -type f -print -o -type l -print 2>/dev/null"
 
 " The Silver Searcher:
 " disabled by now because rg is better ^^
@@ -821,59 +837,58 @@ let $FZF_DEFAULT_COMMAND .= " -o -type f -print -o -type l -print 2>/dev/null"
 " + pros: cross-platforms, leverage powerful Vim search patterns
 " - external (:grep): grep and grep-like programs (ripgrep or rg in this case)
 if executable('rg')
-    let $FZF_DEFAULT_COMMAND='rg --no-ignore --files --hidden --follow '
-    """ temporarily not used directory
-    let $FZF_DEFAULT_COMMAND .= '--glob "!**/Music/*" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!**/Videos/*" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!**/OneDriveDocuments/*" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!**/PcDocuments/*" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!**/Python/Project/*" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!**/Project_Ubuntu/SSD.TensorFlow/*" '
-    """
-    let $FZF_DEFAULT_COMMAND .= '--glob "!**/anaconda3/*" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!**/.pylint.d/*" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!**/.git/*" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!**/site-packages/*" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.tfrecord" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.ckpt-*" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.tfevents.*" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.pyc" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.jpg" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.JPG" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.jpeg" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.JPEG" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.png" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.PNG" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.gif" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.GIF" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.zip" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.mp3" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.MP3" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.mp4" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.MP4" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.flac" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.m4a" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.wmv" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.wav" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.tar*" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.avi" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.pdf" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.PDF" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.rar" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.doc" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.docx" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.pptx" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.MKV" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.ppt" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.xlsx" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.exe" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.msi" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.dwg" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.ipynb" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.download" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.pkl" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.lnk" '
-    let $FZF_DEFAULT_COMMAND .= '--glob "!*.whl" '
+    let $FZF_DEFAULT_COMMAND=
+        \'rg --no-ignore --files --hidden --follow
+        \ --glob "!**/Music/*"
+        \ --glob "!**/Videos/*"
+        \ --glob "!**/OneDriveDocuments/*"
+        \ --glob "!**/PcDocuments/*"
+        \ --glob "!**/Python/Project/*"
+        \ --glob "!**/Project_Ubuntu/SSD.TensorFlow/*"
+        \ --glob "!**/anaconda3/*"
+        \ --glob "!**/.pylint.d/*"
+        \ --glob "!**/.git/*"
+        \ --glob "!**/site-packages/*"
+        \ --glob "!*.tfrecord"
+        \ --glob "!*.ckpt-*"
+        \ --glob "!*.tfevents.*"
+        \ --glob "!*.pyc"
+        \ --glob "!*.jpg"
+        \ --glob "!*.JPG"
+        \ --glob "!*.jpeg"
+        \ --glob "!*.JPEG"
+        \ --glob "!*.png"
+        \ --glob "!*.PNG"
+        \ --glob "!*.gif"
+        \ --glob "!*.GIF"
+        \ --glob "!*.zip"
+        \ --glob "!*.mp3"
+        \ --glob "!*.MP3"
+        \ --glob "!*.mp4"
+        \ --glob "!*.MP4"
+        \ --glob "!*.flac"
+        \ --glob "!*.m4a"
+        \ --glob "!*.wmv"
+        \ --glob "!*.wav"
+        \ --glob "!*.tar*"
+        \ --glob "!*.avi"
+        \ --glob "!*.pdf"
+        \ --glob "!*.PDF"
+        \ --glob "!*.rar"
+        \ --glob "!*.doc"
+        \ --glob "!*.docx"
+        \ --glob "!*.pptx"
+        \ --glob "!*.MKV"
+        \ --glob "!*.ppt"
+        \ --glob "!*.xlsx"
+        \ --glob "!*.exe"
+        \ --glob "!*.msi"
+        \ --glob "!*.dwg"
+        \ --glob "!*.ipynb"
+        \ --glob "!*.download"
+        \ --glob "!*.pkl"
+        \ --glob "!*.lnk"
+        \ --glob "!*.whl"'
 
     set grepprg=rg\ --vimgrep
     " let g:first_argument='rg --column --line-number --no-heading '
@@ -885,8 +900,9 @@ if executable('rg')
     "     \fzf#vim#with_preview(),
     "     \<bang>0)
     function! RipgrepFzf(query, fullscreen)
-        let command_fmt = 'rg --column --line-number --no-heading '
-        let command_fmt .= '--color=always --smart-case -- %s || true'
+        let command_fmt=
+            \'rg --column --line-number --no-heading
+            \ --color=always --smart-case -- %s || true'
         let initial_command = printf(command_fmt, shellescape(a:query))
         let reload_command = printf(command_fmt, '{q}')
         let spec = {'options': ['--phony',
@@ -907,8 +923,9 @@ let g:fzf_command_prefix="Fzf"
 " let g:project_path="/mnt/9A743BCF743BAD3F/Lloyd"
 " let g:project_path .= "/OneDrive - Hanoi University of Science and Technology"
 " let g:project_path .= "/DellDocuments/Python/Project_Ubuntu"
-let g:project_path="/home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/"
-let g:project_path .= "Python/Project_Ubuntu"
+let g:project_path=
+    \"/home/loinguyenvan/Projects/OneDriveHUST/DellDocuments/
+    \Python/Project_Ubuntu"
 command! -bang -nargs=? -complete=dir ProjectFiles call fzf#vim#files(
     \g:project_path,
     \fzf#vim#with_preview(),
@@ -936,8 +953,11 @@ inoremap <silent> <leader>fs <esc>:FzfSnippets!<cr>
 nnoremap <silent> <leader>fw :FzfWindows<cr>
 " find commands
 nnoremap <silent> <leader>fh :FzfHistory:<cr>
-nnoremap <silent> <leader>fc :FzfColors<cr>
-nnoremap <silent> <leader>fg :FzfBCommits<cr>
+nnoremap <silent> <leader>fcl :FzfColors<cr>
+nnoremap <silent> <leader>fcm :FzfCommits!<cr>
+nnoremap <silent> <leader>fbc :FzfBCommits!<cr>
+nnoremap <silent> <leader>fvc :FzfCommands<cr>
+nnoremap <silent> <leader>fgs :FzfGFiles?<cr>
 
 " currently unable to use other Linux search commands (._.")
 let g:fzf_complete_cm="fdfind -t d . $HOME --hidden --follow"
@@ -981,9 +1001,10 @@ nnoremap <c-m> <c-i>
 " nnoremap <leader>pm <key>
 
 " Errors List:
-let g:python_fixers=['autopep8', 'isort', 'remove_trailing_lines']
-let g:python_fixers+=['add_blank_lines_for_python_control_statements']
-let g:python_fixers+=['trim_whitespace']
+let g:python_fixers=
+    \['autopep8', 'isort', 'remove_trailing_lines',
+    \ 'add_blank_lines_for_python_control_statements',
+    \ 'trim_whitespace']
 let g:ale_sign_column_always=1
 let g:ale_fixers={
     \   '*': ['remove_trailing_lines', 'trim_whitespace'],
@@ -1408,8 +1429,9 @@ augroup filetype_python
     autocmd FileType python setlocal tabstop=4 softtabstop=0
     autocmd FileType python setlocal textwidth=79 colorcolumn=80
     autocmd FileType python setlocal formatoptions+=croq
-    let g:python_keywords="if,elif,else,for,while,try"
-    let g:python_keywords .= "except,finally,def,class,with"
+    let g:python_keywords=
+        \"if,elif,else,for,while,try,
+        \except,finally,def,class,with"
     autocmd FileType python setlocal cinwords=g:python_keywords
     " autocmd FileType python nnoremap <buffer> <localleader>c I# <esc>
     autocmd FileType python setlocal commentstring=#\ %s

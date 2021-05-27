@@ -17,9 +17,13 @@ export FZF_DEFAULT_COMMAND="fd --type f . $HOME --color=always --hidden --follow
 
 export FZF_DEFAULT_OPTS="
     -x --cycle --keep-right
-    --bind ctrl-n:preview-down,ctrl-p:preview-up
-    --bind ctrl-j:down,ctrl-k:up
     --no-height --layout=reverse --border --inline-info --ansi
+    --bind ctrl-j:down,ctrl-k:up
+    --bind ctrl-n:preview-down,ctrl-p:preview-up
+    --bind ctrl-b:preview-page-up,ctrl-f:preview-page-down
+    --bind ctrl-u:preview-half-page-up,ctrl-d:preview-half-page-down
+    --bind shift-up:preview-top,shift-down:preview-bottom
+    --bind alt-up:half-page-up,alt-down:half-page-down
     --color=fg:#c7c597,bg:#121212,hl:#c42a2a
     --color=fg+:#ffd000,bg+:#262626,hl+:#ff0000
     --color=info:#afaf87,prompt:#d7005f,pointer:#af5fff
