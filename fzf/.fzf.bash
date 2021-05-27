@@ -17,6 +17,8 @@ export FZF_DEFAULT_COMMAND="fd --type f . $HOME --color=always --hidden --follow
 
 export FZF_DEFAULT_OPTS="
     -x --cycle --keep-right
+    --bind ctrl-n:preview-down,ctrl-p:preview-up
+    --bind ctrl-j:down,ctrl-k:up
     --no-height --layout=reverse --border --inline-info --ansi
     --color=fg:#c7c597,bg:#121212,hl:#c42a2a
     --color=fg+:#ffd000,bg+:#262626,hl+:#ff0000
