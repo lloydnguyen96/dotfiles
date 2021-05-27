@@ -821,7 +821,7 @@ let $FZF_DEFAULT_COMMAND .= " -o -type f -print -o -type l -print 2>/dev/null"
 " + pros: cross-platforms, leverage powerful Vim search patterns
 " - external (:grep): grep and grep-like programs (ripgrep or rg in this case)
 if executable('rg')
-    let $FZF_DEFAULT_COMMAND='rg --files --hidden --follow '
+    let $FZF_DEFAULT_COMMAND='rg --no-ignore --files --hidden --follow '
     """ temporarily not used directory
     let $FZF_DEFAULT_COMMAND .= '--glob "!**/Music/*" '
     let $FZF_DEFAULT_COMMAND .= '--glob "!**/Videos/*" '
@@ -940,16 +940,14 @@ nnoremap <silent> <leader>fc :FzfColors<cr>
 nnoremap <silent> <leader>fg :FzfBCommits<cr>
 
 " currently unable to use other Linux search commands (._.")
-let g:fzf_complete_cm="find -L ~/ -path '**/anaconda3/**' -prune"
-let g:fzf_complete_cm .= " -o -path '*/\.*' -prune"
-let g:fzf_complete_cm .= " -o -path '**/node_modules/**' -prune"
-let g:fzf_complete_cm .= " -o -type d -print -o -type l -print 2>/dev/null"
-inoremap <expr> <plug>(fzf-complete-home-path)
-    \ fzf#vim#complete#path(
-        \g:fzf_complete_cm)
+let g:fzf_complete_cm="fdfind -t d . $HOME --hidden --follow"
+" inoremap <expr> <plug>(fzf-complete-home-path)
+"     \ fzf#vim#complete#path(
+"         \g:fzf_complete_cm)
 imap <leader>cl <plug>(fzf-complete-line)
 imap <leader>cp <plug>(fzf-complete-path)
-imap <leader>c. <plug>(fzf-complete-home-path)
+" imap <leader>c. <plug>(fzf-complete-home-path)
+inoremap <expr> <leader>c. fzf#vim#complete#path(g:fzf_complete_cm)
 imap <leader>cw <plug>(fzf-complete-word)
 imap <leader>cf <plug>(fzf-complete-file)
 imap <leader>cb <plug>(fzf-complete-buffer-line)
