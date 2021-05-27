@@ -29,7 +29,6 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     stow -S bash
     stow -S input
     stow -S conda
-    # stow -S config
     stow -S fd
     stow -S fzf
     stow -S git
@@ -37,6 +36,12 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     stow -S python
     stow -S tmux
     stow -S vim
+
+    # config gnome-terminal, gnome shortcuts, ...
+    mv ~/.config/dconf/ ~/.config/old_dconf
+    mv ~/.config/ibus/ ~/.config/old_ibus
+    mv ~/.config/ibus-bamboo/ ~/.config/old_ibus-bamboo
+    stow -S config/ -t ~/.config/
 
     # echo "*** setup fzf ***"
     # if fzf does not exist

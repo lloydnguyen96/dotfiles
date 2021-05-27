@@ -36,14 +36,15 @@ multilanguages)
 in the current .fzf.bash file to the new .fzf.bash file created the following
 terminal command: '~/.fzf/install'.
 
-- change terminal:
-    + text
-    + background color and terminal theme (based on tango)
-    + shortcut (c-s-hjkl):
-        + c-s-h: move terminal's tab leftward
-        + c-s-l: move terminal's tab rightward
-        + c-s-j: move to terminal's tab in the left
-        + c-s-k: move to terminal's tab in the right
+> - change terminal:
+>     + text
+>     + background color and terminal theme (based on tango)
+>     + shortcut (c-s-hjkl):
+>         + c-s-h: move terminal's tab leftward
+>         + c-s-l: move terminal's tab rightward
+>         + c-s-j: move to terminal's tab in the left
+>         + c-s-k: move to terminal's tab in the right
+- config gnome-terminal, gnome shortcuts, ...: take a look at the setup.sh file
 
 - deoplete's requirements:
     + python -m pip install msgpack (system environment)
