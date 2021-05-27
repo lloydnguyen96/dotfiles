@@ -38,6 +38,12 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     # Source: https://www.reddit.com/r/linux_gaming/comments/iaa9io/how_do_you_set_coolbits_4_on_ubuntu_2004/
     sudo nvidia-xconfig --cool-bits=4
 
+    sudo apt install npm
+    sudo npm install --global yarn
+
+    sudo apt update
+    sudo apt install postgresql postgresql-contrib
+
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     echo "Haven't written setup bash script yet"
     # Mac OSX
