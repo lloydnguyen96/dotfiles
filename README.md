@@ -28,10 +28,6 @@ multilanguages)
     + add excluded folders (which you don't want fzf to search for) in
     $HOME/.fdignore file
 
-- if fuzzy completion (**) is not working, then copy our own configuration code
-in the current .fzf.bash file to the new .fzf.bash file created the following
-terminal command: '~/.fzf/install'.
-
 > - change terminal:
 >     + text
 >     + background color and terminal theme (based on tango)
