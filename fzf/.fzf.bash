@@ -11,4 +11,4 @@ fi
 # Key bindings
 # ------------
 source "/home/loinguyenvan/.fzf/shell/key-bindings.bash"
-source "~/.fzf.bash.local"
+source ~/.fzf.bash.local
