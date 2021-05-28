@@ -12,10 +12,6 @@ environment
 environment
 
 - start vim and type ':PlugInstall' to install vim plugins
-- git clone https://github.com/gpakosz/.tmux.git in dir ~/.dotfiles/tmux
-- restow the ~/.dotfiles/bash if errors (restow the ~/.dotfiles/bash/.inputrc,
-add our own configuration code in the old ~/.dotfiles/bash/.bashrc to
-~/.bashrc, ...)
 
 - install linters and fixers for automatically checking and fixing syntax
 errors:
