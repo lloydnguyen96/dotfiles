@@ -1,6 +1,6 @@
 " ~/.dotfiles/vim/.vim/sessions/CK.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 27 Tháng 5 2021 at 18:07:35.
+" Created by session.vim 2.13.1 on 28 Tháng 5 2021 at 14:41:33.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrti
@@ -33,10 +33,15 @@ wincmd _ | wincmd |
 vsplit
 wincmd _ | wincmd |
 vsplit
+2wincmd h
 wincmd _ | wincmd |
-vsplit
-3wincmd h
+split
+1wincmd k
 wincmd w
+wincmd w
+wincmd _ | wincmd |
+split
+1wincmd k
 wincmd w
 wincmd w
 wincmd t
@@ -44,22 +49,15 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe 'vert 1resize ' . ((&columns * 40 + 158) / 317)
-exe 'vert 2resize ' . ((&columns * 92 + 158) / 317)
-exe 'vert 3resize ' . ((&columns * 91 + 158) / 317)
-exe 'vert 4resize ' . ((&columns * 91 + 158) / 317)
-argglobal
-enew
-" file NERD_tree_1
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal nofen
-wincmd w
+exe '1resize ' . ((&lines * 28 + 30) / 60)
+exe 'vert 1resize ' . ((&columns * 105 + 158) / 317)
+exe '2resize ' . ((&lines * 28 + 30) / 60)
+exe 'vert 2resize ' . ((&columns * 105 + 158) / 317)
+exe '3resize ' . ((&lines * 28 + 30) / 60)
+exe 'vert 3resize ' . ((&columns * 105 + 158) / 317)
+exe '4resize ' . ((&lines * 28 + 30) / 60)
+exe 'vert 4resize ' . ((&columns * 105 + 158) / 317)
+exe 'vert 5resize ' . ((&columns * 105 + 158) / 317)
 argglobal
 setlocal fdm=indent
 setlocal fde=0
@@ -71,11 +69,34 @@ setlocal fdn=20
 setlocal fen
 33
 silent! normal! zo
-let s:l = 33 - ((32 * winheight(0) + 30) / 61)
+let s:l = 17 - ((6 * winheight(0) + 14) / 28)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-33
+17
+normal! 025|
+wincmd w
+argglobal
+if bufexists("src/services/auth.py") | buffer src/services/auth.py | else | edit src/services/auth.py | endif
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+14
+silent! normal! zo
+82
+silent! normal! zo
+90
+silent! normal! zo
+let s:l = 92 - ((13 * winheight(0) + 14) / 28)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+92
 normal! 025|
 wincmd w
 argglobal
@@ -89,15 +110,16 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 81 - ((57 * winheight(0) + 30) / 61)
+let s:l = 84 - ((13 * winheight(0) + 14) / 28)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-81
+84
 normal! 0
+lcd ~/
 wincmd w
 argglobal
-if bufexists("protos/group.proto") | buffer protos/group.proto | else | edit protos/group.proto | endif
+if bufexists("~/.tmux.conf.local") | buffer ~/.tmux.conf.local | else | edit ~/.tmux.conf.local | endif
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -107,28 +129,52 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 122 - ((57 * winheight(0) + 30) / 61)
+let s:l = 404 - ((3 * winheight(0) + 14) / 28)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-122
+404
+normal! 08|
+wincmd w
+argglobal
+if bufexists("~/Projects/VMOProjects/ck-backend/configs/stagging.json") | buffer ~/Projects/VMOProjects/ck-backend/configs/stagging.json | else | edit ~/Projects/VMOProjects/ck-backend/configs/stagging.json | endif
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 10 - ((9 * winheight(0) + 28) / 57)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+10
 normal! 0
 wincmd w
-2wincmd w
-exe 'vert 1resize ' . ((&columns * 40 + 158) / 317)
-exe 'vert 2resize ' . ((&columns * 92 + 158) / 317)
-exe 'vert 3resize ' . ((&columns * 91 + 158) / 317)
-exe 'vert 4resize ' . ((&columns * 91 + 158) / 317)
+4wincmd w
+exe '1resize ' . ((&lines * 28 + 30) / 60)
+exe 'vert 1resize ' . ((&columns * 105 + 158) / 317)
+exe '2resize ' . ((&lines * 28 + 30) / 60)
+exe 'vert 2resize ' . ((&columns * 105 + 158) / 317)
+exe '3resize ' . ((&lines * 28 + 30) / 60)
+exe 'vert 3resize ' . ((&columns * 105 + 158) / 317)
+exe '4resize ' . ((&lines * 28 + 30) / 60)
+exe 'vert 4resize ' . ((&columns * 105 + 158) / 317)
+exe 'vert 5resize ' . ((&columns * 105 + 158) / 317)
 tabnext 1
-badd +32 src/services/auth.py
-badd +22 src/models/user.py
+badd +1 ~/Projects/VMOProjects/ck-backend/app_grpc.py
+badd +0 ~/Projects/VMOProjects/ck-backend/protos/auth.proto
+badd +119 ~/Projects/VMOProjects/ck-backend/protos/group.proto
+badd +32 ~/Projects/VMOProjects/ck-backend/src/services/auth.py
+badd +22 ~/Projects/VMOProjects/ck-backend/src/models/user.py
 badd +956 ~/.dotfiles/vim/.vim/vimrc
-badd +1 configs/stagging.json
-badd +20 src/controllers/video_call.py
-badd +0 protos/group.proto
-badd +0 protos/auth.proto
-badd +7 client-test/auth.py
-badd +0 app_grpc.py
+badd +1 ~/Projects/VMOProjects/ck-backend/configs/stagging.json
+badd +20 ~/Projects/VMOProjects/ck-backend/src/controllers/video_call.py
+badd +7 ~/Projects/VMOProjects/ck-backend/client-test/auth.py
+badd +0 ~/.tmux.conf.local
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
 "   silent exe 'bwipe ' . s:wipebuf
 endif
@@ -146,20 +192,7 @@ nohlsearch
 " Everything down here is generated by vim-session (not supported
 " by :mksession out of the box).
 
-1wincmd w
-tabnext 1
-let s:bufnr_save = bufnr("%")
-let s:cwd_save = getcwd()
-NERDTree ~/Projects/VMOProjects/ck-backend
-if !getbufvar(s:bufnr_save, '&modified')
-  let s:wipebuflines = getbufline(s:bufnr_save, 1, '$')
-  if len(s:wipebuflines) <= 1 && empty(get(s:wipebuflines, 0, ''))
-    silent execute 'bwipeout' s:bufnr_save
-  endif
-endif
-execute "cd" fnameescape(s:cwd_save)
-1resize 61|vert 1resize 40|2resize 61|vert 2resize 92|3resize 61|vert 3resize 91|4resize 61|vert 4resize 91|
-2wincmd w
+4wincmd w
 tabnext 1
 if exists('s:wipebuf')
   if empty(bufname(s:wipebuf))
