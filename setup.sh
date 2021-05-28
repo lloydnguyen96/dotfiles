@@ -24,6 +24,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     sudo apt install tree
     # fd for terminal fzf
     sudo apt install fd-find
+    sudo apt install -y sed
     # stow configuration files
     cd $HOME/.dotfiles
     stow -S bash
@@ -31,10 +32,14 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     stow -S conda
     stow -S fd
     stow -S fzf
+    ~/.fzf/install
+    echo 'source ~/.fzf.bash.local' >> ~/.fzf.bash
     stow -S git
     stow -S nvidia
     stow -S python
+    git clone https://github.com/gpakosz/.tmux.git ~/.dotfiles/tmux/.tmux
     stow -S tmux
+    git clone https://github.com/tmux-plugins/tpm ~/.dotfiles/tmux/plugins/tpm
     stow -S vim
 
     # config gnome-terminal, gnome shortcuts, ...
@@ -42,6 +47,8 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     mv ~/.config/ibus/ ~/.config/old_ibus
     mv ~/.config/ibus-bamboo/ ~/.config/old_ibus-bamboo
     stow -S config/ -t ~/.config/
+
+    source ~/.bashrc
 
     # echo "*** setup fzf ***"
     # if fzf does not exist
