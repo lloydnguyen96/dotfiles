@@ -770,6 +770,15 @@ let g:fzf_colors =
     \ 'spinner': ['fg', 'Label'],
     \ 'header':  ['fg', 'Comment'] }
 
+" Navigations:
+" set these key mappings before FZF_DEFAULT_OPTS because both kinds of
+" navigations use the same keys (ctrl-j and ctrl-k) and I want fzf.vim
+" navigations take precedence over vim navigations
+nnoremap <silent> <c-k> <c-w>k
+nnoremap <silent> <c-j> <c-w>j
+nnoremap <silent> <c-h> <c-w>h
+nnoremap <silent> <c-l> <c-w>l
+
 " same as in .fzf.bash
 let $FZF_DEFAULT_OPTS=
     \"-x --cycle --keep-right
@@ -1098,12 +1107,6 @@ function! Insert(text, inserted_text)
         execute '%s/' . a:text . '/' . a:inserted_text . a:text . '/gc'
     endif
 endfunction
-
-" Navigations:
-nnoremap <silent> <c-k> <c-w>k
-nnoremap <silent> <c-j> <c-w>j
-nnoremap <silent> <c-h> <c-w>h
-nnoremap <silent> <c-l> <c-w>l
 
 " visually select a word: viw
 

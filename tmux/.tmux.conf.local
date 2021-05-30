@@ -447,7 +447,7 @@ bind -n M-s new-session
 
 # find session
 unbind C-f
-# bind -n M-f command-prompt -p find-session 'switch-client -t %%'
+bind -n M-f command-prompt -p find-session 'switch-client -t %%'
 
 # rename session: default <prefix> $
 # list session: default <prefix> s
