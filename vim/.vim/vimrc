@@ -964,8 +964,8 @@ nnoremap <silent> <leader>fw :FzfWindows<cr>
 nnoremap <silent> <leader>fh :FzfHistory:<cr>
 nnoremap <silent> <leader>fcl :FzfColors<cr>
 nnoremap <silent> <leader>fcm :FzfCommits!<cr>
-nnoremap <silent> <leader>fbc :FzfBCommits!<cr>
-nnoremap <silent> <leader>fvc :FzfCommands<cr>
+nnoremap <silent> <leader>fcb :FzfBCommits!<cr>
+nnoremap <silent> <leader>fcv :FzfCommands<cr>
 nnoremap <silent> <leader>fgs :FzfGFiles?<cr>
 
 " currently unable to use other Linux search commands (._.")
