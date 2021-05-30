@@ -449,6 +449,9 @@ bind -n M-s new-session
 unbind C-f
 bind -n M-f command-prompt -p find-session 'switch-client -t %%'
 
+# detach session
+bind -n M-d detach-client
+
 # rename session: default <prefix> $
 # list session: default <prefix> s
 
@@ -569,5 +572,10 @@ set -g @plugin 'sainnhe/tmux-fzf'
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.dotfiles/tmux/plugins/tpm/tpm'
+
+TMUX_FZF_MENU=\
+"list_environments\nconda env list\n"\
+"shutdown\nshutdown\n"\
+"reboot\nreboot\n"
 
 TMUX_FZF_LAUNCH_KEY="C-a"

@@ -1,6 +1,6 @@
 " ~/.dotfiles/vim/.vim/sessions/CK.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 30 Tháng 5 2021 at 16:36:14.
+" Created by session.vim 2.13.1 on 30 Tháng 5 2021 at 23:39:10.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrti
@@ -55,7 +55,7 @@ setlocal fdn=20
 setlocal fen
 33
 silent! normal! zo
-let s:l = 29 - ((26 * winheight(0) + 28) / 57)
+let s:l = 29 - ((25 * winheight(0) + 27) / 55)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -73,7 +73,7 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 77 - ((49 * winheight(0) + 28) / 57)
+let s:l = 77 - ((47 * winheight(0) + 27) / 55)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -91,7 +91,7 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 122 - ((53 * winheight(0) + 28) / 57)
+let s:l = 122 - ((51 * winheight(0) + 27) / 55)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
