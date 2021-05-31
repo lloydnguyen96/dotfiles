@@ -47,6 +47,9 @@ multilanguages)
 - fzf.vim's requirements:
     + install ripgrep for keyword searching
 
+- if install a new tmux plugin, you will need to manage that submodule by
+addding information in .gitmodules file
+
 # TODO LIST
 
 - tmuxinator
