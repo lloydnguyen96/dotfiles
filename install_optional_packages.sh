@@ -32,8 +32,9 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     # Green With Envy GUI for Nvidia fan control
     # Source: https://www.techticity.com/howto/how-to-control-nvidia-graphics-card-fan-speed-in-linux/
     sudo apt install flatpak
-    flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-    flatpak install flathub com.leinardi.gwe
+    flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    flatpak --user install flathub com.leinardi.gwe
+    flatpak update
     sudo apt install libcanberra-gtk-module libcanberra-gtk3-module
     # Source: https://www.reddit.com/r/linux_gaming/comments/iaa9io/how_do_you_set_coolbits_4_on_ubuntu_2004/
     sudo nvidia-xconfig --cool-bits=4
