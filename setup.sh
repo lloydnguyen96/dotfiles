@@ -25,6 +25,11 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     # fd for terminal fzf
     sudo apt install fd-find
     sudo apt install -y sed
+    # blueman for bluetooth devices
+    sudo service bluetooth start
+    sudo apt-get install blueman bluez-utils bluez bluetooth
+    sudo service bluetooth restart
+    sudo apt-get install blueman
     # stow configuration files
     cd $HOME/.dotfiles
     stow -S bash
