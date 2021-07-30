@@ -42,8 +42,11 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     sudo apt install npm
     sudo npm install --global yarn
 
+    sudo apt install mlocate
+
     sudo apt update
     sudo apt install postgresql postgresql-contrib
+    sudo apt install mysql-server
 
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     echo "Haven't written setup bash script yet"

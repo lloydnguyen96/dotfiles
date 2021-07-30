@@ -553,6 +553,9 @@ set -g focus-events on
 unbind Enter
 bind -n M-y copy-mode
 
+# copy-mode-vi key bindings
+bind-key -T copy-mode-vi Space send-keys -X clear-selection
+
 bind -n M-t choose-tree
 
 bind -n M-q display-panes

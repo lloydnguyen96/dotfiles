@@ -18,7 +18,7 @@ export FZF_DEFAULT_OPTS="
 # export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 #     --select-1 --exit-0'
 
-# Use ~~ as the trigger sequence instead of the default **
+# Use ,, as the trigger sequence instead of the default **
 export FZF_COMPLETION_TRIGGER=",,"
 
 # Options to fzf command

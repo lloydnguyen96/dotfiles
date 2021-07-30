@@ -13,6 +13,9 @@ set visible-stats On
 
 "\C-l": clear-screen
 
+set editing-mode vi
 set show-mode-in-prompt on
-set vi-cmd-mode-string "NORMAL"
-set vi-ins-mode-string "INSERT"
+set vi-cmd-mode-string "[NORMAL]"
+set vi-ins-mode-string "[INSERT]"
+# set vi-ins-mode-string [INSERT]\1\e[5 q\2
+# set vi-cmd-mode-string [NORMAL]\1\e[1 q\2

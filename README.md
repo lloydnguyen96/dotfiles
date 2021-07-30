@@ -1,4 +1,22 @@
-# VIM & TMUX: Environment Requirements And Setup In New Environment:
+# Development Environment:
+- Platform: Ubuntu
+- Window manager: i3
+- Terminal emulator: gnome (alacritty)
+- Shell: bash (zsh)
+- Prompt: starship
+- Multiplexer: tmux
+- Finder: fzf
+- Editor: vim
+
+# Setup In New Environment:
+
+- i3 setup:
+    + run: sudo apt install i3
+    + restart computer
+    + config i3:
+        * create local configuration
+        * set i3 wm modifier key ($mod) to Windows key
+    > + stow the configuration file into $HOME/.config (by later execute setup.sh file)
 
 - backup configuration files from current environment (.vimrc, .viminfo, ...).
 Those that will be replaced by stow (dotfiles manager) should be removed from
@@ -6,7 +24,9 @@ home.
 
 - if use python, install anaconda
 
-- source ~/.dotfiles/setup.sh to install packages, ... for vim development
+- consider installing: gcloud, pgadmin, ...
+
+- source ~/.dotfiles/setup.sh to install packages, ... for our development
 environment
 - optionally source ~/.dotfiles/install_optional_packages.sh for new Linux
 environment
@@ -39,10 +59,10 @@ multilanguages)
 - config gnome-terminal, gnome shortcuts, ...: take a look at the setup.sh file
 
 - deoplete's requirements:
-    + python -m pip install msgpack (system environment)
-    + python -m pip install --user jedi (current environment)
-    + python -m pip install --user pynvim (current environment)
-    + python -m pip install --user neovim (current environment)
+    + python -m pip install msgpack, jedi, pynvim, neovim (system environment)
+    > + python -m pip install --user jedi (current environment)
+    > + python -m pip install --user pynvim (current environment)
+    > + python -m pip install --user neovim (current environment)
 
 - fzf.vim's requirements:
     + install ripgrep for keyword searching
@@ -50,6 +70,9 @@ multilanguages)
 - if install a new tmux plugin, you will need to manage that submodule by
 addding information in .gitmodules file
 
-# TODO LIST
+- remove .starship folder from improper location, download Fira Code Nerd Font
+and install them using font manager
+
+# Todo List
 
 - tmuxinator

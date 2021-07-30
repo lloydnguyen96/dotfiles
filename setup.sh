@@ -30,6 +30,26 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     sudo apt-get install blueman bluez-utils bluez bluetooth
     sudo service bluetooth restart
     sudo apt-get install blueman
+
+    # tiling window manager
+    sudo apt install i3
+
+    # fonts for linux
+    sudo apt install font-manager
+    sudo apt install fonts-powerline
+
+    # starship prompt
+    sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+
+    # zsh and ohmyzsh
+    sudo apt install zsh
+    # chsh -s $(which zsh)
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+    # install alacritty
+    sudo add-apt-repository ppa:aslatter/ppa
+    sudo apt install alacritty
+
     # stow configuration files
     cd $HOME/.dotfiles
     stow -S bash
@@ -38,7 +58,8 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     stow -S fd
     stow -S fzf
     ~/.fzf/install
-    echo 'source ~/.fzf.bash.local' >> ~/.fzf.bash
+    echo 'source ~/.fzf.local' >> ~/.fzf.bash
+    echo 'source ~/.fzf.local' >> ~/.fzf.zsh
     stow -S git
     stow -S nvidia
     stow -S python
@@ -46,6 +67,8 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     stow -S tmux
     git clone https://github.com/tmux-plugins/tpm ~/.dotfiles/tmux/plugins/tpm
     stow -S vim
+    stow -S zsh
+    stow -S alacritty
 
     # config gnome-terminal, gnome shortcuts, ...
     mv ~/.config/dconf/ ~/.config/old_dconf
@@ -54,83 +77,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     stow -S config/ -t ~/.config/
 
     source ~/.bashrc
-
-    # echo "*** setup fzf ***"
-    # if fzf does not exist
-    # if command -v fzf &> /dev/null; then
-    #     echo "Found fzf, no setup needed!!!"
-    # else
-    #     echo "fzf not found. Get fzf from .vim/plugged/fzf folder"
-    #     # if folder ~/bin does not exist
-    #     if [ -d ~/bin ]; then
-    #         echo "Found ~/bin folder!!!"
-    #     else
-    #         # create that folder
-    #         echo "Folder ~/bin not found!!!"
-    #         echo "creating ~/bin folder ..."
-    #         mkdir ~/bin
-    #     fi
-    #     # if ~/.bashrc does not exist
-    #     if [ ! -w ~/.bashrc ]; then
-    #         echo ".bashrc not found!!!"
-    #         echo "creating ~/.bashrc file ..."
-    #         touch ~/.bashrc
-    #         echo "export PATH=\"$PATH:~/bin\"" >> ~/.bashrc
-    #         source ~/.bashrc
-    #     else
-    #         echo "Found ~/.bashrc file!!!"
-    #         if grep -q "~/bin" "$HOME/.bashrc"; then
-    #             echo "~/bin have already been exported in ~/.bashrc file"
-    #         else
-    #             echo "~/bin have NOT been exported in ~/.bashrc file"
-    #             echo "exporting ~/bin to PATH ..."
-    #             echo "export PATH=\"$PATH:~/bin\"" >> ~/.bashrc
-    #             echo "sourcing ~/.bashrc ..."
-    #             source ~/.bashrc
-    #         fi
-    #     fi
-    #     echo "creating symbolic link to .vim/plugged/fzf in ~/bin folder ..."
-    #     ln -s ~/.vim/plugged/fzf/bin/fzf ~/bin/fzf
-    # fi
-    # echo "*** setup vi mode for terminal shell ***"
-    # if [ ! -w ~/.bashrc ]; then
-    #     echo ".bashrc not found!!!"
-    # else
-    #     echo "Found ~/.bashrc file!!!"
-    #     if grep -q "set -o vi" "$HOME/.bashrc"; then
-    #         echo "vi mode have already been set in ~/.bashrc file"
-    #         echo "No setup needed!!!"
-    #     else
-    #         echo "vi mode have NOT been set in ~/.bashrc file"
-    #         echo "setting vi mode ..."
-    #         echo "set -o vi" >> ~/.bashrc
-    #         echo "sourcing ~/.bashrc ..."
-    #         source ~/.bashrc
-    #     fi
-    # fi
-    # echo "*** setup tmux ***"
-    # if grep -q "export TERM" "$HOME/.bashrc"; then
-    #     echo "TERM have already been set in ~/.bashrc file"
-    #     echo "No setup needed!!!"
-    # else
-    #     echo "TERM have NOT been set in ~/.bashrc file"
-    #     echo "setting TERM environment variable ..."
-    #     # it is set by default (still write here to be clearer)
-    #     echo "export TERM=\"xterm-256color\""  >> ~/.bashrc
-    #     echo "sourcing ~/.bashrc ..."
-    #     source ~/.bashrc
-    # fi
-    # if grep -q "export EDITOR" "$HOME/.bashrc"; then
-    #     echo "EDITOR have already been set in ~/.bashrc file"
-    #     echo "No setup needed!!!"
-    # else
-    #     echo "EDITOR have NOT been set in ~/.bashrc file"
-    #     echo "setting EDITOR environment variable ..."
-    #     # it is set by default (still write here to be clearer)
-    #     echo "export EDITOR=\"/usr/bin/vim\""  >> ~/.bashrc
-    #     echo "sourcing ~/.bashrc ..."
-    #     source ~/.bashrc
-    # fi
+    source ~/.zshrc
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     echo "Haven't written setup bash script yet"
     # Mac OSX

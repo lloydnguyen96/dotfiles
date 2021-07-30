@@ -1,0 +1,7 @@
+command_timeout = 1000
+
+[conda]
+ignore_base = false
+
+[gcloud]
+symbol = '🌩️  '
