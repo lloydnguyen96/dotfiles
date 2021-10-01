@@ -440,7 +440,11 @@ set -g display-time 5000
 
 # -- navigation ----------------------------------------------------------------
 
+# list sessions, windows, panes to choose
+bind -n M-t choose-tree
+
 # ********** Session **********
+
 # create session
 unbind C-c
 bind -n M-s new-session
@@ -460,7 +464,7 @@ bind -n M-d detach-client
 # create window: default <prefix> c
 bind -n M-w new-window
 
-# shift arrow to switch windows
+# switch to another window
 unbind C-h
 unbind C-l
 bind -n M-, previous-window
@@ -515,13 +519,18 @@ bind -n C-l run "($is_vim && tmux send-keys C-l) || \
 #     "bind-key -n 'C-\\' if-shell \"$is_vim\" 'send-keys C-\\\\'  'select-pane -l'"
 bind-key -n C-\\  if-shell  "$is_vim"  "send-keys C-\\"  "select-pane -l"
 
-# Make tmux like vim
-# Not sure those 5 bind-keys are nessesary
+# vi mode of tmux
+## navigation (not sure those 5 bind-keys are nessesary)
 bind-key -T copy-mode-vi 'C-h' select-pane -L
 bind-key -T copy-mode-vi 'C-j' select-pane -D
 bind-key -T copy-mode-vi 'C-k' select-pane -U
 bind-key -T copy-mode-vi 'C-l' select-pane -R
 bind-key -T copy-mode-vi 'C-\' select-pane -l
+## yank mode
+unbind Enter
+bind -n M-y copy-mode
+## clear the visual selection
+bind-key -T copy-mode-vi Space send-keys -X clear-selection
 
 # pane resizing
 unbind H
@@ -533,15 +542,11 @@ bind -n M-j resize-pane -D 2
 bind -n M-k resize-pane -U 2
 bind -n M-l resize-pane -R 2
 
-# find pane: default <prefix> q
-
 # maximize current pane
-# p stands for 'phong'
 unbind +
-# bind -n M-p run 'cut -c3- ~/.tmux.conf | sh -s _maximize_pane "#{session_name}" #D'
 bind -n M-z resize-pane -Z
 
-# with this enabled you can use <prefix> C-l to clear the screen
+# clear the screen by using <prefix> C-l
 bind C-l send-keys 'C-l'
 
 # <c-e>, <c-y> can be bound to something using root key table
@@ -549,31 +554,23 @@ bind C-l send-keys 'C-l'
 # vim-tmux-focus-events
 set -g focus-events on
 
-# yank mode
-unbind Enter
-bind -n M-y copy-mode
-
-# copy-mode-vi key bindings
-bind-key -T copy-mode-vi Space send-keys -X clear-selection
-
-bind -n M-t choose-tree
-
+# switch to a pane in current window based on its displayed identity
 bind -n M-q display-panes
 
 # ********** Tmux Plugin Manager **********
 set-environment -g TMUX_PLUGIN_MANAGER_PATH '~/.dotfiles/tmux/plugins'
 
-# List of plugins
+# list of plugins:
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
 set -g @plugin 'sainnhe/tmux-fzf'
 
-# Other examples:
+# other examples:
 # set -g @plugin 'github_username/plugin_name'
 # set -g @plugin 'git@github.com:user/plugin'
 # set -g @plugin 'git@bitbucket.com:user/plugin'
 
-# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+# initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.dotfiles/tmux/plugins/tpm/tpm'
 
 TMUX_FZF_MENU=\

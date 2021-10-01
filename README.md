@@ -40,6 +40,7 @@ errors:
     + also check out 'YouCompleteMe' vim plugin for autocompletion (it supports
 multilanguages)
     + modify global vimrc variables like python_fixers, ...
+    + example: pylint for python
 
 - for fzf and fzf.vim:
     + mkdir ~/Projects

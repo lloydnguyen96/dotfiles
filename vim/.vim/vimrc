@@ -855,6 +855,7 @@ if executable('rg')
         \ --glob "!**/Python/Project/*"
         \ --glob "!**/Project_Ubuntu/SSD.TensorFlow/*"
         \ --glob "!**/anaconda3/*"
+        \ --glob "!**/node_modules/**"
         \ --glob "!**/.pylint.d/*"
         \ --glob "!**/.git/*"
         \ --glob "!**/site-packages/*"
@@ -1135,6 +1136,7 @@ inoremap <leader>ip <esc>viw<esc>a)<esc>bi(<esc>lela
 inoremap <leader>ic <esc>viw<esc>a}<esc>bi{<esc>lela
 " surround the word in double quotes
 
+" surround the word in double quotes
 nnoremap <leader>it viw<esc>a"<esc>bi"<esc>lel
 " surround the word in single quotes
 nnoremap <leader>io viw<esc>a'<esc>bi'<esc>lel
@@ -1459,7 +1461,15 @@ augroup end
 
 augroup filetype_javascript
     autocmd!
+    autocmd FileType javascript setlocal expandtab shiftwidth=2
+    autocmd FileType javascript setlocal tabstop=2 softtabstop=0
+    autocmd FileType javascript setlocal textwidth=79 colorcolumn=80
+    autocmd FileType javascript setlocal formatoptions+=croq
     autocmd FileType javascript setlocal commentstring=//\ %s
+    autocmd FileType javascript
+        \ nnoremap <buffer> <localleader>i viw<esc>a)<esc>bi(<left>
+    autocmd FileType javascript
+        \ vnoremap <buffer> <localleader>i <esc>`>a)<esc>`<i(<left>
 augroup end
 
 augroup filetype_html

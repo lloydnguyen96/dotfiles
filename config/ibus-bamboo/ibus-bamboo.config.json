@@ -162,9 +162,21 @@
   "OutputCharset": "Unicode",
   "Flags": 7,
   "IBflags": 53616,
-  "JupiterFlags": 0,
+  "Shortcuts": [
+    1,
+    126,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5,
+    117
+  ],
   "DefaultInputMode": 1,
   "InputModeMapping": {
+    "\"Google-chrome\"": 4,
     "google-chrome:Google-chrome": 1
   }
 }
