@@ -1,0 +1,6 @@
+[WARN] - (starship::utils): Executing command "git" timed out.
+[WARN] - (starship::utils): You can set command_timeout in your config to a higher value to allow longer-running commands to keep executing.
+[WARN] - (starship::utils): Executing command "python" timed out.
+[WARN] - (starship::utils): You can set command_timeout in your config to a higher value to allow longer-running commands to keep executing.
+[WARN] - (starship::utils): Executing command "python3" timed out.
+[WARN] - (starship::utils): You can set command_timeout in your config to a higher value to allow longer-running commands to keep executing.
