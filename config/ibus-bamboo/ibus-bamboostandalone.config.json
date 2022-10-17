@@ -129,9 +129,9 @@
       ".": "DauNang",
       "0": "XoaDauThanh",
       "?": "DauHoi",
-      "\\": "D_Đ",
       "^": "AEO_ÂÊÔ",
       "`": "DauHuyen",
+      "d": "D_Đ",
       "~": "DauNga"
     },
     "VNI": {
@@ -161,7 +161,7 @@
   },
   "OutputCharset": "Unicode",
   "Flags": 7,
-  "IBflags": 53616,
+  "IBflags": 295408,
   "Shortcuts": [
     1,
     126,
@@ -175,9 +175,5 @@
     117
   ],
   "DefaultInputMode": 1,
-  "InputModeMapping": {
-    "\"Alacritty\"": 1,
-    "\"Google-chrome\"": 1,
-    "google-chrome:Google-chrome": 1
-  }
+  "InputModeMapping": {}
 }

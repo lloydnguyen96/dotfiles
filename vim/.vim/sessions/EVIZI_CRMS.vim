@@ -1,0 +1,232 @@
+" ~/.dotfiles/vim/.vim/sessions/EVIZI_CRMS.vim:
+" Vim session script.
+" Created by session.vim 2.13.1 on 28 Tháng 6 2022 at 18:50:41.
+" Open this file in Vim and run :source % to restore your session.
+
+if exists('g:syntax_on') != 1 | syntax on | endif
+if exists('g:did_load_filetypes') != 1 | filetype on | endif
+if exists('g:did_load_ftplugin') != 1 | filetype plugin on | endif
+if exists('g:did_indent_on') != 1 | filetype indent on | endif
+if &background != 'dark'
+	set background=dark
+endif
+if !exists('g:colors_name') || g:colors_name != 'gruvbox' | colorscheme gruvbox | endif
+call setqflist([])
+let SessionLoad = 1
+if &cp | set nocp | endif
+let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
+let v:this_session=expand("<sfile>:p")
+silent only
+silent tabonly
+cd ~/Projects/VMOProjects/evz21165/carlogix-monthly-reports
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+set shortmess=aoO
+argglobal
+%argdel
+$argadd README.md
+edit tests/cp/test_cp_material_labor_estimates.py
+let s:save_splitbelow = &splitbelow
+let s:save_splitright = &splitright
+set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+wincmd _ | wincmd |
+vsplit
+2wincmd h
+wincmd w
+wincmd w
+let &splitbelow = s:save_splitbelow
+let &splitright = s:save_splitright
+wincmd t
+let s:save_winminheight = &winminheight
+let s:save_winminwidth = &winminwidth
+set winminheight=0
+set winheight=1
+set winminwidth=0
+set winwidth=1
+exe 'vert 1resize ' . ((&columns * 106 + 160) / 320)
+exe 'vert 2resize ' . ((&columns * 106 + 160) / 320)
+exe 'vert 3resize ' . ((&columns * 106 + 160) / 320)
+argglobal
+balt src/config.yaml
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+62
+silent! normal! zo
+72
+silent! normal! zo
+let s:l = 61 - ((10 * winheight(0) + 39) / 79)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 61
+normal! 0
+wincmd w
+argglobal
+if bufexists("src/helpers.py") | buffer src/helpers.py | else | edit src/helpers.py | endif
+balt sas/src/IAIS/CRB_Rebillable_Report.sas
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+250
+silent! normal! zo
+let s:l = 265 - ((54 * winheight(0) + 39) / 79)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 265
+normal! 021|
+wincmd w
+argglobal
+if bufexists("src/iais/crb_rebillable_report.py") | buffer src/iais/crb_rebillable_report.py | else | edit src/iais/crb_rebillable_report.py | endif
+balt src/helpers.py
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=20
+setlocal nofen
+18
+silent! normal! zo
+80
+silent! normal! zo
+103
+silent! normal! zo
+111
+silent! normal! zo
+111
+silent! normal! zo
+112
+silent! normal! zo
+112
+silent! normal! zo
+112
+silent! normal! zo
+118
+silent! normal! zo
+118
+silent! normal! zo
+137
+silent! normal! zo
+151
+silent! normal! zo
+159
+silent! normal! zo
+159
+silent! normal! zo
+179
+silent! normal! zo
+187
+silent! normal! zo
+187
+silent! normal! zo
+206
+silent! normal! zo
+206
+silent! normal! zo
+206
+silent! normal! zo
+206
+silent! normal! zo
+206
+silent! normal! zo
+206
+silent! normal! zo
+219
+silent! normal! zo
+220
+silent! normal! zo
+231
+silent! normal! zo
+232
+silent! normal! zo
+261
+silent! normal! zo
+281
+silent! normal! zo
+286
+silent! normal! zo
+287
+silent! normal! zo
+300
+silent! normal! zo
+391
+silent! normal! zo
+413
+silent! normal! zo
+413
+silent! normal! zo
+let s:l = 243 - ((40 * winheight(0) + 39) / 79)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 243
+normal! 014|
+wincmd w
+exe 'vert 1resize ' . ((&columns * 106 + 160) / 320)
+exe 'vert 2resize ' . ((&columns * 106 + 160) / 320)
+exe 'vert 3resize ' . ((&columns * 106 + 160) / 320)
+tabnext 1
+badd +12 tests/cp/test_cp_material_labor_estimates.py
+badd +31 README.md
+badd +29 src/config.yaml
+badd +0 src/helpers.py
+badd +134 sas/src/IAIS/CRB_Rebillable_Report.sas
+badd +1 src/iais/crb_rebillable_report.py
+badd +602 sas/src/CP/CP_material_labor_estimates.sas
+badd +1153 src/cp/cp_material_labor_estimates.py
+badd +1 tests/_cp/test_cp_material_labor_estimates.py
+badd +30 Dockerfile
+badd +1353 src/cp/cp_material_labor_actuals.py
+badd +1281 src/_cp/cp_material_labor_estimates.py
+badd +1 __doc__
+badd +1 src/CP/cp_material_labor_estimates.py
+badd +124 src/_iais/crb_rebillable_report.py
+if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
+"   silent exe 'bwipe ' . s:wipebuf
+endif
+" unlet! s:wipebuf
+set winheight=1 winwidth=20 shortmess=filnxtToOA
+let &winminheight = s:save_winminheight
+let &winminwidth = s:save_winminwidth
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if filereadable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &g:so = s:so_save | let &g:siso = s:siso_save
+nohlsearch
+
+" Support for special windows like quick-fix and plug-in windows.
+" Everything down here is generated by vim-session (not supported
+" by :mksession out of the box).
+
+1wincmd w
+tabnext 1
+if exists('s:wipebuf')
+  if empty(bufname(s:wipebuf))
+if !getbufvar(s:wipebuf, '&modified')
+  let s:wipebuflines = getbufline(s:wipebuf, 1, '$')
+  if len(s:wipebuflines) <= 1 && empty(get(s:wipebuflines, 0, ''))
+    silent execute 'bwipeout' s:wipebuf
+  endif
+endif
+  endif
+endif
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: ft=vim ro nowrap smc=128

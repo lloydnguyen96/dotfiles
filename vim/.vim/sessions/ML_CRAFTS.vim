@@ -1,10 +1,8 @@
 " ~/.dotfiles/vim/.vim/sessions/ML_CRAFTS.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 11 Tháng 10 2021 at 00:38:54.
+" Created by session.vim 2.13.1 on 13 Tháng 3 2022 at 17:42:29.
 " Open this file in Vim and run :source % to restore your session.
 
-set guioptions=egmrti
-silent! set guifont=Monospace\ 10
 if exists('g:syntax_on') != 1 | syntax on | endif
 if exists('g:did_load_filetypes') != 1 | filetype on | endif
 if exists('g:did_load_ftplugin') != 1 | filetype plugin on | endif
@@ -13,14 +11,14 @@ if &background != 'dark'
 	set background=dark
 endif
 if !exists('g:colors_name') || g:colors_name != 'gruvbox' | colorscheme gruvbox | endif
-call setqflist([{'lnum': 669, 'col': 9, 'pattern': '', 'valid': 1, 'vcol': 0, 'nr': 0, 'type': '', 'module': '', 'filename': 'training.py', 'text': 'checkpoint = None'}, {'lnum': 664, 'col': 13, 'pattern': '', 'valid': 1, 'vcol': 0, 'nr': 0, 'type': '', 'module': '', 'filename': 'training.py', 'text': 'checkpoint = torch.load('}, {'lnum': 662, 'col': 13, 'pattern': '', 'valid': 1, 'vcol': 0, 'nr': 0, 'type': '', 'module': '', 'filename': 'training.py', 'text': 'checkpoint = None'}])
+call setqflist([{'lnum': 669, 'end_lnum': 0, 'pattern': '', 'valid': 1, 'vcol': 0, 'nr': 0, 'module': '', 'type': '', 'end_col': 0, 'col': 9, 'filename': 'training.py', 'text': 'checkpoint = None'}, {'lnum': 664, 'end_lnum': 0, 'pattern': '', 'valid': 1, 'vcol': 0, 'nr': 0, 'module': '', 'type': '', 'end_col': 0, 'col': 13, 'filename': 'training.py', 'text': 'checkpoint = torch.load('}, {'lnum': 662, 'end_lnum': 0, 'pattern': '', 'valid': 1, 'vcol': 0, 'nr': 0, 'module': '', 'type': '', 'end_col': 0, 'col': 13, 'filename': 'training.py', 'text': 'checkpoint = None'}])
 let SessionLoad = 1
 if &cp | set nocp | endif
-let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
+let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS
+cd /media/loinguyenvan/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -32,15 +30,14 @@ tabnew
 tabnew
 tabrewind
 edit datasets/rects2019/dataset.py
+let s:save_splitbelow = &splitbelow
+let s:save_splitright = &splitright
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
 wincmd _ | wincmd |
 vsplit
-wincmd _ | wincmd |
-vsplit
-3wincmd h
-wincmd w
+2wincmd h
 wincmd _ | wincmd |
 split
 1wincmd k
@@ -55,37 +52,29 @@ wincmd _ | wincmd |
 split
 1wincmd k
 wincmd w
+let &splitbelow = s:save_splitbelow
+let &splitright = s:save_splitright
 wincmd t
+let s:save_winminheight = &winminheight
+let s:save_winminwidth = &winminwidth
 set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe 'vert 1resize ' . ((&columns * 40 + 160) / 320)
-exe '2resize ' . ((&lines * 26 + 27) / 55)
-exe 'vert 2resize ' . ((&columns * 92 + 160) / 320)
-exe '3resize ' . ((&lines * 25 + 27) / 55)
-exe 'vert 3resize ' . ((&columns * 92 + 160) / 320)
-exe '4resize ' . ((&lines * 26 + 27) / 55)
-exe 'vert 4resize ' . ((&columns * 92 + 160) / 320)
-exe '5resize ' . ((&lines * 25 + 27) / 55)
-exe 'vert 5resize ' . ((&columns * 92 + 160) / 320)
-exe '6resize ' . ((&lines * 26 + 27) / 55)
-exe 'vert 6resize ' . ((&columns * 93 + 160) / 320)
-exe '7resize ' . ((&lines * 25 + 27) / 55)
-exe 'vert 7resize ' . ((&columns * 93 + 160) / 320)
+exe '1resize ' . ((&lines * 29 + 30) / 61)
+exe 'vert 1resize ' . ((&columns * 106 + 160) / 320)
+exe '2resize ' . ((&lines * 28 + 30) / 61)
+exe 'vert 2resize ' . ((&columns * 106 + 160) / 320)
+exe '3resize ' . ((&lines * 28 + 30) / 61)
+exe 'vert 3resize ' . ((&columns * 106 + 160) / 320)
+exe '4resize ' . ((&lines * 29 + 30) / 61)
+exe 'vert 4resize ' . ((&columns * 106 + 160) / 320)
+exe '5resize ' . ((&lines * 29 + 30) / 61)
+exe 'vert 5resize ' . ((&columns * 106 + 160) / 320)
+exe '6resize ' . ((&lines * 28 + 30) / 61)
+exe 'vert 6resize ' . ((&columns * 106 + 160) / 320)
 argglobal
-enew
-" file NERD_tree_1
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal nofen
-wincmd w
-argglobal
+balt datasets/rects2019/dataset.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -244,15 +233,16 @@ silent! normal! zo
 silent! normal! zo
 495
 silent! normal! zo
-let s:l = 60 - ((4 * winheight(0) + 13) / 26)
+let s:l = 70 - ((13 * winheight(0) + 14) / 29)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-60
+keepjumps 70
 normal! 0
 wincmd w
 argglobal
 if bufexists("datasets/testdataset/config.py") | buffer datasets/testdataset/config.py | else | edit datasets/testdataset/config.py | endif
+balt datasets/rects2019/dataset.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -261,15 +251,16 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 33 - ((6 * winheight(0) + 12) / 25)
+let s:l = 33 - ((7 * winheight(0) + 14) / 28)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-33
+keepjumps 33
 normal! 020|
 wincmd w
 argglobal
 if bufexists("datasets/transforms.py") | buffer datasets/transforms.py | else | edit datasets/transforms.py | endif
+balt datasets/rects2019/dataset.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -704,16 +695,16 @@ silent! normal! zo
 silent! normal! zo
 1894
 silent! normal! zo
-let s:l = 1886 - ((22 * winheight(0) + 13) / 26)
+let s:l = 39 - ((24 * winheight(0) + 14) / 28)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-1886
-normal! 05|
-lcd /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS
+keepjumps 39
+normal! 0
 wincmd w
 argglobal
-if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/training.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/training.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/training.py | endif
+if bufexists("testing.py") | buffer testing.py | else | edit testing.py | endif
+balt /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/training.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -722,167 +713,70 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-59
-silent! normal! zo
-106
-silent! normal! zo
-155
-silent! normal! zo
-207
-silent! normal! zo
-let s:l = 188 - ((9 * winheight(0) + 12) / 25)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-188
-normal! 017|
-wincmd w
-argglobal
-if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py | endif
-setlocal fdm=indent
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=10
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-43
-silent! normal! zo
-87
-silent! normal! zo
-let s:l = 35 - ((3 * winheight(0) + 13) / 26)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-35
-normal! 016|
-wincmd w
-argglobal
-if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/testing.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/testing.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/testing.py | endif
-setlocal fdm=indent
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=10
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-44
-silent! normal! zo
-44
-silent! normal! zo
-64
-silent! normal! zo
-84
-silent! normal! zo
-98
-silent! normal! zo
-101
-silent! normal! zo
-118
-silent! normal! zo
-128
-silent! normal! zo
-129
-silent! normal! zo
-138
-silent! normal! zo
-139
-silent! normal! zo
-140
-silent! normal! zo
-143
-silent! normal! zo
-145
-silent! normal! zo
-146
-silent! normal! zo
-155
-silent! normal! zo
-161
-silent! normal! zo
-176
-silent! normal! zo
-177
-silent! normal! zo
-177
-silent! normal! zo
-177
-silent! normal! zo
-180
-silent! normal! zo
-182
-silent! normal! zo
-184
-silent! normal! zo
-185
-silent! normal! zo
-192
-silent! normal! zo
-198
-silent! normal! zo
-213
-silent! normal! zo
-222
-silent! normal! zo
-225
-silent! normal! zo
-225
-silent! normal! zo
-225
-silent! normal! zo
 231
-silent! normal! zo
-242
-silent! normal! zo
-245
-silent! normal! zo
-252
-silent! normal! zo
-276
-silent! normal! zo
-277
-silent! normal! zo
-294
-silent! normal! zo
-295
-silent! normal! zo
-345
-silent! normal! zo
-346
-silent! normal! zo
-348
-silent! normal! zo
-364
-silent! normal! zo
-365
 silent! normal! zo
 378
 silent! normal! zo
-let s:l = 1 - ((0 * winheight(0) + 12) / 25)
+let s:l = 57 - ((14 * winheight(0) + 14) / 29)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-1
+keepjumps 57
+normal! 05|
+wincmd w
+argglobal
+if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py | endif
+balt datasets/rects2019/dataset.py
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 1 - ((0 * winheight(0) + 14) / 29)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 1
 normal! 0
 wincmd w
-7wincmd w
-exe 'vert 1resize ' . ((&columns * 40 + 160) / 320)
-exe '2resize ' . ((&lines * 26 + 27) / 55)
-exe 'vert 2resize ' . ((&columns * 92 + 160) / 320)
-exe '3resize ' . ((&lines * 25 + 27) / 55)
-exe 'vert 3resize ' . ((&columns * 92 + 160) / 320)
-exe '4resize ' . ((&lines * 26 + 27) / 55)
-exe 'vert 4resize ' . ((&columns * 92 + 160) / 320)
-exe '5resize ' . ((&lines * 25 + 27) / 55)
-exe 'vert 5resize ' . ((&columns * 92 + 160) / 320)
-exe '6resize ' . ((&lines * 26 + 27) / 55)
-exe 'vert 6resize ' . ((&columns * 93 + 160) / 320)
-exe '7resize ' . ((&lines * 25 + 27) / 55)
-exe 'vert 7resize ' . ((&columns * 93 + 160) / 320)
+argglobal
+if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/testing.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/testing.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/testing.py | endif
+balt datasets/rects2019/dataset.py
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 1 - ((0 * winheight(0) + 14) / 28)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 1
+normal! 0
+wincmd w
+4wincmd w
+exe '1resize ' . ((&lines * 29 + 30) / 61)
+exe 'vert 1resize ' . ((&columns * 106 + 160) / 320)
+exe '2resize ' . ((&lines * 28 + 30) / 61)
+exe 'vert 2resize ' . ((&columns * 106 + 160) / 320)
+exe '3resize ' . ((&lines * 28 + 30) / 61)
+exe 'vert 3resize ' . ((&columns * 106 + 160) / 320)
+exe '4resize ' . ((&lines * 29 + 30) / 61)
+exe 'vert 4resize ' . ((&columns * 106 + 160) / 320)
+exe '5resize ' . ((&lines * 29 + 30) / 61)
+exe 'vert 5resize ' . ((&columns * 106 + 160) / 320)
+exe '6resize ' . ((&lines * 28 + 30) / 61)
+exe 'vert 6resize ' . ((&columns * 106 + 160) / 320)
 tabnext
 edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/connections/rocpooling/rocpooling.py
+let s:save_splitbelow = &splitbelow
+let s:save_splitright = &splitright
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
@@ -903,24 +797,29 @@ wincmd _ | wincmd |
 split
 1wincmd k
 wincmd w
+let &splitbelow = s:save_splitbelow
+let &splitright = s:save_splitright
 wincmd t
+let s:save_winminheight = &winminheight
+let s:save_winminwidth = &winminwidth
 set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe '1resize ' . ((&lines * 39 + 27) / 55)
+exe '1resize ' . ((&lines * 30 + 30) / 61)
 exe 'vert 1resize ' . ((&columns * 106 + 160) / 320)
-exe '2resize ' . ((&lines * 12 + 27) / 55)
+exe '2resize ' . ((&lines * 29 + 30) / 61)
 exe 'vert 2resize ' . ((&columns * 106 + 160) / 320)
-exe '3resize ' . ((&lines * 39 + 27) / 55)
+exe '3resize ' . ((&lines * 30 + 30) / 61)
 exe 'vert 3resize ' . ((&columns * 106 + 160) / 320)
-exe '4resize ' . ((&lines * 12 + 27) / 55)
+exe '4resize ' . ((&lines * 29 + 30) / 61)
 exe 'vert 4resize ' . ((&columns * 106 + 160) / 320)
-exe '5resize ' . ((&lines * 39 + 27) / 55)
+exe '5resize ' . ((&lines * 30 + 30) / 61)
 exe 'vert 5resize ' . ((&columns * 106 + 160) / 320)
-exe '6resize ' . ((&lines * 12 + 27) / 55)
+exe '6resize ' . ((&lines * 29 + 30) / 61)
 exe 'vert 6resize ' . ((&columns * 106 + 160) / 320)
 argglobal
+balt datasets/rects2019/dataset.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -929,137 +828,16 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-17
-silent! normal! zo
-40
-silent! normal! zo
-40
-silent! normal! zo
-58
-silent! normal! zo
-62
-silent! normal! zo
-63
-silent! normal! zo
-72
-silent! normal! zo
-79
-silent! normal! zo
-80
-silent! normal! zo
-90
-silent! normal! zo
-112
-silent! normal! zo
-113
-silent! normal! zo
-137
-silent! normal! zo
-142
-silent! normal! zo
-162
-silent! normal! zo
-163
-silent! normal! zo
-171
-silent! normal! zo
-179
-silent! normal! zo
-192
-silent! normal! zo
-204
-silent! normal! zo
-205
-silent! normal! zo
-210
-silent! normal! zo
-220
-silent! normal! zo
-232
-silent! normal! zo
-233
-silent! normal! zo
-251
-silent! normal! zo
-262
-silent! normal! zo
-263
-silent! normal! zo
-270
-silent! normal! zo
-547
-silent! normal! zo
-636
-silent! normal! zo
-644
-silent! normal! zo
-665
-silent! normal! zo
-674
-silent! normal! zo
-683
-silent! normal! zo
-699
-silent! normal! zo
-708
-silent! normal! zo
-728
-silent! normal! zo
-729
-silent! normal! zo
-739
-silent! normal! zo
-748
-silent! normal! zo
-762
-silent! normal! zo
-765
-silent! normal! zo
-781
-silent! normal! zo
-783
-silent! normal! zo
-790
-silent! normal! zo
-792
-silent! normal! zo
-801
-silent! normal! zo
-826
-silent! normal! zo
-830
-silent! normal! zo
-839
-silent! normal! zo
-848
-silent! normal! zo
-855
-silent! normal! zo
-856
-silent! normal! zo
-870
-silent! normal! zo
-894
-silent! normal! zo
-905
-silent! normal! zo
-920
-silent! normal! zo
-926
-silent! normal! zo
-927
-silent! normal! zo
-928
-silent! normal! zo
-let s:l = 220 - ((9 * winheight(0) + 19) / 39)
+let s:l = 1 - ((0 * winheight(0) + 15) / 30)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-220
-normal! 029|
+keepjumps 1
+normal! 0
 wincmd w
 argglobal
 if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/recognitions/recognizer.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/recognitions/recognizer.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/recognitions/recognizer.py | endif
+balt /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/connections/rocpooling/rocpooling.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1068,29 +846,16 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-15
-silent! normal! zo
-16
-silent! normal! zo
-26
-silent! normal! zo
-35
-silent! normal! zo
-36
-silent! normal! zo
-49
-silent! normal! zo
-57
-silent! normal! zo
-let s:l = 17 - ((5 * winheight(0) + 6) / 12)
+let s:l = 1 - ((0 * winheight(0) + 14) / 29)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-17
+keepjumps 1
 normal! 0
 wincmd w
 argglobal
 if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/model.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/model.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/model.py | endif
+balt /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/connections/rocpooling/rocpooling.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1099,51 +864,16 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-24
-silent! normal! zo
-27
-silent! normal! zo
-27
-silent! normal! zo
-40
-silent! normal! zo
-48
-silent! normal! zo
-60
-silent! normal! zo
-69
-silent! normal! zo
-79
-silent! normal! zo
-79
-silent! normal! zo
-93
-silent! normal! zo
-95
-silent! normal! zo
-96
-silent! normal! zo
-97
-silent! normal! zo
-108
-silent! normal! zo
-109
-silent! normal! zo
-123
-silent! normal! zo
-124
-silent! normal! zo
-131
-silent! normal! zo
-let s:l = 34 - ((33 * winheight(0) + 19) / 39)
+let s:l = 1 - ((0 * winheight(0) + 15) / 30)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-34
+keepjumps 1
 normal! 0
 wincmd w
 argglobal
 if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/recognitions/feature_extraction.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/recognitions/feature_extraction.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/recognitions/feature_extraction.py | endif
+balt /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/connections/rocpooling/rocpooling.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1152,25 +882,16 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-7
-silent! normal! zo
-12
-silent! normal! zo
-12
-silent! normal! zo
-106
-silent! normal! zo
-107
-silent! normal! zo
-let s:l = 72 - ((4 * winheight(0) + 6) / 12)
+let s:l = 1 - ((0 * winheight(0) + 14) / 29)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-72
-normal! 013|
+keepjumps 1
+normal! 0
 wincmd w
 argglobal
 if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/config.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/config.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/config.py | endif
+balt /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/connections/rocpooling/rocpooling.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1179,23 +900,16 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-29
-silent! normal! zo
-36
-silent! normal! zo
-38
-silent! normal! zo
-45
-silent! normal! zo
-let s:l = 60 - ((35 * winheight(0) + 19) / 39)
+let s:l = 1 - ((0 * winheight(0) + 15) / 30)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-60
-normal! 010|
+keepjumps 1
+normal! 0
 wincmd w
 argglobal
 if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/detections/modified_crafts_detector/detector.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/detections/modified_crafts_detector/detector.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/detections/modified_crafts_detector/detector.py | endif
+balt /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/connections/rocpooling/rocpooling.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1204,39 +918,29 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-17
-silent! normal! zo
-34
-silent! normal! zo
-81
-silent! normal! zo
-84
-silent! normal! zo
-84
-silent! normal! zo
-116
-silent! normal! zo
-let s:l = 131 - ((8 * winheight(0) + 6) / 12)
+let s:l = 1 - ((0 * winheight(0) + 14) / 29)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-131
-normal! 09|
+keepjumps 1
+normal! 0
 wincmd w
-exe '1resize ' . ((&lines * 39 + 27) / 55)
+exe '1resize ' . ((&lines * 30 + 30) / 61)
 exe 'vert 1resize ' . ((&columns * 106 + 160) / 320)
-exe '2resize ' . ((&lines * 12 + 27) / 55)
+exe '2resize ' . ((&lines * 29 + 30) / 61)
 exe 'vert 2resize ' . ((&columns * 106 + 160) / 320)
-exe '3resize ' . ((&lines * 39 + 27) / 55)
+exe '3resize ' . ((&lines * 30 + 30) / 61)
 exe 'vert 3resize ' . ((&columns * 106 + 160) / 320)
-exe '4resize ' . ((&lines * 12 + 27) / 55)
+exe '4resize ' . ((&lines * 29 + 30) / 61)
 exe 'vert 4resize ' . ((&columns * 106 + 160) / 320)
-exe '5resize ' . ((&lines * 39 + 27) / 55)
+exe '5resize ' . ((&lines * 30 + 30) / 61)
 exe 'vert 5resize ' . ((&columns * 106 + 160) / 320)
-exe '6resize ' . ((&lines * 12 + 27) / 55)
+exe '6resize ' . ((&lines * 29 + 30) / 61)
 exe 'vert 6resize ' . ((&columns * 106 + 160) / 320)
 tabnext
 edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py
+let s:save_splitbelow = &splitbelow
+let s:save_splitright = &splitright
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
@@ -1266,30 +970,35 @@ split
 2wincmd k
 wincmd w
 wincmd w
+let &splitbelow = s:save_splitbelow
+let &splitright = s:save_splitright
 wincmd t
+let s:save_winminheight = &winminheight
+let s:save_winminwidth = &winminwidth
 set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe '1resize ' . ((&lines * 26 + 27) / 55)
+exe '1resize ' . ((&lines * 20 + 30) / 61)
 exe 'vert 1resize ' . ((&columns * 106 + 160) / 320)
-exe '2resize ' . ((&lines * 23 + 27) / 55)
+exe '2resize ' . ((&lines * 19 + 30) / 61)
 exe 'vert 2resize ' . ((&columns * 106 + 160) / 320)
-exe '3resize ' . ((&lines * 1 + 27) / 55)
+exe '3resize ' . ((&lines * 19 + 30) / 61)
 exe 'vert 3resize ' . ((&columns * 106 + 160) / 320)
-exe '4resize ' . ((&lines * 26 + 27) / 55)
+exe '4resize ' . ((&lines * 19 + 30) / 61)
 exe 'vert 4resize ' . ((&columns * 106 + 160) / 320)
-exe '5resize ' . ((&lines * 23 + 27) / 55)
+exe '5resize ' . ((&lines * 20 + 30) / 61)
 exe 'vert 5resize ' . ((&columns * 106 + 160) / 320)
-exe '6resize ' . ((&lines * 1 + 27) / 55)
+exe '6resize ' . ((&lines * 19 + 30) / 61)
 exe 'vert 6resize ' . ((&columns * 106 + 160) / 320)
-exe '7resize ' . ((&lines * 26 + 27) / 55)
+exe '7resize ' . ((&lines * 19 + 30) / 61)
 exe 'vert 7resize ' . ((&columns * 106 + 160) / 320)
-exe '8resize ' . ((&lines * 23 + 27) / 55)
+exe '8resize ' . ((&lines * 20 + 30) / 61)
 exe 'vert 8resize ' . ((&columns * 106 + 160) / 320)
-exe '9resize ' . ((&lines * 1 + 27) / 55)
+exe '9resize ' . ((&lines * 19 + 30) / 61)
 exe 'vert 9resize ' . ((&columns * 106 + 160) / 320)
 argglobal
+balt /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/connections/rocpooling/rocpooling.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1298,15 +1007,16 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 4 - ((3 * winheight(0) + 13) / 26)
+let s:l = 1 - ((0 * winheight(0) + 10) / 20)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-4
+keepjumps 1
 normal! 0
 wincmd w
 argglobal
 if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/config.py | endif
+balt /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1315,19 +1025,16 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-41
-silent! normal! zo
-79
-silent! normal! zo
-let s:l = 2 - ((1 * winheight(0) + 11) / 23)
+let s:l = 1 - ((0 * winheight(0) + 9) / 19)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-2
+keepjumps 1
 normal! 0
 wincmd w
 argglobal
 if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/icdar2013fst/config.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/icdar2013fst/config.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/icdar2013fst/config.py | endif
+balt /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1336,19 +1043,16 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-39
-silent! normal! zo
-54
-silent! normal! zo
-let s:l = 3 - ((0 * winheight(0) + 0) / 1)
+let s:l = 1 - ((0 * winheight(0) + 9) / 19)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-3
+keepjumps 1
 normal! 0
 wincmd w
 argglobal
 if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/transforms.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/transforms.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/transforms.py | endif
+balt /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1357,25 +1061,16 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-17
-silent! normal! zo
-20
-silent! normal! zo
-29
-silent! normal! zo
-51
-silent! normal! zo
-52
-silent! normal! zo
-let s:l = 47 - ((5 * winheight(0) + 13) / 26)
+let s:l = 1 - ((0 * winheight(0) + 9) / 19)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-47
-normal! 029|
+keepjumps 1
+normal! 0
 wincmd w
 argglobal
 if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/transforms.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/transforms.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/transforms.py | endif
+balt /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1385,15 +1080,17 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 16 - ((4 * winheight(0) + 11) / 23)
+let &fdl = &fdl
+let s:l = 1 - ((0 * winheight(0) + 10) / 20)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-16
+keepjumps 1
 normal! 0
 wincmd w
 argglobal
 if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/icdar2013fst/transforms.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/icdar2013fst/transforms.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/icdar2013fst/transforms.py | endif
+balt /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1402,23 +1099,16 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-20
-silent! normal! zo
-23
-silent! normal! zo
-32
-silent! normal! zo
-72
-silent! normal! zo
-let s:l = 68 - ((0 * winheight(0) + 0) / 1)
+let s:l = 1 - ((0 * winheight(0) + 9) / 19)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-68
-normal! 054|
+keepjumps 1
+normal! 0
 wincmd w
 argglobal
 if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/dataset.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/dataset.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/dataset.py | endif
+balt /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1427,31 +1117,16 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-25
-silent! normal! zo
-28
-silent! normal! zo
-28
-silent! normal! zo
-54
-silent! normal! zo
-118
-silent! normal! zo
-130
-silent! normal! zo
-167
-silent! normal! zo
-187
-silent! normal! zo
-let s:l = 124 - ((19 * winheight(0) + 13) / 26)
+let s:l = 1 - ((0 * winheight(0) + 9) / 19)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-124
-normal! 037|
+keepjumps 1
+normal! 0
 wincmd w
 argglobal
 if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/dataset.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/dataset.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/dataset.py | endif
+balt /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1460,89 +1135,16 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-27
-silent! normal! zo
-30
-silent! normal! zo
-30
-silent! normal! zo
-55
-silent! normal! zo
-71
-silent! normal! zo
-75
-silent! normal! zo
-81
-silent! normal! zo
-82
-silent! normal! zo
-83
-silent! normal! zo
-88
-silent! normal! zo
-93
-silent! normal! zo
-100
-silent! normal! zo
-105
-silent! normal! zo
-118
-silent! normal! zo
-125
-silent! normal! zo
-174
-silent! normal! zo
-176
-silent! normal! zo
-214
-silent! normal! zo
-215
-silent! normal! zo
-220
-silent! normal! zo
-231
-silent! normal! zo
-285
-silent! normal! zo
-287
-silent! normal! zo
-295
-silent! normal! zo
-355
-silent! normal! zo
-360
-silent! normal! zo
-373
-silent! normal! zo
-378
-silent! normal! zo
-407
-silent! normal! zo
-416
-silent! normal! zo
-417
-silent! normal! zo
-418
-silent! normal! zo
-425
-silent! normal! zo
-433
-silent! normal! zo
-434
-silent! normal! zo
-475
-silent! normal! zo
-495
-silent! normal! zo
-let s:l = 31 - ((10 * winheight(0) + 11) / 23)
+let s:l = 1 - ((0 * winheight(0) + 10) / 20)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-31
-normal! 019|
+keepjumps 1
+normal! 0
 wincmd w
 argglobal
 if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/icdar2013fst/dataset.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/icdar2013fst/dataset.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/icdar2013fst/dataset.py | endif
+balt /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1551,81 +1153,35 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-21
-silent! normal! zo
-24
-silent! normal! zo
-24
-silent! normal! zo
-56
-silent! normal! zo
-80
-silent! normal! zo
-81
-silent! normal! zo
-98
-silent! normal! zo
-103
-silent! normal! zo
-116
-silent! normal! zo
-122
-silent! normal! zo
-123
-silent! normal! zo
-128
-silent! normal! zo
-136
-silent! normal! zo
-148
-silent! normal! zo
-150
-silent! normal! zo
-152
-silent! normal! zo
-160
-silent! normal! zo
-163
-silent! normal! zo
-177
-silent! normal! zo
-177
-silent! normal! zo
-177
-silent! normal! zo
-177
-silent! normal! zo
-206
-silent! normal! zo
-226
-silent! normal! zo
-let s:l = 207 - ((0 * winheight(0) + 0) / 1)
+let s:l = 1 - ((0 * winheight(0) + 9) / 19)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-207
+keepjumps 1
 normal! 0
 wincmd w
-exe '1resize ' . ((&lines * 26 + 27) / 55)
+exe '1resize ' . ((&lines * 20 + 30) / 61)
 exe 'vert 1resize ' . ((&columns * 106 + 160) / 320)
-exe '2resize ' . ((&lines * 23 + 27) / 55)
+exe '2resize ' . ((&lines * 19 + 30) / 61)
 exe 'vert 2resize ' . ((&columns * 106 + 160) / 320)
-exe '3resize ' . ((&lines * 1 + 27) / 55)
+exe '3resize ' . ((&lines * 19 + 30) / 61)
 exe 'vert 3resize ' . ((&columns * 106 + 160) / 320)
-exe '4resize ' . ((&lines * 26 + 27) / 55)
+exe '4resize ' . ((&lines * 19 + 30) / 61)
 exe 'vert 4resize ' . ((&columns * 106 + 160) / 320)
-exe '5resize ' . ((&lines * 23 + 27) / 55)
+exe '5resize ' . ((&lines * 20 + 30) / 61)
 exe 'vert 5resize ' . ((&columns * 106 + 160) / 320)
-exe '6resize ' . ((&lines * 1 + 27) / 55)
+exe '6resize ' . ((&lines * 19 + 30) / 61)
 exe 'vert 6resize ' . ((&columns * 106 + 160) / 320)
-exe '7resize ' . ((&lines * 26 + 27) / 55)
+exe '7resize ' . ((&lines * 19 + 30) / 61)
 exe 'vert 7resize ' . ((&columns * 106 + 160) / 320)
-exe '8resize ' . ((&lines * 23 + 27) / 55)
+exe '8resize ' . ((&lines * 20 + 30) / 61)
 exe 'vert 8resize ' . ((&columns * 106 + 160) / 320)
-exe '9resize ' . ((&lines * 1 + 27) / 55)
+exe '9resize ' . ((&lines * 19 + 30) / 61)
 exe 'vert 9resize ' . ((&columns * 106 + 160) / 320)
 tabnext
 edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/config.py
+let s:save_splitbelow = &splitbelow
+let s:save_splitright = &splitright
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
@@ -1652,28 +1208,33 @@ split
 2wincmd k
 wincmd w
 wincmd w
+let &splitbelow = s:save_splitbelow
+let &splitright = s:save_splitright
 wincmd t
+let s:save_winminheight = &winminheight
+let s:save_winminwidth = &winminwidth
 set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe '1resize ' . ((&lines * 26 + 27) / 55)
+exe '1resize ' . ((&lines * 20 + 30) / 61)
 exe 'vert 1resize ' . ((&columns * 106 + 160) / 320)
-exe '2resize ' . ((&lines * 23 + 27) / 55)
+exe '2resize ' . ((&lines * 19 + 30) / 61)
 exe 'vert 2resize ' . ((&columns * 106 + 160) / 320)
-exe '3resize ' . ((&lines * 1 + 27) / 55)
+exe '3resize ' . ((&lines * 19 + 30) / 61)
 exe 'vert 3resize ' . ((&columns * 106 + 160) / 320)
-exe '4resize ' . ((&lines * 39 + 27) / 55)
+exe '4resize ' . ((&lines * 30 + 30) / 61)
 exe 'vert 4resize ' . ((&columns * 106 + 160) / 320)
-exe '5resize ' . ((&lines * 12 + 27) / 55)
+exe '5resize ' . ((&lines * 29 + 30) / 61)
 exe 'vert 5resize ' . ((&columns * 106 + 160) / 320)
-exe '6resize ' . ((&lines * 26 + 27) / 55)
+exe '6resize ' . ((&lines * 19 + 30) / 61)
 exe 'vert 6resize ' . ((&columns * 106 + 160) / 320)
-exe '7resize ' . ((&lines * 23 + 27) / 55)
+exe '7resize ' . ((&lines * 20 + 30) / 61)
 exe 'vert 7resize ' . ((&columns * 106 + 160) / 320)
-exe '8resize ' . ((&lines * 1 + 27) / 55)
+exe '8resize ' . ((&lines * 19 + 30) / 61)
 exe 'vert 8resize ' . ((&columns * 106 + 160) / 320)
 argglobal
+balt /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1682,15 +1243,16 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 13) / 26)
+let s:l = 1 - ((0 * winheight(0) + 10) / 20)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-1
+keepjumps 1
 normal! 0
 wincmd w
 argglobal
 if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/csvtr/config.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/csvtr/config.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/csvtr/config.py | endif
+balt /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/config.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1699,17 +1261,16 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-37
-silent! normal! zo
-let s:l = 22 - ((12 * winheight(0) + 11) / 23)
+let s:l = 1 - ((0 * winheight(0) + 9) / 19)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-22
+keepjumps 1
 normal! 0
 wincmd w
 argglobal
 if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/testdataset/config.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/testdataset/config.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/testdataset/config.py | endif
+balt /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/config.py
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1719,15 +1280,17 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 3 - ((0 * winheight(0) + 0) / 1)
+let &fdl = &fdl
+let s:l = 1 - ((0 * winheight(0) + 9) / 19)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-3
+keepjumps 1
 normal! 0
 wincmd w
 argglobal
 if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/transforms.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/transforms.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/transforms.py | endif
+balt /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/config.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1736,33 +1299,16 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-19
-silent! normal! zo
-22
-silent! normal! zo
-40
-silent! normal! zo
-41
-silent! normal! zo
-48
-silent! normal! zo
-72
-silent! normal! zo
-73
-silent! normal! zo
-92
-silent! normal! zo
-99
-silent! normal! zo
-let s:l = 74 - ((5 * winheight(0) + 19) / 39)
+let s:l = 1 - ((0 * winheight(0) + 15) / 30)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-74
-normal! 017|
+keepjumps 1
+normal! 0
 wincmd w
 argglobal
 if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/csvtr/transforms.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/csvtr/transforms.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/csvtr/transforms.py | endif
+balt /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/config.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1771,37 +1317,16 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-19
-silent! normal! zo
-22
-silent! normal! zo
-40
-silent! normal! zo
-41
-silent! normal! zo
-42
-silent! normal! zo
-48
-silent! normal! zo
-49
-silent! normal! zo
-72
-silent! normal! zo
-73
-silent! normal! zo
-92
-silent! normal! zo
-99
-silent! normal! zo
-let s:l = 114 - ((6 * winheight(0) + 6) / 12)
+let s:l = 1 - ((0 * winheight(0) + 14) / 29)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-114
-normal! 014|
+keepjumps 1
+normal! 0
 wincmd w
 argglobal
 if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/dataset.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/dataset.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/dataset.py | endif
+balt /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/config.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1810,31 +1335,16 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-21
-silent! normal! zo
-24
-silent! normal! zo
-24
-silent! normal! zo
-39
-silent! normal! zo
-62
-silent! normal! zo
-94
-silent! normal! zo
-141
-silent! normal! zo
-161
-silent! normal! zo
-let s:l = 146 - ((3 * winheight(0) + 13) / 26)
+let s:l = 1 - ((0 * winheight(0) + 9) / 19)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-146
+keepjumps 1
 normal! 0
 wincmd w
 argglobal
 if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/csvtr/dataset.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/csvtr/dataset.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/csvtr/dataset.py | endif
+balt /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/config.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1843,40 +1353,16 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-21
-silent! normal! zo
-24
-silent! normal! zo
-24
-silent! normal! zo
-39
-silent! normal! zo
-43
-silent! normal! zo
-48
-silent! normal! zo
-53
-silent! normal! zo
-56
-silent! normal! zo
-82
-silent! normal! zo
-90
-silent! normal! zo
-131
-silent! normal! zo
-151
-silent! normal! zo
-let s:l = 135 - ((6 * winheight(0) + 11) / 23)
+let s:l = 1 - ((0 * winheight(0) + 10) / 20)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-135
-normal! 05|
-lcd /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS
+keepjumps 1
+normal! 0
 wincmd w
 argglobal
 if bufexists("/mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/testdataset/dataset.py") | buffer /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/testdataset/dataset.py | else | edit /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/testdataset/dataset.py | endif
+balt /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/config.py
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -1885,40 +1371,39 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 74 - ((0 * winheight(0) + 0) / 1)
+let s:l = 1 - ((0 * winheight(0) + 9) / 19)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-74
+keepjumps 1
 normal! 0
 wincmd w
-exe '1resize ' . ((&lines * 26 + 27) / 55)
+exe '1resize ' . ((&lines * 20 + 30) / 61)
 exe 'vert 1resize ' . ((&columns * 106 + 160) / 320)
-exe '2resize ' . ((&lines * 23 + 27) / 55)
+exe '2resize ' . ((&lines * 19 + 30) / 61)
 exe 'vert 2resize ' . ((&columns * 106 + 160) / 320)
-exe '3resize ' . ((&lines * 1 + 27) / 55)
+exe '3resize ' . ((&lines * 19 + 30) / 61)
 exe 'vert 3resize ' . ((&columns * 106 + 160) / 320)
-exe '4resize ' . ((&lines * 39 + 27) / 55)
+exe '4resize ' . ((&lines * 30 + 30) / 61)
 exe 'vert 4resize ' . ((&columns * 106 + 160) / 320)
-exe '5resize ' . ((&lines * 12 + 27) / 55)
+exe '5resize ' . ((&lines * 29 + 30) / 61)
 exe 'vert 5resize ' . ((&columns * 106 + 160) / 320)
-exe '6resize ' . ((&lines * 26 + 27) / 55)
+exe '6resize ' . ((&lines * 19 + 30) / 61)
 exe 'vert 6resize ' . ((&columns * 106 + 160) / 320)
-exe '7resize ' . ((&lines * 23 + 27) / 55)
+exe '7resize ' . ((&lines * 20 + 30) / 61)
 exe 'vert 7resize ' . ((&columns * 106 + 160) / 320)
-exe '8resize ' . ((&lines * 1 + 27) / 55)
+exe '8resize ' . ((&lines * 19 + 30) / 61)
 exe 'vert 8resize ' . ((&columns * 106 + 160) / 320)
 tabnext 1
-badd +4 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/dataset.py
-badd +1 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/training.py
+badd +76 datasets/rects2019/dataset.py
 badd +1 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/connections/rocpooling/rocpooling.py
 badd +1 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/config.py
 badd +1 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/config.py
-badd +1 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/testdataset/config.py
-badd +1339 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/transforms.py
-badd +170 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/utilities.py
+badd +0 datasets/testdataset/config.py
+badd +0 datasets/transforms.py
+badd +1 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/training.py
 badd +1 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/project_config.py
-badd +1 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/testing.py
+badd +0 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/testing.py
 badd +67 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/recognitions/recognizer.py
 badd +92 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/model.py
 badd +76 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/recognitions/feature_extraction.py
@@ -1930,16 +1415,20 @@ badd +47 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science
 badd +1 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/transforms.py
 badd +1 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/icdar2013fst/transforms.py
 badd +5 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/synthtext/dataset.py
+badd +4 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/rects2019/dataset.py
 badd +40 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/icdar2013fst/dataset.py
 badd +1 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/csvtr/config.py
+badd +1 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/testdataset/config.py
 badd +1 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/transforms.py
 badd +1 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/csvtr/transforms.py
 badd +1 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/chinese_synthetic_string/dataset.py
 badd +153 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/csvtr/dataset.py
+badd +6 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/testdataset/dataset.py
+badd +1339 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/transforms.py
+badd +170 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/utilities.py
 badd +12 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/recognitions/sequence_modeling.py
 badd +17 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/character_classes/fullwidth2halfwidth.py
 badd +45 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/detections/modified_craft/detector.py
-badd +6 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/testdataset/dataset.py
 badd +11 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/detections/shared_networks.py
 badd +55 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/models/detections/modified_craft/backbone.py
 badd +78 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/datasets/collate.py
@@ -1951,37 +1440,26 @@ badd +1 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\
 badd +1330 ~/.dotfiles/vim/.vim/vimrc
 badd +1 /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS/character_classes.json
 badd +950 ~/anaconda3/envs/ML_CRAFTS_17/lib/python3.8/site-packages/torch/nn/modules/module.py
+badd +0 testing.py
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
 "   silent exe 'bwipe ' . s:wipebuf
 endif
 " unlet! s:wipebuf
 set winheight=1 winwidth=20 shortmess=filnxtToOA
-set winminheight=1 winminwidth=1
+let &winminheight = s:save_winminheight
+let &winminwidth = s:save_winminwidth
 let s:sx = expand("<sfile>:p:r")."x.vim"
-if file_readable(s:sx)
+if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
-let &so = s:so_save | let &siso = s:siso_save
+let &g:so = s:so_save | let &g:siso = s:siso_save
 nohlsearch
 
 " Support for special windows like quick-fix and plug-in windows.
 " Everything down here is generated by vim-session (not supported
 " by :mksession out of the box).
 
-1wincmd w
-tabnext 1
-let s:bufnr_save = bufnr("%")
-let s:cwd_save = getcwd()
-NERDTree /mnt/9A743BCF743BAD3F/Lloyd/OneDrive\ -\ Hanoi\ University\ of\ Science\ and\ Technology/DellDocuments/Python/Project_Ubuntu/ML_CRAFTS
-if !getbufvar(s:bufnr_save, '&modified')
-  let s:wipebuflines = getbufline(s:bufnr_save, 1, '$')
-  if len(s:wipebuflines) <= 1 && empty(get(s:wipebuflines, 0, ''))
-    silent execute 'bwipeout' s:bufnr_save
-  endif
-endif
-execute "cd" fnameescape(s:cwd_save)
-1resize 52|vert 1resize 40|2resize 26|vert 2resize 92|3resize 25|vert 3resize 92|4resize 26|vert 4resize 92|5resize 25|vert 5resize 92|6resize 26|vert 6resize 93|7resize 25|vert 7resize 93|
-7wincmd w
+4wincmd w
 tabnext 1
 if exists('s:wipebuf')
   if empty(bufname(s:wipebuf))

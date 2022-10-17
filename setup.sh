@@ -41,11 +41,6 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     # starship prompt
     sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
-    # zsh and ohmyzsh
-    sudo apt install zsh
-    # chsh -s $(which zsh)
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
     # install alacritty
     sudo add-apt-repository ppa:aslatter/ppa
     sudo apt install alacritty
@@ -56,10 +51,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     stow -S input
     stow -S conda
     stow -S fd
-    stow -S fzf
-    ~/.fzf/install
-    echo 'source ~/.fzf.local' >> ~/.fzf.bash
-    echo 'source ~/.fzf.local' >> ~/.fzf.zsh
+    rm ~/.gitconfig
     stow -S git
     stow -S nvidia
     stow -S python
@@ -67,8 +59,8 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     stow -S tmux
     git clone https://github.com/tmux-plugins/tpm ~/.dotfiles/tmux/plugins/tpm
     stow -S vim
-    stow -S zsh
     stow -S alacritty
+    stow -S starship
 
     # config gnome-terminal, gnome shortcuts, ...
     mv ~/.config/dconf/ ~/.config/old_dconf
@@ -77,7 +69,13 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     stow -S config/ -t ~/.config/
 
     source ~/.bashrc
-    source ~/.zshrc
+    # zsh and ohmyzsh
+    sudo apt install zsh
+    # chsh -s $(which zsh)
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    echo 'source ~/.fzf.local' >> ~/.fzf.zsh
+    rm ~/.zshrc
+    stow -S zsh
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     echo "Haven't written setup bash script yet"
     # Mac OSX

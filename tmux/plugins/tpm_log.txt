@@ -1,0 +1,8 @@
+Already installed "tpm"
+Already installed "tmux-sensible"
+Already installed "tmux-fzf"
+Updating all plugins!
+
+  "tpm" update fail
+  "tmux-fzf" update fail
+  "tmux-sensible" update success

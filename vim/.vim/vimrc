@@ -46,11 +46,14 @@
 "" Vim-PLug Core
 "*****************************************************************************
 
+if has('python3')
+endif
+
 if has("vim_starting")
     set nocompatible " Be iMproved
 endif
 
-let b:vimplug_exists=expand("~/.vim/autoload/plug.vim")
+let b:vimplug_exists=expand("$HOME/.vim/autoload/plug.vim")
 
 if !filereadable(b:vimplug_exists)
     if !executable("curl")
@@ -70,7 +73,7 @@ endif
 "" Plugin Installations With Vim-Plug
 "*****************************************************************************
 
-call plug#begin(expand('~/.vim/plugged'))
+call plug#begin(expand('$HOME/.vim/plugged'))
 
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
@@ -84,7 +87,7 @@ Plug 'majutsushi/tagbar'
 " Language Server and LSP (autocompletion)
 Plug 'dense-analysis/ale'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'tmux-plugins/vim-tmux-focus-events'
+" Plug 'tmux-plugins/vim-tmux-focus-events'
 
 " icons for nerdtree, vim-airline, ...
 " Plug 'ryanoasis/vim-devicons'
@@ -168,7 +171,7 @@ call plug#end()
 "*****************************************************************************
 
 " move .viminfo to .vim folder for portability
-set viminfo+=n~/.vim/viminfo
+set viminfo+=n$HOME/.vim/viminfo
 
 " enable file type detection: filetype on
 " enable loading the plugin files for specific file types: filetype plugin on
@@ -340,7 +343,8 @@ else
     " let g:indentLine_setColors = 0
     let g:indentLine_color_gui = '#414141'
     let g:indentLine_bgcolor_gui = '#1D2021'
-    let g:indentLine_concealcursor = 0
+    let g:indentLine_concealcursor = 'nc'
+    let g:indentLine_setConceal = 1
     let g:indentLine_char = '┆'
     let g:indentLine_faster = 0
 
@@ -678,7 +682,8 @@ noremap <leader>gr :Gremove<cr>
 nnoremap <leader>og :.Gbrowse<cr>
 
 " ********** Session Management **********
-let g:session_directory="~/.vim/sessions"
+let g:session_directory=$HOME
+let g:session_directory.="/.vim/sessions"
 let g:session_default_name="default"
 let g:session_autoload="no"
 let g:session_autosave="no"
@@ -941,7 +946,7 @@ command! -bang -nargs=? -complete=dir ProjectFiles call fzf#vim#files(
     \fzf#vim#with_preview(),
     \<bang>0)
 
-let g:home_path="~"
+let g:home_path=$HOME
 command! -bang -nargs=? -complete=dir HomeFiles call fzf#vim#files(
     \g:home_path,
     \fzf#vim#with_preview(),
